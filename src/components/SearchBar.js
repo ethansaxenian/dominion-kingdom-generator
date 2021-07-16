@@ -1,6 +1,6 @@
 import { Col, Form, InputGroup, Row } from "react-bootstrap";
 
-export default function SearchBar({ searchTerm, setSearchTerm, sortBy, setSortBy }) {
+export default function SearchBar({ searchTerm, setSearchTerm, sortBy, setSortBy, inSupply, setInSupply }) {
   return (
     <Row>
       <Col
@@ -22,9 +22,11 @@ export default function SearchBar({ searchTerm, setSearchTerm, sortBy, setSortBy
             <option value="name">Name</option>
             <option value="expansion">Expansion</option>
             <option value="cost">Cost</option>
-            <option value="types">Type</option>
           </select>
         </InputGroup>
+      </Col>
+      <Col>
+        <Form.Check inline type="checkbox" label="Only Supply Piles" onClick={() => setInSupply(!inSupply)}/>
       </Col>
     </Row>
   )

@@ -44,14 +44,10 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} alt="logo" />
-      </header>
-      <body>
-        <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} sortBy={sortBy} setSortBy={setSortBy}/>
-        <br/>
-        <CardsDisplay data={sortedCards}/>
-      </body>
+      <img src={logo} alt="logo"/>
+      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} sortBy={sortBy} setSortBy={setSortBy}/>
+      <br/>
+      <CardsDisplay data={sortedCards}/>
     </div>
   );
 }

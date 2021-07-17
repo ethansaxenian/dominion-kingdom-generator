@@ -5,9 +5,12 @@ export default function CardsDisplay({ data, swapCard, cardWidth }) {
   const cards = data.map((card) => (
     <li key={card.name}>
       <Card>
-        <a href={card.link}><Figure.Image width={cardWidth} src={card.img} alt={card.name}/></a>
+        <a href={card.link} target="_blank" rel="noopener noreferrer">
+          <Figure.Image width={cardWidth} src={card.img} alt={card.name}/>
+        </a>
         <Card.Body>
           {card.bane && <Card.Text>Bane Card</Card.Text>}
+          {card.wotm && <Card.Text>Way of the Mouse</Card.Text>}
           {swapCard && <Button size="sm" variant="danger" onClick={() => swapCard(card)}>Swap</Button>}
         </Card.Body>
       </Card>

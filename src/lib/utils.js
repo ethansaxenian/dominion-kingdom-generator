@@ -1,10 +1,12 @@
 import _ from "lodash";
-import { CARDS_TO_REMOVE, NON_SUPPLY_TYPES } from "./constants";
+import { CARDS_TO_REMOVE, CARD_SHAPED_TYPES, NON_SUPPLY_TYPES } from "./constants";
 
 export const isValidKingdomCard = (card) =>
   card.in_supply
   && card.types.every((type) => !NON_SUPPLY_TYPES.includes(type))
   && !CARDS_TO_REMOVE.includes(card.name);
+
+export const isLandscape = (card) => card.types.every((type) => CARD_SHAPED_TYPES.includes(type));
 
 export const sortTwoCards = (card1, card2, sortBy) => {
   let first = card1[sortBy];
@@ -29,7 +31,7 @@ export const drawCards = (cards, num, predicate) => _.sampleSize(predicate ? car
 
 export const youngWitchPredicate = (card) => ((card.coins === 2) || (card.coins === 3)) && !card.potions && !card.debt;
 
-export const addExtraCards = (kingdom, availableCards) => {
+export const addExtraCards = (kingdom, landscapes, availableCards) => {
   const newCards = kingdom;
   if (arrayIncludesCardName(newCards, 'Young Witch') && kingdom.every((card) => !card.bane)) {
     console.log("huh>")
@@ -37,7 +39,7 @@ export const addExtraCards = (kingdom, availableCards) => {
     const [bane] = drawCards(notInKingdom, 1, youngWitchPredicate);
     bane && newCards.push({...bane, bane: true});
   }
-  if (arrayIncludesCardName(newCards, 'Way of the Mouse')  && kingdom.every((card) => !card.wotm)) {
+  if (arrayIncludesCardName(landscapes, 'Way of the Mouse')  && kingdom.every((card) => !card.wotm)) {
     const notInKingdom = availableCards.filter((card) => !arrayIncludesCard(newCards, card));
     const [wotm] = drawCards(notInKingdom, 1, youngWitchPredicate);
     wotm && newCards.push({...wotm, wotm: true});

@@ -1,3 +1,4 @@
+import _ from "lodash";
 import { CARDS_TO_REMOVE, NON_SUPPLY_TYPES } from "./constants";
 
 export const isValidKingdomCard = (card) =>
@@ -19,3 +20,9 @@ export const sortTwoCards = (card1, card2, sortBy) => {
   }
   return 1;
 }
+
+export const arrayIncludesCard = (array, card) => array.map((obj) => obj.name.toLowerCase()).includes(card.name.toLowerCase());
+
+export const arrayIncludesCardName = (array, name) => array.map((card) => card.name.toLowerCase()).includes(name.toLowerCase());
+
+export const drawCard = (availableCards, predicate) => _.sample(availableCards.filter((card) => predicate(card)));

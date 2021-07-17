@@ -1,9 +1,9 @@
 [
   {
-    "name": "cellar",
-    "expansion": "base",
+    "name": "Cellar",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -14,10 +14,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Cellar"
   },
   {
-    "name": "chapel",
-    "expansion": "base",
+    "name": "Chapel",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -28,11 +28,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Chapel"
   },
   {
-    "name": "moat",
-    "expansion": "base",
+    "name": "Moat",
+    "expansion": "Base",
     "types": [
-      "action",
-      "reaction"
+      "Action",
+      "Reaction"
     ],
     "coins": 2,
     "potions": null,
@@ -43,10 +43,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Moat"
   },
   {
-    "name": "chancellor",
-    "expansion": "base",
+    "name": "Chancellor",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -57,10 +57,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Chancellor"
   },
   {
-    "name": "harbinger",
-    "expansion": "base",
+    "name": "Harbinger",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -71,10 +71,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Harbinger"
   },
   {
-    "name": "merchant",
-    "expansion": "base",
+    "name": "Merchant",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -85,10 +85,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Merchant"
   },
   {
-    "name": "vassal",
-    "expansion": "base",
+    "name": "Vassal",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -99,10 +99,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Vassal"
   },
   {
-    "name": "village",
-    "expansion": "base",
+    "name": "Village",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -113,10 +113,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Village"
   },
   {
-    "name": "woodcutter",
-    "expansion": "base",
+    "name": "Woodcutter",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -127,10 +127,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Woodcutter"
   },
   {
-    "name": "workshop",
-    "expansion": "base",
+    "name": "Workshop",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -141,11 +141,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Workshop"
   },
   {
-    "name": "bureaucrat",
-    "expansion": "base",
+    "name": "Bureaucrat",
+    "expansion": "Base",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 4,
     "potions": null,
@@ -156,10 +156,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bureaucrat"
   },
   {
-    "name": "feast",
-    "expansion": "base",
+    "name": "Feast",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -170,10 +170,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Feast"
   },
   {
-    "name": "gardens",
-    "expansion": "base",
+    "name": "Gardens",
+    "expansion": "Base",
     "types": [
-      "victory"
+      "Victory"
     ],
     "coins": 4,
     "potions": null,
@@ -184,11 +184,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Gardens"
   },
   {
-    "name": "militia",
-    "expansion": "base",
+    "name": "Militia",
+    "expansion": "Base",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 4,
     "potions": null,
@@ -199,10 +199,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Militia"
   },
   {
-    "name": "moneylender",
-    "expansion": "base",
+    "name": "Moneylender",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -213,10 +213,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Moneylender"
   },
   {
-    "name": "poacher",
-    "expansion": "base",
+    "name": "Poacher",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -227,10 +227,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Poacher"
   },
   {
-    "name": "remodel",
-    "expansion": "base",
+    "name": "Remodel",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -241,10 +241,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Remodel"
   },
   {
-    "name": "smithy",
-    "expansion": "base",
+    "name": "Smithy",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -255,11 +255,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Smithy"
   },
   {
-    "name": "spy",
-    "expansion": "base",
+    "name": "Spy",
+    "expansion": "Base",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 4,
     "potions": null,
@@ -270,11 +270,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Spy"
   },
   {
-    "name": "thief",
-    "expansion": "base",
+    "name": "Thief",
+    "expansion": "Base",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 4,
     "potions": null,
@@ -285,10 +285,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Thief"
   },
   {
-    "name": "throne room",
-    "expansion": "base",
+    "name": "Throne Room",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -299,11 +299,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Throne_Room"
   },
   {
-    "name": "bandit",
-    "expansion": "base",
+    "name": "Bandit",
+    "expansion": "Base",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -314,10 +314,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bandit"
   },
   {
-    "name": "council room",
-    "expansion": "base",
+    "name": "Council Room",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -328,10 +328,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Council_Room"
   },
   {
-    "name": "festival",
-    "expansion": "base",
+    "name": "Festival",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -342,10 +342,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Festival"
   },
   {
-    "name": "laboratory",
-    "expansion": "base",
+    "name": "Laboratory",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -356,10 +356,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Laboratory"
   },
   {
-    "name": "library",
-    "expansion": "base",
+    "name": "Library",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -370,10 +370,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Library"
   },
   {
-    "name": "market",
-    "expansion": "base",
+    "name": "Market",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -384,10 +384,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Market"
   },
   {
-    "name": "mine",
-    "expansion": "base",
+    "name": "Mine",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -398,10 +398,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Mine"
   },
   {
-    "name": "sentry",
-    "expansion": "base",
+    "name": "Sentry",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -412,11 +412,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sentry"
   },
   {
-    "name": "witch",
-    "expansion": "base",
+    "name": "Witch",
+    "expansion": "Base",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -427,10 +427,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Witch"
   },
   {
-    "name": "adventurer",
-    "expansion": "base",
+    "name": "Adventurer",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 6,
     "potions": null,
@@ -441,10 +441,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Adventurer"
   },
   {
-    "name": "artisan",
-    "expansion": "base",
+    "name": "Artisan",
+    "expansion": "Base",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 6,
     "potions": null,
@@ -455,10 +455,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Artisan"
   },
   {
-    "name": "copper",
-    "expansion": "base",
+    "name": "Copper",
+    "expansion": "Base",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 0,
     "potions": null,
@@ -469,10 +469,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Copper"
   },
   {
-    "name": "silver",
-    "expansion": "base",
+    "name": "Silver",
+    "expansion": "Base",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 3,
     "potions": null,
@@ -483,10 +483,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Silver"
   },
   {
-    "name": "gold",
-    "expansion": "base",
+    "name": "Gold",
+    "expansion": "Base",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 6,
     "potions": null,
@@ -497,10 +497,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Gold"
   },
   {
-    "name": "estate",
-    "expansion": "base",
+    "name": "Estate",
+    "expansion": "Base",
     "types": [
-      "victory"
+      "Victory"
     ],
     "coins": 2,
     "potions": null,
@@ -511,10 +511,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Estate"
   },
   {
-    "name": "duchy",
-    "expansion": "base",
+    "name": "Duchy",
+    "expansion": "Base",
     "types": [
-      "victory"
+      "Victory"
     ],
     "coins": 5,
     "potions": null,
@@ -525,10 +525,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Duchy"
   },
   {
-    "name": "province",
-    "expansion": "base",
+    "name": "Province",
+    "expansion": "Base",
     "types": [
-      "victory"
+      "Victory"
     ],
     "coins": 8,
     "potions": null,
@@ -539,10 +539,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Province"
   },
   {
-    "name": "curse",
-    "expansion": "base",
+    "name": "Curse",
+    "expansion": "Base",
     "types": [
-      "curse"
+      "Curse"
     ],
     "coins": 0,
     "potions": null,
@@ -553,10 +553,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Curse"
   },
   {
-    "name": "courtyard",
-    "expansion": "intrigue",
+    "name": "Courtyard",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -567,10 +567,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Courtyard"
   },
   {
-    "name": "lurker",
-    "expansion": "intrigue",
+    "name": "Lurker",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -581,10 +581,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Lurker"
   },
   {
-    "name": "pawn",
-    "expansion": "intrigue",
+    "name": "Pawn",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -595,11 +595,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Pawn"
   },
   {
-    "name": "secret chamber",
-    "expansion": "intrigue",
+    "name": "Secret Chamber",
+    "expansion": "Intrigue",
     "types": [
-      "action",
-      "reaction"
+      "Action",
+      "Reaction"
     ],
     "coins": 2,
     "potions": null,
@@ -610,11 +610,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Secret_Chamber"
   },
   {
-    "name": "great hall",
-    "expansion": "intrigue",
+    "name": "Great Hall",
+    "expansion": "Intrigue",
     "types": [
-      "action",
-      "victory"
+      "Action",
+      "Victory"
     ],
     "coins": 3,
     "potions": null,
@@ -625,10 +625,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Great_Hall"
   },
   {
-    "name": "masquerade",
-    "expansion": "intrigue",
+    "name": "Masquerade",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -639,10 +639,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Masquerade"
   },
   {
-    "name": "shanty town",
-    "expansion": "intrigue",
+    "name": "Shanty Town",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -653,10 +653,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Shanty_Town"
   },
   {
-    "name": "steward",
-    "expansion": "intrigue",
+    "name": "Steward",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -667,11 +667,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Steward"
   },
   {
-    "name": "swindler",
-    "expansion": "intrigue",
+    "name": "Swindler",
+    "expansion": "Intrigue",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 3,
     "potions": null,
@@ -682,10 +682,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Swindler"
   },
   {
-    "name": "wishing well",
-    "expansion": "intrigue",
+    "name": "Wishing Well",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -696,10 +696,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Wishing_Well"
   },
   {
-    "name": "baron",
-    "expansion": "intrigue",
+    "name": "Baron",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -710,10 +710,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Baron"
   },
   {
-    "name": "bridge",
-    "expansion": "intrigue",
+    "name": "Bridge",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -724,10 +724,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bridge"
   },
   {
-    "name": "conspirator",
-    "expansion": "intrigue",
+    "name": "Conspirator",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -738,10 +738,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Conspirator"
   },
   {
-    "name": "coppersmith",
-    "expansion": "intrigue",
+    "name": "Coppersmith",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -752,11 +752,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Coppersmith"
   },
   {
-    "name": "diplomat",
-    "expansion": "intrigue",
+    "name": "Diplomat",
+    "expansion": "Intrigue",
     "types": [
-      "action",
-      "reaction"
+      "Action",
+      "Reaction"
     ],
     "coins": 4,
     "potions": null,
@@ -767,10 +767,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Diplomat"
   },
   {
-    "name": "ironworks",
-    "expansion": "intrigue",
+    "name": "Ironworks",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -781,11 +781,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ironworks"
   },
   {
-    "name": "mill",
-    "expansion": "intrigue",
+    "name": "Mill",
+    "expansion": "Intrigue",
     "types": [
-      "action",
-      "victory"
+      "Action",
+      "Victory"
     ],
     "coins": 4,
     "potions": null,
@@ -796,10 +796,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Mill"
   },
   {
-    "name": "mining village",
-    "expansion": "intrigue",
+    "name": "Mining Village",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -810,10 +810,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Mining_Village"
   },
   {
-    "name": "scout",
-    "expansion": "intrigue",
+    "name": "Scout",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -824,10 +824,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Scout"
   },
   {
-    "name": "secret passage",
-    "expansion": "intrigue",
+    "name": "Secret Passage",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -838,10 +838,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Secret_Passage"
   },
   {
-    "name": "courtier",
-    "expansion": "intrigue",
+    "name": "Courtier",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -852,10 +852,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Courtier"
   },
   {
-    "name": "duke",
-    "expansion": "intrigue",
+    "name": "Duke",
+    "expansion": "Intrigue",
     "types": [
-      "victory"
+      "Victory"
     ],
     "coins": 5,
     "potions": null,
@@ -866,11 +866,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Duke"
   },
   {
-    "name": "minion",
-    "expansion": "intrigue",
+    "name": "Minion",
+    "expansion": "Intrigue",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -881,10 +881,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Minion"
   },
   {
-    "name": "patrol",
-    "expansion": "intrigue",
+    "name": "Patrol",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -895,11 +895,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Patrol"
   },
   {
-    "name": "replace",
-    "expansion": "intrigue",
+    "name": "Replace",
+    "expansion": "Intrigue",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -910,11 +910,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Replace"
   },
   {
-    "name": "saboteur",
-    "expansion": "intrigue",
+    "name": "Saboteur",
+    "expansion": "Intrigue",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -925,11 +925,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Saboteur"
   },
   {
-    "name": "torturer",
-    "expansion": "intrigue",
+    "name": "Torturer",
+    "expansion": "Intrigue",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -940,10 +940,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Torturer"
   },
   {
-    "name": "trading post",
-    "expansion": "intrigue",
+    "name": "Trading Post",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -954,10 +954,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Trading_Post"
   },
   {
-    "name": "tribute",
-    "expansion": "intrigue",
+    "name": "Tribute",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -968,10 +968,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Tribute"
   },
   {
-    "name": "upgrade",
-    "expansion": "intrigue",
+    "name": "Upgrade",
+    "expansion": "Intrigue",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -982,11 +982,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Upgrade"
   },
   {
-    "name": "harem",
-    "expansion": "intrigue",
+    "name": "Harem",
+    "expansion": "Intrigue",
     "types": [
-      "treasure",
-      "victory"
+      "Treasure",
+      "Victory"
     ],
     "coins": 6,
     "potions": null,
@@ -997,11 +997,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Harem"
   },
   {
-    "name": "nobles",
-    "expansion": "intrigue",
+    "name": "Nobles",
+    "expansion": "Intrigue",
     "types": [
-      "action",
-      "victory"
+      "Action",
+      "Victory"
     ],
     "coins": 6,
     "potions": null,
@@ -1012,10 +1012,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Nobles"
   },
   {
-    "name": "embargo",
-    "expansion": "seaside",
+    "name": "Embargo",
+    "expansion": "Seaside",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -1026,11 +1026,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Embargo"
   },
   {
-    "name": "haven",
-    "expansion": "seaside",
+    "name": "Haven",
+    "expansion": "Seaside",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 2,
     "potions": null,
@@ -1041,11 +1041,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Haven"
   },
   {
-    "name": "lighthouse",
-    "expansion": "seaside",
+    "name": "Lighthouse",
+    "expansion": "Seaside",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 2,
     "potions": null,
@@ -1056,10 +1056,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Lighthouse"
   },
   {
-    "name": "native village",
-    "expansion": "seaside",
+    "name": "Native Village",
+    "expansion": "Seaside",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -1070,10 +1070,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Native_Village"
   },
   {
-    "name": "pearl diver",
-    "expansion": "seaside",
+    "name": "Pearl Diver",
+    "expansion": "Seaside",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -1084,11 +1084,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Pearl_Diver"
   },
   {
-    "name": "ambassador",
-    "expansion": "seaside",
+    "name": "Ambassador",
+    "expansion": "Seaside",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 3,
     "potions": null,
@@ -1099,11 +1099,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ambassador"
   },
   {
-    "name": "fishing village",
-    "expansion": "seaside",
+    "name": "Fishing Village",
+    "expansion": "Seaside",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 3,
     "potions": null,
@@ -1114,10 +1114,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Fishing_Village"
   },
   {
-    "name": "lookout",
-    "expansion": "seaside",
+    "name": "Lookout",
+    "expansion": "Seaside",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -1128,10 +1128,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Lookout"
   },
   {
-    "name": "smugglers",
-    "expansion": "seaside",
+    "name": "Smugglers",
+    "expansion": "Seaside",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -1142,10 +1142,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Smugglers"
   },
   {
-    "name": "warehouse",
-    "expansion": "seaside",
+    "name": "Warehouse",
+    "expansion": "Seaside",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -1156,11 +1156,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Warehouse"
   },
   {
-    "name": "caravan",
-    "expansion": "seaside",
+    "name": "Caravan",
+    "expansion": "Seaside",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 4,
     "potions": null,
@@ -1171,11 +1171,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Caravan"
   },
   {
-    "name": "cutpurse",
-    "expansion": "seaside",
+    "name": "Cutpurse",
+    "expansion": "Seaside",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 4,
     "potions": null,
@@ -1186,11 +1186,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Cutpurse"
   },
   {
-    "name": "island",
-    "expansion": "seaside",
+    "name": "Island",
+    "expansion": "Seaside",
     "types": [
-      "action",
-      "victory"
+      "Action",
+      "Victory"
     ],
     "coins": 4,
     "potions": null,
@@ -1201,10 +1201,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Island"
   },
   {
-    "name": "navigator",
-    "expansion": "seaside",
+    "name": "Navigator",
+    "expansion": "Seaside",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -1215,11 +1215,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Navigator"
   },
   {
-    "name": "pirate ship",
-    "expansion": "seaside",
+    "name": "Pirate Ship",
+    "expansion": "Seaside",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 4,
     "potions": null,
@@ -1230,10 +1230,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Pirate_Ship"
   },
   {
-    "name": "salvager",
-    "expansion": "seaside",
+    "name": "Salvager",
+    "expansion": "Seaside",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -1244,11 +1244,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Salvager"
   },
   {
-    "name": "sea hag",
-    "expansion": "seaside",
+    "name": "Sea Hag",
+    "expansion": "Seaside",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 4,
     "potions": null,
@@ -1259,10 +1259,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sea_Hag"
   },
   {
-    "name": "treasure map",
-    "expansion": "seaside",
+    "name": "Treasure Map",
+    "expansion": "Seaside",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -1273,10 +1273,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Treasure_Map"
   },
   {
-    "name": "bazaar",
-    "expansion": "seaside",
+    "name": "Bazaar",
+    "expansion": "Seaside",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -1287,10 +1287,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bazaar"
   },
   {
-    "name": "explorer",
-    "expansion": "seaside",
+    "name": "Explorer",
+    "expansion": "Seaside",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -1301,11 +1301,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Explorer"
   },
   {
-    "name": "ghost ship",
-    "expansion": "seaside",
+    "name": "Ghost Ship",
+    "expansion": "Seaside",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -1316,11 +1316,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ghost_Ship"
   },
   {
-    "name": "merchant ship",
-    "expansion": "seaside",
+    "name": "Merchant Ship",
+    "expansion": "Seaside",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 5,
     "potions": null,
@@ -1331,11 +1331,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Merchant_Ship"
   },
   {
-    "name": "outpost",
-    "expansion": "seaside",
+    "name": "Outpost",
+    "expansion": "Seaside",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 5,
     "potions": null,
@@ -1346,11 +1346,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Outpost"
   },
   {
-    "name": "tactician",
-    "expansion": "seaside",
+    "name": "Tactician",
+    "expansion": "Seaside",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 5,
     "potions": null,
@@ -1361,10 +1361,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Tactician"
   },
   {
-    "name": "treasury",
-    "expansion": "seaside",
+    "name": "Treasury",
+    "expansion": "Seaside",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -1375,11 +1375,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Treasury"
   },
   {
-    "name": "wharf",
-    "expansion": "seaside",
+    "name": "Wharf",
+    "expansion": "Seaside",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 5,
     "potions": null,
@@ -1390,10 +1390,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Wharf"
   },
   {
-    "name": "transmute",
-    "expansion": "alchemy",
+    "name": "Transmute",
+    "expansion": "Alchemy",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": null,
     "potions": "p",
@@ -1404,10 +1404,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Transmute"
   },
   {
-    "name": "vineyard",
-    "expansion": "alchemy",
+    "name": "Vineyard",
+    "expansion": "Alchemy",
     "types": [
-      "victory"
+      "Victory"
     ],
     "coins": null,
     "potions": "p",
@@ -1418,10 +1418,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Vineyard"
   },
   {
-    "name": "herbalist",
-    "expansion": "alchemy",
+    "name": "Herbalist",
+    "expansion": "Alchemy",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -1432,10 +1432,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Herbalist"
   },
   {
-    "name": "apothecary",
-    "expansion": "alchemy",
+    "name": "Apothecary",
+    "expansion": "Alchemy",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": "p",
@@ -1446,11 +1446,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Apothecary"
   },
   {
-    "name": "scrying pool",
-    "expansion": "alchemy",
+    "name": "Scrying Pool",
+    "expansion": "Alchemy",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 2,
     "potions": "p",
@@ -1461,10 +1461,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Scrying_Pool"
   },
   {
-    "name": "university",
-    "expansion": "alchemy",
+    "name": "University",
+    "expansion": "Alchemy",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": "p",
@@ -1475,10 +1475,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/University"
   },
   {
-    "name": "alchemist",
-    "expansion": "alchemy",
+    "name": "Alchemist",
+    "expansion": "Alchemy",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": "p",
@@ -1489,11 +1489,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Alchemist"
   },
   {
-    "name": "familiar",
-    "expansion": "alchemy",
+    "name": "Familiar",
+    "expansion": "Alchemy",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 3,
     "potions": "p",
@@ -1504,10 +1504,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Familiar"
   },
   {
-    "name": "philosopher's stone",
-    "expansion": "alchemy",
+    "name": "Philosopher's Stone",
+    "expansion": "Alchemy",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 3,
     "potions": "p",
@@ -1518,10 +1518,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Philosopher%27s_Stone"
   },
   {
-    "name": "golem",
-    "expansion": "alchemy",
+    "name": "Golem",
+    "expansion": "Alchemy",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": "p",
@@ -1532,10 +1532,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Golem"
   },
   {
-    "name": "apprentice",
-    "expansion": "alchemy",
+    "name": "Apprentice",
+    "expansion": "Alchemy",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -1546,10 +1546,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Apprentice"
   },
   {
-    "name": "possession",
-    "expansion": "alchemy",
+    "name": "Possession",
+    "expansion": "Alchemy",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 6,
     "potions": "p",
@@ -1560,10 +1560,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Possession"
   },
   {
-    "name": "potion",
-    "expansion": "alchemy",
+    "name": "Potion",
+    "expansion": "Alchemy",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 4,
     "potions": null,
@@ -1574,10 +1574,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Potion"
   },
   {
-    "name": "loan",
-    "expansion": "prosperity",
+    "name": "Loan",
+    "expansion": "Prosperity",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 3,
     "potions": null,
@@ -1588,10 +1588,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Loan"
   },
   {
-    "name": "trade route",
-    "expansion": "prosperity",
+    "name": "Trade Route",
+    "expansion": "Prosperity",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -1602,11 +1602,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Trade_Route"
   },
   {
-    "name": "watchtower",
-    "expansion": "prosperity",
+    "name": "Watchtower",
+    "expansion": "Prosperity",
     "types": [
-      "action",
-      "reaction"
+      "Action",
+      "Reaction"
     ],
     "coins": 3,
     "potions": null,
@@ -1617,10 +1617,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Watchtower"
   },
   {
-    "name": "bishop",
-    "expansion": "prosperity",
+    "name": "Bishop",
+    "expansion": "Prosperity",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -1631,10 +1631,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bishop"
   },
   {
-    "name": "monument",
-    "expansion": "prosperity",
+    "name": "Monument",
+    "expansion": "Prosperity",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -1645,10 +1645,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Monument"
   },
   {
-    "name": "quarry",
-    "expansion": "prosperity",
+    "name": "Quarry",
+    "expansion": "Prosperity",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 4,
     "potions": null,
@@ -1659,10 +1659,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Quarry"
   },
   {
-    "name": "talisman",
-    "expansion": "prosperity",
+    "name": "Talisman",
+    "expansion": "Prosperity",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 4,
     "potions": null,
@@ -1673,10 +1673,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Talisman"
   },
   {
-    "name": "worker's village",
-    "expansion": "prosperity",
+    "name": "Worker's Village",
+    "expansion": "Prosperity",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -1687,10 +1687,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Worker%27s_Village"
   },
   {
-    "name": "city",
-    "expansion": "prosperity",
+    "name": "City",
+    "expansion": "Prosperity",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -1701,10 +1701,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/City"
   },
   {
-    "name": "contraband",
-    "expansion": "prosperity",
+    "name": "Contraband",
+    "expansion": "Prosperity",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 5,
     "potions": null,
@@ -1715,10 +1715,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Contraband"
   },
   {
-    "name": "counting house",
-    "expansion": "prosperity",
+    "name": "Counting House",
+    "expansion": "Prosperity",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -1729,10 +1729,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Counting_House"
   },
   {
-    "name": "mint",
-    "expansion": "prosperity",
+    "name": "Mint",
+    "expansion": "Prosperity",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -1743,11 +1743,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Mint"
   },
   {
-    "name": "mountebank",
-    "expansion": "prosperity",
+    "name": "Mountebank",
+    "expansion": "Prosperity",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -1758,11 +1758,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Mountebank"
   },
   {
-    "name": "rabble",
-    "expansion": "prosperity",
+    "name": "Rabble",
+    "expansion": "Prosperity",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -1773,10 +1773,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Rabble"
   },
   {
-    "name": "royal seal",
-    "expansion": "prosperity",
+    "name": "Royal Seal",
+    "expansion": "Prosperity",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 5,
     "potions": null,
@@ -1787,10 +1787,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Royal_Seal"
   },
   {
-    "name": "vault",
-    "expansion": "prosperity",
+    "name": "Vault",
+    "expansion": "Prosperity",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -1801,10 +1801,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Vault"
   },
   {
-    "name": "venture",
-    "expansion": "prosperity",
+    "name": "Venture",
+    "expansion": "Prosperity",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 5,
     "potions": null,
@@ -1815,11 +1815,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Venture"
   },
   {
-    "name": "goons",
-    "expansion": "prosperity",
+    "name": "Goons",
+    "expansion": "Prosperity",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 6,
     "potions": null,
@@ -1830,10 +1830,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Goons"
   },
   {
-    "name": "grand market",
-    "expansion": "prosperity",
+    "name": "Grand Market",
+    "expansion": "Prosperity",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 6,
     "potions": null,
@@ -1844,10 +1844,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Grand_Market"
   },
   {
-    "name": "hoard",
-    "expansion": "prosperity",
+    "name": "Hoard",
+    "expansion": "Prosperity",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 6,
     "potions": null,
@@ -1858,10 +1858,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Hoard"
   },
   {
-    "name": "bank",
-    "expansion": "prosperity",
+    "name": "Bank",
+    "expansion": "Prosperity",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 7,
     "potions": null,
@@ -1872,10 +1872,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bank"
   },
   {
-    "name": "expand",
-    "expansion": "prosperity",
+    "name": "Expand",
+    "expansion": "Prosperity",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 7,
     "potions": null,
@@ -1886,10 +1886,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Expand"
   },
   {
-    "name": "forge",
-    "expansion": "prosperity",
+    "name": "Forge",
+    "expansion": "Prosperity",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 7,
     "potions": null,
@@ -1900,10 +1900,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Forge"
   },
   {
-    "name": "king's court",
-    "expansion": "prosperity",
+    "name": "King's Court",
+    "expansion": "Prosperity",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 7,
     "potions": null,
@@ -1914,10 +1914,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/King%27s_Court"
   },
   {
-    "name": "peddler",
-    "expansion": "prosperity",
+    "name": "Peddler",
+    "expansion": "Prosperity",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 8,
     "potions": null,
@@ -1928,10 +1928,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Peddler"
   },
   {
-    "name": "platinum",
-    "expansion": "prosperity",
+    "name": "Platinum",
+    "expansion": "Prosperity",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 9,
     "potions": null,
@@ -1942,10 +1942,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Platinum"
   },
   {
-    "name": "colony",
-    "expansion": "prosperity",
+    "name": "Colony",
+    "expansion": "Prosperity",
     "types": [
-      "victory"
+      "Victory"
     ],
     "coins": 11,
     "potions": null,
@@ -1956,10 +1956,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Colony"
   },
   {
-    "name": "hamlet",
-    "expansion": "cornucopia",
+    "name": "Hamlet",
+    "expansion": "Cornucopia",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -1970,11 +1970,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Hamlet"
   },
   {
-    "name": "fortune teller",
-    "expansion": "cornucopia",
+    "name": "Fortune Teller",
+    "expansion": "Cornucopia",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 3,
     "potions": null,
@@ -1985,10 +1985,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Fortune_Teller"
   },
   {
-    "name": "menagerie",
-    "expansion": "cornucopia",
+    "name": "Menagerie",
+    "expansion": "Cornucopia",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -1999,10 +1999,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Menagerie"
   },
   {
-    "name": "farming village",
-    "expansion": "cornucopia",
+    "name": "Farming Village",
+    "expansion": "Cornucopia",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -2013,11 +2013,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Farming_Village"
   },
   {
-    "name": "horse traders",
-    "expansion": "cornucopia",
+    "name": "Horse Traders",
+    "expansion": "Cornucopia",
     "types": [
-      "action",
-      "reaction"
+      "Action",
+      "Reaction"
     ],
     "coins": 4,
     "potions": null,
@@ -2028,10 +2028,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Horse_Traders"
   },
   {
-    "name": "remake",
-    "expansion": "cornucopia",
+    "name": "Remake",
+    "expansion": "Cornucopia",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -2042,10 +2042,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Remake"
   },
   {
-    "name": "tournament",
-    "expansion": "cornucopia",
+    "name": "Tournament",
+    "expansion": "Cornucopia",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -2056,11 +2056,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Tournament"
   },
   {
-    "name": "young witch",
-    "expansion": "cornucopia",
+    "name": "Young Witch",
+    "expansion": "Cornucopia",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 4,
     "potions": null,
@@ -2071,10 +2071,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Young_Witch"
   },
   {
-    "name": "harvest",
-    "expansion": "cornucopia",
+    "name": "Harvest",
+    "expansion": "Cornucopia",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -2085,10 +2085,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Harvest"
   },
   {
-    "name": "horn of plenty",
-    "expansion": "cornucopia",
+    "name": "Horn of Plenty",
+    "expansion": "Cornucopia",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 5,
     "potions": null,
@@ -2099,10 +2099,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Horn_of_Plenty"
   },
   {
-    "name": "hunting party",
-    "expansion": "cornucopia",
+    "name": "Hunting Party",
+    "expansion": "Cornucopia",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -2113,11 +2113,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Hunting_Party"
   },
   {
-    "name": "jester",
-    "expansion": "cornucopia",
+    "name": "Jester",
+    "expansion": "Cornucopia",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -2128,10 +2128,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Jester"
   },
   {
-    "name": "fairgrounds",
-    "expansion": "cornucopia",
+    "name": "Fairgrounds",
+    "expansion": "Cornucopia",
     "types": [
-      "victory"
+      "Victory"
     ],
     "coins": 6,
     "potions": null,
@@ -2142,11 +2142,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Fairgrounds"
   },
   {
-    "name": "bag of gold",
-    "expansion": "cornucopia",
+    "name": "Bag of Gold",
+    "expansion": "Cornucopia",
     "types": [
-      "action",
-      "prize"
+      "Action",
+      "Prize"
     ],
     "coins": 0,
     "potions": null,
@@ -2157,11 +2157,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bag_of_Gold"
   },
   {
-    "name": "diadem",
-    "expansion": "cornucopia",
+    "name": "Diadem",
+    "expansion": "Cornucopia",
     "types": [
-      "treasure",
-      "prize"
+      "Treasure",
+      "Prize"
     ],
     "coins": 0,
     "potions": null,
@@ -2172,12 +2172,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Diadem"
   },
   {
-    "name": "followers",
-    "expansion": "cornucopia",
+    "name": "Followers",
+    "expansion": "Cornucopia",
     "types": [
-      "action",
-      "attack",
-      "prize"
+      "Action",
+      "Attack",
+      "Prize"
     ],
     "coins": 0,
     "potions": null,
@@ -2188,11 +2188,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Followers"
   },
   {
-    "name": "princess",
-    "expansion": "cornucopia",
+    "name": "Princess",
+    "expansion": "Cornucopia",
     "types": [
-      "action",
-      "prize"
+      "Action",
+      "Prize"
     ],
     "coins": 0,
     "potions": null,
@@ -2203,11 +2203,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Princess"
   },
   {
-    "name": "trusty steed",
-    "expansion": "cornucopia",
+    "name": "Trusty Steed",
+    "expansion": "Cornucopia",
     "types": [
-      "action",
-      "prize"
+      "Action",
+      "Prize"
     ],
     "coins": 0,
     "potions": null,
@@ -2218,10 +2218,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Trusty_Steed"
   },
   {
-    "name": "crossroads",
-    "expansion": "hinterlands",
+    "name": "Crossroads",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -2232,10 +2232,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Crossroads"
   },
   {
-    "name": "duchess",
-    "expansion": "hinterlands",
+    "name": "Duchess",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -2246,11 +2246,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Duchess"
   },
   {
-    "name": "fool's gold",
-    "expansion": "hinterlands",
+    "name": "Fool's Gold",
+    "expansion": "Hinterlands",
     "types": [
-      "treasure",
-      "reaction"
+      "Treasure",
+      "Reaction"
     ],
     "coins": 2,
     "potions": null,
@@ -2261,10 +2261,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Fool%27s_Gold"
   },
   {
-    "name": "develop",
-    "expansion": "hinterlands",
+    "name": "Develop",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -2275,10 +2275,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Develop"
   },
   {
-    "name": "oasis",
-    "expansion": "hinterlands",
+    "name": "Oasis",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -2289,11 +2289,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Oasis"
   },
   {
-    "name": "oracle",
-    "expansion": "hinterlands",
+    "name": "Oracle",
+    "expansion": "Hinterlands",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 3,
     "potions": null,
@@ -2304,10 +2304,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Oracle"
   },
   {
-    "name": "scheme",
-    "expansion": "hinterlands",
+    "name": "Scheme",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -2318,11 +2318,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Scheme"
   },
   {
-    "name": "tunnel",
-    "expansion": "hinterlands",
+    "name": "Tunnel",
+    "expansion": "Hinterlands",
     "types": [
-      "victory",
-      "reaction"
+      "Victory",
+      "Reaction"
     ],
     "coins": 3,
     "potions": null,
@@ -2333,10 +2333,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Tunnel"
   },
   {
-    "name": "jack of all trades",
-    "expansion": "hinterlands",
+    "name": "Jack of All Trades",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -2347,11 +2347,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Jack_of_All_Trades"
   },
   {
-    "name": "noble brigand",
-    "expansion": "hinterlands",
+    "name": "Noble Brigand",
+    "expansion": "Hinterlands",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 4,
     "potions": null,
@@ -2362,10 +2362,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Noble_Brigand"
   },
   {
-    "name": "nomad camp",
-    "expansion": "hinterlands",
+    "name": "Nomad Camp",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -2376,10 +2376,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Nomad_Camp"
   },
   {
-    "name": "silk road",
-    "expansion": "hinterlands",
+    "name": "Silk Road",
+    "expansion": "Hinterlands",
     "types": [
-      "victory"
+      "Victory"
     ],
     "coins": 4,
     "potions": null,
@@ -2390,10 +2390,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Silk_Road"
   },
   {
-    "name": "spice merchant",
-    "expansion": "hinterlands",
+    "name": "Spice Merchant",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -2404,11 +2404,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Spice_Merchant"
   },
   {
-    "name": "trader",
-    "expansion": "hinterlands",
+    "name": "Trader",
+    "expansion": "Hinterlands",
     "types": [
-      "action",
-      "reaction"
+      "Action",
+      "Reaction"
     ],
     "coins": 4,
     "potions": null,
@@ -2419,10 +2419,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Trader"
   },
   {
-    "name": "cache",
-    "expansion": "hinterlands",
+    "name": "Cache",
+    "expansion": "Hinterlands",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 5,
     "potions": null,
@@ -2433,10 +2433,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Cache"
   },
   {
-    "name": "cartographer",
-    "expansion": "hinterlands",
+    "name": "Cartographer",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -2447,10 +2447,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Cartographer"
   },
   {
-    "name": "embassy",
-    "expansion": "hinterlands",
+    "name": "Embassy",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -2461,10 +2461,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Embassy"
   },
   {
-    "name": "haggler",
-    "expansion": "hinterlands",
+    "name": "Haggler",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -2475,10 +2475,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Haggler"
   },
   {
-    "name": "highway",
-    "expansion": "hinterlands",
+    "name": "Highway",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -2489,10 +2489,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Highway"
   },
   {
-    "name": "ill-gotten gains",
-    "expansion": "hinterlands",
+    "name": "Ill-Gotten Gains",
+    "expansion": "Hinterlands",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 5,
     "potions": null,
@@ -2503,10 +2503,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ill-Gotten_Gains"
   },
   {
-    "name": "inn",
-    "expansion": "hinterlands",
+    "name": "Inn",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -2517,10 +2517,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Inn"
   },
   {
-    "name": "mandarin",
-    "expansion": "hinterlands",
+    "name": "Mandarin",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -2531,11 +2531,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Mandarin"
   },
   {
-    "name": "margrave",
-    "expansion": "hinterlands",
+    "name": "Margrave",
+    "expansion": "Hinterlands",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -2546,10 +2546,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Margrave"
   },
   {
-    "name": "stables",
-    "expansion": "hinterlands",
+    "name": "Stables",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -2560,10 +2560,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Stables"
   },
   {
-    "name": "border village",
-    "expansion": "hinterlands",
+    "name": "Border Village",
+    "expansion": "Hinterlands",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 6,
     "potions": null,
@@ -2574,10 +2574,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Border_Village"
   },
   {
-    "name": "farmland",
-    "expansion": "hinterlands",
+    "name": "Farmland",
+    "expansion": "Hinterlands",
     "types": [
-      "victory"
+      "Victory"
     ],
     "coins": 6,
     "potions": null,
@@ -2588,10 +2588,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Farmland"
   },
   {
-    "name": "poor house",
-    "expansion": "dark ages",
+    "name": "Poor House",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 1,
     "potions": null,
@@ -2602,11 +2602,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Poor_House"
   },
   {
-    "name": "beggar",
-    "expansion": "dark ages",
+    "name": "Beggar",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "reaction"
+      "Action",
+      "Reaction"
     ],
     "coins": 2,
     "potions": null,
@@ -2617,10 +2617,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Beggar"
   },
   {
-    "name": "squire",
-    "expansion": "dark ages",
+    "name": "Squire",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -2631,10 +2631,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Squire"
   },
   {
-    "name": "vagrant",
-    "expansion": "dark ages",
+    "name": "Vagrant",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -2645,10 +2645,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Vagrant"
   },
   {
-    "name": "forager",
-    "expansion": "dark ages",
+    "name": "Forager",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -2659,10 +2659,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Forager"
   },
   {
-    "name": "hermit",
-    "expansion": "dark ages",
+    "name": "Hermit",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -2673,11 +2673,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Hermit"
   },
   {
-    "name": "market square",
-    "expansion": "dark ages",
+    "name": "Market Square",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "reaction"
+      "Action",
+      "Reaction"
     ],
     "coins": 3,
     "potions": null,
@@ -2688,10 +2688,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Market_Square"
   },
   {
-    "name": "sage",
-    "expansion": "dark ages",
+    "name": "Sage",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -2702,10 +2702,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sage"
   },
   {
-    "name": "storeroom",
-    "expansion": "dark ages",
+    "name": "Storeroom",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -2716,11 +2716,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Storeroom"
   },
   {
-    "name": "urchin",
-    "expansion": "dark ages",
+    "name": "Urchin",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 3,
     "potions": null,
@@ -2731,10 +2731,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Urchin"
   },
   {
-    "name": "armory",
-    "expansion": "dark ages",
+    "name": "Armory",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -2745,11 +2745,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Armory"
   },
   {
-    "name": "death cart",
-    "expansion": "dark ages",
+    "name": "Death Cart",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "looter"
+      "Action",
+      "Looter"
     ],
     "coins": 4,
     "potions": null,
@@ -2760,10 +2760,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Death_Cart"
   },
   {
-    "name": "feodum",
-    "expansion": "dark ages",
+    "name": "Feodum",
+    "expansion": "Dark Ages",
     "types": [
-      "victory"
+      "Victory"
     ],
     "coins": 4,
     "potions": null,
@@ -2774,10 +2774,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Feodum"
   },
   {
-    "name": "fortress",
-    "expansion": "dark ages",
+    "name": "Fortress",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -2788,10 +2788,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Fortress"
   },
   {
-    "name": "ironmonger",
-    "expansion": "dark ages",
+    "name": "Ironmonger",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -2802,12 +2802,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ironmonger"
   },
   {
-    "name": "marauder",
-    "expansion": "dark ages",
+    "name": "Marauder",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack",
-      "looter"
+      "Action",
+      "Attack",
+      "Looter"
     ],
     "coins": 4,
     "potions": null,
@@ -2818,10 +2818,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Marauder"
   },
   {
-    "name": "procession",
-    "expansion": "dark ages",
+    "name": "Procession",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -2832,10 +2832,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Procession"
   },
   {
-    "name": "rats",
-    "expansion": "dark ages",
+    "name": "Rats",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -2846,10 +2846,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Rats"
   },
   {
-    "name": "scavenger",
-    "expansion": "dark ages",
+    "name": "Scavenger",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -2860,10 +2860,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Scavenger"
   },
   {
-    "name": "wandering minstrel",
-    "expansion": "dark ages",
+    "name": "Wandering Minstrel",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -2874,11 +2874,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Wandering_Minstrel"
   },
   {
-    "name": "band of misfits",
-    "expansion": "dark ages",
+    "name": "Band of Misfits",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "command"
+      "Action",
+      "Command"
     ],
     "coins": 5,
     "potions": null,
@@ -2889,10 +2889,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Band_of_Misfits"
   },
   {
-    "name": "bandit camp",
-    "expansion": "dark ages",
+    "name": "Bandit Camp",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -2903,10 +2903,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bandit_Camp"
   },
   {
-    "name": "catacombs",
-    "expansion": "dark ages",
+    "name": "Catacombs",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -2917,10 +2917,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Catacombs"
   },
   {
-    "name": "count",
-    "expansion": "dark ages",
+    "name": "Count",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -2931,10 +2931,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Count"
   },
   {
-    "name": "counterfeit",
-    "expansion": "dark ages",
+    "name": "Counterfeit",
+    "expansion": "Dark Ages",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 5,
     "potions": null,
@@ -2945,12 +2945,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Counterfeit"
   },
   {
-    "name": "cultist",
-    "expansion": "dark ages",
+    "name": "Cultist",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack",
-      "looter"
+      "Action",
+      "Attack",
+      "Looter"
     ],
     "coins": 5,
     "potions": null,
@@ -2961,10 +2961,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Cultist"
   },
   {
-    "name": "graverobber",
-    "expansion": "dark ages",
+    "name": "Graverobber",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -2975,10 +2975,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Graverobber"
   },
   {
-    "name": "junk dealer",
-    "expansion": "dark ages",
+    "name": "Junk Dealer",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -2989,10 +2989,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Junk_Dealer"
   },
   {
-    "name": "mystic",
-    "expansion": "dark ages",
+    "name": "Mystic",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -3003,11 +3003,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Mystic"
   },
   {
-    "name": "pillage",
-    "expansion": "dark ages",
+    "name": "Pillage",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -3018,10 +3018,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Pillage"
   },
   {
-    "name": "rebuild",
-    "expansion": "dark ages",
+    "name": "Rebuild",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -3032,11 +3032,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Rebuild"
   },
   {
-    "name": "rogue",
-    "expansion": "dark ages",
+    "name": "Rogue",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -3047,10 +3047,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Rogue"
   },
   {
-    "name": "altar",
-    "expansion": "dark ages",
+    "name": "Altar",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 6,
     "potions": null,
@@ -3061,10 +3061,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Altar"
   },
   {
-    "name": "hunting grounds",
-    "expansion": "dark ages",
+    "name": "Hunting Grounds",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 6,
     "potions": null,
@@ -3075,11 +3075,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Hunting_Grounds"
   },
   {
-    "name": "abandoned mine",
-    "expansion": "dark ages",
+    "name": "Abandoned Mine",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "ruins"
+      "Action",
+      "Ruins"
     ],
     "coins": 0,
     "potions": null,
@@ -3090,11 +3090,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Abandoned_Mine"
   },
   {
-    "name": "ruined library",
-    "expansion": "dark ages",
+    "name": "Ruined Library",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "ruins"
+      "Action",
+      "Ruins"
     ],
     "coins": 0,
     "potions": null,
@@ -3105,11 +3105,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ruined_Library"
   },
   {
-    "name": "ruined market",
-    "expansion": "dark ages",
+    "name": "Ruined Market",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "ruins"
+      "Action",
+      "Ruins"
     ],
     "coins": 0,
     "potions": null,
@@ -3120,11 +3120,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ruined_Market"
   },
   {
-    "name": "ruined village",
-    "expansion": "dark ages",
+    "name": "Ruined Village",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "ruins"
+      "Action",
+      "Ruins"
     ],
     "coins": 0,
     "potions": null,
@@ -3135,11 +3135,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ruined_Village"
   },
   {
-    "name": "survivors",
-    "expansion": "dark ages",
+    "name": "Survivors",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "ruins"
+      "Action",
+      "Ruins"
     ],
     "coins": 0,
     "potions": null,
@@ -3150,12 +3150,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Survivors"
   },
   {
-    "name": "dame anna",
-    "expansion": "dark ages",
+    "name": "Dame Anna",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack",
-      "knight"
+      "Action",
+      "Attack",
+      "Knight"
     ],
     "coins": 5,
     "potions": null,
@@ -3166,13 +3166,13 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Dame_Anna"
   },
   {
-    "name": "dame josephine",
-    "expansion": "dark ages",
+    "name": "Dame Josephine",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack",
-      "victory",
-      "knight"
+      "Action",
+      "Attack",
+      "Victory",
+      "Knight"
     ],
     "coins": 5,
     "potions": null,
@@ -3183,12 +3183,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Dame_Josephine"
   },
   {
-    "name": "dame molly",
-    "expansion": "dark ages",
+    "name": "Dame Molly",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack",
-      "knight"
+      "Action",
+      "Attack",
+      "Knight"
     ],
     "coins": 5,
     "potions": null,
@@ -3199,12 +3199,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Dame_Molly"
   },
   {
-    "name": "dame natalie",
-    "expansion": "dark ages",
+    "name": "Dame Natalie",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack",
-      "knight"
+      "Action",
+      "Attack",
+      "Knight"
     ],
     "coins": 5,
     "potions": null,
@@ -3215,12 +3215,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Dame_Natalie"
   },
   {
-    "name": "dame sylvia",
-    "expansion": "dark ages",
+    "name": "Dame Sylvia",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack",
-      "knight"
+      "Action",
+      "Attack",
+      "Knight"
     ],
     "coins": 5,
     "potions": null,
@@ -3231,12 +3231,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Dame_Sylvia"
   },
   {
-    "name": "sir bailey",
-    "expansion": "dark ages",
+    "name": "Sir Bailey",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack",
-      "knight"
+      "Action",
+      "Attack",
+      "Knight"
     ],
     "coins": 5,
     "potions": null,
@@ -3247,12 +3247,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sir_Bailey"
   },
   {
-    "name": "sir destry",
-    "expansion": "dark ages",
+    "name": "Sir Destry",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack",
-      "knight"
+      "Action",
+      "Attack",
+      "Knight"
     ],
     "coins": 5,
     "potions": null,
@@ -3263,12 +3263,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sir_Destry"
   },
   {
-    "name": "sir martin",
-    "expansion": "dark ages",
+    "name": "Sir Martin",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack",
-      "knight"
+      "Action",
+      "Attack",
+      "Knight"
     ],
     "coins": 4,
     "potions": null,
@@ -3279,12 +3279,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sir_Martin"
   },
   {
-    "name": "sir michael",
-    "expansion": "dark ages",
+    "name": "Sir Michael",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack",
-      "knight"
+      "Action",
+      "Attack",
+      "Knight"
     ],
     "coins": 5,
     "potions": null,
@@ -3295,12 +3295,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sir_Michael"
   },
   {
-    "name": "sir vander",
-    "expansion": "dark ages",
+    "name": "Sir Vander",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack",
-      "knight"
+      "Action",
+      "Attack",
+      "Knight"
     ],
     "coins": 5,
     "potions": null,
@@ -3311,10 +3311,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sir_Vander"
   },
   {
-    "name": "madman",
-    "expansion": "dark ages",
+    "name": "Madman",
+    "expansion": "Dark Ages",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 0,
     "potions": null,
@@ -3325,11 +3325,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Madman"
   },
   {
-    "name": "mercenary",
-    "expansion": "dark ages",
+    "name": "Mercenary",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 0,
     "potions": null,
@@ -3340,10 +3340,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Mercenary"
   },
   {
-    "name": "spoils",
-    "expansion": "dark ages",
+    "name": "Spoils",
+    "expansion": "Dark Ages",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 0,
     "potions": null,
@@ -3354,11 +3354,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Spoils"
   },
   {
-    "name": "hovel",
-    "expansion": "dark ages",
+    "name": "Hovel",
+    "expansion": "Dark Ages",
     "types": [
-      "reaction",
-      "shelter"
+      "Reaction",
+      "Shelter"
     ],
     "coins": 1,
     "potions": null,
@@ -3369,11 +3369,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Hovel"
   },
   {
-    "name": "necropolis",
-    "expansion": "dark ages",
+    "name": "Necropolis",
+    "expansion": "Dark Ages",
     "types": [
-      "action",
-      "shelter"
+      "Action",
+      "Shelter"
     ],
     "coins": 1,
     "potions": null,
@@ -3384,11 +3384,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Necropolis"
   },
   {
-    "name": "overgrown estate",
-    "expansion": "dark ages",
+    "name": "Overgrown Estate",
+    "expansion": "Dark Ages",
     "types": [
-      "victory",
-      "shelter"
+      "Victory",
+      "Shelter"
     ],
     "coins": 1,
     "potions": null,
@@ -3399,10 +3399,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Overgrown_Estate"
   },
   {
-    "name": "candlestick maker",
-    "expansion": "guilds",
+    "name": "Candlestick Maker",
+    "expansion": "Guilds",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -3413,10 +3413,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Candlestick_Maker"
   },
   {
-    "name": "stonemason",
-    "expansion": "guilds",
+    "name": "Stonemason",
+    "expansion": "Guilds",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -3427,10 +3427,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Stonemason"
   },
   {
-    "name": "doctor",
-    "expansion": "guilds",
+    "name": "Doctor",
+    "expansion": "Guilds",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -3441,10 +3441,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Doctor"
   },
   {
-    "name": "masterpiece",
-    "expansion": "guilds",
+    "name": "Masterpiece",
+    "expansion": "Guilds",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 3,
     "potions": null,
@@ -3455,10 +3455,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Masterpiece"
   },
   {
-    "name": "advisor",
-    "expansion": "guilds",
+    "name": "Advisor",
+    "expansion": "Guilds",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -3469,10 +3469,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Advisor"
   },
   {
-    "name": "herald",
-    "expansion": "guilds",
+    "name": "Herald",
+    "expansion": "Guilds",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -3483,10 +3483,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Herald"
   },
   {
-    "name": "plaza",
-    "expansion": "guilds",
+    "name": "Plaza",
+    "expansion": "Guilds",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -3497,11 +3497,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Plaza"
   },
   {
-    "name": "taxman",
-    "expansion": "guilds",
+    "name": "Taxman",
+    "expansion": "Guilds",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 4,
     "potions": null,
@@ -3512,10 +3512,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Taxman"
   },
   {
-    "name": "baker",
-    "expansion": "guilds",
+    "name": "Baker",
+    "expansion": "Guilds",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -3526,10 +3526,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Baker"
   },
   {
-    "name": "butcher",
-    "expansion": "guilds",
+    "name": "Butcher",
+    "expansion": "Guilds",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -3540,10 +3540,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Butcher"
   },
   {
-    "name": "journeyman",
-    "expansion": "guilds",
+    "name": "Journeyman",
+    "expansion": "Guilds",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -3554,10 +3554,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Journeyman"
   },
   {
-    "name": "merchant guild",
-    "expansion": "guilds",
+    "name": "Merchant Guild",
+    "expansion": "Guilds",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -3568,11 +3568,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Merchant_Guild"
   },
   {
-    "name": "soothsayer",
-    "expansion": "guilds",
+    "name": "Soothsayer",
+    "expansion": "Guilds",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -3583,11 +3583,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Soothsayer"
   },
   {
-    "name": "coin of the realm",
-    "expansion": "adventures",
+    "name": "Coin of the Realm",
+    "expansion": "Adventures",
     "types": [
-      "treasure",
-      "reserve"
+      "Treasure",
+      "Reserve"
     ],
     "coins": 2,
     "potions": null,
@@ -3598,11 +3598,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Coin_of_the_Realm"
   },
   {
-    "name": "page",
-    "expansion": "adventures",
+    "name": "Page",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "traveller"
+      "Action",
+      "Traveller"
     ],
     "coins": 2,
     "potions": null,
@@ -3613,11 +3613,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Page"
   },
   {
-    "name": "peasant",
-    "expansion": "adventures",
+    "name": "Peasant",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "traveller"
+      "Action",
+      "Traveller"
     ],
     "coins": 2,
     "potions": null,
@@ -3628,11 +3628,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Peasant"
   },
   {
-    "name": "ratcatcher",
-    "expansion": "adventures",
+    "name": "Ratcatcher",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "reserve"
+      "Action",
+      "Reserve"
     ],
     "coins": 2,
     "potions": null,
@@ -3643,10 +3643,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ratcatcher"
   },
   {
-    "name": "raze",
-    "expansion": "adventures",
+    "name": "Raze",
+    "expansion": "Adventures",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -3657,11 +3657,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Raze"
   },
   {
-    "name": "amulet",
-    "expansion": "adventures",
+    "name": "Amulet",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 3,
     "potions": null,
@@ -3672,12 +3672,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Amulet"
   },
   {
-    "name": "caravan guard",
-    "expansion": "adventures",
+    "name": "Caravan Guard",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "duration",
-      "reaction"
+      "Action",
+      "Duration",
+      "Reaction"
     ],
     "coins": 3,
     "potions": null,
@@ -3688,11 +3688,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Caravan_Guard"
   },
   {
-    "name": "dungeon",
-    "expansion": "adventures",
+    "name": "Dungeon",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 3,
     "potions": null,
@@ -3703,11 +3703,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Dungeon"
   },
   {
-    "name": "gear",
-    "expansion": "adventures",
+    "name": "Gear",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 3,
     "potions": null,
@@ -3718,11 +3718,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Gear"
   },
   {
-    "name": "guide",
-    "expansion": "adventures",
+    "name": "Guide",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "reserve"
+      "Action",
+      "Reserve"
     ],
     "coins": 3,
     "potions": null,
@@ -3733,11 +3733,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Guide"
   },
   {
-    "name": "duplicate",
-    "expansion": "adventures",
+    "name": "Duplicate",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "reserve"
+      "Action",
+      "Reserve"
     ],
     "coins": 4,
     "potions": null,
@@ -3748,10 +3748,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Duplicate"
   },
   {
-    "name": "magpie",
-    "expansion": "adventures",
+    "name": "Magpie",
+    "expansion": "Adventures",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -3762,10 +3762,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Magpie"
   },
   {
-    "name": "messenger",
-    "expansion": "adventures",
+    "name": "Messenger",
+    "expansion": "Adventures",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -3776,10 +3776,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Messenger"
   },
   {
-    "name": "miser",
-    "expansion": "adventures",
+    "name": "Miser",
+    "expansion": "Adventures",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -3790,10 +3790,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Miser"
   },
   {
-    "name": "port",
-    "expansion": "adventures",
+    "name": "Port",
+    "expansion": "Adventures",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -3804,10 +3804,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Port"
   },
   {
-    "name": "ranger",
-    "expansion": "adventures",
+    "name": "Ranger",
+    "expansion": "Adventures",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -3818,11 +3818,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ranger"
   },
   {
-    "name": "transmogrify",
-    "expansion": "adventures",
+    "name": "Transmogrify",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "reserve"
+      "Action",
+      "Reserve"
     ],
     "coins": 4,
     "potions": null,
@@ -3833,10 +3833,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Transmogrify"
   },
   {
-    "name": "artificer",
-    "expansion": "adventures",
+    "name": "Artificer",
+    "expansion": "Adventures",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -3847,12 +3847,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Artificer"
   },
   {
-    "name": "bridge troll",
-    "expansion": "adventures",
+    "name": "Bridge Troll",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "attack",
-      "duration"
+      "Action",
+      "Attack",
+      "Duration"
     ],
     "coins": 5,
     "potions": null,
@@ -3863,12 +3863,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bridge_Troll"
   },
   {
-    "name": "distant lands",
-    "expansion": "adventures",
+    "name": "Distant Lands",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "reserve",
-      "victory"
+      "Action",
+      "Reserve",
+      "Victory"
     ],
     "coins": 5,
     "potions": null,
@@ -3879,11 +3879,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Distant_Lands"
   },
   {
-    "name": "giant",
-    "expansion": "adventures",
+    "name": "Giant",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -3894,12 +3894,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Giant"
   },
   {
-    "name": "haunted woods",
-    "expansion": "adventures",
+    "name": "Haunted Woods",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "attack",
-      "duration"
+      "Action",
+      "Attack",
+      "Duration"
     ],
     "coins": 5,
     "potions": null,
@@ -3910,10 +3910,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Haunted_Woods"
   },
   {
-    "name": "lost city",
-    "expansion": "adventures",
+    "name": "Lost City",
+    "expansion": "Adventures",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -3924,11 +3924,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Lost_City"
   },
   {
-    "name": "relic",
-    "expansion": "adventures",
+    "name": "Relic",
+    "expansion": "Adventures",
     "types": [
-      "treasure",
-      "attack"
+      "Treasure",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -3939,11 +3939,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Relic"
   },
   {
-    "name": "royal carriage",
-    "expansion": "adventures",
+    "name": "Royal Carriage",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "reserve"
+      "Action",
+      "Reserve"
     ],
     "coins": 5,
     "potions": null,
@@ -3954,10 +3954,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Royal_Carriage"
   },
   {
-    "name": "storyteller",
-    "expansion": "adventures",
+    "name": "Storyteller",
+    "expansion": "Adventures",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -3968,12 +3968,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Storyteller"
   },
   {
-    "name": "swamp hag",
-    "expansion": "adventures",
+    "name": "Swamp Hag",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "attack",
-      "duration"
+      "Action",
+      "Attack",
+      "Duration"
     ],
     "coins": 5,
     "potions": null,
@@ -3984,10 +3984,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Swamp_Hag"
   },
   {
-    "name": "treasure trove",
-    "expansion": "adventures",
+    "name": "Treasure Trove",
+    "expansion": "Adventures",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 5,
     "potions": null,
@@ -3998,11 +3998,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Treasure_Trove"
   },
   {
-    "name": "wine merchant",
-    "expansion": "adventures",
+    "name": "Wine Merchant",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "reserve"
+      "Action",
+      "Reserve"
     ],
     "coins": 5,
     "potions": null,
@@ -4013,11 +4013,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Wine_Merchant"
   },
   {
-    "name": "hireling",
-    "expansion": "adventures",
+    "name": "Hireling",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 6,
     "potions": null,
@@ -4028,10 +4028,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Hireling"
   },
   {
-    "name": "alms",
-    "expansion": "adventures",
+    "name": "Alms",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 0,
     "potions": null,
@@ -4042,10 +4042,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Alms"
   },
   {
-    "name": "borrow",
-    "expansion": "adventures",
+    "name": "Borrow",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 0,
     "potions": null,
@@ -4056,10 +4056,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Borrow"
   },
   {
-    "name": "quest",
-    "expansion": "adventures",
+    "name": "Quest",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 0,
     "potions": null,
@@ -4070,10 +4070,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Quest"
   },
   {
-    "name": "save",
-    "expansion": "adventures",
+    "name": "Save",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 1,
     "potions": null,
@@ -4084,10 +4084,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Save"
   },
   {
-    "name": "scouting party",
-    "expansion": "adventures",
+    "name": "Scouting Party",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 2,
     "potions": null,
@@ -4098,10 +4098,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Scouting_Party"
   },
   {
-    "name": "travelling fair",
-    "expansion": "adventures",
+    "name": "Travelling Fair",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 2,
     "potions": null,
@@ -4112,10 +4112,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Travelling_Fair"
   },
   {
-    "name": "bonfire",
-    "expansion": "adventures",
+    "name": "Bonfire",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 3,
     "potions": null,
@@ -4126,10 +4126,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bonfire"
   },
   {
-    "name": "expedition",
-    "expansion": "adventures",
+    "name": "Expedition",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 3,
     "potions": null,
@@ -4140,10 +4140,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Expedition"
   },
   {
-    "name": "ferry",
-    "expansion": "adventures",
+    "name": "Ferry",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 3,
     "potions": null,
@@ -4154,10 +4154,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ferry"
   },
   {
-    "name": "plan",
-    "expansion": "adventures",
+    "name": "Plan",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 3,
     "potions": null,
@@ -4168,10 +4168,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Plan"
   },
   {
-    "name": "mission",
-    "expansion": "adventures",
+    "name": "Mission",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 4,
     "potions": null,
@@ -4182,10 +4182,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Mission"
   },
   {
-    "name": "pilgrimage",
-    "expansion": "adventures",
+    "name": "Pilgrimage",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 4,
     "potions": null,
@@ -4196,10 +4196,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Pilgrimage"
   },
   {
-    "name": "ball",
-    "expansion": "adventures",
+    "name": "Ball",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 5,
     "potions": null,
@@ -4210,10 +4210,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ball"
   },
   {
-    "name": "raid",
-    "expansion": "adventures",
+    "name": "Raid",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 5,
     "potions": null,
@@ -4224,10 +4224,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Raid"
   },
   {
-    "name": "seaway",
-    "expansion": "adventures",
+    "name": "Seaway",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 5,
     "potions": null,
@@ -4238,10 +4238,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Seaway"
   },
   {
-    "name": "trade",
-    "expansion": "adventures",
+    "name": "Trade",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 5,
     "potions": null,
@@ -4252,10 +4252,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Trade"
   },
   {
-    "name": "lost arts",
-    "expansion": "adventures",
+    "name": "Lost Arts",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 6,
     "potions": null,
@@ -4266,10 +4266,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Lost_Arts"
   },
   {
-    "name": "training",
-    "expansion": "adventures",
+    "name": "Training",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 6,
     "potions": null,
@@ -4280,10 +4280,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Training"
   },
   {
-    "name": "inheritance",
-    "expansion": "adventures",
+    "name": "Inheritance",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 7,
     "potions": null,
@@ -4294,10 +4294,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Inheritance"
   },
   {
-    "name": "pathfinding",
-    "expansion": "adventures",
+    "name": "Pathfinding",
+    "expansion": "Adventures",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 8,
     "potions": null,
@@ -4308,12 +4308,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Pathfinding"
   },
   {
-    "name": "soldier",
-    "expansion": "adventures",
+    "name": "Soldier",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "attack",
-      "traveller"
+      "Action",
+      "Attack",
+      "Traveller"
     ],
     "coins": 3,
     "potions": null,
@@ -4324,11 +4324,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Soldier"
   },
   {
-    "name": "fugitive",
-    "expansion": "adventures",
+    "name": "Fugitive",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "traveller"
+      "Action",
+      "Traveller"
     ],
     "coins": 4,
     "potions": null,
@@ -4339,11 +4339,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Fugitive"
   },
   {
-    "name": "disciple",
-    "expansion": "adventures",
+    "name": "Disciple",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "traveller"
+      "Action",
+      "Traveller"
     ],
     "coins": 5,
     "potions": null,
@@ -4354,11 +4354,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Disciple"
   },
   {
-    "name": "teacher",
-    "expansion": "adventures",
+    "name": "Teacher",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "reserve"
+      "Action",
+      "Reserve"
     ],
     "coins": 6,
     "potions": null,
@@ -4369,11 +4369,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Teacher"
   },
   {
-    "name": "treasure hunter",
-    "expansion": "adventures",
+    "name": "Treasure Hunter",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "traveller"
+      "Action",
+      "Traveller"
     ],
     "coins": 3,
     "potions": null,
@@ -4384,12 +4384,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Treasure_Hunter"
   },
   {
-    "name": "warrior",
-    "expansion": "adventures",
+    "name": "Warrior",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "attack",
-      "traveller"
+      "Action",
+      "Attack",
+      "Traveller"
     ],
     "coins": 4,
     "potions": null,
@@ -4400,11 +4400,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Warrior"
   },
   {
-    "name": "hero",
-    "expansion": "adventures",
+    "name": "Hero",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "traveller"
+      "Action",
+      "Traveller"
     ],
     "coins": 5,
     "potions": null,
@@ -4415,11 +4415,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Hero"
   },
   {
-    "name": "champion",
-    "expansion": "adventures",
+    "name": "Champion",
+    "expansion": "Adventures",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 6,
     "potions": null,
@@ -4430,10 +4430,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Champion"
   },
   {
-    "name": "engineer",
-    "expansion": "empires",
+    "name": "Engineer",
+    "expansion": "Empires",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": null,
     "potions": null,
@@ -4444,10 +4444,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Engineer"
   },
   {
-    "name": "city quarter",
-    "expansion": "empires",
+    "name": "City Quarter",
+    "expansion": "Empires",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": null,
     "potions": null,
@@ -4458,10 +4458,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/City_Quarter"
   },
   {
-    "name": "royal blacksmith",
-    "expansion": "empires",
+    "name": "Royal Blacksmith",
+    "expansion": "Empires",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": null,
     "potions": null,
@@ -4472,11 +4472,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Royal_Blacksmith"
   },
   {
-    "name": "overlord",
-    "expansion": "empires",
+    "name": "Overlord",
+    "expansion": "Empires",
     "types": [
-      "action",
-      "command"
+      "Action",
+      "Command"
     ],
     "coins": null,
     "potions": null,
@@ -4487,10 +4487,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Overlord"
   },
   {
-    "name": "encampment",
-    "expansion": "empires",
+    "name": "Encampment",
+    "expansion": "Empires",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -4501,10 +4501,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Encampment"
   },
   {
-    "name": "patrician",
-    "expansion": "empires",
+    "name": "Patrician",
+    "expansion": "Empires",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -4515,10 +4515,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Patrician"
   },
   {
-    "name": "settlers",
-    "expansion": "empires",
+    "name": "Settlers",
+    "expansion": "Empires",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -4529,11 +4529,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Settlers"
   },
   {
-    "name": "catapult",
-    "expansion": "empires",
+    "name": "Catapult",
+    "expansion": "Empires",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 3,
     "potions": null,
@@ -4544,10 +4544,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Catapult"
   },
   {
-    "name": "chariot race",
-    "expansion": "empires",
+    "name": "Chariot Race",
+    "expansion": "Empires",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -4558,12 +4558,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Chariot_Race"
   },
   {
-    "name": "enchantress",
-    "expansion": "empires",
+    "name": "Enchantress",
+    "expansion": "Empires",
     "types": [
-      "action",
-      "attack",
-      "duration"
+      "Action",
+      "Attack",
+      "Duration"
     ],
     "coins": 3,
     "potions": null,
@@ -4574,11 +4574,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Enchantress"
   },
   {
-    "name": "farmers' market",
-    "expansion": "empires",
+    "name": "Farmers' Market",
+    "expansion": "Empires",
     "types": [
-      "action",
-      "gathering"
+      "Action",
+      "Gathering"
     ],
     "coins": 3,
     "potions": null,
@@ -4589,10 +4589,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Farmers%27_Market"
   },
   {
-    "name": "gladiator",
-    "expansion": "empires",
+    "name": "Gladiator",
+    "expansion": "Empires",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -4603,10 +4603,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Gladiator"
   },
   {
-    "name": "rocks",
-    "expansion": "empires",
+    "name": "Rocks",
+    "expansion": "Empires",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 4,
     "potions": null,
@@ -4617,10 +4617,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Rocks"
   },
   {
-    "name": "sacrifice",
-    "expansion": "empires",
+    "name": "Sacrifice",
+    "expansion": "Empires",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -4631,11 +4631,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sacrifice"
   },
   {
-    "name": "temple",
-    "expansion": "empires",
+    "name": "Temple",
+    "expansion": "Empires",
     "types": [
-      "action",
-      "gathering"
+      "Action",
+      "Gathering"
     ],
     "coins": 4,
     "potions": null,
@@ -4646,10 +4646,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Temple"
   },
   {
-    "name": "villa",
-    "expansion": "empires",
+    "name": "Villa",
+    "expansion": "Empires",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -4660,11 +4660,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Villa"
   },
   {
-    "name": "archive",
-    "expansion": "empires",
+    "name": "Archive",
+    "expansion": "Empires",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 5,
     "potions": null,
@@ -4675,10 +4675,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Archive"
   },
   {
-    "name": "bustling village",
-    "expansion": "empires",
+    "name": "Bustling Village",
+    "expansion": "Empires",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -4689,10 +4689,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bustling_Village"
   },
   {
-    "name": "capital",
-    "expansion": "empires",
+    "name": "Capital",
+    "expansion": "Empires",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 5,
     "potions": null,
@@ -4703,10 +4703,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Capital"
   },
   {
-    "name": "charm",
-    "expansion": "empires",
+    "name": "Charm",
+    "expansion": "Empires",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 5,
     "potions": null,
@@ -4717,11 +4717,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Charm"
   },
   {
-    "name": "crown",
-    "expansion": "empires",
+    "name": "Crown",
+    "expansion": "Empires",
     "types": [
-      "action",
-      "treasure"
+      "Action",
+      "Treasure"
     ],
     "coins": 5,
     "potions": null,
@@ -4732,10 +4732,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Crown"
   },
   {
-    "name": "emporium",
-    "expansion": "empires",
+    "name": "Emporium",
+    "expansion": "Empires",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -4746,10 +4746,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Emporium"
   },
   {
-    "name": "forum",
-    "expansion": "empires",
+    "name": "Forum",
+    "expansion": "Empires",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -4760,10 +4760,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Forum"
   },
   {
-    "name": "groundskeeper",
-    "expansion": "empires",
+    "name": "Groundskeeper",
+    "expansion": "Empires",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -4774,11 +4774,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Groundskeeper"
   },
   {
-    "name": "legionary",
-    "expansion": "empires",
+    "name": "Legionary",
+    "expansion": "Empires",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -4789,10 +4789,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Legionary"
   },
   {
-    "name": "plunder",
-    "expansion": "empires",
+    "name": "Plunder",
+    "expansion": "Empires",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 5,
     "potions": null,
@@ -4803,11 +4803,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Plunder"
   },
   {
-    "name": "wild hunt",
-    "expansion": "empires",
+    "name": "Wild Hunt",
+    "expansion": "Empires",
     "types": [
-      "action",
-      "gathering"
+      "Action",
+      "Gathering"
     ],
     "coins": 5,
     "potions": null,
@@ -4818,10 +4818,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Wild_Hunt"
   },
   {
-    "name": "fortune",
-    "expansion": "empires",
+    "name": "Fortune",
+    "expansion": "Empires",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 8,
     "potions": null,
@@ -4832,12 +4832,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Fortune"
   },
   {
-    "name": "humble castle",
-    "expansion": "empires",
+    "name": "Humble Castle",
+    "expansion": "Empires",
     "types": [
-      "treasure",
-      "victory",
-      "castle"
+      "Treasure",
+      "Victory",
+      "Castle"
     ],
     "coins": 3,
     "potions": null,
@@ -4848,11 +4848,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Humble_Castle"
   },
   {
-    "name": "crumbling castle",
-    "expansion": "empires",
+    "name": "Crumbling Castle",
+    "expansion": "Empires",
     "types": [
-      "victory",
-      "castle"
+      "Victory",
+      "Castle"
     ],
     "coins": 4,
     "potions": null,
@@ -4863,12 +4863,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Crumbling_Castle"
   },
   {
-    "name": "small castle",
-    "expansion": "empires",
+    "name": "Small Castle",
+    "expansion": "Empires",
     "types": [
-      "action",
-      "victory",
-      "castle"
+      "Action",
+      "Victory",
+      "Castle"
     ],
     "coins": 5,
     "potions": null,
@@ -4879,11 +4879,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Small_Castle"
   },
   {
-    "name": "haunted castle",
-    "expansion": "empires",
+    "name": "Haunted Castle",
+    "expansion": "Empires",
     "types": [
-      "victory",
-      "castle"
+      "Victory",
+      "Castle"
     ],
     "coins": 6,
     "potions": null,
@@ -4894,12 +4894,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Haunted_Castle"
   },
   {
-    "name": "opulent castle",
-    "expansion": "empires",
+    "name": "Opulent Castle",
+    "expansion": "Empires",
     "types": [
-      "action",
-      "victory",
-      "castle"
+      "Action",
+      "Victory",
+      "Castle"
     ],
     "coins": 7,
     "potions": null,
@@ -4910,11 +4910,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Opulent_Castle"
   },
   {
-    "name": "sprawling castle",
-    "expansion": "empires",
+    "name": "Sprawling Castle",
+    "expansion": "Empires",
     "types": [
-      "victory",
-      "castle"
+      "Victory",
+      "Castle"
     ],
     "coins": 8,
     "potions": null,
@@ -4925,11 +4925,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sprawling_Castle"
   },
   {
-    "name": "grand castle",
-    "expansion": "empires",
+    "name": "Grand Castle",
+    "expansion": "Empires",
     "types": [
-      "victory",
-      "castle"
+      "Victory",
+      "Castle"
     ],
     "coins": 9,
     "potions": null,
@@ -4940,11 +4940,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Grand_Castle"
   },
   {
-    "name": "king's castle",
-    "expansion": "empires",
+    "name": "King's Castle",
+    "expansion": "Empires",
     "types": [
-      "victory",
-      "castle"
+      "Victory",
+      "Castle"
     ],
     "coins": 10,
     "potions": null,
@@ -4955,10 +4955,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/King%27s_Castle"
   },
   {
-    "name": "triumph",
-    "expansion": "empires",
+    "name": "Triumph",
+    "expansion": "Empires",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": null,
     "potions": null,
@@ -4969,10 +4969,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Triumph"
   },
   {
-    "name": "annex",
-    "expansion": "empires",
+    "name": "Annex",
+    "expansion": "Empires",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": null,
     "potions": null,
@@ -4983,10 +4983,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Annex"
   },
   {
-    "name": "donate",
-    "expansion": "empires",
+    "name": "Donate",
+    "expansion": "Empires",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": null,
     "potions": null,
@@ -4997,10 +4997,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Donate"
   },
   {
-    "name": "advance",
-    "expansion": "empires",
+    "name": "Advance",
+    "expansion": "Empires",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 0,
     "potions": null,
@@ -5011,10 +5011,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Advance"
   },
   {
-    "name": "delve",
-    "expansion": "empires",
+    "name": "Delve",
+    "expansion": "Empires",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 2,
     "potions": null,
@@ -5025,10 +5025,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Delve"
   },
   {
-    "name": "tax",
-    "expansion": "empires",
+    "name": "Tax",
+    "expansion": "Empires",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 2,
     "potions": null,
@@ -5039,10 +5039,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Tax"
   },
   {
-    "name": "banquet",
-    "expansion": "empires",
+    "name": "Banquet",
+    "expansion": "Empires",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 3,
     "potions": null,
@@ -5053,10 +5053,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Banquet"
   },
   {
-    "name": "ritual",
-    "expansion": "empires",
+    "name": "Ritual",
+    "expansion": "Empires",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 4,
     "potions": null,
@@ -5067,10 +5067,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ritual"
   },
   {
-    "name": "salt the earth",
-    "expansion": "empires",
+    "name": "Salt the Earth",
+    "expansion": "Empires",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 4,
     "potions": null,
@@ -5081,10 +5081,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Salt_the_Earth"
   },
   {
-    "name": "wedding",
-    "expansion": "empires",
+    "name": "Wedding",
+    "expansion": "Empires",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 4,
     "potions": null,
@@ -5095,10 +5095,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Wedding"
   },
   {
-    "name": "windfall",
-    "expansion": "empires",
+    "name": "Windfall",
+    "expansion": "Empires",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 5,
     "potions": null,
@@ -5109,10 +5109,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Windfall"
   },
   {
-    "name": "conquest",
-    "expansion": "empires",
+    "name": "Conquest",
+    "expansion": "Empires",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 6,
     "potions": null,
@@ -5123,10 +5123,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Conquest"
   },
   {
-    "name": "dominate",
-    "expansion": "empires",
+    "name": "Dominate",
+    "expansion": "Empires",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 14,
     "potions": null,
@@ -5137,10 +5137,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Dominate"
   },
   {
-    "name": "aqueduct",
-    "expansion": "empires",
+    "name": "Aqueduct",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5151,10 +5151,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Aqueduct"
   },
   {
-    "name": "arena",
-    "expansion": "empires",
+    "name": "Arena",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5165,10 +5165,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Arena"
   },
   {
-    "name": "bandit fort",
-    "expansion": "empires",
+    "name": "Bandit Fort",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5179,10 +5179,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bandit_Fort"
   },
   {
-    "name": "basilica",
-    "expansion": "empires",
+    "name": "Basilica",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5193,10 +5193,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Basilica"
   },
   {
-    "name": "battlefield",
-    "expansion": "empires",
+    "name": "Battlefield",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5207,10 +5207,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Battlefield"
   },
   {
-    "name": "baths",
-    "expansion": "empires",
+    "name": "Baths",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5221,10 +5221,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Baths"
   },
   {
-    "name": "colonnade",
-    "expansion": "empires",
+    "name": "Colonnade",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5235,10 +5235,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Colonnade"
   },
   {
-    "name": "defiled shrine",
-    "expansion": "empires",
+    "name": "Defiled Shrine",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5249,10 +5249,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Defiled_Shrine"
   },
   {
-    "name": "fountain",
-    "expansion": "empires",
+    "name": "Fountain",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5263,10 +5263,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Fountain"
   },
   {
-    "name": "keep",
-    "expansion": "empires",
+    "name": "Keep",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5277,10 +5277,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Keep"
   },
   {
-    "name": "labyrinth",
-    "expansion": "empires",
+    "name": "Labyrinth",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5291,10 +5291,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Labyrinth"
   },
   {
-    "name": "mountain pass",
-    "expansion": "empires",
+    "name": "Mountain Pass",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5305,10 +5305,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Mountain_Pass"
   },
   {
-    "name": "museum",
-    "expansion": "empires",
+    "name": "Museum",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5319,10 +5319,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Museum"
   },
   {
-    "name": "obelisk",
-    "expansion": "empires",
+    "name": "Obelisk",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5333,10 +5333,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Obelisk"
   },
   {
-    "name": "orchard",
-    "expansion": "empires",
+    "name": "Orchard",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5347,10 +5347,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Orchard"
   },
   {
-    "name": "palace",
-    "expansion": "empires",
+    "name": "Palace",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5361,10 +5361,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Palace"
   },
   {
-    "name": "tomb",
-    "expansion": "empires",
+    "name": "Tomb",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5375,10 +5375,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Tomb"
   },
   {
-    "name": "tower",
-    "expansion": "empires",
+    "name": "Tower",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5389,10 +5389,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Tower"
   },
   {
-    "name": "triumphal arch",
-    "expansion": "empires",
+    "name": "Triumphal Arch",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5403,10 +5403,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Triumphal_Arch"
   },
   {
-    "name": "wall",
-    "expansion": "empires",
+    "name": "Wall",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5417,10 +5417,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Wall"
   },
   {
-    "name": "wolf den",
-    "expansion": "empires",
+    "name": "Wolf Den",
+    "expansion": "Empires",
     "types": [
-      "landmark"
+      "Landmark"
     ],
     "coins": null,
     "potions": null,
@@ -5431,11 +5431,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Wolf_Den"
   },
   {
-    "name": "druid",
-    "expansion": "nocturne",
+    "name": "Druid",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "fate"
+      "Action",
+      "Fate"
     ],
     "coins": 2,
     "potions": null,
@@ -5446,11 +5446,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Druid"
   },
   {
-    "name": "faithful hound",
-    "expansion": "nocturne",
+    "name": "Faithful Hound",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "reaction"
+      "Action",
+      "Reaction"
     ],
     "coins": 2,
     "potions": null,
@@ -5461,11 +5461,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Faithful_Hound"
   },
   {
-    "name": "guardian",
-    "expansion": "nocturne",
+    "name": "Guardian",
+    "expansion": "Nocturne",
     "types": [
-      "night",
-      "duration"
+      "Night",
+      "Duration"
     ],
     "coins": 2,
     "potions": null,
@@ -5476,10 +5476,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Guardian"
   },
   {
-    "name": "monastery",
-    "expansion": "nocturne",
+    "name": "Monastery",
+    "expansion": "Nocturne",
     "types": [
-      "night"
+      "Night"
     ],
     "coins": 2,
     "potions": null,
@@ -5490,11 +5490,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Monastery"
   },
   {
-    "name": "pixie",
-    "expansion": "nocturne",
+    "name": "Pixie",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "fate"
+      "Action",
+      "Fate"
     ],
     "coins": 2,
     "potions": null,
@@ -5505,11 +5505,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Pixie"
   },
   {
-    "name": "tracker",
-    "expansion": "nocturne",
+    "name": "Tracker",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "fate"
+      "Action",
+      "Fate"
     ],
     "coins": 2,
     "potions": null,
@@ -5520,10 +5520,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Tracker"
   },
   {
-    "name": "changeling",
-    "expansion": "nocturne",
+    "name": "Changeling",
+    "expansion": "Nocturne",
     "types": [
-      "night"
+      "Night"
     ],
     "coins": 3,
     "potions": null,
@@ -5534,11 +5534,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Changeling"
   },
   {
-    "name": "fool",
-    "expansion": "nocturne",
+    "name": "Fool",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "fate"
+      "Action",
+      "Fate"
     ],
     "coins": 3,
     "potions": null,
@@ -5549,11 +5549,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Fool"
   },
   {
-    "name": "ghost town",
-    "expansion": "nocturne",
+    "name": "Ghost Town",
+    "expansion": "Nocturne",
     "types": [
-      "night",
-      "duration"
+      "Night",
+      "Duration"
     ],
     "coins": 3,
     "potions": null,
@@ -5564,11 +5564,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ghost_Town"
   },
   {
-    "name": "leprechaun",
-    "expansion": "nocturne",
+    "name": "Leprechaun",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "doom"
+      "Action",
+      "Doom"
     ],
     "coins": 3,
     "potions": null,
@@ -5579,10 +5579,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Leprechaun"
   },
   {
-    "name": "night watchman",
-    "expansion": "nocturne",
+    "name": "Night Watchman",
+    "expansion": "Nocturne",
     "types": [
-      "night"
+      "Night"
     ],
     "coins": 3,
     "potions": null,
@@ -5593,11 +5593,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Night_Watchman"
   },
   {
-    "name": "secret cave",
-    "expansion": "nocturne",
+    "name": "Secret Cave",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 3,
     "potions": null,
@@ -5608,11 +5608,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Secret_Cave"
   },
   {
-    "name": "bard",
-    "expansion": "nocturne",
+    "name": "Bard",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "fate"
+      "Action",
+      "Fate"
     ],
     "coins": 4,
     "potions": null,
@@ -5623,11 +5623,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bard"
   },
   {
-    "name": "blessed village",
-    "expansion": "nocturne",
+    "name": "Blessed Village",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "fate"
+      "Action",
+      "Fate"
     ],
     "coins": 4,
     "potions": null,
@@ -5638,10 +5638,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Blessed_Village"
   },
   {
-    "name": "cemetery",
-    "expansion": "nocturne",
+    "name": "Cemetery",
+    "expansion": "Nocturne",
     "types": [
-      "victory"
+      "Victory"
     ],
     "coins": 4,
     "potions": null,
@@ -5652,10 +5652,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Cemetery"
   },
   {
-    "name": "conclave",
-    "expansion": "nocturne",
+    "name": "Conclave",
+    "expansion": "Nocturne",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -5666,10 +5666,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Conclave"
   },
   {
-    "name": "devil's workshop",
-    "expansion": "nocturne",
+    "name": "Devil's Workshop",
+    "expansion": "Nocturne",
     "types": [
-      "night"
+      "Night"
     ],
     "coins": 4,
     "potions": null,
@@ -5680,10 +5680,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Devil%27s_Workshop"
   },
   {
-    "name": "exorcist",
-    "expansion": "nocturne",
+    "name": "Exorcist",
+    "expansion": "Nocturne",
     "types": [
-      "night"
+      "Night"
     ],
     "coins": 4,
     "potions": null,
@@ -5694,10 +5694,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Exorcist"
   },
   {
-    "name": "necromancer",
-    "expansion": "nocturne",
+    "name": "Necromancer",
+    "expansion": "Nocturne",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -5708,10 +5708,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Necromancer"
   },
   {
-    "name": "shepherd",
-    "expansion": "nocturne",
+    "name": "Shepherd",
+    "expansion": "Nocturne",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -5722,12 +5722,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Shepherd"
   },
   {
-    "name": "skulk",
-    "expansion": "nocturne",
+    "name": "Skulk",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "attack",
-      "doom"
+      "Action",
+      "Attack",
+      "Doom"
     ],
     "coins": 4,
     "potions": null,
@@ -5738,11 +5738,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Skulk"
   },
   {
-    "name": "cobbler",
-    "expansion": "nocturne",
+    "name": "Cobbler",
+    "expansion": "Nocturne",
     "types": [
-      "night",
-      "duration"
+      "Night",
+      "Duration"
     ],
     "coins": 5,
     "potions": null,
@@ -5753,11 +5753,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Cobbler"
   },
   {
-    "name": "crypt",
-    "expansion": "nocturne",
+    "name": "Crypt",
+    "expansion": "Nocturne",
     "types": [
-      "night",
-      "duration"
+      "Night",
+      "Duration"
     ],
     "coins": 5,
     "potions": null,
@@ -5768,11 +5768,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Crypt"
   },
   {
-    "name": "cursed village",
-    "expansion": "nocturne",
+    "name": "Cursed Village",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "doom"
+      "Action",
+      "Doom"
     ],
     "coins": 5,
     "potions": null,
@@ -5783,11 +5783,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Cursed_Village"
   },
   {
-    "name": "den of sin",
-    "expansion": "nocturne",
+    "name": "Den of Sin",
+    "expansion": "Nocturne",
     "types": [
-      "night",
-      "duration"
+      "Night",
+      "Duration"
     ],
     "coins": 5,
     "potions": null,
@@ -5798,12 +5798,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Den_of_Sin"
   },
   {
-    "name": "idol",
-    "expansion": "nocturne",
+    "name": "Idol",
+    "expansion": "Nocturne",
     "types": [
-      "treasure",
-      "attack",
-      "fate"
+      "Treasure",
+      "Attack",
+      "Fate"
     ],
     "coins": 5,
     "potions": null,
@@ -5814,10 +5814,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Idol"
   },
   {
-    "name": "pooka",
-    "expansion": "nocturne",
+    "name": "Pooka",
+    "expansion": "Nocturne",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -5828,11 +5828,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Pooka"
   },
   {
-    "name": "sacred grove",
-    "expansion": "nocturne",
+    "name": "Sacred Grove",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "fate"
+      "Action",
+      "Fate"
     ],
     "coins": 5,
     "potions": null,
@@ -5843,12 +5843,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sacred_Grove"
   },
   {
-    "name": "tormentor",
-    "expansion": "nocturne",
+    "name": "Tormentor",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "attack",
-      "doom"
+      "Action",
+      "Attack",
+      "Doom"
     ],
     "coins": 5,
     "potions": null,
@@ -5859,10 +5859,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Tormentor"
   },
   {
-    "name": "tragic hero",
-    "expansion": "nocturne",
+    "name": "Tragic Hero",
+    "expansion": "Nocturne",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -5873,12 +5873,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Tragic_Hero"
   },
   {
-    "name": "vampire",
-    "expansion": "nocturne",
+    "name": "Vampire",
+    "expansion": "Nocturne",
     "types": [
-      "night",
-      "attack",
-      "doom"
+      "Night",
+      "Attack",
+      "Doom"
     ],
     "coins": 5,
     "potions": null,
@@ -5889,13 +5889,13 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Vampire"
   },
   {
-    "name": "werewolf",
-    "expansion": "nocturne",
+    "name": "Werewolf",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "night",
-      "attack",
-      "doom"
+      "Action",
+      "Night",
+      "Attack",
+      "Doom"
     ],
     "coins": 5,
     "potions": null,
@@ -5906,12 +5906,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Werewolf"
   },
   {
-    "name": "raider",
-    "expansion": "nocturne",
+    "name": "Raider",
+    "expansion": "Nocturne",
     "types": [
-      "night",
-      "duration",
-      "attack"
+      "Night",
+      "Duration",
+      "Attack"
     ],
     "coins": 6,
     "potions": null,
@@ -5922,11 +5922,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Raider"
   },
   {
-    "name": "will-o'-wisp",
-    "expansion": "nocturne",
+    "name": "Will-o'-Wisp",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "spirit"
+      "Action",
+      "Spirit"
     ],
     "coins": 0,
     "potions": null,
@@ -5937,10 +5937,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Will-o%27-Wisp"
   },
   {
-    "name": "wish",
-    "expansion": "nocturne",
+    "name": "Wish",
+    "expansion": "Nocturne",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 0,
     "potions": null,
@@ -5951,10 +5951,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Wish"
   },
   {
-    "name": "bat",
-    "expansion": "nocturne",
+    "name": "Bat",
+    "expansion": "Nocturne",
     "types": [
-      "night"
+      "Night"
     ],
     "coins": 2,
     "potions": null,
@@ -5965,11 +5965,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bat"
   },
   {
-    "name": "imp",
-    "expansion": "nocturne",
+    "name": "Imp",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "spirit"
+      "Action",
+      "Spirit"
     ],
     "coins": 2,
     "potions": null,
@@ -5980,12 +5980,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Imp"
   },
   {
-    "name": "ghost",
-    "expansion": "nocturne",
+    "name": "Ghost",
+    "expansion": "Nocturne",
     "types": [
-      "night",
-      "duration",
-      "spirit"
+      "Night",
+      "Duration",
+      "Spirit"
     ],
     "coins": 4,
     "potions": null,
@@ -5996,11 +5996,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ghost"
   },
   {
-    "name": "zombie apprentice",
-    "expansion": "nocturne",
+    "name": "Zombie Apprentice",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "zombie"
+      "Action",
+      "Zombie"
     ],
     "coins": 3,
     "potions": null,
@@ -6011,11 +6011,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Zombie_Apprentice"
   },
   {
-    "name": "zombie mason",
-    "expansion": "nocturne",
+    "name": "Zombie Mason",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "zombie"
+      "Action",
+      "Zombie"
     ],
     "coins": 3,
     "potions": null,
@@ -6026,11 +6026,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Zombie_Mason"
   },
   {
-    "name": "zombie spy",
-    "expansion": "nocturne",
+    "name": "Zombie Spy",
+    "expansion": "Nocturne",
     "types": [
-      "action",
-      "zombie"
+      "Action",
+      "Zombie"
     ],
     "coins": 3,
     "potions": null,
@@ -6041,11 +6041,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Zombie_Spy"
   },
   {
-    "name": "haunted mirror",
-    "expansion": "nocturne",
+    "name": "Haunted Mirror",
+    "expansion": "Nocturne",
     "types": [
-      "treasure",
-      "heirloom"
+      "Treasure",
+      "Heirloom"
     ],
     "coins": 0,
     "potions": null,
@@ -6056,11 +6056,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Haunted_Mirror"
   },
   {
-    "name": "magic lamp",
-    "expansion": "nocturne",
+    "name": "Magic Lamp",
+    "expansion": "Nocturne",
     "types": [
-      "treasure",
-      "heirloom"
+      "Treasure",
+      "Heirloom"
     ],
     "coins": 0,
     "potions": null,
@@ -6071,11 +6071,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Magic_Lamp"
   },
   {
-    "name": "goat",
-    "expansion": "nocturne",
+    "name": "Goat",
+    "expansion": "Nocturne",
     "types": [
-      "treasure",
-      "heirloom"
+      "Treasure",
+      "Heirloom"
     ],
     "coins": 2,
     "potions": null,
@@ -6086,12 +6086,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Goat"
   },
   {
-    "name": "pasture",
-    "expansion": "nocturne",
+    "name": "Pasture",
+    "expansion": "Nocturne",
     "types": [
-      "treasure",
-      "victory",
-      "heirloom"
+      "Treasure",
+      "Victory",
+      "Heirloom"
     ],
     "coins": 2,
     "potions": null,
@@ -6102,11 +6102,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Pasture"
   },
   {
-    "name": "pouch",
-    "expansion": "nocturne",
+    "name": "Pouch",
+    "expansion": "Nocturne",
     "types": [
-      "treasure",
-      "heirloom"
+      "Treasure",
+      "Heirloom"
     ],
     "coins": 2,
     "potions": null,
@@ -6117,11 +6117,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Pouch"
   },
   {
-    "name": "cursed gold",
-    "expansion": "nocturne",
+    "name": "Cursed Gold",
+    "expansion": "Nocturne",
     "types": [
-      "treasure",
-      "heirloom"
+      "Treasure",
+      "Heirloom"
     ],
     "coins": 4,
     "potions": null,
@@ -6132,11 +6132,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Cursed_Gold"
   },
   {
-    "name": "lucky coin",
-    "expansion": "nocturne",
+    "name": "Lucky Coin",
+    "expansion": "Nocturne",
     "types": [
-      "treasure",
-      "heirloom"
+      "Treasure",
+      "Heirloom"
     ],
     "coins": 4,
     "potions": null,
@@ -6147,10 +6147,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Lucky_Coin"
   },
   {
-    "name": "the earth's gift",
-    "expansion": "nocturne",
+    "name": "The Earth's Gift",
+    "expansion": "Nocturne",
     "types": [
-      "boon"
+      "Boon"
     ],
     "coins": null,
     "potions": null,
@@ -6161,10 +6161,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/The_Earth%27s_Gift"
   },
   {
-    "name": "the field's gift",
-    "expansion": "nocturne",
+    "name": "The Field's Gift",
+    "expansion": "Nocturne",
     "types": [
-      "boon"
+      "Boon"
     ],
     "coins": null,
     "potions": null,
@@ -6175,10 +6175,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/The_Field%27s_Gift"
   },
   {
-    "name": "the flame's gift",
-    "expansion": "nocturne",
+    "name": "The Flame's Gift",
+    "expansion": "Nocturne",
     "types": [
-      "boon"
+      "Boon"
     ],
     "coins": null,
     "potions": null,
@@ -6189,10 +6189,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/The_Flame%27s_Gift"
   },
   {
-    "name": "the forest's gift",
-    "expansion": "nocturne",
+    "name": "The Forest's Gift",
+    "expansion": "Nocturne",
     "types": [
-      "boon"
+      "Boon"
     ],
     "coins": null,
     "potions": null,
@@ -6203,10 +6203,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/The_Forest%27s_Gift"
   },
   {
-    "name": "the moon's gift",
-    "expansion": "nocturne",
+    "name": "The Moon's Gift",
+    "expansion": "Nocturne",
     "types": [
-      "boon"
+      "Boon"
     ],
     "coins": null,
     "potions": null,
@@ -6217,10 +6217,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/The_Moon%27s_Gift"
   },
   {
-    "name": "the mountain's gift",
-    "expansion": "nocturne",
+    "name": "The Mountain's Gift",
+    "expansion": "Nocturne",
     "types": [
-      "boon"
+      "Boon"
     ],
     "coins": null,
     "potions": null,
@@ -6231,10 +6231,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/The_Mountain%27s_Gift"
   },
   {
-    "name": "the river's gift",
-    "expansion": "nocturne",
+    "name": "The River's Gift",
+    "expansion": "Nocturne",
     "types": [
-      "boon"
+      "Boon"
     ],
     "coins": null,
     "potions": null,
@@ -6245,10 +6245,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/The_River%27s_Gift"
   },
   {
-    "name": "the sea's gift",
-    "expansion": "nocturne",
+    "name": "The Sea's Gift",
+    "expansion": "Nocturne",
     "types": [
-      "boon"
+      "Boon"
     ],
     "coins": null,
     "potions": null,
@@ -6259,10 +6259,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/The_Sea%27s_Gift"
   },
   {
-    "name": "the sky's gift",
-    "expansion": "nocturne",
+    "name": "The Sky's Gift",
+    "expansion": "Nocturne",
     "types": [
-      "boon"
+      "Boon"
     ],
     "coins": null,
     "potions": null,
@@ -6273,10 +6273,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/The_Sky%27s_Gift"
   },
   {
-    "name": "the sun's gift",
-    "expansion": "nocturne",
+    "name": "The Sun's Gift",
+    "expansion": "Nocturne",
     "types": [
-      "boon"
+      "Boon"
     ],
     "coins": null,
     "potions": null,
@@ -6287,10 +6287,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/The_Sun%27s_Gift"
   },
   {
-    "name": "the swamp's gift",
-    "expansion": "nocturne",
+    "name": "The Swamp's Gift",
+    "expansion": "Nocturne",
     "types": [
-      "boon"
+      "Boon"
     ],
     "coins": null,
     "potions": null,
@@ -6301,10 +6301,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/The_Swamp%27s_Gift"
   },
   {
-    "name": "the wind's gift",
-    "expansion": "nocturne",
+    "name": "The Wind's Gift",
+    "expansion": "Nocturne",
     "types": [
-      "boon"
+      "Boon"
     ],
     "coins": null,
     "potions": null,
@@ -6315,10 +6315,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/The_Wind%27s_Gift"
   },
   {
-    "name": "bad omens",
-    "expansion": "nocturne",
+    "name": "Bad Omens",
+    "expansion": "Nocturne",
     "types": [
-      "hex"
+      "Hex"
     ],
     "coins": null,
     "potions": null,
@@ -6329,10 +6329,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bad_Omens"
   },
   {
-    "name": "delusion",
-    "expansion": "nocturne",
+    "name": "Delusion",
+    "expansion": "Nocturne",
     "types": [
-      "hex"
+      "Hex"
     ],
     "coins": null,
     "potions": null,
@@ -6343,10 +6343,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Delusion"
   },
   {
-    "name": "envy",
-    "expansion": "nocturne",
+    "name": "Envy",
+    "expansion": "Nocturne",
     "types": [
-      "hex"
+      "Hex"
     ],
     "coins": null,
     "potions": null,
@@ -6357,10 +6357,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Envy"
   },
   {
-    "name": "famine",
-    "expansion": "nocturne",
+    "name": "Famine",
+    "expansion": "Nocturne",
     "types": [
-      "hex"
+      "Hex"
     ],
     "coins": null,
     "potions": null,
@@ -6371,10 +6371,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Famine"
   },
   {
-    "name": "fear",
-    "expansion": "nocturne",
+    "name": "Fear",
+    "expansion": "Nocturne",
     "types": [
-      "hex"
+      "Hex"
     ],
     "coins": null,
     "potions": null,
@@ -6385,10 +6385,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Fear"
   },
   {
-    "name": "greed",
-    "expansion": "nocturne",
+    "name": "Greed",
+    "expansion": "Nocturne",
     "types": [
-      "hex"
+      "Hex"
     ],
     "coins": null,
     "potions": null,
@@ -6399,10 +6399,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Greed"
   },
   {
-    "name": "haunting",
-    "expansion": "nocturne",
+    "name": "Haunting",
+    "expansion": "Nocturne",
     "types": [
-      "hex"
+      "Hex"
     ],
     "coins": null,
     "potions": null,
@@ -6413,10 +6413,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Haunting"
   },
   {
-    "name": "locusts",
-    "expansion": "nocturne",
+    "name": "Locusts",
+    "expansion": "Nocturne",
     "types": [
-      "hex"
+      "Hex"
     ],
     "coins": null,
     "potions": null,
@@ -6427,10 +6427,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Locusts"
   },
   {
-    "name": "misery",
-    "expansion": "nocturne",
+    "name": "Misery",
+    "expansion": "Nocturne",
     "types": [
-      "hex"
+      "Hex"
     ],
     "coins": null,
     "potions": null,
@@ -6441,10 +6441,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Misery"
   },
   {
-    "name": "plague",
-    "expansion": "nocturne",
+    "name": "Plague",
+    "expansion": "Nocturne",
     "types": [
-      "hex"
+      "Hex"
     ],
     "coins": null,
     "potions": null,
@@ -6455,10 +6455,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Plague"
   },
   {
-    "name": "poverty",
-    "expansion": "nocturne",
+    "name": "Poverty",
+    "expansion": "Nocturne",
     "types": [
-      "hex"
+      "Hex"
     ],
     "coins": null,
     "potions": null,
@@ -6469,10 +6469,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Poverty"
   },
   {
-    "name": "war",
-    "expansion": "nocturne",
+    "name": "War",
+    "expansion": "Nocturne",
     "types": [
-      "hex"
+      "Hex"
     ],
     "coins": null,
     "potions": null,
@@ -6483,10 +6483,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/War"
   },
   {
-    "name": "deluded",
-    "expansion": "nocturne",
+    "name": "Deluded",
+    "expansion": "Nocturne",
     "types": [
-      "state"
+      "State"
     ],
     "coins": null,
     "potions": null,
@@ -6497,10 +6497,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Deluded"
   },
   {
-    "name": "envious",
-    "expansion": "nocturne",
+    "name": "Envious",
+    "expansion": "Nocturne",
     "types": [
-      "state"
+      "State"
     ],
     "coins": null,
     "potions": null,
@@ -6511,10 +6511,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Envious"
   },
   {
-    "name": "lost in the woods",
-    "expansion": "nocturne",
+    "name": "Lost in the Woods",
+    "expansion": "Nocturne",
     "types": [
-      "state"
+      "State"
     ],
     "coins": null,
     "potions": null,
@@ -6525,10 +6525,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Lost_in_the_Woods"
   },
   {
-    "name": "miserable",
-    "expansion": "nocturne",
+    "name": "Miserable",
+    "expansion": "Nocturne",
     "types": [
-      "state"
+      "State"
     ],
     "coins": null,
     "potions": null,
@@ -6539,10 +6539,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Miserable"
   },
   {
-    "name": "twice miserable",
-    "expansion": "nocturne",
+    "name": "Twice Miserable",
+    "expansion": "Nocturne",
     "types": [
-      "state"
+      "State"
     ],
     "coins": null,
     "potions": null,
@@ -6553,10 +6553,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Twice_Miserable"
   },
   {
-    "name": "border guard",
-    "expansion": "renaissance",
+    "name": "Border Guard",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -6567,10 +6567,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Border_Guard"
   },
   {
-    "name": "ducat",
-    "expansion": "renaissance",
+    "name": "Ducat",
+    "expansion": "Renaissance",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 2,
     "potions": null,
@@ -6581,10 +6581,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ducat"
   },
   {
-    "name": "lackeys",
-    "expansion": "renaissance",
+    "name": "Lackeys",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 2,
     "potions": null,
@@ -6595,10 +6595,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Lackeys"
   },
   {
-    "name": "acting troupe",
-    "expansion": "renaissance",
+    "name": "Acting Troupe",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -6609,11 +6609,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Acting_Troupe"
   },
   {
-    "name": "cargo ship",
-    "expansion": "renaissance",
+    "name": "Cargo Ship",
+    "expansion": "Renaissance",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 3,
     "potions": null,
@@ -6624,10 +6624,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Cargo_Ship"
   },
   {
-    "name": "experiment",
-    "expansion": "renaissance",
+    "name": "Experiment",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -6638,10 +6638,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Experiment"
   },
   {
-    "name": "improve",
-    "expansion": "renaissance",
+    "name": "Improve",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -6652,10 +6652,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Improve"
   },
   {
-    "name": "flag bearer",
-    "expansion": "renaissance",
+    "name": "Flag Bearer",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -6666,10 +6666,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Flag_Bearer"
   },
   {
-    "name": "hideout",
-    "expansion": "renaissance",
+    "name": "Hideout",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -6680,10 +6680,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Hideout"
   },
   {
-    "name": "inventor",
-    "expansion": "renaissance",
+    "name": "Inventor",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -6694,10 +6694,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Inventor"
   },
   {
-    "name": "mountain village",
-    "expansion": "renaissance",
+    "name": "Mountain Village",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -6708,11 +6708,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Mountain_Village"
   },
   {
-    "name": "patron",
-    "expansion": "renaissance",
+    "name": "Patron",
+    "expansion": "Renaissance",
     "types": [
-      "action",
-      "reaction"
+      "Action",
+      "Reaction"
     ],
     "coins": 4,
     "potions": null,
@@ -6723,10 +6723,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Patron"
   },
   {
-    "name": "priest",
-    "expansion": "renaissance",
+    "name": "Priest",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -6737,11 +6737,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Priest"
   },
   {
-    "name": "research",
-    "expansion": "renaissance",
+    "name": "Research",
+    "expansion": "Renaissance",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 4,
     "potions": null,
@@ -6752,10 +6752,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Research"
   },
   {
-    "name": "silk merchant",
-    "expansion": "renaissance",
+    "name": "Silk Merchant",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -6766,11 +6766,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Silk_Merchant"
   },
   {
-    "name": "old witch",
-    "expansion": "renaissance",
+    "name": "Old Witch",
+    "expansion": "Renaissance",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -6781,10 +6781,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Old_Witch"
   },
   {
-    "name": "recruiter",
-    "expansion": "renaissance",
+    "name": "Recruiter",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -6795,10 +6795,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Recruiter"
   },
   {
-    "name": "scepter",
-    "expansion": "renaissance",
+    "name": "Scepter",
+    "expansion": "Renaissance",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 5,
     "potions": null,
@@ -6809,10 +6809,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Scepter"
   },
   {
-    "name": "scholar",
-    "expansion": "renaissance",
+    "name": "Scholar",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -6823,10 +6823,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Scholar"
   },
   {
-    "name": "sculptor",
-    "expansion": "renaissance",
+    "name": "Sculptor",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -6837,10 +6837,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sculptor"
   },
   {
-    "name": "seer",
-    "expansion": "renaissance",
+    "name": "Seer",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -6851,10 +6851,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Seer"
   },
   {
-    "name": "spices",
-    "expansion": "renaissance",
+    "name": "Spices",
+    "expansion": "Renaissance",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 5,
     "potions": null,
@@ -6865,10 +6865,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Spices"
   },
   {
-    "name": "swashbuckler",
-    "expansion": "renaissance",
+    "name": "Swashbuckler",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -6879,10 +6879,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Swashbuckler"
   },
   {
-    "name": "treasurer",
-    "expansion": "renaissance",
+    "name": "Treasurer",
+    "expansion": "Renaissance",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -6893,11 +6893,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Treasurer"
   },
   {
-    "name": "villain",
-    "expansion": "renaissance",
+    "name": "Villain",
+    "expansion": "Renaissance",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -6908,10 +6908,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Villain"
   },
   {
-    "name": "flag",
-    "expansion": "renaissance",
+    "name": "Flag",
+    "expansion": "Renaissance",
     "types": [
-      "artifact"
+      "Artifact"
     ],
     "coins": null,
     "potions": null,
@@ -6922,10 +6922,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Flag"
   },
   {
-    "name": "horn",
-    "expansion": "renaissance",
+    "name": "Horn",
+    "expansion": "Renaissance",
     "types": [
-      "artifact"
+      "Artifact"
     ],
     "coins": null,
     "potions": null,
@@ -6936,10 +6936,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Horn"
   },
   {
-    "name": "key",
-    "expansion": "renaissance",
+    "name": "Key",
+    "expansion": "Renaissance",
     "types": [
-      "artifact"
+      "Artifact"
     ],
     "coins": null,
     "potions": null,
@@ -6950,10 +6950,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Key"
   },
   {
-    "name": "lantern",
-    "expansion": "renaissance",
+    "name": "Lantern",
+    "expansion": "Renaissance",
     "types": [
-      "artifact"
+      "Artifact"
     ],
     "coins": null,
     "potions": null,
@@ -6964,10 +6964,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Lantern"
   },
   {
-    "name": "treasure chest",
-    "expansion": "renaissance",
+    "name": "Treasure Chest",
+    "expansion": "Renaissance",
     "types": [
-      "artifact"
+      "Artifact"
     ],
     "coins": null,
     "potions": null,
@@ -6978,10 +6978,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Treasure_Chest"
   },
   {
-    "name": "cathedral",
-    "expansion": "renaissance",
+    "name": "Cathedral",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 3,
     "potions": null,
@@ -6992,10 +6992,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Cathedral"
   },
   {
-    "name": "city gate",
-    "expansion": "renaissance",
+    "name": "City Gate",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 3,
     "potions": null,
@@ -7006,10 +7006,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/City_Gate"
   },
   {
-    "name": "pageant",
-    "expansion": "renaissance",
+    "name": "Pageant",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 3,
     "potions": null,
@@ -7020,10 +7020,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Pageant"
   },
   {
-    "name": "sewers",
-    "expansion": "renaissance",
+    "name": "Sewers",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 3,
     "potions": null,
@@ -7034,10 +7034,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sewers"
   },
   {
-    "name": "star chart",
-    "expansion": "renaissance",
+    "name": "Star Chart",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 3,
     "potions": null,
@@ -7048,10 +7048,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Star_Chart"
   },
   {
-    "name": "exploration",
-    "expansion": "renaissance",
+    "name": "Exploration",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 4,
     "potions": null,
@@ -7062,10 +7062,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Exploration"
   },
   {
-    "name": "fair",
-    "expansion": "renaissance",
+    "name": "Fair",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 4,
     "potions": null,
@@ -7076,10 +7076,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Fair"
   },
   {
-    "name": "silos",
-    "expansion": "renaissance",
+    "name": "Silos",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 4,
     "potions": null,
@@ -7090,10 +7090,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Silos"
   },
   {
-    "name": "sinister plot",
-    "expansion": "renaissance",
+    "name": "Sinister Plot",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 4,
     "potions": null,
@@ -7104,10 +7104,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sinister_Plot"
   },
   {
-    "name": "academy",
-    "expansion": "renaissance",
+    "name": "Academy",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 5,
     "potions": null,
@@ -7118,10 +7118,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Academy"
   },
   {
-    "name": "capitalism",
-    "expansion": "renaissance",
+    "name": "Capitalism",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 5,
     "potions": null,
@@ -7132,10 +7132,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Capitalism"
   },
   {
-    "name": "fleet",
-    "expansion": "renaissance",
+    "name": "Fleet",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 5,
     "potions": null,
@@ -7146,10 +7146,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Fleet"
   },
   {
-    "name": "guildhall",
-    "expansion": "renaissance",
+    "name": "Guildhall",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 5,
     "potions": null,
@@ -7160,10 +7160,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Guildhall"
   },
   {
-    "name": "piazza",
-    "expansion": "renaissance",
+    "name": "Piazza",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 5,
     "potions": null,
@@ -7174,10 +7174,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Piazza"
   },
   {
-    "name": "road network",
-    "expansion": "renaissance",
+    "name": "Road Network",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 5,
     "potions": null,
@@ -7188,10 +7188,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Road_Network"
   },
   {
-    "name": "barracks",
-    "expansion": "renaissance",
+    "name": "Barracks",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 6,
     "potions": null,
@@ -7202,10 +7202,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Barracks"
   },
   {
-    "name": "crop rotation",
-    "expansion": "renaissance",
+    "name": "Crop Rotation",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 6,
     "potions": null,
@@ -7216,10 +7216,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Crop_Rotation"
   },
   {
-    "name": "innovation",
-    "expansion": "renaissance",
+    "name": "Innovation",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 6,
     "potions": null,
@@ -7230,10 +7230,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Innovation"
   },
   {
-    "name": "canal",
-    "expansion": "renaissance",
+    "name": "Canal",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 7,
     "potions": null,
@@ -7244,10 +7244,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Canal"
   },
   {
-    "name": "citadel",
-    "expansion": "renaissance",
+    "name": "Citadel",
+    "expansion": "Renaissance",
     "types": [
-      "project"
+      "Project"
     ],
     "coins": 8,
     "potions": null,
@@ -7258,12 +7258,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Citadel"
   },
   {
-    "name": "black cat",
-    "expansion": "menagerie",
+    "name": "Black Cat",
+    "expansion": "Menagerie",
     "types": [
-      "action",
-      "attack",
-      "reaction"
+      "Action",
+      "Attack",
+      "Reaction"
     ],
     "coins": 2,
     "potions": null,
@@ -7274,11 +7274,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Black_Cat"
   },
   {
-    "name": "sleigh",
-    "expansion": "menagerie",
+    "name": "Sleigh",
+    "expansion": "Menagerie",
     "types": [
-      "action",
-      "reaction"
+      "Action",
+      "Reaction"
     ],
     "coins": 2,
     "potions": null,
@@ -7289,10 +7289,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sleigh"
   },
   {
-    "name": "supplies",
-    "expansion": "menagerie",
+    "name": "Supplies",
+    "expansion": "Menagerie",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 2,
     "potions": null,
@@ -7303,10 +7303,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Supplies"
   },
   {
-    "name": "horse",
-    "expansion": "menagerie",
+    "name": "Horse",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -7317,10 +7317,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Horse"
   },
   {
-    "name": "camel train",
-    "expansion": "menagerie",
+    "name": "Camel Train",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -7331,10 +7331,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Camel_Train"
   },
   {
-    "name": "goatherd",
-    "expansion": "menagerie",
+    "name": "Goatherd",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -7345,10 +7345,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Goatherd"
   },
   {
-    "name": "scrap",
-    "expansion": "menagerie",
+    "name": "Scrap",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -7359,11 +7359,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Scrap"
   },
   {
-    "name": "sheepdog",
-    "expansion": "menagerie",
+    "name": "Sheepdog",
+    "expansion": "Menagerie",
     "types": [
-      "action",
-      "reaction"
+      "Action",
+      "Reaction"
     ],
     "coins": 3,
     "potions": null,
@@ -7374,10 +7374,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sheepdog"
   },
   {
-    "name": "snowy village",
-    "expansion": "menagerie",
+    "name": "Snowy Village",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -7388,10 +7388,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Snowy_Village"
   },
   {
-    "name": "stockpile",
-    "expansion": "menagerie",
+    "name": "Stockpile",
+    "expansion": "Menagerie",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 3,
     "potions": null,
@@ -7402,10 +7402,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Stockpile"
   },
   {
-    "name": "bounty hunter",
-    "expansion": "menagerie",
+    "name": "Bounty Hunter",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -7416,11 +7416,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bounty_Hunter"
   },
   {
-    "name": "cardinal",
-    "expansion": "menagerie",
+    "name": "Cardinal",
+    "expansion": "Menagerie",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 4,
     "potions": null,
@@ -7431,10 +7431,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Cardinal"
   },
   {
-    "name": "cavalry",
-    "expansion": "menagerie",
+    "name": "Cavalry",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -7445,10 +7445,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Cavalry"
   },
   {
-    "name": "groom",
-    "expansion": "menagerie",
+    "name": "Groom",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -7459,10 +7459,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Groom"
   },
   {
-    "name": "hostelry",
-    "expansion": "menagerie",
+    "name": "Hostelry",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -7473,12 +7473,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Hostelry"
   },
   {
-    "name": "village green",
-    "expansion": "menagerie",
+    "name": "Village Green",
+    "expansion": "Menagerie",
     "types": [
-      "action",
-      "duration",
-      "reaction"
+      "Action",
+      "Duration",
+      "Reaction"
     ],
     "coins": 4,
     "potions": null,
@@ -7489,10 +7489,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Village_Green"
   },
   {
-    "name": "fisherman",
-    "expansion": "menagerie",
+    "name": "Fisherman",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -7503,10 +7503,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Fisherman"
   },
   {
-    "name": "hunting lodge",
-    "expansion": "menagerie",
+    "name": "Hunting Lodge",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -7517,11 +7517,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Hunting_Lodge"
   },
   {
-    "name": "barge",
-    "expansion": "menagerie",
+    "name": "Barge",
+    "expansion": "Menagerie",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 5,
     "potions": null,
@@ -7532,11 +7532,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Barge"
   },
   {
-    "name": "coven",
-    "expansion": "menagerie",
+    "name": "Coven",
+    "expansion": "Menagerie",
     "types": [
-      "action",
-      "attack"
+      "Action",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -7547,10 +7547,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Coven"
   },
   {
-    "name": "displace",
-    "expansion": "menagerie",
+    "name": "Displace",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -7561,11 +7561,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Displace"
   },
   {
-    "name": "falconer",
-    "expansion": "menagerie",
+    "name": "Falconer",
+    "expansion": "Menagerie",
     "types": [
-      "action",
-      "reaction"
+      "Action",
+      "Reaction"
     ],
     "coins": 5,
     "potions": null,
@@ -7576,12 +7576,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Falconer"
   },
   {
-    "name": "gatekeeper",
-    "expansion": "menagerie",
+    "name": "Gatekeeper",
+    "expansion": "Menagerie",
     "types": [
-      "action",
-      "duration",
-      "attack"
+      "Action",
+      "Duration",
+      "Attack"
     ],
     "coins": 5,
     "potions": null,
@@ -7592,10 +7592,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Gatekeeper"
   },
   {
-    "name": "kiln",
-    "expansion": "menagerie",
+    "name": "Kiln",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -7606,10 +7606,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Kiln"
   },
   {
-    "name": "livery",
-    "expansion": "menagerie",
+    "name": "Livery",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -7620,11 +7620,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Livery"
   },
   {
-    "name": "mastermind",
-    "expansion": "menagerie",
+    "name": "Mastermind",
+    "expansion": "Menagerie",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 5,
     "potions": null,
@@ -7635,10 +7635,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Mastermind"
   },
   {
-    "name": "paddock",
-    "expansion": "menagerie",
+    "name": "Paddock",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -7649,10 +7649,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Paddock"
   },
   {
-    "name": "sanctuary",
-    "expansion": "menagerie",
+    "name": "Sanctuary",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -7663,10 +7663,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sanctuary"
   },
   {
-    "name": "destrier",
-    "expansion": "menagerie",
+    "name": "Destrier",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 6,
     "potions": null,
@@ -7677,10 +7677,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Destrier"
   },
   {
-    "name": "wayfarer",
-    "expansion": "menagerie",
+    "name": "Wayfarer",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 6,
     "potions": null,
@@ -7691,10 +7691,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Wayfarer"
   },
   {
-    "name": "animal fair",
-    "expansion": "menagerie",
+    "name": "Animal Fair",
+    "expansion": "Menagerie",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 7,
     "potions": null,
@@ -7705,10 +7705,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Animal_Fair"
   },
   {
-    "name": "delay",
-    "expansion": "menagerie",
+    "name": "Delay",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 0,
     "potions": null,
@@ -7719,10 +7719,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Delay"
   },
   {
-    "name": "desperation",
-    "expansion": "menagerie",
+    "name": "Desperation",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 0,
     "potions": null,
@@ -7733,10 +7733,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Desperation"
   },
   {
-    "name": "gamble",
-    "expansion": "menagerie",
+    "name": "Gamble",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 2,
     "potions": null,
@@ -7747,10 +7747,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Gamble"
   },
   {
-    "name": "pursue",
-    "expansion": "menagerie",
+    "name": "Pursue",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 2,
     "potions": null,
@@ -7761,10 +7761,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Pursue"
   },
   {
-    "name": "ride",
-    "expansion": "menagerie",
+    "name": "Ride",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 2,
     "potions": null,
@@ -7775,10 +7775,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Ride"
   },
   {
-    "name": "toil",
-    "expansion": "menagerie",
+    "name": "Toil",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 2,
     "potions": null,
@@ -7789,10 +7789,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Toil"
   },
   {
-    "name": "enhance",
-    "expansion": "menagerie",
+    "name": "Enhance",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 3,
     "potions": null,
@@ -7803,10 +7803,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Enhance"
   },
   {
-    "name": "march",
-    "expansion": "menagerie",
+    "name": "March",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 3,
     "potions": null,
@@ -7817,10 +7817,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/March"
   },
   {
-    "name": "transport",
-    "expansion": "menagerie",
+    "name": "Transport",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 3,
     "potions": null,
@@ -7831,10 +7831,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Transport"
   },
   {
-    "name": "banish",
-    "expansion": "menagerie",
+    "name": "Banish",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 4,
     "potions": null,
@@ -7845,10 +7845,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Banish"
   },
   {
-    "name": "bargain",
-    "expansion": "menagerie",
+    "name": "Bargain",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 4,
     "potions": null,
@@ -7859,10 +7859,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Bargain"
   },
   {
-    "name": "invest",
-    "expansion": "menagerie",
+    "name": "Invest",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 4,
     "potions": null,
@@ -7873,10 +7873,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Invest"
   },
   {
-    "name": "seize the day",
-    "expansion": "menagerie",
+    "name": "Seize the Day",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 4,
     "potions": null,
@@ -7887,10 +7887,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Seize_the_Day"
   },
   {
-    "name": "commerce",
-    "expansion": "menagerie",
+    "name": "Commerce",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 5,
     "potions": null,
@@ -7901,10 +7901,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Commerce"
   },
   {
-    "name": "demand",
-    "expansion": "menagerie",
+    "name": "Demand",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 5,
     "potions": null,
@@ -7915,10 +7915,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Demand"
   },
   {
-    "name": "stampede",
-    "expansion": "menagerie",
+    "name": "Stampede",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 5,
     "potions": null,
@@ -7929,10 +7929,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Stampede"
   },
   {
-    "name": "reap",
-    "expansion": "menagerie",
+    "name": "Reap",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 7,
     "potions": null,
@@ -7943,10 +7943,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Reap"
   },
   {
-    "name": "enclave",
-    "expansion": "menagerie",
+    "name": "Enclave",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 8,
     "potions": null,
@@ -7957,10 +7957,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Enclave"
   },
   {
-    "name": "alliance",
-    "expansion": "menagerie",
+    "name": "Alliance",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 10,
     "potions": null,
@@ -7971,10 +7971,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Alliance"
   },
   {
-    "name": "populate",
-    "expansion": "menagerie",
+    "name": "Populate",
+    "expansion": "Menagerie",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 10,
     "potions": null,
@@ -7985,10 +7985,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Populate"
   },
   {
-    "name": "way of the butterfly",
-    "expansion": "menagerie",
+    "name": "Way of the Butterfly",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -7999,10 +7999,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Butterfly"
   },
   {
-    "name": "way of the camel",
-    "expansion": "menagerie",
+    "name": "Way of the Camel",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8013,10 +8013,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Camel"
   },
   {
-    "name": "way of the chameleon",
-    "expansion": "menagerie",
+    "name": "Way of the Chameleon",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8027,10 +8027,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Chameleon"
   },
   {
-    "name": "way of the frog",
-    "expansion": "menagerie",
+    "name": "Way of the Frog",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8041,10 +8041,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Frog"
   },
   {
-    "name": "way of the goat",
-    "expansion": "menagerie",
+    "name": "Way of the Goat",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8055,10 +8055,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Goat"
   },
   {
-    "name": "way of the horse",
-    "expansion": "menagerie",
+    "name": "Way of the Horse",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8069,10 +8069,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Horse"
   },
   {
-    "name": "way of the mole",
-    "expansion": "menagerie",
+    "name": "Way of the Mole",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8083,10 +8083,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Mole"
   },
   {
-    "name": "way of the monkey",
-    "expansion": "menagerie",
+    "name": "Way of the Monkey",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8097,10 +8097,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Monkey"
   },
   {
-    "name": "way of the mouse",
-    "expansion": "menagerie",
+    "name": "Way of the Mouse",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8111,10 +8111,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Mouse"
   },
   {
-    "name": "way of the mule",
-    "expansion": "menagerie",
+    "name": "Way of the Mule",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8125,10 +8125,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Mule"
   },
   {
-    "name": "way of the otter",
-    "expansion": "menagerie",
+    "name": "Way of the Otter",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8139,10 +8139,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Otter"
   },
   {
-    "name": "way of the ox",
-    "expansion": "menagerie",
+    "name": "Way of the Ox",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8153,10 +8153,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Ox"
   },
   {
-    "name": "way of the owl",
-    "expansion": "menagerie",
+    "name": "Way of the Owl",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8167,10 +8167,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Owl"
   },
   {
-    "name": "way of the pig",
-    "expansion": "menagerie",
+    "name": "Way of the Pig",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8181,10 +8181,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Pig"
   },
   {
-    "name": "way of the rat",
-    "expansion": "menagerie",
+    "name": "Way of the Rat",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8195,10 +8195,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Rat"
   },
   {
-    "name": "way of the seal",
-    "expansion": "menagerie",
+    "name": "Way of the Seal",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8209,10 +8209,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Seal"
   },
   {
-    "name": "way of the sheep",
-    "expansion": "menagerie",
+    "name": "Way of the Sheep",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8223,10 +8223,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Sheep"
   },
   {
-    "name": "way of the squirrel",
-    "expansion": "menagerie",
+    "name": "Way of the Squirrel",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8237,10 +8237,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Squirrel"
   },
   {
-    "name": "way of the turtle",
-    "expansion": "menagerie",
+    "name": "Way of the Turtle",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8251,10 +8251,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Turtle"
   },
   {
-    "name": "way of the worm",
-    "expansion": "menagerie",
+    "name": "Way of the Worm",
+    "expansion": "Menagerie",
     "types": [
-      "way"
+      "Way"
     ],
     "coins": null,
     "potions": null,
@@ -8265,10 +8265,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Worm"
   },
   {
-    "name": "black market",
-    "expansion": "promo",
+    "name": "Black Market",
+    "expansion": "Promo",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 3,
     "potions": null,
@@ -8279,11 +8279,11 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Black_Market"
   },
   {
-    "name": "church",
-    "expansion": "promo",
+    "name": "Church",
+    "expansion": "Promo",
     "types": [
-      "action",
-      "duration"
+      "Action",
+      "Duration"
     ],
     "coins": 3,
     "potions": null,
@@ -8294,10 +8294,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Church"
   },
   {
-    "name": "dismantle",
-    "expansion": "promo",
+    "name": "Dismantle",
+    "expansion": "Promo",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -8308,10 +8308,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Dismantle"
   },
   {
-    "name": "envoy",
-    "expansion": "promo",
+    "name": "Envoy",
+    "expansion": "Promo",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -8322,10 +8322,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Envoy"
   },
   {
-    "name": "sauna",
-    "expansion": "promo",
+    "name": "Sauna",
+    "expansion": "Promo",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -8336,10 +8336,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Sauna"
   },
   {
-    "name": "walled village",
-    "expansion": "promo",
+    "name": "Walled Village",
+    "expansion": "Promo",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 4,
     "potions": null,
@@ -8350,10 +8350,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Walled_Village"
   },
   {
-    "name": "avanto",
-    "expansion": "promo",
+    "name": "Avanto",
+    "expansion": "Promo",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -8364,10 +8364,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Avanto"
   },
   {
-    "name": "governor",
-    "expansion": "promo",
+    "name": "Governor",
+    "expansion": "Promo",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 5,
     "potions": null,
@@ -8378,10 +8378,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Governor"
   },
   {
-    "name": "stash",
-    "expansion": "promo",
+    "name": "Stash",
+    "expansion": "Promo",
     "types": [
-      "treasure"
+      "Treasure"
     ],
     "coins": 5,
     "potions": null,
@@ -8392,10 +8392,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Stash"
   },
   {
-    "name": "summon",
-    "expansion": "promo",
+    "name": "Summon",
+    "expansion": "Promo",
     "types": [
-      "event"
+      "Event"
     ],
     "coins": 5,
     "potions": null,
@@ -8406,12 +8406,12 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Summon"
   },
   {
-    "name": "captain",
-    "expansion": "promo",
+    "name": "Captain",
+    "expansion": "Promo",
     "types": [
-      "action",
-      "duration",
-      "command"
+      "Action",
+      "Duration",
+      "Command"
     ],
     "coins": 6,
     "potions": null,
@@ -8422,10 +8422,10 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Captain"
   },
   {
-    "name": "prince",
-    "expansion": "promo",
+    "name": "Prince",
+    "expansion": "Promo",
     "types": [
-      "action"
+      "Action"
     ],
     "coins": 8,
     "potions": null,

@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { arrayIncludesCard, arrayIncludesCardName, drawCard, isValidKingdomCard, sortTwoCards } from "../lib/utils";
+import { addExtraCards, arrayIncludesCard, drawCards, isValidKingdomCard, sortTwoCards } from "../lib/utils";
 import CardsDisplay from "./CardsDisplay";
-import _ from 'lodash';
 import ExpansionSelector from "./ExpansionSelector";
 import { Button } from "react-bootstrap";
 
@@ -13,19 +12,22 @@ export default function KingdomGenerator({ cards }) {
 
   const remainingCards = availableCards.filter((card) => !arrayIncludesCard(kingdom, card));
 
-  const generateKingdom = () => {
-    const newKingdom = _.sampleSize(availableCards, 10);
-    const notInKingdom = availableCards.filter((card) => !arrayIncludesCard(newKingdom, card));
-    if (arrayIncludesCardName(newKingdom, 'Young Witch')) {
-      const bane = drawCard(notInKingdom, (card) => ((card.coins === 2) || (card.coins === 3)))
-      bane && newKingdom.push({...bane, bane: true});
-    }
-    setKingdom(newKingdom)
+  const addCards = (num, add) => {
+    const newCards = drawCards(remainingCards, num);
+    const newKingdom = add ? [...kingdom, ...newCards] : newCards;
+    setKingdom(addExtraCards(newKingdom, availableCards));
   }
 
-  const swapCard = (name) => {
-    const newCard = _.sample(remainingCards);
-    setKingdom([...kingdom.filter((card) => card.name !== name), newCard]);
+  const swapCard = (oldCard) => {
+    let newKingdom = kingdom.filter((card) => card.name !== oldCard.name);
+    if (oldCard.name === 'Young Witch') {
+      newKingdom = newKingdom.filter((card) => !card.bane);
+    }
+    if (!oldCard.bane) {
+      const [newCard] = drawCards(remainingCards, 1);
+      newKingdom.push(newCard);
+    }
+    setKingdom(addExtraCards(newKingdom, remainingCards));
   }
 
   const toggleExpansion = (name) => {
@@ -38,7 +40,9 @@ export default function KingdomGenerator({ cards }) {
     <div>
       <ExpansionSelector toggleExpansion={toggleExpansion}/>
       <br/>
-      <Button variant="success" onClick={() => generateKingdom()}>Generate Kingdom!</Button>
+      <Button variant="success" onClick={() => addCards(10)}>Generate Kingdom!</Button>
+      <Button variant="success" onClick={() => addCards(1, true)}>Add Single Card</Button>
+      <Button variant="success" onClick={() => setKingdom([])}>Clear</Button>
       <br/>
       <br/>
       <CardsDisplay data={kingdom.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))} swapCard={swapCard} cardWidth={200}/>

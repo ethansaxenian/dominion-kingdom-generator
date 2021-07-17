@@ -25,4 +25,22 @@ export const arrayIncludesCard = (array, card) => array.map((obj) => obj.name.to
 
 export const arrayIncludesCardName = (array, name) => array.map((card) => card.name.toLowerCase()).includes(name.toLowerCase());
 
-export const drawCard = (availableCards, predicate) => _.sample(availableCards.filter((card) => predicate(card)));
+export const drawCards = (cards, num, predicate) => _.sampleSize(predicate ? cards.filter((card) => predicate(card)) : cards, num);
+
+export const youngWitchPredicate = (card) => ((card.coins === 2) || (card.coins === 3)) && !card.potions && !card.debt;
+
+export const addExtraCards = (kingdom, availableCards) => {
+  const newCards = kingdom;
+  if (arrayIncludesCardName(newCards, 'Young Witch') && kingdom.every((card) => !card.bane)) {
+    console.log("huh>")
+    const notInKingdom = availableCards.filter((card) => !arrayIncludesCard(newCards, card));
+    const [bane] = drawCards(notInKingdom, 1, youngWitchPredicate);
+    bane && newCards.push({...bane, bane: true});
+  }
+  if (arrayIncludesCardName(newCards, 'Way of the Mouse')  && kingdom.every((card) => !card.wotm)) {
+    const notInKingdom = availableCards.filter((card) => !arrayIncludesCard(newCards, card));
+    const [wotm] = drawCards(notInKingdom, 1, youngWitchPredicate);
+    wotm && newCards.push({...wotm, wotm: true});
+  }
+  return newCards
+}

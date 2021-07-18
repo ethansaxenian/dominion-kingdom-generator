@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { addExtraCards, arrayIncludesCard, drawCards, isLandscape, isValidKingdomCard, sortTwoCards } from "../lib/utils";
-import { Alert, Button, Modal } from "react-bootstrap";
+import { Alert, Button } from "react-bootstrap";
 import { combinations, min } from "mathjs";
 import _ from "lodash";
 import KingdomSettings from "./KingdomSettings";
 import KingdomDisplay from "./KingdomDisplay";
+import ModalAlert from "./ModalAlert";
 
 export default function KingdomGenerator({ cards }) {
   const [kingdom, setKingdom] = useState([]);
@@ -90,14 +91,7 @@ export default function KingdomGenerator({ cards }) {
       <KingdomSettings toggleExpansion={toggleExpansion} togglePromo={togglePromo}/>
       <br/>
       <Button variant="success" onClick={() => generateKingdom()}>Generate Kingdom!</Button>
-      <Modal show={alert} onHide={() => setAlert('')}>
-        <Modal.Body><Alert variant="danger">{alert}</Alert></Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setAlert('')}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      <ModalAlert text={alert} onClose={() => setAlert('')}/>
       <br/>
       <br/>
       <KingdomDisplay

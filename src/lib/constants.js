@@ -1,4 +1,4 @@
-export const EXPANSIONS = ['Adventures', 'Alchemy', 'Base', 'Cornucopia', 'Dark ages', 'Empires', 'Guilds', 'Hinterlands', 'Intrigue', 'Menagerie', 'Nocturne', 'Prosperity', 'Renaissance', 'Seaside'];
+export const EXPANSIONS = ['Adventures', 'Alchemy', 'Base', 'Base 1st Edition', 'Cornucopia', 'Dark Ages', 'Empires', 'Guilds', 'Hinterlands', 'Intrigue', 'Intrigue 1st Edition', 'Menagerie', 'Nocturne', 'Prosperity', 'Renaissance', 'Seaside'];
 
 export const PROMOS = ['Black Market', 'Captain', 'Church', 'Dismantle', 'Envoy', 'Governor', 'Prince', 'Sauna', 'Stash', 'Summon', 'Walled Village'];
 

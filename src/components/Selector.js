@@ -14,10 +14,10 @@ export default function Selector({ toggle, options, name }) {
 
   return (
     <Card className={styles.selector}>
-      <Accordion.Toggle as={Card.Header} eventKey="0" className={styles.header}>
+      <Accordion.Toggle as={Card.Header} eventKey={name} className={styles.header}>
         Select {name}
       </Accordion.Toggle>
-      <Accordion.Collapse eventKey="0">
+      <Accordion.Collapse eventKey={name}>
         <ul>{selectors}</ul>
       </Accordion.Collapse>
     </Card>

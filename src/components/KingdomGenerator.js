@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { addExtraCards, arrayIncludesCard, drawCards, isLandscape, isValidKingdomCard, sortTwoCards } from "../lib/utils";
-import { Alert } from "react-bootstrap";
-import { combinations, max } from "mathjs";
+import { Alert, Button, Modal } from "react-bootstrap";
+import { combinations, min } from "mathjs";
 import _ from "lodash";
 import KingdomSettings from "./KingdomSettings";
 import KingdomDisplay from "./KingdomDisplay";
@@ -12,6 +12,7 @@ export default function KingdomGenerator({ cards }) {
   const [expansions, setExpansions] = useState([]);
   const [promos, setPromos] = useState([]);
   const [usePlatinumColony, setUsePlatinumColony] = useState(false);
+  const [alert, setAlert] = useState('');
 
   const availableCards = cards.filter(
     (card) => isValidKingdomCard(card) && (expansions.includes(card.expansion) || promos.includes(card.name))
@@ -25,11 +26,11 @@ export default function KingdomGenerator({ cards }) {
 
   const generateKingdom = () => {
     if (availableCards.length < 10) {
-      alert('You need at least 10 kingdom cards!')
+      setAlert('You need at least 10 kingdom cards!')
       return
     }
     const newKingdom = drawCards(availableCards, 10);
-    const newLandscapes = drawCards(availableLandscapes, max(2, availableLandscapes.length));
+    const newLandscapes = drawCards(availableLandscapes, min(2, availableLandscapes.length));
     const leftovers = availableCards.filter((card) => !arrayIncludesCard(newKingdom, card));
     setKingdom(addExtraCards(newKingdom, newLandscapes, leftovers));
     setLandScapes(newLandscapes);
@@ -40,7 +41,7 @@ export default function KingdomGenerator({ cards }) {
 
   const swapCard = (oldCard) => {
     if (remainingCards.length < 10) {
-      alert('There are no available kingdom cards to swap!')
+      setAlert('There are no available kingdom cards to swap!')
       return
     }
     let newKingdom = kingdom.filter((card) => card.name !== oldCard.name);
@@ -56,7 +57,7 @@ export default function KingdomGenerator({ cards }) {
 
   const swapLandscape = (oldCard) => {
     if (remainingLandscapes.length < 10) {
-      alert('There are no available landscapes to swap!')
+      setAlert('There are no available landscapes to swap!')
       return
     }
     let newLandscapes = landscapes.filter((card) => card.name !== oldCard.name);
@@ -86,7 +87,17 @@ export default function KingdomGenerator({ cards }) {
 
   return (
     <div>
-      <KingdomSettings toggleExpansion={toggleExpansion} togglePromo={togglePromo} generateKingdom={generateKingdom}/>
+      <KingdomSettings toggleExpansion={toggleExpansion} togglePromo={togglePromo}/>
+      <br/>
+      <Button variant="success" onClick={() => generateKingdom()}>Generate Kingdom!</Button>
+      <Modal show={alert} onHide={() => setAlert('')}>
+        <Modal.Body><Alert variant="danger">{alert}</Alert></Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setAlert('')}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
       <br/>
       <br/>
       <KingdomDisplay
@@ -97,7 +108,7 @@ export default function KingdomGenerator({ cards }) {
         usePlatinumColony={usePlatinumColony}
         platinumColony={platinumColony}
       />
-      {((kingdom.length >= 10) && (expansions.length > 0)) && (
+      {((kingdom.length >= 10) && (availableCards.length > 0)) && (
         <Alert variant="success" style={{width: '50%', margin: 'auto', marginTop: 20, marginBottom: 20}}>
           Don't like this kingdom? Luckily for you, there are over {2 * combinations(availableCards.length, 10) * ((availableLandscapes.length >= 2) ? combinations(availableLandscapes.length, 2) : 1)} different combinations to choose from!
         </Alert>

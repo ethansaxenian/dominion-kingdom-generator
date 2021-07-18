@@ -1,5 +1,6 @@
 import { Accordion, Card, Form } from "react-bootstrap";
 import { EXPANSIONS } from "../lib/constants";
+import styles from "../styles/ExpansionSelector.module.css";
 
 export default function ExpansionSelector({ toggleExpansion }) {
   const expansionSelectors = EXPANSIONS.map((expansion) =>
@@ -14,8 +15,8 @@ export default function ExpansionSelector({ toggleExpansion }) {
 
   return (
     <Accordion>
-      <Card style={{width: "30%", margin: "auto"}}>
-        <Accordion.Toggle as={Card.Header} eventKey="0">
+      <Card className={styles.selector}>
+        <Accordion.Toggle as={Card.Header} eventKey="0" className={styles.header}>
           Select Expansions
         </Accordion.Toggle>
         <Accordion.Collapse eventKey="0">

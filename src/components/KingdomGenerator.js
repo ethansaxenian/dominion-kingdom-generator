@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { addExtraCards, arrayIncludesCard, drawCards, isLandscape, isValidKingdomCard, sortTwoCards } from "../lib/utils";
-import CardsDisplay from "./CardsDisplay";
-import ExpansionSelector from "./ExpansionSelector";
-import { Alert, Button, Col, Row } from "react-bootstrap";
+import { Alert } from "react-bootstrap";
 import { combinations } from "mathjs";
 import _ from "lodash";
+import KingdomSettings from "./KingdomSettings";
+import KingdomDisplay from "./KingdomDisplay";
 
 export default function KingdomGenerator({ cards }) {
   const [kingdom, setKingdom] = useState([]);
@@ -23,7 +23,9 @@ export default function KingdomGenerator({ cards }) {
     const newLandscapes = drawCards(remainingLandscapes, 2);
     setKingdom(addExtraCards(newKingdom, newLandscapes, availableCards));
     setLandScapes(newLandscapes);
-    setUsePlatinumColony(_.sample(newKingdom).expansion === 'Prosperity');
+    if (newKingdom.length > 0) {
+      setUsePlatinumColony(_.sample(newKingdom).expansion === 'Prosperity');
+    }
   }
 
   const swapCard = (oldCard) => {
@@ -56,26 +58,21 @@ export default function KingdomGenerator({ cards }) {
     : setExpansions([...expansions, name])
   }
 
+  const platinumColony = cards.filter((card) => card.name === 'Platinum' || card.name === 'Colony').sort((a, b) => sortTwoCards(a, b, 'cost'));
+
   return (
     <div>
-      <ExpansionSelector toggleExpansion={toggleExpansion}/>
-      <br/>
-      <Button variant="success" onClick={() => generateKingdom()}>Generate Kingdom!</Button>
+      <KingdomSettings toggleExpansion={toggleExpansion} generateKingdom={generateKingdom}/>
       <br/>
       <br/>
-      <CardsDisplay data={kingdom.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))} swapCard={swapCard} cardWidth={200}/>
-      <Row>
-        {(landscapes.length > 0) && (
-          <Col>
-            <CardsDisplay data={landscapes.sort((card1, card2) => sortTwoCards(card1, card2, 'name'))} swapCard={swapLandscape}/>
-          </Col>
-        )}
-        {usePlatinumColony && (
-          <Col>
-            <CardsDisplay data={cards.filter((card) => card.name === 'Platinum' || card.name === 'Colony').sort((a, b) => sortTwoCards(a, b, 'cost'))} cardWidth={150}/>
-          </Col>
-        )}
-      </Row>
+      <KingdomDisplay
+        kingdom={kingdom}
+        landscapes={landscapes}
+        swapCard={swapCard}
+        swapLandscape={swapLandscape}
+        usePlatinumColony={usePlatinumColony}
+        platinumColony={platinumColony}
+      />
       {((kingdom.length !== 0) && (expansions.length > 0)) && (
         <Alert variant="success" style={{width: '50%', margin: 'auto', marginTop: 20, marginBottom: 20}}>
           Don't like this kingdom? Luckily for you, there are over {2 * combinations(availableCards.length, 10) * ((availableLandscapes.length > 0) ? combinations(availableLandscapes.length, 2) : 1)} different combinations to choose from!

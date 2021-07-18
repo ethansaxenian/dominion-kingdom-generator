@@ -2,7 +2,7 @@ import { Nav, Navbar } from "react-bootstrap";
 
 export default function NavBar({ page, setPage }) {
   return (
-    <Navbar variant="light" bg="light">
+    <Navbar variant="light" bg="light" style={{width: "50%", margin: "auto"}}>
       <Nav variant="tabs" className="m-auto">
         <Nav.Item>
           <Nav.Link

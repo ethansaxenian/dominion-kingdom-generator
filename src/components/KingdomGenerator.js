@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { addExtraCards, arrayIncludesCard, drawCards, isLandscape, isValidKingdomCard, sortTwoCards } from "../lib/utils";
 import { Alert } from "react-bootstrap";
-import { combinations } from "mathjs";
+import { combinations, max } from "mathjs";
 import _ from "lodash";
 import KingdomSettings from "./KingdomSettings";
 import KingdomDisplay from "./KingdomDisplay";
@@ -10,18 +10,28 @@ export default function KingdomGenerator({ cards }) {
   const [kingdom, setKingdom] = useState([]);
   const [landscapes, setLandScapes] = useState([]);
   const [expansions, setExpansions] = useState([]);
+  const [promos, setPromos] = useState([]);
   const [usePlatinumColony, setUsePlatinumColony] = useState(false);
 
-  const availableCards = cards.filter((card) => isValidKingdomCard(card) && expansions.includes(card.expansion));
-  const availableLandscapes = cards.filter((card) => isLandscape(card) && expansions.includes(card.expansion));
+  const availableCards = cards.filter(
+    (card) => isValidKingdomCard(card) && (expansions.includes(card.expansion) || promos.includes(card.name))
+  );
+  const availableLandscapes = cards.filter(
+    (card) => isLandscape(card) && (expansions.includes(card.expansion) || promos.includes(card.name))
+  );
 
   const remainingCards = availableCards.filter((card) => !arrayIncludesCard(kingdom, card));
   const remainingLandscapes = availableLandscapes.filter((card) => !arrayIncludesCard(landscapes, card));
 
   const generateKingdom = () => {
-    const newKingdom = drawCards(remainingCards, 10);
-    const newLandscapes = drawCards(remainingLandscapes, 2);
-    setKingdom(addExtraCards(newKingdom, newLandscapes, availableCards));
+    if (availableCards.length < 10) {
+      alert('You need at least 10 kingdom cards!')
+      return
+    }
+    const newKingdom = drawCards(availableCards, 10);
+    const newLandscapes = drawCards(availableLandscapes, max(2, availableLandscapes.length));
+    const leftovers = availableCards.filter((card) => !arrayIncludesCard(newKingdom, card));
+    setKingdom(addExtraCards(newKingdom, newLandscapes, leftovers));
     setLandScapes(newLandscapes);
     if (newKingdom.length > 0) {
       setUsePlatinumColony(_.sample(newKingdom).expansion === 'Prosperity');
@@ -29,6 +39,10 @@ export default function KingdomGenerator({ cards }) {
   }
 
   const swapCard = (oldCard) => {
+    if (remainingCards.length < 10) {
+      alert('There are no available kingdom cards to swap!')
+      return
+    }
     let newKingdom = kingdom.filter((card) => card.name !== oldCard.name);
     if (oldCard.name === 'Young Witch') {
       newKingdom = newKingdom.filter((card) => !card.bane);
@@ -41,6 +55,10 @@ export default function KingdomGenerator({ cards }) {
   }
 
   const swapLandscape = (oldCard) => {
+    if (remainingLandscapes.length < 10) {
+      alert('There are no available landscapes to swap!')
+      return
+    }
     let newLandscapes = landscapes.filter((card) => card.name !== oldCard.name);
     let newKingdom = kingdom;
     if (oldCard.name === 'Way of the Mouse') {
@@ -58,11 +76,17 @@ export default function KingdomGenerator({ cards }) {
     : setExpansions([...expansions, name])
   }
 
+  const togglePromo = (name) => {
+    promos.includes(name)
+    ? setPromos(promos.filter((promo) => promo !== name))
+    : setPromos([...promos, name])
+  }
+
   const platinumColony = cards.filter((card) => card.name === 'Platinum' || card.name === 'Colony').sort((a, b) => sortTwoCards(a, b, 'cost'));
 
   return (
     <div>
-      <KingdomSettings toggleExpansion={toggleExpansion} generateKingdom={generateKingdom}/>
+      <KingdomSettings toggleExpansion={toggleExpansion} togglePromo={togglePromo} generateKingdom={generateKingdom}/>
       <br/>
       <br/>
       <KingdomDisplay
@@ -73,9 +97,9 @@ export default function KingdomGenerator({ cards }) {
         usePlatinumColony={usePlatinumColony}
         platinumColony={platinumColony}
       />
-      {((kingdom.length !== 0) && (expansions.length > 0)) && (
+      {((kingdom.length >= 10) && (expansions.length > 0)) && (
         <Alert variant="success" style={{width: '50%', margin: 'auto', marginTop: 20, marginBottom: 20}}>
-          Don't like this kingdom? Luckily for you, there are over {2 * combinations(availableCards.length, 10) * ((availableLandscapes.length > 0) ? combinations(availableLandscapes.length, 2) : 1)} different combinations to choose from!
+          Don't like this kingdom? Luckily for you, there are over {2 * combinations(availableCards.length, 10) * ((availableLandscapes.length >= 2) ? combinations(availableLandscapes.length, 2) : 1)} different combinations to choose from!
         </Alert>
       )}
     </div>

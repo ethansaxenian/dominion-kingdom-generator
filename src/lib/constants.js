@@ -1,6 +1,6 @@
 export const EXPANSIONS = ['Adventures', 'Alchemy', 'Base', 'Cornucopia', 'Dark ages', 'Empires', 'Guilds', 'Hinterlands', 'Intrigue', 'Menagerie', 'Nocturne', 'Prosperity', 'Renaissance', 'Seaside'];
 
-export const PROMOS = ['Black market', 'Captain', 'Church', 'Dismantle', 'Envoy', 'Governor', 'Prince', 'Sauna', 'Stash', 'Summon', 'Walled village'];
+export const PROMOS = ['Black Market', 'Captain', 'Church', 'Dismantle', 'Envoy', 'Governor', 'Prince', 'Sauna', 'Stash', 'Summon', 'Walled Village'];
 
 export const TYPES = ['Action', 'Artifact', 'Attack', 'Boon', 'Castle', 'Command', 'Curse', 'Doom', 'Duration', 'Event', 'Fate', 'Gathering', 'Heirloom', 'Hex', 'Knight', 'Landmark', 'Looter', 'Night', 'Prize', 'Project', 'Reaction', 'Reserve', 'Ruins', 'Shelter', 'Spirit', 'State', 'Traveller', 'Treasure', 'Victory', 'Way', 'Zombie'];
 

@@ -1,10 +1,14 @@
-import { Button } from "react-bootstrap";
-import ExpansionSelector from "./ExpansionSelector";
+import { Accordion, Button } from "react-bootstrap";
+import { EXPANSIONS, PROMOS } from "../lib/constants";
+import Selector from "./Selector";
 
-export default function KingdomSettings({ toggleExpansion, generateKingdom }) {
+export default function KingdomSettings({ toggleExpansion, togglePromo, generateKingdom }) {
   return (
     <div>
-      <ExpansionSelector toggleExpansion={toggleExpansion}/>
+      <Accordion>
+        <Selector toggle={toggleExpansion} options={EXPANSIONS} name="Expansions"/>
+        <Selector toggle={togglePromo} options={PROMOS} name="Promos"/>
+      </Accordion>
       <br/>
       <Button variant="success" onClick={() => generateKingdom()}>Generate Kingdom!</Button>
     </div>

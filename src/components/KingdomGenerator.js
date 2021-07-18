@@ -76,9 +76,9 @@ export default function KingdomGenerator({ cards }) {
           </Col>
         )}
       </Row>
-      {(kingdom.length !== 0) && (
+      {((kingdom.length !== 0) && (expansions.length > 0)) && (
         <Alert variant="success" style={{width: '50%', margin: 'auto', marginTop: 20, marginBottom: 20}}>
-          Don't like this kingdom? Luckily for you, there are over {combinations(availableCards.length, 10) * ((availableLandscapes.length > 0) ? combinations(availableLandscapes.length, 2) : 1)} different combinations to choose from!
+          Don't like this kingdom? Luckily for you, there are over {2 * combinations(availableCards.length, 10) * ((availableLandscapes.length > 0) ? combinations(availableLandscapes.length, 2) : 1)} different combinations to choose from!
         </Alert>
       )}
     </div>

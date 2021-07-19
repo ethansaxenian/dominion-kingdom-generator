@@ -1,5 +1,5 @@
 import _ from "lodash";
-import { CARDS_TO_REMOVE, CARD_SHAPED_TYPES, NON_SUPPLY_TYPES } from "./constants";
+import { BASE_2_CARDS, CARDS_TO_REMOVE, CARD_SHAPED_TYPES, INTRIGUE_2_CARDS, NON_SUPPLY_TYPES, ORIGINAL_BASE_CARDS, ORIGINAL_INTRIGUE_CARDS } from "./constants";
 
 export const isValidKingdomCard = (card) =>
   card.in_supply
@@ -34,7 +34,6 @@ export const youngWitchPredicate = (card) => ((card.coins === 2) || (card.coins 
 export const addExtraCards = (kingdom, landscapes, availableCards) => {
   const newCards = kingdom;
   if (arrayIncludesCardName(newCards, 'Young Witch') && kingdom.every((card) => !card.bane)) {
-    console.log("huh>")
     const notInKingdom = availableCards.filter((card) => !arrayIncludesCard(newCards, card));
     const [bane] = drawCards(notInKingdom, 1, youngWitchPredicate);
     bane && newCards.push({...bane, bane: true});
@@ -45,4 +44,22 @@ export const addExtraCards = (kingdom, landscapes, availableCards) => {
     wotm && newCards.push({...wotm, wotm: true});
   }
   return newCards
+}
+
+export const hasValidExpansion = (card, expansions) => {
+  if (ORIGINAL_BASE_CARDS.includes(card.name)) {
+    return expansions.includes('Base 1st Edition')
+  } else if (BASE_2_CARDS.includes(card.name)) {
+    return expansions.includes('Base')
+  } else if (card.expansion === 'Base') {
+    return expansions.includes('Base') || expansions.includes('Base 1st Edition')
+  } else if (ORIGINAL_INTRIGUE_CARDS.includes(card.name)) {
+    return expansions.includes('Intrigue 1st Edition')
+  } else if (INTRIGUE_2_CARDS.includes(card.name)) {
+    return expansions.includes('Intrigue')
+  } else if (card.expansion === 'Intrigue') {
+    return expansions.includes('Intrigue') || expansions.includes('Intrigue 1st Edition')
+  } else {
+    return expansions.includes(card.expansion)
+  }
 }

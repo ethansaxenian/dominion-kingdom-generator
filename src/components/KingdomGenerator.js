@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { addExtraCards, arrayIncludesCard, drawCards, isLandscape, isValidKingdomCard, sortTwoCards } from "../lib/utils";
+import { addExtraCards, arrayIncludesCard, drawCards, hasValidExpansion, isLandscape, isValidKingdomCard, sortTwoCards } from "../lib/utils";
 import { Alert, Button } from "react-bootstrap";
 import { combinations, min } from "mathjs";
 import _ from "lodash";
@@ -15,11 +15,16 @@ export default function KingdomGenerator({ cards }) {
   const [usePlatinumColony, setUsePlatinumColony] = useState(false);
   const [alert, setAlert] = useState('');
 
-  const availableCards = cards.filter(
-    (card) => isValidKingdomCard(card) && (expansions.includes(card.expansion) || promos.includes(card.name))
+  const availableCards = cards.filter((card) =>
+    isValidKingdomCard(card)
+    && (hasValidExpansion(card, expansions) || promos.includes(card.name))
   );
-  const availableLandscapes = cards.filter(
-    (card) => isLandscape(card) && (expansions.includes(card.expansion) || promos.includes(card.name))
+
+  console.log(expansions, availableCards)
+
+  const availableLandscapes = cards.filter((card) =>
+    isLandscape(card) &&
+    (expansions.includes(card.expansion) || promos.includes(card.name))
   );
 
   const remainingCards = availableCards.filter((card) => !arrayIncludesCard(kingdom, card));

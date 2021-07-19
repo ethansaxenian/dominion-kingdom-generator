@@ -23,7 +23,7 @@ export default function CardSearcher({ cards }) {
   const sortedCards = filteredCards.sort((card1, card2) => sortTwoCards(card1, card2, sortBy))
 
   return (
-    <div>
+    <>
       <SearchBar
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
@@ -32,6 +32,6 @@ export default function CardSearcher({ cards }) {
       />
       <br/>
       <CardsDisplay data={sortedCards}/>
-    </div>
+    </>
   )
 }

@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { addExtraCards, arrayIncludesCard, drawCards, hasValidExpansion, isLandscape, isValidKingdomCard, sortTwoCards } from "../lib/utils";
-import { Alert, Button } from "react-bootstrap";
-import { combinations, min } from "mathjs";
+import { Alert } from "react-bootstrap";
+import { combinations, min, sum } from "mathjs";
 import _ from "lodash";
 import KingdomSettings from "./KingdomSettings";
 import KingdomDisplay from "./KingdomDisplay";
-import ModalAlert from "./ModalAlert";
+import { EXPANSIONS } from "../lib/constants";
+import GenerateButton from "./GenerateButton";
 
 export default function KingdomGenerator({ cards }) {
   const [kingdom, setKingdom] = useState([]);
@@ -14,28 +15,36 @@ export default function KingdomGenerator({ cards }) {
   const [promos, setPromos] = useState([]);
   const [usePlatinumColony, setUsePlatinumColony] = useState(false);
   const [alert, setAlert] = useState('');
+  const [expansionAmts, setExpansionAmts] = useState(_.fromPairs(EXPANSIONS.map((name) => [name, ''])));
 
   const availableCards = cards.filter((card) =>
     isValidKingdomCard(card)
     && (hasValidExpansion(card, expansions) || promos.includes(card.name))
   );
 
-  console.log(expansions, availableCards)
-
   const availableLandscapes = cards.filter((card) =>
-    isLandscape(card) &&
-    (expansions.includes(card.expansion) || promos.includes(card.name))
+    isLandscape(card)
+    && (hasValidExpansion(card, expansions) || promos.includes(card.name))
   );
 
   const remainingCards = availableCards.filter((card) => !arrayIncludesCard(kingdom, card));
   const remainingLandscapes = availableLandscapes.filter((card) => !arrayIncludesCard(landscapes, card));
 
   const generateKingdom = () => {
-    if (availableCards.length < 10) {
+    if (sum(_.toPairs(expansionAmts).map(([exp, amt]) => (expansions.includes(exp) ? amt : 0))) > 10) {
+      setAlert('Kingdom can\'t include more than 10 cards!')
+      return
+    }
+    let newKingdom = [];
+    if (_.values(expansionAmts).some((str) => !str)) {
+      newKingdom = generateKingdomFromRules();
+    } else {
+      newKingdom = drawCards(availableCards, 10);
+    }
+    if (newKingdom.length < 10) {
       setAlert('You need at least 10 kingdom cards!')
       return
     }
-    const newKingdom = drawCards(availableCards, 10);
     const newLandscapes = drawCards(availableLandscapes, min(2, availableLandscapes.length));
     const leftovers = availableCards.filter((card) => !arrayIncludesCard(newKingdom, card));
     setKingdom(addExtraCards(newKingdom, newLandscapes, leftovers));
@@ -43,6 +52,23 @@ export default function KingdomGenerator({ cards }) {
     if (newKingdom.length > 0) {
       setUsePlatinumColony(_.sample(newKingdom).expansion === 'Prosperity');
     }
+  }
+
+  const generateKingdomFromRules = () => {
+    const newCards = [];
+    const extraExpansions = [];
+    _.toPairs(expansionAmts).forEach(([exp, amt]) => {
+      if (amt !== '') {
+        newCards.push(
+          ...drawCards(availableCards, +amt, ((card) => hasValidExpansion(card, [exp]) && !arrayIncludesCard(newCards, card)))
+        );
+      } else if (expansions.includes(exp)) {
+        extraExpansions.push(exp);
+      }
+    });
+    const leftovers = availableCards.filter((card) => !arrayIncludesCard(newCards, card));
+    console.log(extraExpansions)
+    return newCards.concat(drawCards(leftovers, 10 - newCards.length, ((card) => hasValidExpansion(card, extraExpansions))));
   }
 
   const swapCard = (oldCard) => {
@@ -92,11 +118,15 @@ export default function KingdomGenerator({ cards }) {
   const platinumColony = cards.filter((card) => card.name === 'Platinum' || card.name === 'Colony').sort((a, b) => sortTwoCards(a, b, 'cost'));
 
   return (
-    <div>
-      <KingdomSettings toggleExpansion={toggleExpansion} togglePromo={togglePromo}/>
+    <>
+      <KingdomSettings
+        toggleExpansion={toggleExpansion}
+        togglePromo={togglePromo}
+        expansionAmts={expansionAmts}
+        setExpansionAmts={setExpansionAmts}
+      />
       <br/>
-      <Button variant="success" onClick={() => generateKingdom()}>Generate Kingdom!</Button>
-      <ModalAlert text={alert} onClose={() => setAlert('')}/>
+      <GenerateButton generateKingdom={generateKingdom} alert={alert} setAlert={setAlert}/>
       <br/>
       <br/>
       <KingdomDisplay
@@ -112,6 +142,6 @@ export default function KingdomGenerator({ cards }) {
           Don't like this kingdom? Luckily for you, there are over {2 * combinations(availableCards.length, 10) * ((availableLandscapes.length >= 2) ? combinations(availableLandscapes.length, 2) : 1)} different combinations to choose from!
         </Alert>
       )}
-    </div>
+    </>
   )
 }

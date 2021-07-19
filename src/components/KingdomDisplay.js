@@ -4,7 +4,7 @@ import CardsDisplay from "./CardsDisplay";
 
 export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLandscape, usePlatinumColony, platinumColony }) {
   return (
-    <div>
+    <>
       <CardsDisplay data={kingdom.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))} swapCard={swapCard} cardWidth={200}/>
       <Row>
         {(landscapes.length > 0) && (
@@ -18,6 +18,6 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
           </Col>
         )}
       </Row>
-    </div>
+    </>
   )
 }

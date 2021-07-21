@@ -41,7 +41,7 @@ for row in table_rows[1:]:
     "debt": cost["debt"],
     "text": text,
     "in_supply": "this is not in the supply" not in text,
-    "img": f"http://wiki.dominionstrategy.com{img}",
+    "img": f"wiki.dominionstrategy.com{img}",
     "link": f"http://wiki.dominionstrategy.com{link}"
   })
 

@@ -18,8 +18,6 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
     setBlackMarketDeck(_.sampleSize(blackMarketOptions, min(blackMarketOptions.length, 10)));
   }
 
-  console.log(blackMarketOptions)
-
   const swapBMCard = (oldCard) => {
     const newOptions = blackMarketOptions.filter((card) => !arrayIncludesCard(blackMarketDeck, card));
     console.log(newOptions)
@@ -31,18 +29,26 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
     }
   }
 
+  const [wotm] = kingdom.filter((card) => card.wotm);
+  const supply = kingdom.filter((card) => card !== wotm);
+
   return (
     <>
-      <CardsDisplay data={kingdom.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))} swapCard={swapCard} cardWidth={170}/>
+      <CardsDisplay data={supply.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))} swapCard={swapCard} cardWidth={170}/>
       <Row>
         {(landscapes.length > 0) && (
           <Col>
-            <CardsDisplay data={landscapes.sort((card1, card2) => sortTwoCards(card1, card2, 'name'))} swapCard={swapLandscape}/>
+            <CardsDisplay data={landscapes.sort((card1, card2) => sortTwoCards(card1, card2, 'name'))} swapCard={swapLandscape} cardWidth={300}/>
           </Col>
         )}
         {usePlatinumColony && (
           <Col>
             <CardsDisplay data={platinumColony} cardWidth={150}/>
+          </Col>
+        )}
+        {wotm && (
+          <Col>
+            <CardsDisplay data={[wotm]} swapCard={swapCard} cardWidth={150}/>
           </Col>
         )}
       </Row>

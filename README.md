@@ -7,6 +7,6 @@ Current features list:
 - Generate a 10-card kingdom from selected expansions and promos
 - Support for Young Witch, Way of the Mouse, and Black Market
 
-Future TODOs:
+Feature TODOs:
 - Randomize number of landscape cards
 - Limit to one Way?

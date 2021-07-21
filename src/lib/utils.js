@@ -1,10 +1,10 @@
 import _ from "lodash";
-import { BASE_2_CARDS, CARDS_TO_REMOVE, CARD_SHAPED_TYPES, INTRIGUE_2_CARDS, NON_SUPPLY_TYPES, ORIGINAL_BASE_CARDS, ORIGINAL_INTRIGUE_CARDS } from "./constants";
+import { BASE_2_CARDS, BASIC_CARDS, CARDS_TO_REMOVE, CARD_SHAPED_TYPES, INTRIGUE_2_CARDS, NON_SUPPLY_TYPES, ORIGINAL_BASE_CARDS, ORIGINAL_INTRIGUE_CARDS, SECONDARY_CARDS } from "./constants";
 
-export const isValidKingdomCard = (card) =>
+export const isValidKingdomCard = (card, onlyRandomizers) =>
   card.in_supply
   && card.types.every((type) => !NON_SUPPLY_TYPES.includes(type))
-  && !CARDS_TO_REMOVE.includes(card.name);
+  && (onlyRandomizers ? !CARDS_TO_REMOVE.includes(card.name) : true);
 
 export const isLandscape = (card) => card.types.every((type) => CARD_SHAPED_TYPES.includes(type));
 
@@ -62,4 +62,19 @@ export const hasValidExpansion = (card, expansions) => {
   } else {
     return expansions.includes(card.expansion)
   }
+}
+
+export const generateBlackMarket = (cards, kingdom, promos, expansions) => {
+  if (!arrayIncludesCardName(kingdom, 'Black Market')) {
+    return [];
+  }
+  const blackMarketOptions = cards.filter((card) =>
+    isValidKingdomCard(card, false)
+    && (hasValidExpansion(card, expansions) || promos.includes(card.name))
+    && ![...BASIC_CARDS, ...SECONDARY_CARDS].includes(card.name)
+    && !arrayIncludesCard(kingdom, card));
+  if (!kingdom.some((card) => card.potions)) {
+    return blackMarketOptions.filter((card) => !card.potions)
+  }
+  return blackMarketOptions;
 }

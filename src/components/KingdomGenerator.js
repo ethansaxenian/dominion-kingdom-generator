@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { addExtraCards, arrayIncludesCard, drawCards, hasValidExpansion, isLandscape, isValidKingdomCard, sortTwoCards } from "../lib/utils";
+import { addExtraCards, arrayIncludesCard, drawCards, generateBlackMarket, hasValidExpansion, isLandscape, isValidKingdomCard, sortTwoCards } from "../lib/utils";
 import { Alert } from "react-bootstrap";
 import { combinations, min, sum } from "mathjs";
 import _ from "lodash";
@@ -18,7 +18,7 @@ export default function KingdomGenerator({ cards }) {
   const [expansionAmts, setExpansionAmts] = useState(_.fromPairs(EXPANSIONS.map((name) => [name, ''])));
 
   const availableCards = cards.filter((card) =>
-    isValidKingdomCard(card)
+    isValidKingdomCard(card, true)
     && (hasValidExpansion(card, expansions) || promos.includes(card.name))
   );
 
@@ -35,12 +35,7 @@ export default function KingdomGenerator({ cards }) {
       setAlert('Kingdom can\'t include more than 10 cards!')
       return
     }
-    let newKingdom = [];
-    if (_.values(expansionAmts).some((str) => !str)) {
-      newKingdom = generateKingdomFromRules();
-    } else {
-      newKingdom = drawCards(availableCards, 10);
-    }
+    const newKingdom = generateKingdomFromRules();
     if (newKingdom.length < 10) {
       setAlert('You need at least 10 kingdom cards!')
       return
@@ -67,8 +62,7 @@ export default function KingdomGenerator({ cards }) {
       }
     });
     const leftovers = availableCards.filter((card) => !arrayIncludesCard(newCards, card));
-    console.log(extraExpansions)
-    return newCards.concat(drawCards(leftovers, 10 - newCards.length, ((card) => hasValidExpansion(card, extraExpansions))));
+    return newCards.concat(drawCards(leftovers, 10 - newCards.length, ((card) => (hasValidExpansion(card, extraExpansions) || promos.includes(card.name)))));
   }
 
   const swapCard = (oldCard) => {
@@ -136,8 +130,9 @@ export default function KingdomGenerator({ cards }) {
         swapLandscape={swapLandscape}
         usePlatinumColony={usePlatinumColony}
         platinumColony={platinumColony}
+        blackMarketOptions={generateBlackMarket(cards, kingdom, promos, expansions)}
       />
-      {((kingdom.length >= 10) && (availableCards.length > 0)) && (
+      {((kingdom.length >= 10) && (availableCards.length > 10)) && (
         <Alert variant="success" style={{width: '50%', margin: 'auto', marginTop: 20, marginBottom: 20}}>
           Don't like this kingdom? Luckily for you, there are over {2 * combinations(availableCards.length, 10) * ((availableLandscapes.length >= 2) ? combinations(availableLandscapes.length, 2) : 1)} different combinations to choose from!
         </Alert>

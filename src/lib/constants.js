@@ -10,9 +10,12 @@ export const NON_SUPPLY_TYPES = ['Artifact', 'Boon', 'Curse', 'Event', 'Heirloom
 
 export const CARD_SHAPED_TYPES = ['Event', 'Landmark', 'Project', 'Way'];
 
-export const BASE_CARDS = ['Copper', 'Silver', 'Gold', 'Estate', 'Duchy', 'Province', 'Curse'];
+export const BASIC_CARDS = ['Copper', 'Silver', 'Gold', 'Estate', 'Duchy', 'Province', 'Curse'];
 
-export const CARDS_TO_REMOVE = ['Avanto', 'Dame Josephine', 'Dame Molly', 'Dame Natalie', 'Dame Sylvia', 'Sir Bailey', 'Sir Destry', 'Sir Martin', 'Sir Michael', 'Sir Vander', 'Rocks', 'Bustling Village', 'Emporium', 'Plunder', 'Fortune', 'Crumbling Castle', 'Small Castle', 'Haunted Castle', 'Opulent Castle', 'Sprawling Castle', 'Grand Castle', 'King\'s Castle', ...BASE_CARDS, 'Platinum', 'Colony', 'Potion'];
+export const SECONDARY_CARDS = ['Platinum', 'Colony', 'Potion'];
+
+// Dame Anna and Humble Castle represent Knights and Castles
+export const CARDS_TO_REMOVE = ['Avanto', 'Dame Josephine', 'Dame Molly', 'Dame Natalie', 'Dame Sylvia', 'Sir Bailey', 'Sir Destry', 'Sir Martin', 'Sir Michael', 'Sir Vander', 'Rocks', 'Bustling Village', 'Emporium', 'Plunder', 'Fortune', 'Crumbling Castle', 'Small Castle', 'Haunted Castle', 'Opulent Castle', 'Sprawling Castle', 'Grand Castle', "King's Castle", ...BASIC_CARDS, ...SECONDARY_CARDS];
 
 export const ORIGINAL_BASE_CARDS = ['Chancellor', 'Woodcutter', 'Thief', 'Spy', 'Feast', 'Adventurer'];
 

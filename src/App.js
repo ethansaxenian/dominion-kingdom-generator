@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src={process.env.PUBLIC_URL + "/logo.png"} alt="logo"/>
+      <img src={process.env.PUBLIC_URL + "/logo.png"} alt="logo" className="logo"/>
       <NavBar page={page} setPage={setPage}/>
       <br/>
       {(page === 'generate') && <KingdomGenerator cards={cards}/>}

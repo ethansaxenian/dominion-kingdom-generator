@@ -12,7 +12,7 @@ export default function Selector({ toggle, options, name, adjustAmts, expansionA
             onClick={() => toggle(option)}
           />
         </Col>
-        <Col xs="10" sm="8" md="4" lg="3">
+        <Col xs="4" sm="3" md="4" lg="3">
           {adjustAmts && (
             <Form.Control
               min="0"
@@ -28,7 +28,7 @@ export default function Selector({ toggle, options, name, adjustAmts, expansionA
   );
 
   return (
-    <Card className={styles.selector}>
+    <Card>
       <Accordion.Toggle as={Card.Header} eventKey={name} className={styles.header}>
         Select {name}
       </Accordion.Toggle>

@@ -4,15 +4,17 @@ import { Button, Card, Figure } from 'react-bootstrap';
 export default function CardsDisplay({ data, swapCard, cardWidth }) {
   const cards = data.map((card) => (
     <li key={card.name}>
-      <Card>
+      <Card style={(card.bane || card.wotm || swapCard) ? undefined : {borderWidth: 0}}>
         <a href={card.link} target="_blank" rel="noopener noreferrer">
           <Figure.Image width={cardWidth} src={process.env.PUBLIC_URL + card.img} alt={card.name}/>
         </a>
-        <Card.Body>
-          {card.bane && <Card.Text>Bane Card</Card.Text>}
-          {card.wotm && <Card.Text>Way of the Mouse</Card.Text>}
-          {swapCard && <Button size="sm" variant="danger" onClick={() => swapCard(card)}>Swap</Button>}
-        </Card.Body>
+        {(card.bane || card.wotm || swapCard) && (
+          <Card.Body>
+            {card.bane && <Card.Text>Bane Card</Card.Text>}
+            {card.wotm && <Card.Text>Way of the Mouse</Card.Text>}
+            {swapCard && <Button size="sm" variant="danger" onClick={() => swapCard(card)}>Swap</Button>}
+          </Card.Body>
+        )}
       </Card>
     </li>
   ));

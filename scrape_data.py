@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-import itertools
+from urllib import request
 
 URL = "http://wiki.dominionstrategy.com/index.php/List_of_cards"
 page = requests.get(URL)
@@ -30,6 +30,7 @@ for row in table_rows[1:]:
   text = columns[4].text.lower().strip()
   img_tag = str(columns[0].find("img"))
   img = img_tag[img_tag.find("src") + 4: img_tag.find("width")].strip().strip('"')
+  request.urlretrieve(f"http://wiki.dominionstrategy.com{img}", f"src/images/{name}.jpg")
   link_tag = str(columns[0].find_all("a")[0])
   link = link_tag[link_tag.find("href") + 5: link_tag.find("title")].strip().strip('"')
   cards.append({
@@ -41,7 +42,7 @@ for row in table_rows[1:]:
     "debt": cost["debt"],
     "text": text,
     "in_supply": "this is not in the supply" not in text,
-    "img": f"http://wiki.dominionstrategy.com{img}",
+    "img": f"../images/{name}.jpg",
     "link": f"http://wiki.dominionstrategy.com{link}"
   })
 

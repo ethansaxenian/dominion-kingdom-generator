@@ -6,7 +6,7 @@ export default function CardsDisplay({ data, swapCard, cardWidth }) {
     <li key={card.name}>
       <Card>
         <a href={card.link} target="_blank" rel="noopener noreferrer">
-          <Figure.Image width={cardWidth} src={card.img} alt={card.name}/>
+          <Figure.Image width={cardWidth} src={process.env.PUBLIC_URL + card.img} alt={card.name}/>
         </a>
         <Card.Body>
           {card.bane && <Card.Text>Bane Card</Card.Text>}

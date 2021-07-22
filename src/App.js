@@ -1,4 +1,3 @@
-import logo from './images/logo.png';
 import './styles/App.css';
 import data from './data/dominion_cards.json';
 import { useState } from 'react';
@@ -12,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src={logo} alt="logo"/>
+      <img src={process.env.PUBLIC_URL + "/logo.png"} alt="logo"/>
       <NavBar page={page} setPage={setPage}/>
       <br/>
       {(page === 'generate') && <KingdomGenerator cards={cards}/>}

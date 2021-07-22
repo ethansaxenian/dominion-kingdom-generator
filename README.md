@@ -10,3 +10,4 @@ Current features list:
 Feature TODOs:
 - Randomize number of landscape cards
 - Limit to one Way?
+- Reduce image sizes on mobile

@@ -15,7 +15,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, sortBy, setSortBy
           onChange={(event) => setSearchTerm(event.target.value)}
         />
       </Col>
-      <Col>
+      <Col xs={{span: "auto", offset: 1}} sm={{span: "auto", offset: 0}}>
         <InputGroup>
           <InputGroup.Text>Sort by: </InputGroup.Text>
           <select value={sortBy} onChange={(event) => setSortBy(event.target.value)}>

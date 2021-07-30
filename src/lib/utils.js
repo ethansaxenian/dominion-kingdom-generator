@@ -17,10 +17,16 @@ export const sortTwoCards = (card1, card2, sortBy) => {
   }
   if (first < second) {
     return -1;
-  } else if (first === second) {
-    return 0;
+  } else if (first > second) {
+    return 1;
+  } else {
+    if (card1.name < card2.name) {
+      return -1
+    } else if (card1.name > card2.name) {
+      return 1
+    }
+    return 0
   }
-  return 1;
 }
 
 export const arrayIncludesCard = (array, card) => array.map((obj) => obj.name.toLowerCase()).includes(card.name.toLowerCase());
@@ -39,7 +45,7 @@ export const addExtraCards = (kingdom, landscapes, availableCards) => {
     bane && newCards.push({...bane, bane: true});
   }
   if (arrayIncludesCardName(landscapes, 'Way of the Mouse')  && kingdom.every((card) => !card.wotm)) {
-    const notInKingdom = availableCards.filter((card) => !arrayIncludesCard(newCards, card));
+    const notInKingdom = availableCards.filter((card) => !arrayIncludesCard(newCards, card) && card.types.includes('Action'));
     const [wotm] = drawCards(notInKingdom, 1, youngWitchPredicate);
     wotm && newCards.push({...wotm, wotm: true});
   }

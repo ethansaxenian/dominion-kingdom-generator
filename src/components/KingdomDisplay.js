@@ -15,16 +15,14 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
   }, [kingdom]);
 
   const generateBlackMarketDeck = () => {
-    setBlackMarketDeck(_.sampleSize(blackMarketOptions, min(blackMarketOptions.length, 10)));
+    setBlackMarketDeck(_.sampleSize(blackMarketOptions, min(blackMarketOptions.length, 60)));
   }
 
   const swapBMCard = (oldCard) => {
     const newOptions = blackMarketOptions.filter((card) => !arrayIncludesCard(blackMarketDeck, card));
-    console.log(newOptions)
     if (newOptions.length > 0) {
       const newBMDeck = blackMarketDeck.filter((card) => card.name !== oldCard.name);
       const [newCard] = drawCards(newOptions, 1);
-      console.log(newCard);
       setBlackMarketDeck([...newBMDeck, newCard]);
     }
   }
@@ -61,7 +59,7 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
               <br/>
               <br/>
               <CardsDisplay
-                data={blackMarketDeck.sort((card1, card2) => sortTwoCards(card1, card2, 'name'))}
+                data={blackMarketDeck.sort((card1, card2) => sortTwoCards(card1, card2, 'expansion'))}
                 swapCard={swapBMCard}
                 cardWidth={170}
               />

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dominion-kingdom-generator/static/css/main.ff1a0c8a.chunk.css",
-    "main.js": "/dominion-kingdom-generator/static/js/main.e3a8e322.chunk.js",
-    "main.js.map": "/dominion-kingdom-generator/static/js/main.e3a8e322.chunk.js.map",
+    "main.js": "/dominion-kingdom-generator/static/js/main.734fb047.chunk.js",
+    "main.js.map": "/dominion-kingdom-generator/static/js/main.734fb047.chunk.js.map",
     "runtime-main.js": "/dominion-kingdom-generator/static/js/runtime-main.6937aa0a.js",
     "runtime-main.js.map": "/dominion-kingdom-generator/static/js/runtime-main.6937aa0a.js.map",
     "static/css/2.4be38407.chunk.css": "/dominion-kingdom-generator/static/css/2.4be38407.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.4be38407.chunk.css",
     "static/js/2.70412484.chunk.js",
     "static/css/main.ff1a0c8a.chunk.css",
-    "static/js/main.e3a8e322.chunk.js"
+    "static/js/main.734fb047.chunk.js"
   ]
 }

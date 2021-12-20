@@ -1,4 +1,4 @@
-import { Accordion, Card, Col, Form, Row } from "react-bootstrap";
+import { Accordion, Col, Form, Row } from "react-bootstrap";
 import styles from "../styles/Selector.module.css";
 
 export default function Selector({ toggle, options, name, adjustAmts, expansionAmts, setExpansionAmts }) {
@@ -28,13 +28,13 @@ export default function Selector({ toggle, options, name, adjustAmts, expansionA
   );
 
   return (
-    <Card>
-      <Accordion.Toggle as={Card.Header} eventKey={name} className={styles.header}>
+    <Accordion.Item>
+      <Accordion.Header eventKey={name} className={styles.header}>
         Select {name}
-      </Accordion.Toggle>
-      <Accordion.Collapse eventKey={name}>
+      </Accordion.Header>
+      <Accordion.Body eventKey={name}>
         <ul>{selectors}</ul>
-      </Accordion.Collapse>
-    </Card>
+      </Accordion.Body>
+    </Accordion.Item>
   )
 }

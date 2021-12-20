@@ -98,15 +98,19 @@ export default function KingdomGenerator({ cards }) {
   }
 
   const toggleExpansion = (name) => {
-    expansions.includes(name)
-    ? setExpansions(expansions.filter((exp) => exp !== name))
-    : setExpansions([...expansions, name])
+    if (expansions.includes(name)) {
+			setExpansions(expansions.filter((exp) => exp !== name))
+		} else {
+			setExpansions([...expansions, name])
+		}
   }
 
   const togglePromo = (name) => {
-    promos.includes(name)
-    ? setPromos(promos.filter((promo) => promo !== name))
-    : setPromos([...promos, name])
+		if (promos.includes(name)) {
+			setPromos(promos.filter((promo) => promo !== name))
+		} else {
+			setPromos([...promos, name])
+		}
   }
 
   const platinumColony = cards.filter((card) => card.name === 'Platinum' || card.name === 'Colony').sort((a, b) => sortTwoCards(a, b, 'cost'));
@@ -114,6 +118,8 @@ export default function KingdomGenerator({ cards }) {
   return (
     <>
       <KingdomSettings
+				expansions={expansions}
+				promos={promos}
         toggleExpansion={toggleExpansion}
         togglePromo={togglePromo}
         expansionAmts={expansionAmts}

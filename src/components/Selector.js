@@ -1,7 +1,7 @@
-import { Accordion, Col, Form, Row } from "react-bootstrap";
+import { Card, Col, Form, Row } from "react-bootstrap";
 import styles from "../styles/Selector.module.css";
 
-export default function Selector({ toggle, options, name, adjustAmts, expansionAmts, setExpansionAmts }) {
+export default function Selector({ list, toggle, options, name, adjustAmts, expansionAmts, setExpansionAmts }) {
   const selectors = options.map((option) =>
     <li key={option} style={{margin: 5}}>
       <Row>
@@ -9,10 +9,11 @@ export default function Selector({ toggle, options, name, adjustAmts, expansionA
           <Form.Check
             type="checkbox"
             label={option}
-            onClick={() => toggle(option)}
+						checked={list.includes(option)}
+            onChange={() => toggle(option)}
           />
         </Col>
-        <Col xs="4" sm="3" md="4" lg="3">
+        <Col xs="4">
           {adjustAmts && (
             <Form.Control
               min="0"
@@ -28,13 +29,13 @@ export default function Selector({ toggle, options, name, adjustAmts, expansionA
   );
 
   return (
-    <Accordion.Item>
-      <Accordion.Header eventKey={name} className={styles.header}>
+    <Card>
+      <Card.Header className={styles.header}>
         Select {name}
-      </Accordion.Header>
-      <Accordion.Body eventKey={name}>
+      </Card.Header>
+      <Card.Body>
         <ul>{selectors}</ul>
-      </Accordion.Body>
-    </Accordion.Item>
+      </Card.Body>
+    </Card>
   )
 }

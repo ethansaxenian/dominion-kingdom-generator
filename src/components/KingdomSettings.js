@@ -8,10 +8,9 @@ export default function KingdomSettings({ expansions, promos, toggleExpansion, t
 
   return (
     <>
-			<Button variant="primary" onClick={() => setShow(true)}>
+			<Button variant="secondary" onClick={() => setShow(true)}>
         Adjust Kingdom Settings
       </Button>
-
       <Offcanvas show={show} onHide={() => setShow(false)} scroll>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Offcanvas</Offcanvas.Title>

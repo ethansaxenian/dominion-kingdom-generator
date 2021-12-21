@@ -125,6 +125,8 @@ export default function KingdomGenerator({ cards }) {
         expansionAmts={expansionAmts}
         setExpansionAmts={setExpansionAmts}
       />
+			<br/>
+			<br/>
       <br/>
       <GenerateButton generateKingdom={generateKingdom} alert={alert} setAlert={setAlert}/>
       <br/>

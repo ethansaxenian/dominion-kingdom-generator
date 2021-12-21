@@ -1,0 +1,96 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "plugins": ["react", "react-hooks"],
+  "env": {
+    "node": true,
+    "jest": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-plusplus": [
+      "warn",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "prefer-template": "warn",
+    "prefer-const": "warn",
+    "prefer-arrow-callback": "warn",
+    "prefer-destructuring": [
+      "warn",
+      {
+        "array": true,
+        "object": true
+      }
+    ],
+    "curly": "warn",
+    "quotes": [
+      "warn",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "jsx-quotes": ["warn", "prefer-double"],
+    "object-shorthand": "warn",
+    "eqeqeq": "warn",
+    "no-var": "warn",
+    "no-duplicate-imports": "warn",
+    "keyword-spacing": "warn",
+    "no-console": [
+      "warn",
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+		"no-multi-spaces": "warn",
+		"no-mixed-spaces-and-tabs": "warn",
+    "no-extra-boolean-cast": "warn",
+    "no-extra-semi": "warn",
+		"indent": ["warn", "tab"],
+    "react/jsx-tag-spacing": [
+      "warn",
+      {
+        "beforeSelfClosing": "never"
+      }
+    ],
+    "react/jsx-boolean-value": ["warn", "never"],
+    "react/no-array-index-key": "warn",
+    "react/no-unused-state": "warn",
+		"react/no-unused-prop-types": "warn",
+		"react/no-invalid-html-attribute": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "warn",
+    "react/no-unescaped-entities": "off",
+		"react/no-typos": "warn",
+    "react/jsx-key": "warn",
+		"react/self-closing-comp": "warn",
+		"react/jsx-closing-tag-location": "warn",
+		"react/jsx-curly-brace-presence": [
+			"warn",
+			{
+				"props": "never",
+				"children": "never"
+				}
+		],
+		"react/jsx-curly-spacing": "warn",
+		"react/jsx-equals-spacing": "warn",
+		"react/jsx-first-prop-new-line": "warn",
+		"react/jsx-indent": ["warn", "tab"],
+		"react/jsx-no-useless-fragment": "warn",
+		"react/jsx-wrap-multilines": "warn"
+  }
+}

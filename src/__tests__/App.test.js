@@ -1,10 +1,10 @@
-import { render } from "@testing-library/react";
-import App from "../App";
+import { render } from '@testing-library/react';
+import App from '../App';
 
-describe("App tests", () => {
+describe('App tests', () => {
 
-  test("Renders without crashing", () => {
-    render(<App/>);
-  });
+	test('Renders without crashing', () => {
+		render(<App/>);
+	});
 
 });

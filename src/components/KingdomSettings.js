@@ -15,7 +15,7 @@ export default function KingdomSettings({ expansions, promos, toggleExpansion, t
 			</Button>
 			<Offcanvas show={show} onHide={() => setShow(false)} scroll>
 				<Offcanvas.Header closeButton>
-					<Offcanvas.Title>Offcanvas</Offcanvas.Title>
+					<Offcanvas.Title>Kindgom Settings</Offcanvas.Title>
 				</Offcanvas.Header>
 				<Offcanvas.Body>
 					<Selector

@@ -6,12 +6,12 @@ import SearchBar from './SearchBar';
 import PropTypes from 'prop-types';
 
 export default function CardSearcher({ cards }) {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [sortBy, setSortBy] = useState('name');
+	const [searchTerm, setSearchTerm] = useState('');
+	const [sortBy, setSortBy] = useState('name');
 
-  const filteredCards = cards.filter(({ name, expansion, types, cost, text }) => {
-    const parsedTerm = searchTerm.toLowerCase();
-    return ((name.toLowerCase().includes(parsedTerm)
+	const filteredCards = cards.filter(({ name, expansion, types, cost, text }) => {
+		const parsedTerm = searchTerm.toLowerCase();
+		return ((name.toLowerCase().includes(parsedTerm)
 			|| expansion.toLowerCase().includes(parsedTerm)
 			|| types.some((type) => type.toLowerCase().includes(parsedTerm))
 			|| (cost && (
@@ -20,22 +20,22 @@ export default function CardSearcher({ cards }) {
 				|| (cost.debt && cost.debt.includes(parsedTerm))
 			))
 			|| text.toLowerCase().includes(parsedTerm)))
-  });
+	});
 
-  const sortedCards = filteredCards.sort((card1, card2) => sortTwoCards(card1, card2, sortBy))
+	const sortedCards = filteredCards.sort((card1, card2) => sortTwoCards(card1, card2, sortBy))
 
-  return (
-    <>
-      <SearchBar
-        searchTerm={searchTerm}
-        setSearchTerm={setSearchTerm}
-        sortBy={sortBy}
-        setSortBy={setSortBy}
-      />
-      <br/>
-      <CardsDisplay data={sortedCards}/>
-    </>
-  )
+	return (
+		<>
+			<SearchBar
+				searchTerm={searchTerm}
+				setSearchTerm={setSearchTerm}
+				sortBy={sortBy}
+				setSortBy={setSortBy}
+			/>
+			<br/>
+			<CardsDisplay data={sortedCards}/>
+		</>
+	)
 }
 
 

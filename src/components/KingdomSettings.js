@@ -8,16 +8,16 @@ import { expansionAmtsType, expansionType, promoNameType } from '../lib/types';
 export default function KingdomSettings({ expansions, promos, toggleExpansion, togglePromo, expansionAmts, setExpansionAmts }) {
 	const [show, setShow] = useState(false);
 
-  return (
-    <>
+	return (
+		<>
 			<Button variant="secondary" onClick={() => setShow(true)}>
-        Adjust Kingdom Settings
-      </Button>
-      <Offcanvas show={show} onHide={() => setShow(false)} scroll>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
+				Adjust Kingdom Settings
+			</Button>
+			<Offcanvas show={show} onHide={() => setShow(false)} scroll>
+				<Offcanvas.Header closeButton>
+					<Offcanvas.Title>Offcanvas</Offcanvas.Title>
+				</Offcanvas.Header>
+				<Offcanvas.Body>
 					<Selector
 						list={expansions}
 						toggle={toggleExpansion}
@@ -29,10 +29,10 @@ export default function KingdomSettings({ expansions, promos, toggleExpansion, t
 					/>
 					<br/>
 					<Selector list={promos} toggle={togglePromo} options={PROMOS} name="Promos" adjustAmts={false}/>
-        </Offcanvas.Body>
-      </Offcanvas>
-    </>
-  )
+				</Offcanvas.Body>
+			</Offcanvas>
+		</>
+	)
 }
 
 

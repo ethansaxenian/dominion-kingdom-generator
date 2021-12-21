@@ -4,42 +4,42 @@ import PropTypes from 'prop-types';
 import { expansionAmtsType, expansionType, promoNameType } from '../lib/types';
 
 export default function Selector({ list, toggle, options, name, adjustAmts, expansionAmts, setExpansionAmts }) {
-  const selectors = options.map((option) =>
-    <li key={option} style={{margin: 5}}>
-      <Row>
-        <Col>
-          <Form.Check
-            type="checkbox"
-            label={option}
+	const selectors = options.map((option) =>
+		<li key={option} style={{margin: 5}}>
+			<Row>
+				<Col>
+					<Form.Check
+						type="checkbox"
+						label={option}
 						checked={list.includes(option)}
-            onChange={() => toggle(option)}
-          />
-        </Col>
-        <Col xs="4">
-          {adjustAmts && (
-            <Form.Control
-              min="0"
-              max="10"
-              type="number"
-              value={expansionAmts[option]}
-              onChange={(event) => setExpansionAmts({...expansionAmts, [option]: event.target.value})}
-            />
-          )}
-        </Col>
-      </Row>
-    </li>
-  );
+						onChange={() => toggle(option)}
+					/>
+				</Col>
+				<Col xs="4">
+					{adjustAmts && (
+						<Form.Control
+							min="0"
+							max="10"
+							type="number"
+							value={expansionAmts[option]}
+							onChange={(event) => setExpansionAmts({...expansionAmts, [option]: event.target.value})}
+						/>
+					)}
+				</Col>
+			</Row>
+		</li>
+	);
 
-  return (
-    <Card>
-      <Card.Header className={styles.header}>
+	return (
+		<Card>
+			<Card.Header className={styles.header}>
         Select {name}
-      </Card.Header>
-      <Card.Body>
-        <ul>{selectors}</ul>
-      </Card.Body>
-    </Card>
-  )
+			</Card.Header>
+			<Card.Body>
+				<ul>{selectors}</ul>
+			</Card.Body>
+		</Card>
+	)
 }
 
 

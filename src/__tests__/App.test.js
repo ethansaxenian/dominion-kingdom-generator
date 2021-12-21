@@ -3,8 +3,8 @@ import App from '../App';
 
 describe('App tests', () => {
 
-  test('Renders without crashing', () => {
-    render(<App/>);
-  });
+	test('Renders without crashing', () => {
+		render(<App/>);
+	});
 
 });

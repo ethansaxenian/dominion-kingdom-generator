@@ -1,5 +1,5 @@
-import _ from "lodash";
-import { BASE_2_CARDS, BASIC_CARDS, CARDS_TO_REMOVE, CARD_SHAPED_TYPES, INTRIGUE_2_CARDS, NON_SUPPLY_TYPES, ORIGINAL_BASE_CARDS, ORIGINAL_INTRIGUE_CARDS, SECONDARY_CARDS } from "./constants";
+import _ from 'lodash';
+import { BASE_2_CARDS, BASIC_CARDS, CARDS_TO_REMOVE, CARD_SHAPED_TYPES, INTRIGUE_2_CARDS, NON_SUPPLY_TYPES, ORIGINAL_BASE_CARDS, ORIGINAL_INTRIGUE_CARDS, SECONDARY_CARDS } from './constants';
 
 export const isValidKingdomCard = (card, onlyRandomizers) =>
   card.in_supply
@@ -12,8 +12,16 @@ export const sortTwoCards = (card1, card2, sortBy) => {
   let first = card1[sortBy];
   let second = card2[sortBy];
   if (sortBy === 'cost') {
-    first = parseInt(`${card1.coins ? card1.coins : ''}${card1.potions ? 100 : ''}${card1.debt ? card1.debt.slice(0, -1) + '00000' : ''}` || 0)
-    second = parseInt(`${card2.coins ? card2.coins : ''}${card2.potions ? 100 : ''}${card2.debt ? card2.debt.slice(0, -1) + '00000' : ''}` || 0)
+    first = parseInt(`
+			${card1.coins ? card1.coins : ''}
+			${card1.potions ? 100 : ''}
+			${card1.debt ? `${card1.debt.slice(0, -1)  }00000` : ''}`
+			|| 0);
+    second = parseInt(`
+			${card2.coins ? card2.coins : ''}
+			${card2.potions ? 100 : ''}
+			${card2.debt ? `${card2.debt.slice(0, -1)  }00000` : ''}`
+			|| 0);
   }
   if (first < second) {
     return -1;

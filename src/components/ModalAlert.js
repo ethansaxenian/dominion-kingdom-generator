@@ -1,4 +1,5 @@
-import { Alert, Button, Modal } from "react-bootstrap";
+import { Alert, Button, Modal } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 
 export default function ModalAlert({ text, onClose }) {
   return (
@@ -11,4 +12,10 @@ export default function ModalAlert({ text, onClose }) {
       </Modal.Footer>
     </Modal>
   )
+}
+
+
+ModalAlert.propTypes = {
+	text: PropTypes.string.isRequired,
+	onClose: PropTypes.func.isRequired
 }

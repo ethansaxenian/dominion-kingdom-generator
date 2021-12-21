@@ -12,8 +12,8 @@ function App() {
 
   return (
     <div className="App">
-      <img src={process.env.PUBLIC_URL + "/logo.png"} alt="logo" className="logo"/>
-			<Card style={{width: "75%", margin: "auto"}}>
+      <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" className="logo"/>
+			<Card style={{width: '75%', margin: 'auto'}}>
 				<Card.Header>
 					<NavBar page={page} setPage={setPage}/>
 				</Card.Header>

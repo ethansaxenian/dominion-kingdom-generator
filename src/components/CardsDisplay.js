@@ -1,5 +1,7 @@
 import styles from '../styles/CardsDisplay.module.css';
 import { Button, Card, Figure } from 'react-bootstrap';
+import PropTypes from 'prop-types';
+import { cardType } from '../lib/types';
 
 export default function CardsDisplay({ data, swapCard, cardWidth }) {
   const cards = data.map((card) => (
@@ -22,4 +24,11 @@ export default function CardsDisplay({ data, swapCard, cardWidth }) {
   return (
     <ul className={styles.cardsList}>{cards}</ul>
   )
+}
+
+
+CardsDisplay.propTypes = {
+	data: PropTypes.arrayOf(cardType).isRequired,
+	swapCard: PropTypes.func,
+	cardWidth: PropTypes.number
 }

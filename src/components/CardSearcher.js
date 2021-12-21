@@ -1,7 +1,9 @@
-import { useState } from "react";
-import { sortTwoCards } from "../lib/utils";
-import CardsDisplay from "./CardsDisplay";
-import SearchBar from "./SearchBar";
+import { useState } from 'react';
+import { cardType } from '../lib/types';
+import { sortTwoCards } from '../lib/utils';
+import CardsDisplay from './CardsDisplay';
+import SearchBar from './SearchBar';
+import PropTypes from 'prop-types';
 
 export default function CardSearcher({ cards }) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -34,4 +36,9 @@ export default function CardSearcher({ cards }) {
       <CardsDisplay data={sortedCards}/>
     </>
   )
+}
+
+
+CardSearcher.propTypes = {
+	cards: PropTypes.arrayOf(cardType).isRequired
 }

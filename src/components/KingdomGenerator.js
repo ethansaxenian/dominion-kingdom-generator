@@ -1,12 +1,14 @@
-import { useState } from "react";
-import { addExtraCards, arrayIncludesCard, drawCards, generateBlackMarket, hasValidExpansion, isLandscape, isValidKingdomCard, sortTwoCards } from "../lib/utils";
-import { Alert } from "react-bootstrap";
-import { combinations, min, sum } from "mathjs";
-import _ from "lodash";
-import KingdomSettings from "./KingdomSettings";
-import KingdomDisplay from "./KingdomDisplay";
-import { EXPANSIONS } from "../lib/constants";
-import GenerateButton from "./GenerateButton";
+import { useState } from 'react';
+import { addExtraCards, arrayIncludesCard, drawCards, generateBlackMarket, hasValidExpansion, isLandscape, isValidKingdomCard, sortTwoCards } from '../lib/utils';
+import { Alert } from 'react-bootstrap';
+import { combinations, min, sum } from 'mathjs';
+import _ from 'lodash';
+import KingdomSettings from './KingdomSettings';
+import KingdomDisplay from './KingdomDisplay';
+import { EXPANSIONS } from '../lib/constants';
+import GenerateButton from './GenerateButton';
+import PropTypes from 'prop-types';
+import { cardType } from '../lib/types';
 
 export default function KingdomGenerator({ cards }) {
   const [kingdom, setKingdom] = useState([]);
@@ -147,4 +149,9 @@ export default function KingdomGenerator({ cards }) {
       )}
     </>
   )
+}
+
+
+KingdomGenerator.propTypes = {
+	cards: PropTypes.arrayOf(cardType).isRequired,
 }

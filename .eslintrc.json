@@ -1,0 +1,76 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "plugins": ["react", "react-hooks"],
+  "env": {
+    "node": true,
+    "jest": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-plusplus": [
+      "warn",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "prefer-template": "warn",
+    "prefer-const": "warn",
+    "prefer-arrow-callback": "warn",
+    "prefer-destructuring": [
+      "warn",
+      {
+        "array": true,
+        "object": true
+      }
+    ],
+    "curly": "warn",
+    "quotes": [
+      "warn",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "jsx-quotes": ["warn", "prefer-double"],
+    "object-shorthand": "warn",
+    "eqeqeq": "warn",
+    "no-var": "warn",
+    "no-duplicate-imports": "warn",
+    "keyword-spacing": "warn",
+    "no-console": [
+      "warn",
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+    "no-extra-boolean-cast": "warn",
+    "no-extra-semi": "off",
+    "react/jsx-tag-spacing": [
+      "warn",
+      {
+        "beforeSelfClosing": "allow"
+      }
+    ],
+    "react/jsx-boolean-value": ["warn", "never"],
+    "react/no-array-index-key": "warn",
+    "react/no-unused-state": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "warn",
+    "react/no-unescaped-entities": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-key": "warn"
+  }
+}

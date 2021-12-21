@@ -1,5 +1,7 @@
-import { Card, Col, Form, Row } from "react-bootstrap";
-import styles from "../styles/Selector.module.css";
+import { Card, Col, Form, Row } from 'react-bootstrap';
+import styles from '../styles/Selector.module.css';
+import PropTypes from 'prop-types';
+import { expansionAmtsType, expansionType, promoNameType } from '../lib/types';
 
 export default function Selector({ list, toggle, options, name, adjustAmts, expansionAmts, setExpansionAmts }) {
   const selectors = options.map((option) =>
@@ -38,4 +40,15 @@ export default function Selector({ list, toggle, options, name, adjustAmts, expa
       </Card.Body>
     </Card>
   )
+}
+
+
+Selector.propTypes = {
+	list: PropTypes.arrayOf(PropTypes.oneOfType([expansionType, promoNameType])).isRequired,
+	toggle: PropTypes.func.isRequired,
+	options: PropTypes.arrayOf(PropTypes.oneOfType([expansionType, promoNameType])).isRequired,
+	name: PropTypes.oneOf(['Expansions', 'Promos']).isRequired,
+	adjustAmts: PropTypes.bool.isRequired,
+	expansionAmts: expansionAmtsType,
+	setExpansionAmts: PropTypes.func
 }

@@ -1,9 +1,11 @@
-import _ from "lodash";
-import { min } from "mathjs";
-import { useEffect, useState } from "react";
-import { Button, Col, Row } from "react-bootstrap";
-import { arrayIncludesCard, arrayIncludesCardName, drawCards, sortTwoCards } from "../lib/utils";
-import CardsDisplay from "./CardsDisplay";
+import _ from 'lodash';
+import { min } from 'mathjs';
+import { useEffect, useState } from 'react';
+import { Button, Col, Row } from 'react-bootstrap';
+import { arrayIncludesCard, arrayIncludesCardName, drawCards, sortTwoCards } from '../lib/utils';
+import CardsDisplay from './CardsDisplay';
+import PropTypes from 'prop-types';
+import { cardType } from '../lib/types';
 
 export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLandscape, usePlatinumColony, platinumColony, blackMarketOptions }) {
   const [blackMarketDeck, setBlackMarketDeck] = useState([]);
@@ -69,4 +71,15 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
       )}
     </>
   )
+}
+
+
+KingdomDisplay.propTypes = {
+	kingdom: PropTypes.arrayOf(cardType).isRequired,
+	landscapes: PropTypes.arrayOf(cardType).isRequired,
+	swapCard: PropTypes.func.isRequired,
+	swapLandscape: PropTypes.func.isRequired,
+	usePlatinumColony: PropTypes.bool.isRequired,
+	platinumColony: PropTypes.arrayOf(cardType).isRequired,
+	blackMarketOptions: PropTypes.arrayOf(cardType).isRequired
 }

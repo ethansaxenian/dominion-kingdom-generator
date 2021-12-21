@@ -7,7 +7,7 @@ export default function ModalAlert({ text, onClose }) {
 			<Modal.Body><Alert variant="danger" style={{textAlign: 'center'}}>{text}</Alert></Modal.Body>
 			<Modal.Footer>
 				<Button variant="secondary" onClick={() => onClose()}>
-          Close
+					Close
 				</Button>
 			</Modal.Footer>
 		</Modal>

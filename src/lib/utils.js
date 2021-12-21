@@ -15,12 +15,12 @@ export const sortTwoCards = (card1, card2, sortBy) => {
 		first = parseInt(`
 			${card1.coins ? card1.coins : ''}
 			${card1.potions ? 100 : ''}
-			${card1.debt ? `${card1.debt.slice(0, -1)  }00000` : ''}`
+			${card1.debt ? `${card1.debt.slice(0, -1) }00000` : ''}`
 			|| 0);
 		second = parseInt(`
 			${card2.coins ? card2.coins : ''}
 			${card2.potions ? 100 : ''}
-			${card2.debt ? `${card2.debt.slice(0, -1)  }00000` : ''}`
+			${card2.debt ? `${card2.debt.slice(0, -1) }00000` : ''}`
 			|| 0);
 	}
 	if (first < second) {
@@ -52,7 +52,7 @@ export const addExtraCards = (kingdom, landscapes, availableCards) => {
 		const [bane] = drawCards(notInKingdom, 1, youngWitchPredicate);
 		bane && newCards.push({...bane, bane: true});
 	}
-	if (arrayIncludesCardName(landscapes, 'Way of the Mouse')  && kingdom.every((card) => !card.wotm)) {
+	if (arrayIncludesCardName(landscapes, 'Way of the Mouse') && kingdom.every((card) => !card.wotm)) {
 		const notInKingdom = availableCards.filter((card) => !arrayIncludesCard(newCards, card) && card.types.includes('Action'));
 		const [wotm] = drawCards(notInKingdom, 1, youngWitchPredicate);
 		wotm && newCards.push({...wotm, wotm: true});

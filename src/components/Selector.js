@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { expansionAmtsType, expansionType, promoNameType } from '../lib/types';
 
 export default function Selector({ list, toggle, options, name, adjustAmts, expansionAmts, setExpansionAmts }) {
-	const selectors = options.map((option) =>
+	const selectors = options.map((option) => (
 		<li key={option} style={{margin: 5}}>
 			<Row>
 				<Col>
@@ -28,12 +28,12 @@ export default function Selector({ list, toggle, options, name, adjustAmts, expa
 				</Col>
 			</Row>
 		</li>
-	);
+	));
 
 	return (
 		<Card>
 			<Card.Header className={styles.header}>
-        Select {name}
+				Select {name}
 			</Card.Header>
 			<Card.Body>
 				<ul>{selectors}</ul>

@@ -56,13 +56,15 @@
         "allow": ["warn", "error"]
       }
     ],
+		"no-multi-spaces": "warn",
+		"no-mixed-spaces-and-tabs": "warn",
     "no-extra-boolean-cast": "warn",
     "no-extra-semi": "warn",
 		"indent": ["warn", "tab"],
     "react/jsx-tag-spacing": [
       "warn",
       {
-        "beforeSelfClosing": "allow"
+        "beforeSelfClosing": "never"
       }
     ],
     "react/jsx-boolean-value": ["warn", "never"],
@@ -87,6 +89,8 @@
 		"react/jsx-curly-spacing": "warn",
 		"react/jsx-equals-spacing": "warn",
 		"react/jsx-first-prop-new-line": "warn",
-		"react/jsx-indent": ["warn", "tab"]
+		"react/jsx-indent": ["warn", "tab"],
+		"react/jsx-no-useless-fragment": "warn",
+		"react/jsx-wrap-multilines": "warn"
   }
 }

@@ -144,7 +144,7 @@ export default function KingdomGenerator({ cards }) {
 			/>
 			{((kingdom.length >= 10) && (availableCards.length > 10)) && (
 				<Alert variant="success" style={{width: '50%', margin: 'auto', marginTop: 20, marginBottom: 20}}>
-          Don't like this kingdom? Luckily for you, there are over {2 * combinations(availableCards.length, 10) * ((availableLandscapes.length >= 2) ? combinations(availableLandscapes.length, 2) : 1)} different combinations to choose from!
+					Don't like this kingdom? Luckily for you, there are over {2 * combinations(availableCards.length, 10) * ((availableLandscapes.length >= 2) ? combinations(availableLandscapes.length, 2) : 1)} different combinations to choose from!
 				</Alert>
 			)}
 		</>

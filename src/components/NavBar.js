@@ -8,7 +8,7 @@ export default function NavBar({ page, setPage }) {
           <Nav.Link
             active={page === 'generate'}
             eventKey="key-2"
-            onSelect={() => setPage('generate')}
+            onClick={() => setPage('generate')}
           >
             Kingdom Generator
           </Nav.Link>
@@ -17,7 +17,7 @@ export default function NavBar({ page, setPage }) {
           <Nav.Link
             active={page === 'browse'}
             eventKey="key-1"
-            onSelect={() => setPage('browse')}
+            onClick={() => setPage('browse')}
           >
             Browse Cards
           </Nav.Link>

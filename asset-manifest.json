@@ -1,23 +1,13 @@
 {
   "files": {
-    "main.css": "/dominion-kingdom-generator/static/css/main.ff1a0c8a.chunk.css",
-    "main.js": "/dominion-kingdom-generator/static/js/main.2f92e1cb.chunk.js",
-    "main.js.map": "/dominion-kingdom-generator/static/js/main.2f92e1cb.chunk.js.map",
-    "runtime-main.js": "/dominion-kingdom-generator/static/js/runtime-main.6937aa0a.js",
-    "runtime-main.js.map": "/dominion-kingdom-generator/static/js/runtime-main.6937aa0a.js.map",
-    "static/css/2.0a9ec390.chunk.css": "/dominion-kingdom-generator/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.fcf2d505.chunk.js": "/dominion-kingdom-generator/static/js/2.fcf2d505.chunk.js",
-    "static/js/2.fcf2d505.chunk.js.map": "/dominion-kingdom-generator/static/js/2.fcf2d505.chunk.js.map",
+    "main.css": "/dominion-kingdom-generator/static/css/main.53f04c94.css",
+    "main.js": "/dominion-kingdom-generator/static/js/main.74d4f320.js",
     "index.html": "/dominion-kingdom-generator/index.html",
-    "static/css/2.0a9ec390.chunk.css.map": "/dominion-kingdom-generator/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.ff1a0c8a.chunk.css.map": "/dominion-kingdom-generator/static/css/main.ff1a0c8a.chunk.css.map",
-    "static/js/2.fcf2d505.chunk.js.LICENSE.txt": "/dominion-kingdom-generator/static/js/2.fcf2d505.chunk.js.LICENSE.txt"
+    "main.53f04c94.css.map": "/dominion-kingdom-generator/static/css/main.53f04c94.css.map",
+    "main.74d4f320.js.map": "/dominion-kingdom-generator/static/js/main.74d4f320.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.6937aa0a.js",
-    "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.fcf2d505.chunk.js",
-    "static/css/main.ff1a0c8a.chunk.css",
-    "static/js/main.2f92e1cb.chunk.js"
+    "static/css/main.53f04c94.css",
+    "static/js/main.74d4f320.js"
   ]
 }

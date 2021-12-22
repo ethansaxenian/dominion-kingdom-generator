@@ -1,5 +1,11 @@
 .cardsList {
-  display: flex;
-  flex-wrap: wrap;
+	padding: 10px;
   margin: auto;
+	align-items: center;
+}
+
+.cardsList li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
 }

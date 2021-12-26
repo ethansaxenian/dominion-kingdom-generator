@@ -10,21 +10,17 @@ export const isLandscape = (card) => card.types.every((type) => CARD_SHAPED_TYPE
 
 export const isOfType = (card, types) => card.types.every((t) => types.includes(t));
 
+export const costSortValue = (card) => {
+	const coinRep = card.coins ? card.coins : '';
+	const potionRep = card.potions ? '100' : '';
+	const debtRep = card.debt ? `${card.debt.slice(0, -1)}00000` : '';
+
+	return parseInt(`${coinRep}${potionRep}${debtRep}` || 0);
+}
+
 export const sortTwoCards = (card1, card2, sortBy) => {
-	let first = card1[sortBy];
-	let second = card2[sortBy];
-	if (sortBy === 'cost') {
-		first = parseInt(`
-			${card1.coins ? card1.coins : ''}
-			${card1.potions ? 100 : ''}
-			${card1.debt ? `${card1.debt.slice(0, -1) }00000` : ''}`
-			|| 0);
-		second = parseInt(`
-			${card2.coins ? card2.coins : ''}
-			${card2.potions ? 100 : ''}
-			${card2.debt ? `${card2.debt.slice(0, -1) }00000` : ''}`
-			|| 0);
-	}
+	const first = (sortBy === 'cost') ? costSortValue(card1) : card1[sortBy];
+	const second = (sortBy === 'cost') ? costSortValue(card2) : card2[sortBy];
 	if (first < second) {
 		return -1;
 	} else if (first > second) {

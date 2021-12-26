@@ -2,13 +2,16 @@ import { Nav, Navbar } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
 export default function NavBar({ page, setPage }) {
+
 	return (
-		<Navbar variant="light" bg="light" style={{width: '50%', margin: 'auto'}}>
-			<Nav variant="tabs" className="m-auto">
+		<Navbar className="justify-content-center">
+			<Navbar.Brand as="div">
+				<img src={`${process.env.PUBLIC_URL}/favicon.ico`} alt="logo" height={40}/>
+			</Navbar.Brand>
+			<Nav navbar variant="pills">
 				<Nav.Item>
 					<Nav.Link
 						active={page === 'generate'}
-						eventKey="key-2"
 						onClick={() => setPage('generate')}
 					>
 						Kingdom Generator
@@ -17,7 +20,6 @@ export default function NavBar({ page, setPage }) {
 				<Nav.Item>
 					<Nav.Link
 						active={page === 'browse'}
-						eventKey="key-1"
 						onClick={() => setPage('browse')}
 					>
 						Browse Cards

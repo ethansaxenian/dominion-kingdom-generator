@@ -1,13 +1,23 @@
 import { useState } from 'react';
 import { cardType } from '../lib/types';
-import { sortTwoCards } from '../lib/utils';
+import { isLandscape, sortTwoCards } from '../lib/utils';
 import CardsDisplay from './CardsDisplay';
 import SearchBar from './SearchBar';
 import PropTypes from 'prop-types';
+import { SUPPLY_TYPES } from '../lib/constants';
 
 export default function CardSearcher({ cards }) {
 	const [searchTerm, setSearchTerm] = useState('');
 	const [sortBy, setSortBy] = useState('name');
+	const [displayed, setDisplayed] = useState(['Supply', 'Non-supply', 'Landscape']);
+
+	const toggleDisplayType = (type) => {
+		if (displayed.includes(type)) {
+			setDisplayed(displayed.filter((t) => t !== type));
+		} else {
+			setDisplayed([...displayed, type]);
+		}
+	}
 
 	const filteredCards = cards.filter(({ name, expansion, types, cost, text }) => {
 		const parsedTerm = searchTerm.toLowerCase();
@@ -20,9 +30,13 @@ export default function CardSearcher({ cards }) {
 				|| (cost.debt && cost.debt.includes(parsedTerm))
 			))
 			|| text.toLowerCase().includes(parsedTerm)))
-	});
+	}).sort((card1, card2) => sortTwoCards(card1, card2, sortBy));
 
-	const sortedCards = filteredCards.sort((card1, card2) => sortTwoCards(card1, card2, sortBy))
+	const inSupply = filteredCards.filter((card) => card.in_supply && card.types.every((type) => SUPPLY_TYPES.includes(type)));
+
+	const notInSupply = filteredCards.filter((card) => !card.in_supply);
+
+	const landscapes = filteredCards.filter((card) => isLandscape(card));
 
 	return (
 		<>
@@ -31,9 +45,30 @@ export default function CardSearcher({ cards }) {
 				setSearchTerm={setSearchTerm}
 				sortBy={sortBy}
 				setSortBy={setSortBy}
+				displayed={displayed}
+				toggleDisplayType={toggleDisplayType}
 			/>
-			<br/>
-			<CardsDisplay data={sortedCards}/>
+			{(displayed.includes('Supply') && inSupply.length > 0) && (
+				<>
+					<hr/>
+					<h1>Supply Cards</h1>
+					<CardsDisplay data={inSupply}/>
+				</>
+			)}
+			{(displayed.includes('Non-supply') && notInSupply.length > 0) && (
+				<>
+					<hr/>
+					<h1>Non-Supply Cards</h1>
+					<CardsDisplay data={notInSupply}/>
+				</>
+			)}
+			{(displayed.includes('Landscape') && landscapes.length > 0) && (
+				<>
+					<hr/>
+					<h1>Landscapes</h1>
+					<CardsDisplay data={landscapes}/>
+				</>
+			)}
 		</>
 	)
 }

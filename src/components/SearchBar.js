@@ -13,17 +13,17 @@ export default function SearchBar({ searchTerm, setSearchTerm, sortBy, setSortBy
 						value={searchTerm}
 						placeholder="Search"
 						onChange={(event) => setSearchTerm(event.target.value)}
-						style={{width: 180, margin: 'auto', float: !isMobile && 'right'}}
+						style={{width: 210, margin: 'auto', float: !isMobile && 'right'}}
 					/>
 				</Col>
 				<Col>
-					<InputGroup style={{width: 180, margin: 'auto', float: !isMobile && 'left'}}>
+					<InputGroup style={{width: 210, margin: 'auto', float: !isMobile && 'left'}}>
 						<InputGroup.Text>Sort by: </InputGroup.Text>
-						<select value={sortBy} onChange={(event) => setSortBy(event.target.value)}>
+						<Form.Select value={sortBy} onChange={(event) => setSortBy(event.target.value)}>
 							<option value="name">Name</option>
 							<option value="expansion">Expansion</option>
 							<option value="cost">Cost</option>
-						</select>
+						</Form.Select>
 					</InputGroup>
 				</Col>
 			</Row>

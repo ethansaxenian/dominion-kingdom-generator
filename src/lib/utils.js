@@ -8,6 +8,8 @@ export const isValidKingdomCard = (card, onlyRandomizers) =>
 
 export const isLandscape = (card) => card.types.every((type) => CARD_SHAPED_TYPES.includes(type));
 
+export const isOfType = (card, types) => card.types.every((t) => types.includes(t));
+
 export const sortTwoCards = (card1, card2, sortBy) => {
 	let first = card1[sortBy];
 	let second = card2[sortBy];

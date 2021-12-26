@@ -1,7 +1,5 @@
 # Dominion Kingdom Generator
 
-[Visit site](https://ethansaxenian.github.io/dominion-kingdom-generator/)
-
 Current features list:
 - Browse all Dominion cards, sort by name, expansion, or cost, and filter by keyword
 - Generate a 10-card kingdom from selected expansions and promos

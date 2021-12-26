@@ -4,7 +4,7 @@ export const PROMOS = ['Black Market', 'Captain', 'Church', 'Dismantle', 'Envoy'
 
 export const TYPES = ['Action', 'Artifact', 'Attack', 'Boon', 'Castle', 'Command', 'Curse', 'Doom', 'Duration', 'Event', 'Fate', 'Gathering', 'Heirloom', 'Hex', 'Knight', 'Landmark', 'Looter', 'Night', 'Prize', 'Project', 'Reaction', 'Reserve', 'Ruins', 'Shelter', 'Spirit', 'State', 'Traveller', 'Treasure', 'Victory', 'Way', 'Zombie'];
 
-export const SUPPLY_TYPES = [ 'Action', 'Attack', 'Castle', 'Command', 'Curse', 'Doom', 'Duration', 'Fate', 'Gathering', 'Knight', 'Looter', 'Night', 'Reaction', 'Reserve', 'Ruins', 'Traveller', 'Treasure', 'Victory'];
+export const SUPPLY_TYPES = ['Action', 'Attack', 'Castle', 'Command', 'Curse', 'Doom', 'Duration', 'Fate', 'Gathering', 'Knight', 'Looter', 'Night', 'Reaction', 'Reserve', 'Ruins', 'Traveller', 'Treasure', 'Victory'];
 
 export const NON_SUPPLY_TYPES = ['Artifact', 'Boon', 'Curse', 'Event', 'Heirloom', 'Hex', 'Landmark', 'Prize', 'Project', 'Ruins', 'Shelter', 'State', 'Way', 'Zombie'];
 

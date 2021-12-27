@@ -1,23 +1,24 @@
 import { Col, Form, InputGroup, Row } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { useMediaQuery } from 'react-responsive';
+import styles from '../styles/SearchBar.module.css';
 
 export default function SearchBar({ searchTerm, setSearchTerm, sortBy, setSortBy, displayed, toggleDisplayType }) {
 	const isMobile = useMediaQuery({ maxWidth: 767 });
 
 	return (
 		<>
-			<Row xs="1" md="2" style={{alignItems: 'center', justifyContent: 'center', marginBottom: 25}}>
-				<Col style={{marginBottom: isMobile && 15}}>
+			<Row xs="1" md="2" className={styles.formRow}>
+				<Col>
 					<Form.Control
 						value={searchTerm}
 						placeholder="Search"
 						onChange={(event) => setSearchTerm(event.target.value)}
-						style={{width: 210, margin: 'auto', float: !isMobile && 'right'}}
+						className={isMobile ? styles.mobileSearchInput : styles.searchInput}
 					/>
 				</Col>
 				<Col>
-					<InputGroup style={{width: 210, margin: 'auto', float: !isMobile && 'left'}}>
+					<InputGroup className={isMobile ? styles.mobileSortSelector : styles.sortSelector}>
 						<InputGroup.Text>Sort by: </InputGroup.Text>
 						<Form.Select value={sortBy} onChange={(event) => setSortBy(event.target.value)}>
 							<option value="name">Name</option>
@@ -27,7 +28,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, sortBy, setSortBy
 					</InputGroup>
 				</Col>
 			</Row>
-			<div style={{width: 'fit-content', margin: 'auto'}}>
+			<div className={styles.checkboxes}>
 				{['Supply', 'Non-supply', 'Landscape'].map((type) => (
 					<Form.Check
 						inline={!isMobile}

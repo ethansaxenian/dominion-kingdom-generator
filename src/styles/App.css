@@ -5,3 +5,8 @@
 .logo {
   width: 65%;
 }
+
+.appBody {
+	width: 75%;
+	margin: auto;
+}

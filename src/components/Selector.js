@@ -5,7 +5,7 @@ import { expansionAmtsType, expansionType, promoNameType } from '../lib/types';
 
 export default function Selector({ list, toggle, options, name, adjustAmts, expansionAmts, setExpansionAmts }) {
 	const selectors = options.map((option) => (
-		<li key={option} style={{margin: 5}}>
+		<li key={option} className={styles.checkboxRow}>
 			<Row>
 				<Col>
 					<Form.Check
@@ -31,7 +31,7 @@ export default function Selector({ list, toggle, options, name, adjustAmts, expa
 	));
 
 	return (
-		<Card>
+		<Card className={styles.selector}>
 			<Card.Header className={styles.header}>
 				Select {name}
 			</Card.Header>

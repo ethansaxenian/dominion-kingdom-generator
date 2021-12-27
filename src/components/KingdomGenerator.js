@@ -120,20 +120,19 @@ export default function KingdomGenerator({ cards }) {
 
 	return (
 		<>
-			<KingdomSettings
-				expansions={expansions}
-				promos={promos}
-				toggleExpansion={toggleExpansion}
-				togglePromo={togglePromo}
-				expansionAmts={expansionAmts}
-				setExpansionAmts={setExpansionAmts}
-			/>
-			<br/>
-			<br/>
-			<br/>
-			<GenerateButton generateKingdom={generateKingdom} alert={alert} setAlert={setAlert}/>
-			<br/>
-			<br/>
+			<div className={styles.kingdomSettingsContainer}>
+				<KingdomSettings
+					expansions={expansions}
+					promos={promos}
+					toggleExpansion={toggleExpansion}
+					togglePromo={togglePromo}
+					expansionAmts={expansionAmts}
+					setExpansionAmts={setExpansionAmts}
+				/>
+			</div>
+			<div className={styles.generateButtonContainer}>
+				<GenerateButton generateKingdom={generateKingdom} alert={alert} setAlert={setAlert}/>
+			</div>
 			<KingdomDisplay
 				kingdom={kingdom}
 				landscapes={landscapes}

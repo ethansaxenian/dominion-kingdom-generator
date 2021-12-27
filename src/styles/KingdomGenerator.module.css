@@ -1,3 +1,12 @@
 .infoAlert {
 	margin: 20 auto;
 }
+
+.kingdomSettingsContainer {
+	margin-top: 16px;
+	margin-bottom: 32px;
+}
+
+.generateButtonContainer {
+	margin-bottom: 22px;
+}

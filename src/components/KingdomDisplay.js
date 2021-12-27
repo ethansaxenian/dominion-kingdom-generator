@@ -6,6 +6,7 @@ import { arrayIncludesCard, arrayIncludesCardName, drawCards, sortTwoCards } fro
 import CardsDisplay from './CardsDisplay';
 import PropTypes from 'prop-types';
 import { cardType } from '../lib/types';
+import styles from '../styles/KingdomDisplay.module.css';
 
 export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLandscape, usePlatinumColony, platinumColony, blackMarketOptions }) {
 	const [blackMarketDeck, setBlackMarketDeck] = useState([]);
@@ -52,22 +53,19 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
 					</Col>
 				)}
 			</Row>
-			<br/>
 			{arrayIncludesCardName(kingdom, 'Black Market') && (
-				<>
+				<div className={styles.blackMarketDisplay}>
 					<Button onClick={() => generateBlackMarketDeck()}>Generate Black Market Deck</Button>
 					{(blackMarketDeck.length > 0) && (
-						<>
-							<br/>
-							<br/>
+						<div className={styles.blackMarketCardsDisplay}>
 							<CardsDisplay
 								data={blackMarketDeck.sort((card1, card2) => sortTwoCards(card1, card2, 'expansion'))}
 								swapCard={swapBMCard}
 								cardWidth={170}
 							/>
-						</>
+						</div>
 					)}
-				</>
+				</div>
 			)}
 		</>
 	)

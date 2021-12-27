@@ -31,7 +31,7 @@ export default function Selector({ list, toggle, options, name, adjustAmts, expa
 	));
 
 	return (
-		<Card>
+		<Card className={styles.selector}>
 			<Card.Header className={styles.header}>
 				Select {name}
 			</Card.Header>

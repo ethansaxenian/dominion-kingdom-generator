@@ -6,7 +6,7 @@ import { cardType } from '../lib/types';
 export default function CardsDisplay({ data, swapCard, cardWidth }) {
 	const cards = data.map((card) => (
 		<li key={card.name}>
-			<Card style={(card.bane || card.wotm || swapCard) ? undefined : {borderWidth: 0}}>
+			<Card className={(card.bane || card.wotm || swapCard) ? undefined : styles.cardDisplayInBrowse}>
 				<a href={card.link} target="_blank" rel="noopener noreferrer">
 					<Figure.Image width={cardWidth} src={process.env.PUBLIC_URL + card.img} alt={card.name}/>
 				</a>

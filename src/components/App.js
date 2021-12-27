@@ -1,9 +1,9 @@
-import './styles/App.css';
-import data from './data/dominion_cards.json';
+import '../styles/App.css';
+import data from '../data/dominion_cards.json';
 import { useState } from 'react';
-import CardSearcher from './components/CardSearcher';
-import NavBar from './components/NavBar';
-import KingdomGenerator from './components/KingdomGenerator';
+import CardSearcher from './CardSearcher';
+import NavBar from './NavBar';
+import KingdomGenerator from './KingdomGenerator';
 import { Card } from 'react-bootstrap';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
 	return (
 		<div className="App">
 			<img src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" className="logo"/>
-			<Card style={{width: '75%', margin: 'auto'}}>
+			<Card className="appBody">
 				<Card.Header>
 					<NavBar page={page} setPage={setPage}/>
 				</Card.Header>

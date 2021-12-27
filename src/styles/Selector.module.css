@@ -1,3 +1,7 @@
 .header {
   cursor: pointer;
 }
+
+.checkboxRow {
+	margin: 5px;
+}

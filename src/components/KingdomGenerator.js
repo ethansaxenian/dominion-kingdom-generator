@@ -9,6 +9,7 @@ import { EXPANSIONS } from '../lib/constants';
 import GenerateButton from './GenerateButton';
 import PropTypes from 'prop-types';
 import { cardType } from '../lib/types';
+import styles from '../styles/KingdomGenerator.module.css';
 
 export default function KingdomGenerator({ cards }) {
 	const [kingdom, setKingdom] = useState([]);
@@ -143,7 +144,7 @@ export default function KingdomGenerator({ cards }) {
 				blackMarketOptions={generateBlackMarket(cards, kingdom, promos, expansions)}
 			/>
 			{((kingdom.length >= 10) && (availableCards.length > 10)) && (
-				<Alert variant="success" style={{width: '50%', margin: 'auto', marginTop: 20, marginBottom: 20}}>
+				<Alert variant="success" className={styles.infoAlert}>
 					Don't like this kingdom? Luckily for you, there are over {2 * combinations(availableCards.length, 10) * ((availableLandscapes.length >= 2) ? combinations(availableLandscapes.length, 2) : 1)} different combinations to choose from!
 				</Alert>
 			)}

@@ -1,0 +1,32 @@
+.formRow {
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 25px;
+}
+
+.searchInput, .mobileSearchInput {
+	width: 210px;
+	margin: auto;
+	float: right;
+}
+
+.mobileSearchInput {
+	width: 210px;
+	margin-bottom: 15px;
+	float: none;
+}
+
+.sortSelector, .mobileSortSelector {
+	width: 210px;
+	margin: auto;
+	float: left;
+}
+
+.mobileSortSelector {
+	float: none;
+}
+
+.checkboxes {
+	width: fit-content;
+	margin: auto;
+}

@@ -27,7 +27,6 @@ export default function KingdomSettings({ expansions, promos, toggleExpansion, t
 						expansionAmts={expansionAmts}
 						setExpansionAmts={setExpansionAmts}
 					/>
-					<br/>
 					<Selector list={promos} toggle={togglePromo} options={PROMOS} name="Promos" adjustAmts={false}/>
 				</Offcanvas.Body>
 			</Offcanvas>

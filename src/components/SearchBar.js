@@ -20,7 +20,7 @@ export default function SearchBar({ searchTerm, setSearchTerm, sortBy, setSortBy
 				</Col>
 				<Col>
 					<InputGroup className={classNames(styles.sortSelector, { [styles.mobileSortSelector]: isMobile })}>
-						<InputGroup.Text>Sort by: </InputGroup.Text>
+						<InputGroup.Text>Sort by:</InputGroup.Text>
 						<Form.Select value={sortBy} onChange={(event) => setSortBy(event.target.value)}>
 							<option value="name">Name</option>
 							<option value="expansion">Expansion</option>

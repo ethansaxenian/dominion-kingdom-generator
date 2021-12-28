@@ -38,7 +38,7 @@ export default function App() {
 	return (
 		<div className="App">
 			<img src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" className="logo"/>
-			<Card className={isMobile ? "mobileAppBody" : "appBody"}>
+			<Card className={isMobile ? 'mobileAppBody' : 'appBody'}>
 				<Card.Header>
 					<NavBar page={page} setPage={setPage}/>
 				</Card.Header>

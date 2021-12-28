@@ -1,3 +1,8 @@
+.kingdomDisplayContainer {
+	width: 90%;
+	margin: 25px auto;
+}
+
 .blackMarketDisplay {
 	margin-top: 22px;
 	margin-bottom: 15px;

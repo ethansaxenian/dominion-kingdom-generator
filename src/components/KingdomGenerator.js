@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { addExtraCards, arrayIncludesCard, drawCards, generateBlackMarket, hasValidExpansion, isLandscape, isValidKingdomCard, sortTwoCards } from '../lib/utils';
-import { Alert } from 'react-bootstrap';
+import { Alert, Button } from 'react-bootstrap';
 import { combinations, min, sum } from 'mathjs';
 import _ from 'lodash';
 import KingdomDisplay from './KingdomDisplay';
-import GenerateButton from './GenerateButton';
 import PropTypes from 'prop-types';
 import { cardType, expansionAmtsType, expansionType, promoNameType } from '../lib/types';
 import styles from '../styles/KingdomGenerator.module.css';
@@ -99,8 +98,17 @@ export default function KingdomGenerator({ cards, expansions, promos, expansionA
 
 	return (
 		<>
-			<div className={styles.generateButtonContainer}>
-				<GenerateButton generateKingdom={generateKingdom} alert={alert} setAlert={setAlert}/>
+			<div className={styles.generateButton}>
+				<Button variant="success" onClick={() => generateKingdom()} size="lg">Generate Kingdom!</Button>
+				<Alert
+					variant="danger"
+					dismissible
+					show={alert !== ''}
+					onClose={() => setAlert('')}
+					className={styles.generateButtonAlert}
+				>
+					{alert}
+				</Alert>
 			</div>
 			<KingdomDisplay
 				kingdom={kingdom}

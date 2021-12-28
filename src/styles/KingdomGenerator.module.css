@@ -1,7 +1,12 @@
-.infoAlert {
-	margin: 20 auto;
+.generateButton {
+	width: fit-content;
+	margin: auto;
 }
 
-.generateButtonContainer {
-	margin-bottom: 22px;
+.generateButtonAlert {
+	margin-top: 15px;
+}
+
+.infoAlert {
+	margin: 20 auto;
 }

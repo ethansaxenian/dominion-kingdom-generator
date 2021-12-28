@@ -1,7 +1,3 @@
-element {
-	--width: 210px;
-}
-
 .formRow {
 	align-items: center;
 	justify-content: center;
@@ -9,7 +5,7 @@ element {
 }
 
 .searchInput {
-	width: var(--width);
+	width: 210px;
 	margin: auto;
 	float: right;
 }
@@ -20,7 +16,7 @@ element {
 }
 
 .sortSelector {
-	width: var(--width);
+	width: 210px;
 	margin: auto;
 	float: left;
 }

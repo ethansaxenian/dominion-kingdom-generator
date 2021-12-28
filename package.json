@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://ethansaxenian.github.io/dominion-kingdom-generator/",
+	"license": "MIT",
+	"author": {
+		"name": "Ethan Saxenian",
+		"email": "ethansaxenian@gmail.com"
+	},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -34,12 +39,6 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "gh-pages": "^3.2.3"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [

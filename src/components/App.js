@@ -5,10 +5,32 @@ import CardSearcher from './CardSearcher';
 import NavBar from './NavBar';
 import KingdomGenerator from './KingdomGenerator';
 import { Card } from 'react-bootstrap';
+import KingdomSettings from './KingdomSettings';
+import _ from 'lodash';
+import { EXPANSIONS } from '../lib/constants';
 
 export default function App() {
 	const [cards] = useState(data);
 	const [page, setPage] = useState('generate');
+	const [expansions, setExpansions] = useState([]);
+	const [promos, setPromos] = useState([]);
+	const [expansionAmts, setExpansionAmts] = useState(_.fromPairs(EXPANSIONS.map((name) => [name, ''])));
+
+	const toggleExpansion = (name) => {
+		if (expansions.includes(name)) {
+			setExpansions(expansions.filter((exp) => exp !== name))
+		} else {
+			setExpansions([...expansions, name])
+		}
+	}
+
+	const togglePromo = (name) => {
+		if (promos.includes(name)) {
+			setPromos(promos.filter((promo) => promo !== name))
+		} else {
+			setPromos([...promos, name])
+		}
+	}
 
 	return (
 		<div className="App">
@@ -18,7 +40,24 @@ export default function App() {
 					<NavBar page={page} setPage={setPage}/>
 				</Card.Header>
 				<Card.Body>
-					{(page === 'generate') && <KingdomGenerator cards={cards}/>}
+					{(page === 'generate') && (
+						<KingdomGenerator
+							cards={cards}
+							expansions={expansions}
+							promos={promos}
+							expansionAmts={expansionAmts}
+						/>
+					)}
+					{(page === 'settings') && (
+						<KingdomSettings
+							expansions={expansions}
+							promos={promos}
+							toggleExpansion={toggleExpansion}
+							togglePromo={togglePromo}
+							expansionAmts={expansionAmts}
+							setExpansionAmts={setExpansionAmts}
+						/>
+					)}
 					{(page === 'browse') && <CardSearcher cards={cards}/>}
 				</Card.Body>
 			</Card>

@@ -1,0 +1,26 @@
+.navLink {
+	display: flex;
+	/* margin: 0, 1vw; */
+}
+
+.activeLink {
+	font-weight: bold;
+}
+
+.iconOnly {
+	margin: 0 5vw;
+}
+
+.iconAndText {
+	margin: 0 .5vw;
+}
+
+.icon {
+	margin: auto;
+}
+
+.navText {
+	width: fit-content;
+	margin-left: 10px;
+	white-space: nowrap;
+}

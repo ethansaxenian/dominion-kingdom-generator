@@ -1,36 +1,41 @@
 import { Nav, Navbar } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import { GiCardPick, GiCastle } from 'react-icons/gi';
+import { BsInboxes } from 'react-icons/bs';
+import NavBarItem from './NavBarItem';
 
 export default function NavBar({ page, setPage }) {
 
 	return (
-		<Navbar className="justify-content-center">
+		<Navbar>
 			<Navbar.Brand as="div">
 				<img src={`${process.env.PUBLIC_URL}/favicon.ico`} alt="logo" height={40}/>
 			</Navbar.Brand>
-			<Nav navbar variant="pills">
-				<Nav.Item>
-					<Nav.Link
-						active={page === 'generate'}
-						onClick={() => setPage('generate')}
-					>
-						Kingdom Generator
-					</Nav.Link>
-				</Nav.Item>
-				<Nav.Item>
-					<Nav.Link
-						active={page === 'browse'}
-						onClick={() => setPage('browse')}
-					>
-						Browse Cards
-					</Nav.Link>
-				</Nav.Item>
+			<Nav>
+				<NavBarItem
+					label="Kingdom Generator"
+					isActive={page === 'generate'}
+					onClick={() => setPage('generate')}
+					icon={<GiCastle/>}
+				/>
+				<NavBarItem
+					label="Kingdom Settings"
+					isActive={page === 'settings'}
+					onClick={() => setPage('settings')}
+					icon={<BsInboxes/>}
+				/>
+				<NavBarItem
+					label="Browse Cards"
+					isActive={page === 'browse'}
+					onClick={() => setPage('browse')}
+					icon={<GiCardPick/>}
+				/>
 			</Nav>
 		</Navbar>
 	)
 }
 
 NavBar.propTypes = {
-	page: PropTypes.oneOf(['generate', 'browse']).isRequired,
+	page: PropTypes.oneOf(['generate', 'settings', 'browse']).isRequired,
 	setPage: PropTypes.func.isRequired
 }

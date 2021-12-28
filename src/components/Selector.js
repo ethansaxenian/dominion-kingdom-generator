@@ -15,8 +15,8 @@ export default function Selector({ list, toggle, options, name, adjustAmts, expa
 						onChange={() => toggle(option)}
 					/>
 				</Col>
-				<Col xs="4">
-					{adjustAmts && (
+				{adjustAmts && (
+					<Col xs="4">
 						<Form.Control
 							min="0"
 							max="10"
@@ -24,15 +24,15 @@ export default function Selector({ list, toggle, options, name, adjustAmts, expa
 							value={expansionAmts[option]}
 							onChange={(event) => setExpansionAmts({...expansionAmts, [option]: event.target.value})}
 						/>
-					)}
-				</Col>
+					</Col>
+				)}
 			</Row>
 		</li>
 	));
 
 	return (
 		<Card className={styles.selector}>
-			<Card.Header className={styles.header}>
+			<Card.Header>
 				Select {name}
 			</Card.Header>
 			<Card.Body>

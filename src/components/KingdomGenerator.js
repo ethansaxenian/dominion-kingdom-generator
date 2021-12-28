@@ -3,22 +3,17 @@ import { addExtraCards, arrayIncludesCard, drawCards, generateBlackMarket, hasVa
 import { Alert } from 'react-bootstrap';
 import { combinations, min, sum } from 'mathjs';
 import _ from 'lodash';
-import KingdomSettings from './KingdomSettings';
 import KingdomDisplay from './KingdomDisplay';
-import { EXPANSIONS } from '../lib/constants';
 import GenerateButton from './GenerateButton';
 import PropTypes from 'prop-types';
-import { cardType } from '../lib/types';
+import { cardType, expansionAmtsType, expansionType, promoNameType } from '../lib/types';
 import styles from '../styles/KingdomGenerator.module.css';
 
-export default function KingdomGenerator({ cards }) {
+export default function KingdomGenerator({ cards, expansions, promos, expansionAmts }) {
 	const [kingdom, setKingdom] = useState([]);
 	const [landscapes, setLandScapes] = useState([]);
-	const [expansions, setExpansions] = useState([]);
-	const [promos, setPromos] = useState([]);
 	const [usePlatinumColony, setUsePlatinumColony] = useState(false);
 	const [alert, setAlert] = useState('');
-	const [expansionAmts, setExpansionAmts] = useState(_.fromPairs(EXPANSIONS.map((name) => [name, ''])));
 
 	const availableCards = cards.filter((card) =>
 		isValidKingdomCard(card, true)
@@ -100,36 +95,10 @@ export default function KingdomGenerator({ cards }) {
 		setKingdom(addExtraCards(newKingdom, newLandscapes, remainingCards));
 	}
 
-	const toggleExpansion = (name) => {
-		if (expansions.includes(name)) {
-			setExpansions(expansions.filter((exp) => exp !== name))
-		} else {
-			setExpansions([...expansions, name])
-		}
-	}
-
-	const togglePromo = (name) => {
-		if (promos.includes(name)) {
-			setPromos(promos.filter((promo) => promo !== name))
-		} else {
-			setPromos([...promos, name])
-		}
-	}
-
 	const platinumColony = cards.filter((card) => card.name === 'Platinum' || card.name === 'Colony').sort((a, b) => sortTwoCards(a, b, 'cost'));
 
 	return (
 		<>
-			<div className={styles.kingdomSettingsContainer}>
-				<KingdomSettings
-					expansions={expansions}
-					promos={promos}
-					toggleExpansion={toggleExpansion}
-					togglePromo={togglePromo}
-					expansionAmts={expansionAmts}
-					setExpansionAmts={setExpansionAmts}
-				/>
-			</div>
 			<div className={styles.generateButtonContainer}>
 				<GenerateButton generateKingdom={generateKingdom} alert={alert} setAlert={setAlert}/>
 			</div>
@@ -153,4 +122,7 @@ export default function KingdomGenerator({ cards }) {
 
 KingdomGenerator.propTypes = {
 	cards: PropTypes.arrayOf(cardType).isRequired,
+	expansions: PropTypes.arrayOf(expansionType).isRequired,
+	promos: PropTypes.arrayOf(promoNameType).isRequired,
+	expansionAmts: expansionAmtsType.isRequired
 }

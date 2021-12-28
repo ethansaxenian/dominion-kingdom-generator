@@ -15,7 +15,3 @@ code {
 ul {
   list-style-type: none;
 }
-
-.nav-link.active {
-	background-color: lightgray !important;
-}

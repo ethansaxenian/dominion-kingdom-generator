@@ -1,9 +1,6 @@
 .selector {
-	margin-bottom: 25px;
-}
-
-.header {
-  cursor: pointer;
+	margin: 25px auto;
+	width: 400px;
 }
 
 .checkboxRow {

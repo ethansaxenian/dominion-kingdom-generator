@@ -13,7 +13,6 @@ export default function ModalAlert({ text, onClose }) {
 	)
 }
 
-
 ModalAlert.propTypes = {
 	text: PropTypes.string.isRequired,
 	onClose: PropTypes.func.isRequired

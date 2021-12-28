@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dominion-kingdom-generator/static/css/main.6bd48f3d.css",
-    "main.js": "/dominion-kingdom-generator/static/js/main.80991758.js",
+    "main.css": "/dominion-kingdom-generator/static/css/main.c6a1cc4d.css",
+    "main.js": "/dominion-kingdom-generator/static/js/main.30ba934c.js",
     "index.html": "/dominion-kingdom-generator/index.html",
-    "main.6bd48f3d.css.map": "/dominion-kingdom-generator/static/css/main.6bd48f3d.css.map",
-    "main.80991758.js.map": "/dominion-kingdom-generator/static/js/main.80991758.js.map"
+    "main.c6a1cc4d.css.map": "/dominion-kingdom-generator/static/css/main.c6a1cc4d.css.map",
+    "main.30ba934c.js.map": "/dominion-kingdom-generator/static/js/main.30ba934c.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bd48f3d.css",
-    "static/js/main.80991758.js"
+    "static/css/main.c6a1cc4d.css",
+    "static/js/main.30ba934c.js"
   ]
 }

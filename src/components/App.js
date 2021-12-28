@@ -15,7 +15,7 @@ export default function App() {
 	const [page, setPage] = useState('generate');
 	const [expansions, setExpansions] = useState([]);
 	const [promos, setPromos] = useState([]);
-	const [expansionAmts, setExpansionAmts] = useState(_.fromPairs(EXPANSIONS.map((name) => [name, ''])));
+	const [expansionAmts] = useState(_.fromPairs(EXPANSIONS.map((name) => [name, ''])));
 
 	const isMobile = useMediaQuery({ maxWidth: 425 });
 
@@ -57,8 +57,6 @@ export default function App() {
 							promos={promos}
 							toggleExpansion={toggleExpansion}
 							togglePromo={togglePromo}
-							expansionAmts={expansionAmts}
-							setExpansionAmts={setExpansionAmts}
 						/>
 					)}
 					{(page === 'browse') && <CardSearcher cards={cards}/>}

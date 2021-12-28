@@ -26,7 +26,6 @@ export default function CardsDisplay({ data, swapCard, cardWidth }) {
 	)
 }
 
-
 CardsDisplay.propTypes = {
 	data: PropTypes.arrayOf(cardType).isRequired,
 	swapCard: PropTypes.func,

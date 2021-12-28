@@ -30,7 +30,6 @@ export default function NavBar({ page, setPage }) {
 	)
 }
 
-
 NavBar.propTypes = {
 	page: PropTypes.oneOf(['generate', 'browse']).isRequired,
 	setPage: PropTypes.func.isRequired

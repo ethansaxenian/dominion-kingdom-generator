@@ -6,7 +6,7 @@ import NavBar from './NavBar';
 import KingdomGenerator from './KingdomGenerator';
 import { Card } from 'react-bootstrap';
 
-function App() {
+export default function App() {
 	const [cards] = useState(data);
 	const [page, setPage] = useState('generate');
 
@@ -25,5 +25,3 @@ function App() {
 		</div>
 	);
 }
-
-export default App;

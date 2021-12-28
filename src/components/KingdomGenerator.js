@@ -151,7 +151,6 @@ export default function KingdomGenerator({ cards }) {
 	)
 }
 
-
 KingdomGenerator.propTypes = {
 	cards: PropTypes.arrayOf(cardType).isRequired,
 }

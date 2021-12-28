@@ -42,7 +42,6 @@ export default function Selector({ list, toggle, options, name, adjustAmts, expa
 	)
 }
 
-
 Selector.propTypes = {
 	list: PropTypes.arrayOf(PropTypes.oneOfType([expansionType, promoNameType])).isRequired,
 	toggle: PropTypes.func.isRequired,

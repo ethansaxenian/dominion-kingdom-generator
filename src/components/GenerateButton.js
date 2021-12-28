@@ -11,7 +11,6 @@ export default function GenerateButton({ generateKingdom, alert, setAlert}) {
 	)
 }
 
-
 GenerateButton.propTypes = {
 	generateKingdom: PropTypes.func.isRequired,
 	alert: PropTypes.string.isRequired,

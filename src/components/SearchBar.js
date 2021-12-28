@@ -43,7 +43,6 @@ export default function SearchBar({ searchTerm, setSearchTerm, sortBy, setSortBy
 	)
 }
 
-
 SearchBar.propTypes = {
 	searchTerm: PropTypes.string.isRequired,
 	setSearchTerm: PropTypes.func.isRequired,

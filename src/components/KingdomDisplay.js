@@ -71,7 +71,6 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
 	)
 }
 
-
 KingdomDisplay.propTypes = {
 	kingdom: PropTypes.arrayOf(cardType).isRequired,
 	landscapes: PropTypes.arrayOf(cardType).isRequired,

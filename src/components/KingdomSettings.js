@@ -34,7 +34,6 @@ export default function KingdomSettings({ expansions, promos, toggleExpansion, t
 	)
 }
 
-
 KingdomSettings.propTypes = {
 	expansions: PropTypes.arrayOf(expansionType).isRequired,
 	promos: PropTypes.arrayOf(promoNameType).isRequired,

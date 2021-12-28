@@ -73,7 +73,6 @@ export default function CardSearcher({ cards }) {
 	)
 }
 
-
 CardSearcher.propTypes = {
 	cards: PropTypes.arrayOf(cardType).isRequired
 }

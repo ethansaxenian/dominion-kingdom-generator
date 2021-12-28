@@ -1,12 +1,12 @@
+.generateButton {
+	width: fit-content;
+	margin: auto;
+}
+
+.generateButtonAlert {
+	margin-top: 15px;
+}
+
 .infoAlert {
 	margin: 20 auto;
-}
-
-.kingdomSettingsContainer {
-	margin-top: 16px;
-	margin-bottom: 32px;
-}
-
-.generateButtonContainer {
-	margin-bottom: 22px;
 }

@@ -7,3 +7,8 @@
 .closeButton {
 	float: right;
 }
+
+.modalBody {
+	background-color: rgba(253, 139, 139, 0.568);
+	color: rgb(109, 1, 1);
+}

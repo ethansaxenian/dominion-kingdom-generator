@@ -34,7 +34,7 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
 	const supply = kingdom.filter((card) => card !== wotm);
 
 	return (
-		<>
+		<div className={styles.kingdomDisplayContainer}>
 			<CardsDisplay data={supply.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))} swapCard={swapCard} cardWidth={170}/>
 			<Row>
 				{(landscapes.length > 0) && (
@@ -67,7 +67,7 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
 					)}
 				</div>
 			)}
-		</>
+		</div>
 	)
 }
 

@@ -1,11 +1,15 @@
 .selector {
-	margin-bottom: 25px;
+	margin: 25px 5vw;
 }
 
-.header {
-  cursor: pointer;
+.checklist {
+	margin: auto;
+	padding: auto;
+	width: fit-content;
 }
 
 .checkboxRow {
-	margin: 5px;
+	margin: 10px;
+	text-align: left;
+	white-space: nowrap;
 }

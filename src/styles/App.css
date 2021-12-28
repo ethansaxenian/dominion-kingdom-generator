@@ -7,6 +7,11 @@
 }
 
 .appBody {
-	width: 75%;
+	width: 80%;
+	margin: auto;
+}
+
+.mobileAppBody {
+	width: 90%;
 	margin: auto;
 }

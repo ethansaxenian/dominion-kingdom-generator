@@ -1,13 +1,13 @@
-import { Alert, CloseButton, Modal } from 'react-bootstrap';
+import { CloseButton, Modal } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import styles from '../styles/ModalAlert.module.css';
 
 export default function ModalAlert({ text, onClose }) {
 	return (
-		<Modal show={text !== ''} onHide={() => onClose()}>
-			<Modal.Body>
+		<Modal show={text !== ''} onHide={() => onClose()} centered>
+			<Modal.Body className={styles.modalBody}>
 				<CloseButton className={styles.closeButton} onClick={() => onClose()}/>
-				<Alert variant="danger" className={styles.alertText}>{text}</Alert>
+				<div className={styles.alertText}>{text}</div>
 			</Modal.Body>
 		</Modal>
 	)

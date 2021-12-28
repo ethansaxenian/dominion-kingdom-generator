@@ -1,23 +1,26 @@
+element {
+	--width: 210px;
+}
+
 .formRow {
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 25px;
 }
 
-.searchInput, .mobileSearchInput {
-	width: 210px;
+.searchInput {
+	width: var(--width);
 	margin: auto;
 	float: right;
 }
 
 .mobileSearchInput {
-	width: 210px;
 	margin-bottom: 15px;
 	float: none;
 }
 
-.sortSelector, .mobileSortSelector {
-	width: 210px;
+.sortSelector {
+	width: var(--width);
 	margin: auto;
 	float: left;
 }

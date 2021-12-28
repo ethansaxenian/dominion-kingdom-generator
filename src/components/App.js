@@ -8,6 +8,7 @@ import { Card } from 'react-bootstrap';
 import KingdomSettings from './KingdomSettings';
 import _ from 'lodash';
 import { EXPANSIONS } from '../lib/constants';
+import { useMediaQuery } from 'react-responsive';
 
 export default function App() {
 	const [cards] = useState(data);
@@ -15,6 +16,8 @@ export default function App() {
 	const [expansions, setExpansions] = useState([]);
 	const [promos, setPromos] = useState([]);
 	const [expansionAmts, setExpansionAmts] = useState(_.fromPairs(EXPANSIONS.map((name) => [name, ''])));
+
+	const isMobile = useMediaQuery({ maxWidth: 425 });
 
 	const toggleExpansion = (name) => {
 		if (expansions.includes(name)) {
@@ -35,7 +38,7 @@ export default function App() {
 	return (
 		<div className="App">
 			<img src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" className="logo"/>
-			<Card className="appBody">
+			<Card className={isMobile ? "mobileAppBody" : "appBody"}>
 				<Card.Header>
 					<NavBar page={page} setPage={setPage}/>
 				</Card.Header>

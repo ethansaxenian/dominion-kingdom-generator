@@ -16,7 +16,7 @@ export default function NavBarItem({ label, isActive, onClick, icon }) {
 				className={classNames(styles.navLink, { [styles.activeLink]: isActive })}
 			>
 				{icon && (
-					<IconContext.Provider value={{ size: '1.5em', style: { margin: 'auto' } }}>
+					<IconContext.Provider value={{ size: '1.5em', className: styles.icon, title: label }}>
 						{icon}
 					</IconContext.Provider>
 				)}

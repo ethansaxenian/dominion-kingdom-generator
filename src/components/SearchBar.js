@@ -5,7 +5,7 @@ import styles from '../styles/SearchBar.module.css';
 import classNames from 'classnames';
 
 export default function SearchBar({ searchTerm, setSearchTerm, sortBy, setSortBy, displayed, toggleDisplayType }) {
-	const isMobile = useMediaQuery({ maxWidth: 767 });
+	const isMobile = useMediaQuery({ maxWidth: 768 });
 
 	return (
 		<>

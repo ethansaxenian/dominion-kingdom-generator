@@ -8,5 +8,6 @@
 }
 
 .infoAlert {
-	margin: 20 auto;
+	width: min(65ch, 100%);
+	margin: auto;
 }

@@ -2,11 +2,12 @@ import styles from '../styles/CardsDisplay.module.css';
 import { Button, Card, Figure } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { cardType } from '../lib/types';
+import classNames from 'classnames';
 
 export default function CardsDisplay({ data, swapCard, cardWidth }) {
 	const cards = data.map((card) => (
 		<li key={card.name}>
-			<Card className={(card.bane || card.wotm || swapCard) ? undefined : styles.cardDisplayInBrowse}>
+			<Card className={classNames({ [styles.cardDisplayInBrowse]: !(card.bane || card.wotm || swapCard) })}>
 				<a href={card.link} target="_blank" rel="noopener noreferrer">
 					<Figure.Image width={cardWidth} src={process.env.PUBLIC_URL + card.img} alt={card.name}/>
 				</a>

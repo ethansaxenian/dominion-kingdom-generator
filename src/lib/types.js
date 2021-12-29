@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { EXPANSIONS, PROMOS, TYPES } from './constants';
-import _ from 'lodash';
 
 export const expansionType = PropTypes.oneOf([...EXPANSIONS, 'Promo']);
 
@@ -20,5 +19,3 @@ export const cardType = PropTypes.shape({
 });
 
 export const promoNameType = PropTypes.oneOf(PROMOS);
-
-export const expansionAmtsType = PropTypes.shape(_.fromPairs(EXPANSIONS.map((name) => [name, PropTypes.string.isRequired])));

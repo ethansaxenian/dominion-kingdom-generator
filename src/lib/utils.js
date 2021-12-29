@@ -1,5 +1,18 @@
-import _ from 'lodash';
 import { BASE_2_CARDS, BASIC_CARDS, CARDS_TO_REMOVE, CARD_SHAPED_TYPES, INTRIGUE_2_CARDS, NON_SUPPLY_TYPES, ORIGINAL_BASE_CARDS, ORIGINAL_INTRIGUE_CARDS, SECONDARY_CARDS } from './constants';
+
+export const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+
+export const sample = (collection, n=1) => {
+	const oldCollection = [...collection];
+	const elements = [];
+	let sampled;
+	for (let i = 0; i < n; i++) {
+		[sampled] = oldCollection.splice(random(0, oldCollection.length), 1);
+		elements.push(sampled);
+	}
+
+	return elements;
+}
 
 export const isValidKingdomCard = (card, onlyRandomizers) =>
 	card.in_supply
@@ -39,7 +52,7 @@ export const arrayIncludesCard = (array, card) => array.map((obj) => obj.name.to
 
 export const arrayIncludesCardName = (array, name) => array.map((card) => card.name.toLowerCase()).includes(name.toLowerCase());
 
-export const drawCards = (cards, num, predicate) => _.sampleSize(predicate ? cards.filter((card) => predicate(card)) : cards, num);
+export const drawCards = (cards, num, predicate) => sample(predicate ? cards.filter((card) => predicate(card)) : cards, num);
 
 export const youngWitchPredicate = (card) => ((card.coins === 2) || (card.coins === 3)) && !card.potions && !card.debt;
 

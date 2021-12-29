@@ -1,14 +1,13 @@
 import { useState } from 'react';
-import { addExtraCards, arrayIncludesCard, drawCards, generateBlackMarket, hasValidExpansion, isLandscape, isValidKingdomCard, sortTwoCards } from '../lib/utils';
+import { addExtraCards, arrayIncludesCard, drawCards, generateBlackMarket, hasValidExpansion, isLandscape, isValidKingdomCard, sample, sortTwoCards } from '../lib/utils';
 import { Alert, Button } from 'react-bootstrap';
-import { combinations, min, sum } from 'mathjs';
-import _ from 'lodash';
 import KingdomDisplay from './KingdomDisplay';
 import PropTypes from 'prop-types';
-import { cardType, expansionAmtsType, expansionType, promoNameType } from '../lib/types';
+import { cardType, expansionType, promoNameType } from '../lib/types';
 import styles from '../styles/KingdomGenerator.module.css';
+import { EXPANSIONS } from '../lib/constants';
 
-export default function KingdomGenerator({ cards, expansions, promos, expansionAmts }) {
+export default function KingdomGenerator({ cards, expansions, promos }) {
 	const [kingdom, setKingdom] = useState([]);
 	const [landscapes, setLandScapes] = useState([]);
 	const [usePlatinumColony, setUsePlatinumColony] = useState(false);
@@ -28,33 +27,25 @@ export default function KingdomGenerator({ cards, expansions, promos, expansionA
 	const remainingLandscapes = availableLandscapes.filter((card) => !arrayIncludesCard(landscapes, card));
 
 	const generateKingdom = () => {
-		if (sum(_.toPairs(expansionAmts).map(([exp, amt]) => (expansions.includes(exp) ? amt : 0))) > 10) {
-			setAlert('Kingdom can\'t include more than 10 cards!')
-			return
-		}
 		const newKingdom = generateKingdomFromRules();
 		if (newKingdom.length < 10) {
 			setAlert('You need at least 10 kingdom cards!')
 			return
 		}
-		const newLandscapes = drawCards(availableLandscapes, min(2, availableLandscapes.length));
+		const newLandscapes = drawCards(availableLandscapes, Math.min(2, availableLandscapes.length));
 		const leftovers = availableCards.filter((card) => !arrayIncludesCard(newKingdom, card));
 		setKingdom(addExtraCards(newKingdom, newLandscapes, leftovers));
 		setLandScapes(newLandscapes);
 		if (newKingdom.length > 0) {
-			setUsePlatinumColony(_.sample(newKingdom).expansion === 'Prosperity');
+			setUsePlatinumColony(sample(newKingdom).expansion === 'Prosperity');
 		}
 	}
 
 	const generateKingdomFromRules = () => {
 		const newCards = [];
 		const extraExpansions = [];
-		_.toPairs(expansionAmts).forEach(([exp, amt]) => {
-			if (amt !== '') {
-				newCards.push(
-					...drawCards(availableCards, +amt, ((card) => hasValidExpansion(card, [exp]) && !arrayIncludesCard(newCards, card)))
-				);
-			} else if (expansions.includes(exp)) {
+		EXPANSIONS.forEach((exp) => {
+			if (expansions.includes(exp)) {
 				extraExpansions.push(exp);
 			}
 		});
@@ -119,11 +110,6 @@ export default function KingdomGenerator({ cards, expansions, promos, expansionA
 				platinumColony={platinumColony}
 				blackMarketOptions={generateBlackMarket(cards, kingdom, promos, expansions)}
 			/>
-			{((kingdom.length >= 10) && (availableCards.length > 10)) && (
-				<Alert variant="success" className={styles.infoAlert}>
-					Don't like this kingdom? Luckily for you, there are over {2 * combinations(availableCards.length, 10) * ((availableLandscapes.length >= 2) ? combinations(availableLandscapes.length, 2) : 1)} different combinations to choose from!
-				</Alert>
-			)}
 		</>
 	)
 }
@@ -131,6 +117,5 @@ export default function KingdomGenerator({ cards, expansions, promos, expansionA
 KingdomGenerator.propTypes = {
 	cards: PropTypes.arrayOf(cardType).isRequired,
 	expansions: PropTypes.arrayOf(expansionType).isRequired,
-	promos: PropTypes.arrayOf(promoNameType).isRequired,
-	expansionAmts: expansionAmtsType.isRequired
+	promos: PropTypes.arrayOf(promoNameType).isRequired
 }

@@ -6,15 +6,12 @@ import NavBar from './NavBar';
 import KingdomGenerator from './KingdomGenerator';
 import { Card } from 'react-bootstrap';
 import KingdomSettings from './KingdomSettings';
-import _ from 'lodash';
-import { EXPANSIONS } from '../lib/constants';
 
 export default function App() {
 	const [cards] = useState(data);
 	const [page, setPage] = useState('generate');
 	const [expansions, setExpansions] = useState([]);
 	const [promos, setPromos] = useState([]);
-	const [expansionAmts] = useState(_.fromPairs(EXPANSIONS.map((name) => [name, ''])));
 
 	const toggleExpansion = (name) => {
 		if (expansions.includes(name)) {
@@ -45,7 +42,6 @@ export default function App() {
 							cards={cards}
 							expansions={expansions}
 							promos={promos}
-							expansionAmts={expansionAmts}
 						/>
 					)}
 					{(page === 'settings') && (

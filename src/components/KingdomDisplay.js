@@ -1,4 +1,3 @@
-import { min } from 'mathjs';
 import { useEffect, useState } from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
 import { arrayIncludesCard, arrayIncludesCardName, drawCards, sample, sortTwoCards } from '../lib/utils';
@@ -17,7 +16,7 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
 	}, [kingdom]);
 
 	const generateBlackMarketDeck = () => {
-		setBlackMarketDeck(sample(blackMarketOptions, min(blackMarketOptions.length, 60)));
+		setBlackMarketDeck(sample(blackMarketOptions, Math.min(blackMarketOptions.length, 60)));
 	}
 
 	const swapBMCard = (oldCard) => {

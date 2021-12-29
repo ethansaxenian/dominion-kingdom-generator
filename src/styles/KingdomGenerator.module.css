@@ -6,8 +6,3 @@
 .generateButtonAlert {
 	margin-top: 15px;
 }
-
-.infoAlert {
-	width: min(65ch, 100%);
-	margin: auto;
-}

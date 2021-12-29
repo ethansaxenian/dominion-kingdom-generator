@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { addExtraCards, arrayIncludesCard, drawCards, generateBlackMarket, hasValidExpansion, isLandscape, isValidKingdomCard, sample, sortTwoCards } from '../lib/utils';
 import { Alert, Button } from 'react-bootstrap';
-import { combinations, min } from 'mathjs';
 import KingdomDisplay from './KingdomDisplay';
 import PropTypes from 'prop-types';
 import { cardType, expansionType, promoNameType } from '../lib/types';
@@ -33,7 +32,7 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 			setAlert('You need at least 10 kingdom cards!')
 			return
 		}
-		const newLandscapes = drawCards(availableLandscapes, min(2, availableLandscapes.length));
+		const newLandscapes = drawCards(availableLandscapes, Math.min(2, availableLandscapes.length));
 		const leftovers = availableCards.filter((card) => !arrayIncludesCard(newKingdom, card));
 		setKingdom(addExtraCards(newKingdom, newLandscapes, leftovers));
 		setLandScapes(newLandscapes);
@@ -111,11 +110,6 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 				platinumColony={platinumColony}
 				blackMarketOptions={generateBlackMarket(cards, kingdom, promos, expansions)}
 			/>
-			{((kingdom.length >= 10) && (availableCards.length > 10)) && (
-				<Alert variant="success" className={styles.infoAlert}>
-					Don't like this kingdom? Luckily for you, there are over {2 * combinations(availableCards.length, 10) * ((availableLandscapes.length >= 2) ? combinations(availableLandscapes.length, 2) : 1)} different combinations to choose from!
-				</Alert>
-			)}
 		</>
 	)
 }

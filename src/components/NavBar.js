@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 import { GiCardPick, GiCastle } from 'react-icons/gi';
 import { BsInboxes } from 'react-icons/bs';
 import NavBarItem from './NavBarItem';
+import { Image } from '@chakra-ui/react';
 
 export default function NavBar({ page, setPage }) {
 
 	return (
 		<Navbar>
 			<Navbar.Brand as="div">
-				<img src={`${process.env.PUBLIC_URL}/favicon.ico`} alt="logo" height={40}/>
+				<Image src={`${process.env.PUBLIC_URL}/favicon.ico`} alt="logo" boxSize="40px"/>
 			</Navbar.Brand>
 			<Nav>
 				<NavBarItem

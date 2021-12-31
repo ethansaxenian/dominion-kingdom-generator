@@ -5,7 +5,6 @@ import KingdomDisplay from './KingdomDisplay';
 import PropTypes from 'prop-types';
 import { cardType, expansionType, promoNameType } from '../lib/types';
 import styles from '../styles/KingdomGenerator.module.css';
-import { EXPANSIONS } from '../lib/constants';
 
 export default function KingdomGenerator({ cards, expansions, promos }) {
 	const [kingdom, setKingdom] = useState([]);
@@ -27,11 +26,11 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 	const remainingLandscapes = availableLandscapes.filter((card) => !arrayIncludesCard(landscapes, card));
 
 	const generateKingdom = () => {
-		const newKingdom = generateKingdomFromRules();
-		if (newKingdom.length < 10) {
+		if (expansions.length < 10) {
 			setAlert('You need at least 10 kingdom cards!')
 			return
 		}
+		const newKingdom = drawCards(availableCards, 10, ((card) => (hasValidExpansion(card, expansions) || promos.includes(card.name))));
 		const newLandscapes = drawCards(availableLandscapes, Math.min(2, availableLandscapes.length));
 		const leftovers = availableCards.filter((card) => !arrayIncludesCard(newKingdom, card));
 		setKingdom(addExtraCards(newKingdom, newLandscapes, leftovers));
@@ -39,18 +38,6 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 		if (newKingdom.length > 0) {
 			setUsePlatinumColony(sample(newKingdom).expansion === 'Prosperity');
 		}
-	}
-
-	const generateKingdomFromRules = () => {
-		const newCards = [];
-		const extraExpansions = [];
-		EXPANSIONS.forEach((exp) => {
-			if (expansions.includes(exp)) {
-				extraExpansions.push(exp);
-			}
-		});
-		const leftovers = availableCards.filter((card) => !arrayIncludesCard(newCards, card));
-		return newCards.concat(drawCards(leftovers, 10 - newCards.length, ((card) => (hasValidExpansion(card, extraExpansions) || promos.includes(card.name)))));
 	}
 
 	const swapCard = (oldCard) => {

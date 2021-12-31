@@ -26,7 +26,7 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 	const remainingLandscapes = availableLandscapes.filter((card) => !arrayIncludesCard(landscapes, card));
 
 	const generateKingdom = () => {
-		if (expansions.length < 10) {
+		if (expansions.length === 0) {
 			setAlert('You need at least 10 kingdom cards!')
 			return
 		}

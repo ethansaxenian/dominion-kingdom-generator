@@ -1,46 +1,34 @@
-import { Col, Form, InputGroup, Row } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import { useMediaQuery } from 'react-responsive';
-import styles from '../styles/SearchBar.module.css';
-import classNames from 'classnames';
+import { HStack, Input, InputGroup, InputLeftAddon, Select, Stack, Switch, Text } from '@chakra-ui/react';
 
 export default function SearchBar({ searchTerm, setSearchTerm, sortBy, setSortBy, displayed, toggleDisplayType }) {
-	const isMobile = useMediaQuery({ maxWidth: 768 });
 
 	return (
 		<>
-			<Row xs="1" md="2" className={styles.formRow}>
-				<Col>
-					<Form.Control
-						value={searchTerm}
-						placeholder="Search"
-						onChange={(event) => setSearchTerm(event.target.value)}
-						className={classNames(styles.searchInput, { [styles.mobileSearchInput]: isMobile })}
-					/>
-				</Col>
-				<Col>
-					<InputGroup className={classNames(styles.sortSelector, { [styles.mobileSortSelector]: isMobile })}>
-						<InputGroup.Text>Sort by:</InputGroup.Text>
-						<Form.Select value={sortBy} onChange={(event) => setSortBy(event.target.value)}>
-							<option value="name">Name</option>
-							<option value="expansion">Expansion</option>
-							<option value="cost">Cost</option>
-						</Form.Select>
-					</InputGroup>
-				</Col>
-			</Row>
-			<div className={styles.checkboxes}>
+			<Stack direction={{base: 'column', md: 'row'}} justify="space-evenly" w={{base: 'fit-content', md: '75%'}} p="30px">
+				<Input
+					value={searchTerm}
+					placeholder="Search"
+					onChange={(event) => setSearchTerm(event.target.value)}
+					w="250px"
+				/>
+				<InputGroup w="250px">
+					<InputLeftAddon>Sort by:</InputLeftAddon>
+					<Select value={sortBy} onChange={(event) => setSortBy(event.target.value)} borderLeftRadius="none">
+						<option value="name">Name</option>
+						<option value="expansion">Expansion</option>
+						<option value="cost">Cost</option>
+					</Select>
+				</InputGroup>
+			</Stack>
+			<Stack direction={{base: 'column', md: 'row'}} spacing={{base: '5px', md: '20px'}}>
 				{['Supply', 'Non-supply', 'Landscape'].map((type) => (
-					<Form.Check
-						inline={!isMobile}
-						checked={displayed.includes(type)}
-						key={type}
-						label={type}
-						type="switch"
-						onChange={() => toggleDisplayType(type)}
-					/>
+					<HStack key={type}>
+						<Switch isChecked={displayed.includes(type)} onChange={() => toggleDisplayType(type)}/>
+						<Text pl="10px">{type}</Text>
+					</HStack>
 				))}
-			</div>
+			</Stack>
 		</>
 	)
 }

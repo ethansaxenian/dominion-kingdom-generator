@@ -1,28 +1,33 @@
-import { Accordion, Card, Form } from 'react-bootstrap';
-import styles from '../styles/Selector.module.css';
 import PropTypes from 'prop-types';
-import { expansionType, promoNameType } from '../lib/types';
+import { expansionType, promoNameType } from 'lib/types';
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, HStack, Switch, Text, useColorModeValue, VStack } from '@chakra-ui/react';
 
 export default function Selector({ list, toggle, options, name }) {
-	const selectors = options.map((option) => (
-		<Form.Check
-			key={option}
-			type="switch"
-			label={option}
-			checked={list.includes(option)}
-			onChange={() => toggle(option)}
-			className={styles.checkboxRow}
-		/>
-	));
-
 	return (
-		<Accordion className={styles.selector} as={Card}>
-			<Accordion.Header>
-				Select {name}
-			</Accordion.Header>
-			<Accordion.Body className={styles.checklist}>
-				{selectors}
-			</Accordion.Body>
+		<Accordion allowToggle w="250px" mt="30px" justify="center" borderColor="transparent">
+			<AccordionItem bg={useColorModeValue('gray.100', 'gray.800')}>
+				<AccordionButton
+					bg={useColorModeValue('gray.300', 'gray.700')}
+					_hover={{
+						bg: useColorModeValue('gray.400', 'gray.600')
+					}}
+				>
+					<Box flex="1" textAlign="left">
+						Select {name}
+					</Box>
+					<AccordionIcon/>
+				</AccordionButton>
+				<AccordionPanel py={4}>
+					<VStack alignItems="left" m="auto" w="fit-content">
+						{options.map((option) => (
+							<HStack key={option}>
+								<Switch isChecked={list.includes(option)} onChange={() => toggle(option)}/>
+								<Text pl="10px" fontWeight="semibold">{option}</Text>
+							</HStack>
+						))}
+					</VStack>
+				</AccordionPanel>
+			</AccordionItem>
 		</Accordion>
 	)
 }

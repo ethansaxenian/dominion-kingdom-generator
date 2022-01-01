@@ -41,7 +41,7 @@ for row in table_rows[1:]:
     "potions": cost["potions"],
     "debt": cost["debt"],
     "text": text,
-    "in_supply": "this is not in the supply" not in text,
+    "in_supply": "this is not in the supply" not in text and not "Heirloom" in types and not "Shelter" in types,
     "img": f"/images/{name}.jpg",
     "link": f"http://wiki.dominionstrategy.com{link}"
   })

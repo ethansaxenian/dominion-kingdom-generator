@@ -1,34 +1,25 @@
-import styles from '../styles/CardsDisplay.module.css';
-import { Button, Card, Figure } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import { cardType } from '../lib/types';
-import classNames from 'classnames';
+import { cardType } from 'lib/types';
+import Card from './Card';
+import { Container, Wrap, WrapItem } from '@chakra-ui/react';
 
-export default function CardsDisplay({ data, swapCard, cardWidth }) {
-	const cards = data.map((card) => (
-		<li key={card.name}>
-			<Card className={classNames({ [styles.cardDisplayInBrowse]: !(card.bane || card.wotm || swapCard) })}>
-				<a href={card.link} target="_blank" rel="noopener noreferrer">
-					<Figure.Image width={cardWidth} src={process.env.PUBLIC_URL + card.img} alt={card.name}/>
-				</a>
-				{(card.bane || card.wotm || swapCard) && (
-					<Card.Body>
-						{card.bane && <Card.Text>Bane Card</Card.Text>}
-						{card.wotm && <Card.Text>Way of the Mouse</Card.Text>}
-						{swapCard && <Button size="sm" variant="danger" onClick={() => swapCard(card)}>Swap</Button>}
-					</Card.Body>
-				)}
-			</Card>
-		</li>
-	));
+export default function CardsDisplay({ data, swapCard, hasWikiLink }) {
 
 	return (
-		<ul className={styles.cardsList}>{cards}</ul>
+		<Container centerContent maxW="container.lg" p="10px">
+			<Wrap spacing="20px" justify="center">
+				{data.map((card) => (
+					<WrapItem key={card.name}>
+						<Card card={card} swapCard={swapCard} hasWikiLink={hasWikiLink}/>
+					</WrapItem>
+				))}
+			</Wrap>
+		</Container>
 	)
 }
 
 CardsDisplay.propTypes = {
 	data: PropTypes.arrayOf(cardType).isRequired,
 	swapCard: PropTypes.func,
-	cardWidth: PropTypes.number
+	hasWikiLink: PropTypes.bool.isRequired
 }

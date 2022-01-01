@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react';
-import { Button, Col, Row } from 'react-bootstrap';
-import { arrayIncludesCard, arrayIncludesCardName, drawCards, sample, sortTwoCards } from '../lib/utils';
+import { arrayIncludesCard, arrayIncludesCardName, drawCards, sample, sortTwoCards } from 'lib/utils';
 import CardsDisplay from './CardsDisplay';
 import PropTypes from 'prop-types';
-import { cardType } from '../lib/types';
-import styles from '../styles/KingdomDisplay.module.css';
+import { cardType } from 'lib/types';
+import { Button, VStack } from '@chakra-ui/react';
 
 export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLandscape, usePlatinumColony, platinumColony, blackMarketOptions }) {
 	const [blackMarketDeck, setBlackMarketDeck] = useState([]);
@@ -32,40 +31,44 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
 	const supply = kingdom.filter((card) => card !== wotm);
 
 	return (
-		<div className={styles.kingdomDisplayContainer}>
-			<CardsDisplay data={supply.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))} swapCard={swapCard} cardWidth={170}/>
-			<Row>
-				{(landscapes.length > 0) && (
-					<Col>
-						<CardsDisplay data={landscapes.sort((card1, card2) => sortTwoCards(card1, card2, 'name'))} swapCard={swapLandscape} cardWidth={300}/>
-					</Col>
-				)}
-				{usePlatinumColony && (
-					<Col>
-						<CardsDisplay data={platinumColony} cardWidth={150}/>
-					</Col>
-				)}
-				{wotm && (
-					<Col>
-						<CardsDisplay data={[wotm]} swapCard={swapCard} cardWidth={150}/>
-					</Col>
-				)}
-			</Row>
-			{arrayIncludesCardName(kingdom, 'Black Market') && (
-				<div className={styles.blackMarketDisplay}>
-					<Button onClick={() => generateBlackMarketDeck()}>Generate Black Market Deck</Button>
-					{(blackMarketDeck.length > 0) && (
-						<div className={styles.blackMarketCardsDisplay}>
-							<CardsDisplay
-								data={blackMarketDeck.sort((card1, card2) => sortTwoCards(card1, card2, 'expansion'))}
-								swapCard={swapBMCard}
-								cardWidth={170}
-							/>
-						</div>
-					)}
-				</div>
+		<>
+			<CardsDisplay
+				data={supply.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))}
+				swapCard={swapCard}
+				hasWikiLink={false}
+			/>
+			{(landscapes.length > 0) && (
+				<CardsDisplay
+					data={landscapes.sort((card1, card2) => sortTwoCards(card1, card2, 'name'))}
+					swapCard={swapLandscape}hasWikiLink={false}
+				/>
 			)}
-		</div>
+			{usePlatinumColony && (
+				<CardsDisplay data={platinumColony} hasWikiLink={false}/>
+			)}
+			{wotm && (
+				<CardsDisplay data={[wotm]} swapCard={swapCard} hasWikiLink={false}/>
+			)}
+			{arrayIncludesCardName(kingdom, 'Black Market') && (
+				<VStack mt="50px">
+					<Button
+						size="lg"
+						colorScheme="blue"
+						onClick={() => generateBlackMarketDeck()}
+						mb="25px"
+					>
+						Generate Black Market Deck
+					</Button>
+					{(blackMarketDeck.length > 0) && (
+						<CardsDisplay
+							data={blackMarketDeck.sort((card1, card2) => sortTwoCards(card1, card2, 'expansion'))}
+							swapCard={(blackMarketOptions.length > 60) ? swapBMCard : undefined}
+							hasWikiLink={false}
+						/>
+					)}
+				</VStack>
+			)}
+		</>
 	)
 }
 

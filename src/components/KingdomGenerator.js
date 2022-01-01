@@ -40,7 +40,7 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 
 	const generateKingdom = () => {
 		if (expansions.length === 0) {
-			setAlert('You need at least 10 kingdom cards!');
+			setAlert('You need to select at least one expansion!')
 			return
 		}
 		const newKingdom = drawCards(availableCards, 10, ((card) => (hasValidExpansion(card, expansions) || promos.includes(card.name))));

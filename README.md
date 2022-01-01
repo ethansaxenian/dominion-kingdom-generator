@@ -8,3 +8,5 @@ Current features list:
 Feature TODOs:
 - Randomize number of landscape cards
 - Limit to one Way?
+
+All images obtained from http://wiki.dominionstrategy.com/

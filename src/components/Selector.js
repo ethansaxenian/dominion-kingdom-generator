@@ -11,6 +11,7 @@ export default function Selector({ list, toggle, options, name }) {
 					_hover={{
 						bg: useColorModeValue('gray.400', 'gray.600')
 					}}
+					p="15px"
 				>
 					<Box flex="1" textAlign="left">
 						Select {name}
@@ -18,7 +19,7 @@ export default function Selector({ list, toggle, options, name }) {
 					<AccordionIcon/>
 				</AccordionButton>
 				<AccordionPanel py={4}>
-					<VStack alignItems="left" m="auto" w="fit-content">
+					<VStack alignItems="left" m="auto" w="fit-content" spacing="15px">
 						{options.map((option) => (
 							<HStack key={option}>
 								<Switch isChecked={list.includes(option)} onChange={() => toggle(option)}/>

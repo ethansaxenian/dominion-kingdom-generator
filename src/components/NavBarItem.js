@@ -1,28 +1,24 @@
-import { Nav, Navbar } from 'react-bootstrap';
-import { IconContext } from 'react-icons';
-import { useMediaQuery } from 'react-responsive';
 import PropTypes from 'prop-types';
-import styles from '../styles/NavBarItem.module.css';
-import classNames from 'classnames';
+import { HStack, Icon, Link, Text, useColorModeValue } from '@chakra-ui/react';
 
 export default function NavBarItem({ label, isActive, onClick, icon }) {
-	const isMobile = useMediaQuery({ maxWidth: 768 });
 
 	return (
-		<Nav.Item className={isMobile ? styles.iconOnly : styles.iconAndText}>
-			<Nav.Link
-				active={isActive}
-				onClick={() => onClick()}
-				className={classNames(styles.navLink, { [styles.activeLink]: isActive })}
-			>
-				{icon && (
-					<IconContext.Provider value={{ size: '1.5em', className: styles.icon, title: label }}>
-						{icon}
-					</IconContext.Provider>
-				)}
-				{!isMobile && <Navbar.Text className={styles.navText}>{label}</Navbar.Text>}
-			</Nav.Link>
-		</Nav.Item>
+		<Link
+			onClick={() => onClick()}
+			rounded="md"
+			color={isActive ? 'black' : useColorModeValue('gray.600', 'gray.400')}
+			_hover={{
+				textDecoration: 'none',
+				color: 'black'
+			}}
+			bg={isActive && useColorModeValue('gray.300', 'gray.700')}
+		>
+			<HStack spacing="10px" w="fit-content" p="10px">
+				<Icon as={icon} boxSize="25px"/>
+				<Text display={{base: 'none', md: 'flex'}}>{label}</Text>
+			</HStack>
+		</Link>
 	)
 }
 

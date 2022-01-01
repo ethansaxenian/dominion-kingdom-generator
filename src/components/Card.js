@@ -1,4 +1,4 @@
-import { AspectRatio, Box, Image, LinkOverlay, Tag, useBoolean, useToken } from '@chakra-ui/react';
+import { AspectRatio, Box, Image, LinkOverlay, Tag, useBoolean, useColorModeValue, useToken } from '@chakra-ui/react';
 import { isLandscape } from 'lib/utils';
 import ConditionalWrapper from './ConditionalWrapper';
 import PropTypes from 'prop-types';
@@ -6,7 +6,7 @@ import { cardType } from 'lib/types';
 
 export default function Card({ card, swapCard, hasWikiLink }) {
 	const [hovered, setHovered] = useBoolean();
-	const [hoverColor] = useToken('colors', ['red.400']);
+	const hoverColor = useColorModeValue(...useToken('colors', ['red.400', 'red.600']));
 
 	const handleClick = () => {
 		if (swapCard) {

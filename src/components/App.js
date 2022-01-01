@@ -4,7 +4,7 @@ import CardSearcher from './CardSearcher';
 import NavBar from './NavBar';
 import KingdomGenerator from './KingdomGenerator';
 import KingdomSettings from './KingdomSettings';
-import { Box, Container, Image } from '@chakra-ui/react';
+import { Container, Image } from '@chakra-ui/react';
 
 export default function App() {
 	const [cards] = useState(data);
@@ -32,7 +32,7 @@ export default function App() {
 		<Container centerContent maxW="container.xl">
 			<Image src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" boxSize="65%"/>
 			<NavBar page={page} setPage={setPage}/>
-			<Box>
+			<>
 				{(page === 'generate') && (
 					<KingdomGenerator
 						cards={cards}
@@ -49,7 +49,7 @@ export default function App() {
 					/>
 				)}
 				{(page === 'browse') && <CardSearcher cards={cards}/>}
-			</Box>
+			</>
 		</Container>
 	);
 }

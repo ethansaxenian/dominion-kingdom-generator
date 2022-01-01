@@ -15,7 +15,7 @@ export default function NavBar({ page, setPage }) {
 			justify="space-between"
 			bg={useColorModeValue('gray.100', 'gray.900')}
 		>
-			<Image src={`${process.env.PUBLIC_URL}/favicon.ico`} alt="logo" boxSize="40px"/>
+			<Image src={`${process.env.PUBLIC_URL}/favicon.ico`} alt="logo" htmlHeight="40px" htmlWidth="40px"/>
 			<NavBarItem
 				label="Kingdom Generator"
 				isActive={page === 'generate'}

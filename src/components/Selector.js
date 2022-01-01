@@ -3,7 +3,6 @@ import { expansionType, promoNameType } from 'lib/types';
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, HStack, Switch, Text, useColorModeValue, VStack } from '@chakra-ui/react';
 
 export default function Selector({ list, toggle, options, name }) {
-
 	return (
 		<Accordion allowToggle w="250px" mt="30px" justify="center" borderColor="transparent">
 			<AccordionItem bg={useColorModeValue('gray.100', 'gray.800')}>

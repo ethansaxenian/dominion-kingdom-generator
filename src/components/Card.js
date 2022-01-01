@@ -1,4 +1,4 @@
-import { AspectRatio, Box, Image, LinkOverlay, Tag, useBoolean, useToken } from '@chakra-ui/react';
+import { AspectRatio, Box, Center, Image, LinkOverlay, Tag, useBoolean, useToken } from '@chakra-ui/react';
 import { isLandscape } from 'lib/utils';
 import ConditionalWrapper from './ConditionalWrapper';
 import PropTypes from 'prop-types';

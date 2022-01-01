@@ -62,7 +62,7 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
 					{(blackMarketDeck.length > 0) && (
 						<CardsDisplay
 							data={blackMarketDeck.sort((card1, card2) => sortTwoCards(card1, card2, 'expansion'))}
-							swapCard={(blackMarketOptions.length > 60) && swapBMCard}
+							swapCard={(blackMarketOptions.length > 60) ? swapBMCard : undefined}
 							hasWikiLink={false}
 						/>
 					)}

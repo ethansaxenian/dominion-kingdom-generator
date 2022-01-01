@@ -31,24 +31,22 @@ export default function App() {
 	return (
 		<Container centerContent maxW="container.xl">
 			<NavBar page={page} setPage={setPage}/>
-			<>
-				{(page === 'generate') && (
-					<KingdomGenerator
-						cards={cards}
-						expansions={expansions}
-						promos={promos}
-					/>
-				)}
-				{(page === 'settings') && (
-					<KingdomSettings
-						expansions={expansions}
-						promos={promos}
-						toggleExpansion={toggleExpansion}
-						togglePromo={togglePromo}
-					/>
-				)}
-				{(page === 'browse') && <CardSearcher cards={cards}/>}
-			</>
+			{(page === 'generate') && (
+				<KingdomGenerator
+					cards={cards}
+					expansions={expansions}
+					promos={promos}
+				/>
+			)}
+			{(page === 'settings') && (
+				<KingdomSettings
+					expansions={expansions}
+					promos={promos}
+					toggleExpansion={toggleExpansion}
+					togglePromo={togglePromo}
+				/>
+			)}
+			{(page === 'browse') && <CardSearcher cards={cards}/>}
 		</Container>
 	);
 }

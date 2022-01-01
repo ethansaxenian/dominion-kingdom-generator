@@ -19,8 +19,7 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 				title: alert,
 				status: 'error',
 				duration: 3000,
-				isClosable: true,
-				position: 'top'
+				isClosable: true
 			});
 			setAlert('');
 		}

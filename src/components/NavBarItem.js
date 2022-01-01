@@ -3,16 +3,20 @@ import { HStack, Icon, Link, Text, useColorModeValue } from '@chakra-ui/react';
 
 export default function NavBarItem({ label, isActive, onClick, icon }) {
 
+	const textColor = useColorModeValue('black', 'white');
+	const textActiveColor = useColorModeValue('gray.600', 'gray.400');
+	const bgActiveColor = useColorModeValue('gray.300', 'gray.700');
+
 	return (
 		<Link
 			onClick={() => onClick()}
 			rounded="md"
-			color={isActive ? useColorModeValue('black', 'white') : useColorModeValue('gray.600', 'gray.400')}
+			color={isActive ? textColor : textActiveColor}
 			_hover={{
 				textDecoration: 'none',
-				color: useColorModeValue('black', 'white')
+				color: textColor
 			}}
-			bg={isActive && useColorModeValue('gray.300', 'gray.700')}
+			bg={isActive && bgActiveColor}
 		>
 			<HStack spacing="10px" w="fit-content" p="10px">
 				<Icon as={icon} boxSize="25px"/>
@@ -26,5 +30,5 @@ NavBarItem.propTypes = {
 	label: PropTypes.string.isRequired,
 	isActive: PropTypes.bool.isRequired,
 	onClick: PropTypes.func.isRequired,
-	icon: PropTypes.element
+	icon: PropTypes.func.isRequired
 }

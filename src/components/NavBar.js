@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 import { GiCardPick, GiCastle } from 'react-icons/gi';
+import { MdSettings } from 'react-icons/md';
 import NavBarItem from './NavBarItem';
 import { Flex, IconButton, Image, useColorMode, useColorModeValue } from '@chakra-ui/react';
-import { MoonIcon, SettingsIcon, SunIcon } from '@chakra-ui/icons';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 export default function NavBar({ page, setPage }) {
 	const { colorMode, toggleColorMode } = useColorMode();
@@ -26,7 +27,7 @@ export default function NavBar({ page, setPage }) {
 				label="Kingdom Settings"
 				isActive={page === 'settings'}
 				onClick={() => setPage('settings')}
-				icon={SettingsIcon}
+				icon={MdSettings}
 			/>
 			<NavBarItem
 				label="Browse Cards"

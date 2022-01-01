@@ -7,10 +7,10 @@ export default function NavBarItem({ label, isActive, onClick, icon }) {
 		<Link
 			onClick={() => onClick()}
 			rounded="md"
-			color={isActive ? 'black' : useColorModeValue('gray.600', 'gray.400')}
+			color={isActive ? useColorModeValue('black', 'white') : useColorModeValue('gray.600', 'gray.400')}
 			_hover={{
 				textDecoration: 'none',
-				color: 'black'
+				color: useColorModeValue('black', 'white')
 			}}
 			bg={isActive && useColorModeValue('gray.300', 'gray.700')}
 		>

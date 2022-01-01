@@ -1,17 +1,16 @@
 import PropTypes from 'prop-types';
 import { GiCardPick, GiCastle } from 'react-icons/gi';
-import { BsInboxes } from 'react-icons/bs';
 import NavBarItem from './NavBarItem';
-import { Flex, Image, useColorModeValue } from '@chakra-ui/react';
+import { Flex, IconButton, Image, useColorMode, useColorModeValue } from '@chakra-ui/react';
+import { MoonIcon, SettingsIcon, SunIcon } from '@chakra-ui/icons';
 
 export default function NavBar({ page, setPage }) {
+	const { colorMode, toggleColorMode } = useColorMode();
 
 	return (
 		<Flex
-			w="100%"
-			py="20px"
-			ps="20px"
-			pe="15vw"
+			w="100vw"
+			p="20px"
 			justify="space-between"
 			bg={useColorModeValue('gray.100', 'gray.900')}
 			borderRadius="8px"
@@ -27,13 +26,19 @@ export default function NavBar({ page, setPage }) {
 				label="Kingdom Settings"
 				isActive={page === 'settings'}
 				onClick={() => setPage('settings')}
-				icon={BsInboxes}
+				icon={SettingsIcon}
 			/>
 			<NavBarItem
 				label="Browse Cards"
 				isActive={page === 'browse'}
 				onClick={() => setPage('browse')}
 				icon={GiCardPick}
+			/>
+			<IconButton
+				onClick={toggleColorMode}
+				aria-label={`toggle ${colorMode === 'light' ? 'dark' : 'light'} mode`}
+				icon={colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
+				fontSize="20px"
 			/>
 		</Flex>
 	)

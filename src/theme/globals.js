@@ -21,5 +21,5 @@ export default extendTheme({
 				'max-width': '100%'
 			}
 		},
-	},
+	}
 })

@@ -1,9 +1,27 @@
 import { extendTheme } from '@chakra-ui/react';
 
-import globals from './globals';
+const theme = extendTheme({
+	styles: {
+		global: {
+			'*, *::before, *::after': {
+				'box-sizing': 'border-box'
+			},
+			'*': {
+				margin: 0
+			},
+			'html, body': {
+				height: '100%'
+			},
+			body: {
+				'line-height': 1.5,
+				'-webkit-font-smoothing': 'antialiased'
+			},
+			'img, picture, video, canvas, svg': {
+				display: 'block',
+				'max-width': '100%'
+			}
+		}
+	}
+});
 
-const overrides = {
-	globals
-}
-
-export default extendTheme(overrides);
+export default theme;

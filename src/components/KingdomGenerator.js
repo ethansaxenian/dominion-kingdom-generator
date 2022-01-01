@@ -1,16 +1,30 @@
-import { useState } from 'react';
-import { addExtraCards, arrayIncludesCard, drawCards, generateBlackMarket, hasValidExpansion, isLandscape, isValidKingdomCard, sample, sortTwoCards } from '../lib/utils';
-import { Alert, Button } from 'react-bootstrap';
+import { useEffect, useState } from 'react';
+import { addExtraCards, arrayIncludesCard, drawCards, generateBlackMarket, hasValidExpansion, isLandscape, isValidKingdomCard, sample, sortTwoCards } from 'lib/utils';
 import KingdomDisplay from './KingdomDisplay';
 import PropTypes from 'prop-types';
-import { cardType, expansionType, promoNameType } from '../lib/types';
-import styles from '../styles/KingdomGenerator.module.css';
+import { cardType, expansionType, promoNameType } from 'lib/types';
+import { Button, Center, useToast } from '@chakra-ui/react';
 
 export default function KingdomGenerator({ cards, expansions, promos }) {
 	const [kingdom, setKingdom] = useState([]);
 	const [landscapes, setLandScapes] = useState([]);
 	const [usePlatinumColony, setUsePlatinumColony] = useState(false);
 	const [alert, setAlert] = useState('');
+
+	const alertToast = useToast();
+
+	useEffect(() => {
+		if (alert !== '') {
+			alertToast({
+				title: alert,
+				status: 'error',
+				duration: 3000,
+				isClosable: true,
+				position: 'top'
+			});
+			setAlert('');
+		}
+	}, [alert]);
 
 	const availableCards = cards.filter((card) =>
 		isValidKingdomCard(card, true)
@@ -27,7 +41,7 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 
 	const generateKingdom = () => {
 		if (expansions.length === 0) {
-			setAlert('You need at least 10 kingdom cards!')
+			setAlert('You need at least 10 kingdom cards!');
 			return
 		}
 		const newKingdom = drawCards(availableCards, 10, ((card) => (hasValidExpansion(card, expansions) || promos.includes(card.name))));
@@ -36,7 +50,8 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 		setKingdom(addExtraCards(newKingdom, newLandscapes, leftovers));
 		setLandScapes(newLandscapes);
 		if (newKingdom.length > 0) {
-			setUsePlatinumColony(sample(newKingdom).expansion === 'Prosperity');
+			const [randomCard] = sample(newKingdom);
+			setUsePlatinumColony(randomCard.expansion === 'Prosperity');
 		}
 	}
 
@@ -76,18 +91,16 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 
 	return (
 		<>
-			<div className={styles.generateButton}>
-				<Button variant="success" onClick={() => generateKingdom()} size="lg">Generate Kingdom!</Button>
-				<Alert
-					variant="danger"
-					dismissible
-					show={alert !== ''}
-					onClose={() => setAlert('')}
-					className={styles.generateButtonAlert}
+			<Center w="100%" py="20px">
+				<Button
+					colorScheme="green"
+					onClick={() => generateKingdom()}
+					size="lg"
+					w="fit-content"
 				>
-					{alert}
-				</Alert>
-			</div>
+					Generate Kingdom!
+				</Button>
+			</Center>
 			<KingdomDisplay
 				kingdom={kingdom}
 				landscapes={landscapes}

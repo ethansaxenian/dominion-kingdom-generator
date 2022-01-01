@@ -33,21 +33,28 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
 
 	return (
 		<div className={styles.kingdomDisplayContainer}>
-			<CardsDisplay data={supply.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))} swapCard={swapCard} cardWidth={170}/>
+			<CardsDisplay
+				data={supply.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))}
+				swapCard={swapCard}
+				hasWikiLink={false}
+			/>
 			<Row>
 				{(landscapes.length > 0) && (
 					<Col>
-						<CardsDisplay data={landscapes.sort((card1, card2) => sortTwoCards(card1, card2, 'name'))} swapCard={swapLandscape} cardWidth={300}/>
+						<CardsDisplay
+							data={landscapes.sort((card1, card2) => sortTwoCards(card1, card2, 'name'))}
+							swapCard={swapLandscape}hasWikiLink={false}
+						/>
 					</Col>
 				)}
 				{usePlatinumColony && (
 					<Col>
-						<CardsDisplay data={platinumColony} cardWidth={150}/>
+						<CardsDisplay data={platinumColony} hasWikiLink={false}/>
 					</Col>
 				)}
 				{wotm && (
 					<Col>
-						<CardsDisplay data={[wotm]} swapCard={swapCard} cardWidth={150}/>
+						<CardsDisplay data={[wotm]} swapCard={swapCard} hasWikiLink={false}/>
 					</Col>
 				)}
 			</Row>
@@ -59,7 +66,7 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
 							<CardsDisplay
 								data={blackMarketDeck.sort((card1, card2) => sortTwoCards(card1, card2, 'expansion'))}
 								swapCard={swapBMCard}
-								cardWidth={170}
+								hasWikiLink={false}
 							/>
 						</div>
 					)}

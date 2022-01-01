@@ -4,9 +4,9 @@ import ConditionalWrapper from './ConditionalWrapper';
 import PropTypes from 'prop-types';
 import { cardType } from 'lib/types';
 
-export default function Card({ card, swapCard }) {
+export default function Card({ card, swapCard, hasWikiLink }) {
 	const [hovered, setHovered] = useBoolean();
-	const [red400] = useToken('colors', ['red.400']);
+	const [hoverColor] = useToken('colors', ['red.400']);
 
 	const handleClick = () => {
 		if (swapCard) {
@@ -21,8 +21,8 @@ export default function Card({ card, swapCard }) {
 			onMouseMove={setHovered.on}
 			border="5px solid black"
 			_hover={swapCard && {
-				borderColor: swapCard && 'red.400',
-				boxShadow: `0 0 10px 10px ${red400}`,
+				borderColor: swapCard && hoverColor,
+				boxShadow: `0 0 10px 10px ${hoverColor}`,
 				transform: 'scale(1.05)'
 			}}
 			cursor={swapCard && 'pointer'}
@@ -33,7 +33,7 @@ export default function Card({ card, swapCard }) {
 			position="relative"
 		>
 			<ConditionalWrapper
-				condition={!swapCard}
+				condition={!swapCard && hasWikiLink}
 				wrapper={(children) => (
 					<LinkOverlay isExternal href={card.link}>{children}</LinkOverlay>
 				)}
@@ -78,5 +78,6 @@ export default function Card({ card, swapCard }) {
 
 Card.propTypes = {
 	card: cardType.isRequired,
-	swapCard: PropTypes.func
+	swapCard: PropTypes.func,
+	hasWikiLink: PropTypes.bool.isRequired
 }

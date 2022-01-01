@@ -1,4 +1,4 @@
-import { AspectRatio, Box, Image, LinkOverlay, Text, useBoolean, useToken } from '@chakra-ui/react';
+import { AspectRatio, Box, Image, LinkOverlay, Tag, useBoolean, useToken } from '@chakra-ui/react';
 import { isLandscape } from 'lib/utils';
 import ConditionalWrapper from './ConditionalWrapper';
 import PropTypes from 'prop-types';
@@ -20,7 +20,7 @@ export default function Card({ card, swapCard }) {
 			onMouseLeave={setHovered.off}
 			onMouseMove={setHovered.on}
 			border="5px solid black"
-			_hover={{
+			_hover={swapCard && {
 				borderColor: swapCard && 'red.400',
 				boxShadow: `0 0 10px 10px ${red400}`,
 				transform: 'scale(1.05)'
@@ -43,40 +43,33 @@ export default function Card({ card, swapCard }) {
 					<AspectRatio maxW="100%" ratio={isLandscape(card) ? 320 / 200 : 200 / 320}>
 						<Image src={`${process.env.PUBLIC_URL}/${card.img}`} alt={card.name}/>
 					</AspectRatio>
-					{(card.bane || card.wotm) && (
-						<Text
-							noOfLines={1}
-							isTruncated={false}
-							borderRadius="8px"
-							bgColor="#aaaaaaa0"
-							fontWeight="bold"
+					{(swapCard && (card.bane || card.wotm)) && (
+						<Tag
 							position="absolute"
 							top="50%"
 							left="50%"
 							transform="translate(-50%, -200%)"
 							w="fit-content"
-							p="5px"
+							borderRadius="full"
+							colorScheme="blackAlpha"
+							variant="solid"
 						>
 							{card.bane ? 'Bane Card' : 'Way of the Mouse'}
-						</Text>
+						</Tag>
 					)}
-					{hovered && (
-						<Text
-							noOfLines={1}
-							isTruncated={false}
-							color="red.700"
-							borderRadius="8px"
-							bgColor="#aaaaaaa0"
-							fontWeight="bold"
+					{(swapCard && hovered) && (
+						<Tag
 							position="absolute"
 							top="50%"
 							left="50%"
-							transform="translate(-50%, -95%)"
+							transform="translate(-50%, -90%)"
 							w="fit-content"
-							p="5px"
+							borderRadius="full"
+							colorScheme="blackAlpha"
+							variant="solid"
 						>
-							Click to swap
-						</Text>
+							Click to Swap
+						</Tag>
 					)}
 				</>
 			</ConditionalWrapper>

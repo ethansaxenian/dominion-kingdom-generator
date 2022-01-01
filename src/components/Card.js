@@ -28,7 +28,6 @@ export default function Card({ card, swapCard }) {
 			cursor={swapCard && 'pointer'}
 			onClick={handleClick}
 			w={isLandscape(card) ? '300px' : '170px'}
-			m="10px"
 			borderRadius="8px"
 			transition="200ms"
 			position="relative"

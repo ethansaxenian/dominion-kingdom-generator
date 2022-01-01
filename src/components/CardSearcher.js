@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { cardType } from '../lib/types';
-import { isLandscape, sortTwoCards } from '../lib/utils';
+import { cardType } from 'lib/types';
+import { isLandscape, sortTwoCards } from 'lib/utils';
 import CardsDisplay from './CardsDisplay';
 import SearchBar from './SearchBar';
 import PropTypes from 'prop-types';
-import { SUPPLY_TYPES } from '../lib/constants';
+import { SUPPLY_TYPES } from 'lib/constants';
+import { Divider, Heading } from '@chakra-ui/react';
 
 export default function CardSearcher({ cards }) {
 	const [searchTerm, setSearchTerm] = useState('');
@@ -50,23 +51,23 @@ export default function CardSearcher({ cards }) {
 			/>
 			{(displayed.includes('Supply') && inSupply.length > 0) && (
 				<>
-					<hr/>
-					<h1>Supply Cards</h1>
-					<CardsDisplay data={inSupply}/>
+					<Divider my="30px"/>
+					<Heading pb="30px">Supply Cards</Heading>
+					<CardsDisplay data={inSupply} hasWikiLink/>
 				</>
 			)}
 			{(displayed.includes('Non-supply') && notInSupply.length > 0) && (
 				<>
-					<hr/>
-					<h1>Non-Supply Cards</h1>
-					<CardsDisplay data={notInSupply}/>
+					<Divider my="30px"/>
+					<Heading pb="30px">Non-Supply Cards</Heading>
+					<CardsDisplay data={notInSupply} hasWikiLink/>
 				</>
 			)}
 			{(displayed.includes('Landscape') && landscapes.length > 0) && (
 				<>
-					<hr/>
-					<h1>Landscapes</h1>
-					<CardsDisplay data={landscapes}/>
+					<Divider my="30px"/>
+					<Heading pb="30px">Landscapes</Heading>
+					<CardsDisplay data={landscapes} hasWikiLink/>
 				</>
 			)}
 		</>

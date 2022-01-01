@@ -14,7 +14,6 @@ export default function NavBar({ page, setPage }) {
 			p="20px"
 			justify="space-between"
 			bg={useColorModeValue('gray.100', 'gray.900')}
-			borderRadius="8px"
 		>
 			<Image src={`${process.env.PUBLIC_URL}/favicon.ico`} alt="logo" boxSize="40px"/>
 			<NavBarItem

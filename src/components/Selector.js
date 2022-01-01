@@ -23,9 +23,7 @@ export default function Selector({ list, toggle, options, name }) {
 						{options.map((option) => (
 							<HStack key={option}>
 								<Switch isChecked={list.includes(option)} onChange={() => toggle(option)}/>
-								<Text pl="10px" fontWeight="semibold">
-									{option}
-								</Text>
+								<Text pl="10px" fontWeight="semibold">{option}</Text>
 							</HStack>
 						))}
 					</VStack>

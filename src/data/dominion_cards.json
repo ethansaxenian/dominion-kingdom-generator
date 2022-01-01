@@ -3364,7 +3364,7 @@
     "potions": null,
     "debt": null,
     "text": "when you buy a victory card, you may trash this from your hand.",
-    "in_supply": true,
+    "in_supply": false,
     "img": "/images/Hovel.jpg",
     "link": "http://wiki.dominionstrategy.com/index.php/Hovel"
   },
@@ -3379,7 +3379,7 @@
     "potions": null,
     "debt": null,
     "text": "+2 actions",
-    "in_supply": true,
+    "in_supply": false,
     "img": "/images/Necropolis.jpg",
     "link": "http://wiki.dominionstrategy.com/index.php/Necropolis"
   },
@@ -3394,7 +3394,7 @@
     "potions": null,
     "debt": null,
     "text": "0when you trash this, +1 card.",
-    "in_supply": true,
+    "in_supply": false,
     "img": "/images/Overgrown Estate.jpg",
     "link": "http://wiki.dominionstrategy.com/index.php/Overgrown_Estate"
   },
@@ -6051,7 +6051,7 @@
     "potions": null,
     "debt": null,
     "text": "when you trash this, you may discard an action card, to gain a ghost from its pile.",
-    "in_supply": true,
+    "in_supply": false,
     "img": "/images/Haunted Mirror.jpg",
     "link": "http://wiki.dominionstrategy.com/index.php/Haunted_Mirror"
   },
@@ -6066,7 +6066,7 @@
     "potions": null,
     "debt": null,
     "text": "when you play this, if there are at least 6 cards that you have exactly 1 copy of in play, trash this. if you do, gain 3 wishes from their pile.",
-    "in_supply": true,
+    "in_supply": false,
     "img": "/images/Magic Lamp.jpg",
     "link": "http://wiki.dominionstrategy.com/index.php/Magic_Lamp"
   },
@@ -6081,7 +6081,7 @@
     "potions": null,
     "debt": null,
     "text": "when you play this, you may trash a card from your hand.",
-    "in_supply": true,
+    "in_supply": false,
     "img": "/images/Goat.jpg",
     "link": "http://wiki.dominionstrategy.com/index.php/Goat"
   },
@@ -6097,7 +6097,7 @@
     "potions": null,
     "debt": null,
     "text": "worth 1 per estate you have.",
-    "in_supply": true,
+    "in_supply": false,
     "img": "/images/Pasture.jpg",
     "link": "http://wiki.dominionstrategy.com/index.php/Pasture"
   },
@@ -6112,7 +6112,7 @@
     "potions": null,
     "debt": null,
     "text": "+1 buy",
-    "in_supply": true,
+    "in_supply": false,
     "img": "/images/Pouch.jpg",
     "link": "http://wiki.dominionstrategy.com/index.php/Pouch"
   },
@@ -6127,7 +6127,7 @@
     "potions": null,
     "debt": null,
     "text": "when you play this, gain a curse.",
-    "in_supply": true,
+    "in_supply": false,
     "img": "/images/Cursed Gold.jpg",
     "link": "http://wiki.dominionstrategy.com/index.php/Cursed_Gold"
   },
@@ -6142,7 +6142,7 @@
     "potions": null,
     "debt": null,
     "text": "when you play this, gain a silver.",
-    "in_supply": true,
+    "in_supply": false,
     "img": "/images/Lucky Coin.jpg",
     "link": "http://wiki.dominionstrategy.com/index.php/Lucky_Coin"
   },

@@ -1,5 +1,5 @@
 import { EXPANSIONS, PROMOS } from 'lib/constants';
-import Selector from './Selector';
+import SelectorList from './SelectorList';
 import PropTypes from 'prop-types';
 import { expansionType, promoNameType } from 'lib/types';
 import { SimpleGrid } from '@chakra-ui/react';
@@ -7,13 +7,13 @@ import { SimpleGrid } from '@chakra-ui/react';
 export default function KingdomSettings({ expansions, promos, toggleExpansion, togglePromo }) {
 	return (
 		<SimpleGrid columns={{base: 1, md: 2}} spacingX="10vw">
-			<Selector
+			<SelectorList
 				list={expansions}
 				toggle={toggleExpansion}
 				options={EXPANSIONS}
 				name="Expansions"
 			/>
-			<Selector list={promos} toggle={togglePromo} options={PROMOS} name="Promos"/>
+			<SelectorList list={promos} toggle={togglePromo} options={PROMOS} name="Promos"/>
 		</SimpleGrid>
 	)
 }

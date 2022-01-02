@@ -3,7 +3,7 @@ import { expansionType, promoNameType } from 'lib/types';
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Divider, HStack, Switch, Text, useColorModeValue, VStack } from '@chakra-ui/react';
 import { Fragment } from 'react';
 
-export default function Selector({ list, toggle, options, name }) {
+export default function SelectorList({ list, toggle, options, name }) {
 	return (
 		<Accordion allowToggle w="250px" mt="30px" justify="center" borderColor="transparent">
 			<AccordionItem bg={useColorModeValue('gray.100', 'gray.800')}>
@@ -37,7 +37,7 @@ export default function Selector({ list, toggle, options, name }) {
 	)
 }
 
-Selector.propTypes = {
+SelectorList.propTypes = {
 	list: PropTypes.arrayOf(PropTypes.oneOfType([expansionType, promoNameType])).isRequired,
 	toggle: PropTypes.func.isRequired,
 	options: PropTypes.arrayOf(PropTypes.oneOfType([expansionType, promoNameType])).isRequired,

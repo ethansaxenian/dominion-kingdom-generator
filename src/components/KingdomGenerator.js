@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react';
-import { addExtraCards, arrayIncludesCard, drawCards, generateBlackMarket, hasValidExpansion, sample, sortTwoCards } from 'lib/utils';
 import KingdomDisplay from './KingdomDisplay';
 import PropTypes from 'prop-types';
 import { cardType, expansionType, promoNameType } from 'lib/types';
 import { Button, Center, useToast } from '@chakra-ui/react';
+import { generateBlackMarket, generateKingdom, swapCard, swapLandscape } from 'lib/kingdom-utils';
 
-export default function KingdomGenerator({ cardPool, landscapePool, expansions, promos }) {
+export default function KingdomGenerator({ cards, expansions, promos }) {
 	const [kingdom, setKingdom] = useState([]);
 	const [landscapes, setLandScapes] = useState([]);
 	const [usePlatinumColony, setUsePlatinumColony] = useState(false);
+	const [useShelters, setUseShelters] = useState(false);
 	const [alert, setAlert] = useState('');
 
 	const alertToast = useToast();
@@ -25,68 +26,43 @@ export default function KingdomGenerator({ cardPool, landscapePool, expansions, 
 		}
 	}, [alert]);
 
-	const availableCards = cardPool.filter((card) => hasValidExpansion(card, expansions) || promos.includes(card.name));
-	const availableLandscapes = landscapePool.filter((card) => hasValidExpansion(card, expansions) || promos.includes(card.name));
-
-	const remainingCards = availableCards.filter((card) => !arrayIncludesCard(kingdom, card));
-	const remainingLandscapes = availableLandscapes.filter((card) => !arrayIncludesCard(landscapes, card));
-
-	const generateKingdom = () => {
-		if (availableCards.length < 10) {
-			setAlert('Not enough cards available.')
+	const _generateKingdom = () => {
+		const { newKingdom, newLandscapes, alertText, usePC, useSh } = generateKingdom(cards, expansions, promos);
+		if (alertText !== '') {
+			setAlert(alertText);
 			return
 		}
-		const newKingdom = drawCards(availableCards, 10, ((card) => (hasValidExpansion(card, expansions) || promos.includes(card.name))));
-		const newLandscapes = drawCards(availableLandscapes, Math.min(2, availableLandscapes.length));
-		const leftovers = availableCards.filter((card) => !arrayIncludesCard(newKingdom, card));
-		setKingdom(addExtraCards(newKingdom, newLandscapes, leftovers));
+		setKingdom(newKingdom);
 		setLandScapes(newLandscapes);
-		if (newKingdom.length > 0) {
-			const [randomCard] = sample(newKingdom);
-			setUsePlatinumColony(randomCard.expansion === 'Prosperity');
-		}
+		setUsePlatinumColony(usePC);
+		setUseShelters(useSh);
 	}
 
-	const swapCard = (oldCard) => {
-		if (remainingCards.length < 10) {
-			setAlert('There are no available kingdom cards to swap!')
+	const _swapCard = (oldCard) => {
+		const { newKingdom, alertText } = swapCard(oldCard, kingdom, landscapes, cards, expansions, promos)
+		if (alertText !== '') {
+			setAlert(alertText);
 			return
 		}
-		let newKingdom = kingdom.filter((card) => card.name !== oldCard.name);
-		if (oldCard.name === 'Young Witch') {
-			newKingdom = newKingdom.filter((card) => !card.bane);
-		}
-		if (!oldCard.bane && !oldCard.wotm) {
-			const [newCard] = drawCards(remainingCards, 1);
-			newKingdom.push(newCard);
-		}
-		setKingdom(addExtraCards(newKingdom, landscapes, remainingCards));
+		setKingdom(newKingdom);
 	}
 
-	const swapLandscape = (oldCard) => {
-		if (remainingLandscapes.length < 10) {
-			setAlert('There are no available landscapes to swap!')
+	const _swapLandscape = (oldCard) => {
+		const { newKingdom, newLandscapes, alertText } = swapLandscape(oldCard, kingdom, landscapes, cards, expansions, promos);
+		if (alertText !== '') {
+			setAlert(alertText);
 			return
 		}
-		let newLandscapes = landscapes.filter((card) => card.name !== oldCard.name);
-		let newKingdom = kingdom;
-		if (oldCard.name === 'Way of the Mouse') {
-			newKingdom = newKingdom.filter((card) => !card.wotm);
-		}
-		const [newCard] = drawCards(remainingLandscapes, 1);
-		newLandscapes = [...newLandscapes, newCard];
+		setKingdom(newKingdom);
 		setLandScapes(newLandscapes);
-		setKingdom(addExtraCards(newKingdom, newLandscapes, remainingCards));
 	}
-
-	const platinumColony = cardPool.filter((card) => card.name === 'Platinum' || card.name === 'Colony').sort((a, b) => sortTwoCards(a, b, 'cost'));
 
 	return (
 		<>
 			<Center w="100%" py="20px">
 				<Button
 					colorScheme="green"
-					onClick={() => generateKingdom()}
+					onClick={() => _generateKingdom()}
 					size="lg"
 					w="fit-content"
 				>
@@ -96,19 +72,19 @@ export default function KingdomGenerator({ cardPool, landscapePool, expansions, 
 			<KingdomDisplay
 				kingdom={kingdom}
 				landscapes={landscapes}
-				swapCard={swapCard}
-				swapLandscape={swapLandscape}
+				swapCard={_swapCard}
+				swapLandscape={_swapLandscape}
+				pool={cards}
 				usePlatinumColony={usePlatinumColony}
-				platinumColony={platinumColony}
-				blackMarketOptions={generateBlackMarket(cardPool, kingdom, promos, expansions)}
+				useShelters={useShelters}
+				blackMarketOptions={generateBlackMarket(cards, kingdom, promos, expansions)}
 			/>
 		</>
 	)
 }
 
 KingdomGenerator.propTypes = {
-	cardPool: PropTypes.arrayOf(cardType).isRequired,
-	landscapePool: PropTypes.arrayOf(cardType).isRequired,
+	cards: PropTypes.arrayOf(cardType).isRequired,
 	expansions: PropTypes.arrayOf(expansionType).isRequired,
 	promos: PropTypes.arrayOf(promoNameType).isRequired
 }

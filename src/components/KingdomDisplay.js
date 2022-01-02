@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import { arrayIncludesCard, arrayIncludesCardName, drawCards, sample, sortTwoCards } from 'lib/utils';
+import { arrayIncludesCard, arrayIncludesCardName, drawCards, isOfType, sample, sortTwoCards } from 'lib/utils';
 import CardsDisplay from './CardsDisplay';
 import PropTypes from 'prop-types';
 import { cardType } from 'lib/types';
-import { Button, VStack } from '@chakra-ui/react';
+import { Button, Stack, VStack } from '@chakra-ui/react';
 
-export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLandscape, usePlatinumColony, platinumColony, blackMarketOptions }) {
+export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLandscape, pool, usePlatinumColony, useShelters, blackMarketOptions }) {
 	const [blackMarketDeck, setBlackMarketDeck] = useState([]);
 
 	useEffect(() => {
@@ -30,6 +30,9 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
 	const [wotm] = kingdom.filter((card) => card.wotm);
 	const supply = kingdom.filter((card) => card !== wotm);
 
+	const platinumColony = pool.filter((card) => card.name === 'Platinum' || card.name === 'Colony');
+	const shelters = pool.filter((card) => isOfType(card, ['Shelter']));
+
 	return (
 		<>
 			<CardsDisplay
@@ -37,17 +40,24 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
 				swapCard={swapCard}
 				hasWikiLink={false}
 			/>
-			{(landscapes.length > 0) && (
-				<CardsDisplay
-					data={landscapes.sort((card1, card2) => sortTwoCards(card1, card2, 'name'))}
-					swapCard={swapLandscape}hasWikiLink={false}
-				/>
-			)}
-			{usePlatinumColony && (
-				<CardsDisplay data={platinumColony} hasWikiLink={false}/>
-			)}
-			{wotm && (
-				<CardsDisplay data={[wotm]} swapCard={swapCard} hasWikiLink={false}/>
+
+			<Stack direction={{base: 'column', md: 'row'}}>
+				{(landscapes.length > 0) && (
+					<CardsDisplay
+						data={landscapes.sort((card1, card2) => sortTwoCards(card1, card2, 'name'))}
+						swapCard={swapLandscape} hasWikiLink={false}
+					/>
+				)}
+				{wotm && (
+					<CardsDisplay data={[wotm]} swapCard={swapCard} hasWikiLink={false}/>
+				)}
+				{usePlatinumColony && (
+					<CardsDisplay data={platinumColony.sort((a, b) => sortTwoCards(a, b, 'cost'))} hasWikiLink={false}/>
+				)}
+			</Stack>
+
+			{useShelters && (
+				<CardsDisplay data={shelters.sort((a, b) => sortTwoCards(a, b, 'name'))} hasWikiLink={false}/>
 			)}
 			{arrayIncludesCardName(kingdom, 'Black Market') && (
 				<VStack mt="50px">
@@ -77,7 +87,8 @@ KingdomDisplay.propTypes = {
 	landscapes: PropTypes.arrayOf(cardType).isRequired,
 	swapCard: PropTypes.func.isRequired,
 	swapLandscape: PropTypes.func.isRequired,
+	pool: PropTypes.arrayOf(cardType).isRequired,
 	usePlatinumColony: PropTypes.bool.isRequired,
-	platinumColony: PropTypes.arrayOf(cardType).isRequired,
+	useShelters: PropTypes.bool.isRequired,
 	blackMarketOptions: PropTypes.arrayOf(cardType).isRequired
 }

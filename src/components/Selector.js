@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { expansionType, promoNameType } from 'lib/types';
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, HStack, Switch, Text, useColorModeValue, VStack } from '@chakra-ui/react';
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Divider, HStack, Switch, Text, useColorModeValue, VStack } from '@chakra-ui/react';
 
 export default function Selector({ list, toggle, options, name }) {
 	return (
@@ -19,12 +19,15 @@ export default function Selector({ list, toggle, options, name }) {
 					<AccordionIcon/>
 				</AccordionButton>
 				<AccordionPanel py={4}>
-					<VStack alignItems="left" m="auto" w="fit-content" spacing="15px">
+					<VStack alignItems="left" m="auto" w="fit-content">
 						{options.map((option) => (
-							<HStack key={option}>
-								<Switch isChecked={list.includes(option)} onChange={() => toggle(option)}/>
-								<Text pl="10px" fontWeight="semibold">{option}</Text>
-							</HStack>
+							<>
+								<HStack key={option} justify="space-between">
+									<Text fontWeight="semibold" pr="15px">{option}</Text>
+									<Switch isChecked={list.includes(option)} onChange={() => toggle(option)} ml="auto"/>
+								</HStack>
+								<Divider/>
+							</>
 						))}
 					</VStack>
 				</AccordionPanel>

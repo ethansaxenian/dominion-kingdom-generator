@@ -53,21 +53,21 @@ export default function CardSearcher({ cards }) {
 				<>
 					<Divider my="30px"/>
 					<Heading pb="30px">Supply Cards</Heading>
-					<CardsDisplay data={inSupply} hasWikiLink/>
+					<CardsDisplay data={inSupply}/>
 				</>
 			)}
 			{(displayed.includes('Non-supply') && notInSupply.length > 0) && (
 				<>
 					<Divider my="30px"/>
 					<Heading pb="30px">Non-Supply Cards</Heading>
-					<CardsDisplay data={notInSupply} hasWikiLink/>
+					<CardsDisplay data={notInSupply}/>
 				</>
 			)}
 			{(displayed.includes('Landscape') && landscapes.length > 0) && (
 				<>
 					<Divider my="30px"/>
 					<Heading pb="30px">Landscapes</Heading>
-					<CardsDisplay data={landscapes} hasWikiLink/>
+					<CardsDisplay data={landscapes}/>
 				</>
 			)}
 		</>

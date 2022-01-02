@@ -38,26 +38,25 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
 			<CardsDisplay
 				data={supply.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))}
 				swapCard={swapCard}
-				hasWikiLink={false}
 			/>
 
 			<Stack direction={{base: 'column', md: 'row'}}>
 				{(landscapes.length > 0) && (
 					<CardsDisplay
 						data={landscapes.sort((card1, card2) => sortTwoCards(card1, card2, 'name'))}
-						swapCard={swapLandscape} hasWikiLink={false}
+						swapCard={swapLandscape}
 					/>
 				)}
 				{wotm && (
-					<CardsDisplay data={[wotm]} swapCard={swapCard} hasWikiLink={false}/>
+					<CardsDisplay data={[wotm]} swapCard={swapCard}/>
 				)}
 				{usePlatinumColony && (
-					<CardsDisplay data={platinumColony.sort((a, b) => sortTwoCards(a, b, 'cost'))} hasWikiLink={false}/>
+					<CardsDisplay data={platinumColony.sort((a, b) => sortTwoCards(a, b, 'cost'))}/>
 				)}
 			</Stack>
 
 			{useShelters && (
-				<CardsDisplay data={shelters.sort((a, b) => sortTwoCards(a, b, 'name'))} hasWikiLink={false}/>
+				<CardsDisplay data={shelters.sort((a, b) => sortTwoCards(a, b, 'name'))}/>
 			)}
 			{arrayIncludesCardName(kingdom, 'Black Market') && (
 				<VStack mt="50px">
@@ -73,7 +72,6 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
 						<CardsDisplay
 							data={blackMarketDeck.sort((card1, card2) => sortTwoCards(card1, card2, 'expansion'))}
 							swapCard={(blackMarketOptions.length > 60) ? swapBMCard : undefined}
-							hasWikiLink={false}
 						/>
 					)}
 				</VStack>

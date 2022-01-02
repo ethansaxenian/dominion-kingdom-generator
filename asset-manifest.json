@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/dominion-kingdom-generator/static/js/main.9ebb63c3.js",
+    "main.js": "/dominion-kingdom-generator/static/js/main.a197c3ba.js",
     "index.html": "/dominion-kingdom-generator/index.html",
-    "main.9ebb63c3.js.map": "/dominion-kingdom-generator/static/js/main.9ebb63c3.js.map"
+    "main.a197c3ba.js.map": "/dominion-kingdom-generator/static/js/main.a197c3ba.js.map"
   },
   "entrypoints": [
-    "static/js/main.9ebb63c3.js"
+    "static/js/main.a197c3ba.js"
   ]
 }

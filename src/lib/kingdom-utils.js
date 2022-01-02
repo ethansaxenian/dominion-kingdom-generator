@@ -30,14 +30,21 @@ export const addExtraCards = (kingdom, landscapes, availableCards) => {
 	return newCards;
 }
 
-export const generateKingdom = (pool, expansions, promos) => {
+export const generateKingdom = (pool, expansions, promos, oldKingdom, oldLandscapes) => {
 	const availableCards = getAvailableCards(pool, expansions, promos);
 	if (availableCards.length < 10) {
 		return { alertText: 'Not enough cards available.' }
 	}
 	const availableLandscapes = getAvailableLandscapes(pool, expansions, promos);
-	const newKingdom = drawCards(availableCards, 10, ((card) => (hasValidExpansion(card, expansions) || promos.includes(card.name))));
-	const newLandscapes = drawCards(availableLandscapes, Math.min(2, availableLandscapes.length));
+	const lockedCards = oldKingdom.filter((card) => card.locked);
+	const newKingdom = drawCards(availableCards, 10 - lockedCards.length, ((card) => {
+		if (arrayIncludesCard(lockedCards, card)) {
+			return false;
+		}
+		return hasValidExpansion(card, expansions) || promos.includes(card.name);
+	})).concat(lockedCards);
+	const lockedLandscapes = oldLandscapes.filter((card) => card.locked);
+	const newLandscapes = drawCards(availableLandscapes, Math.min(2, availableLandscapes.length) - lockedLandscapes.length, ((card) => !card.locked)).concat(lockedLandscapes);
 	const leftovers = availableCards.filter((card) => !arrayIncludesCard(newKingdom, card));
 	const extraCards = addExtraCards(newKingdom, newLandscapes, leftovers);
 	newKingdom.push(...extraCards);

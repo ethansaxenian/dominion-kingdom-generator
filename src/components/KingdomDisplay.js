@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { cardType } from 'lib/types';
 import { Button, Stack, VStack } from '@chakra-ui/react';
 
-export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLandscape, pool, usePlatinumColony, useShelters, blackMarketOptions }) {
+export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLandscape, lockCard, pool, usePlatinumColony, useShelters, blackMarketOptions }) {
 	const [blackMarketDeck, setBlackMarketDeck] = useState([]);
 
 	useEffect(() => {
@@ -38,13 +38,14 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
 			<CardsDisplay
 				data={supply.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))}
 				swapCard={swapCard}
+				lockCard={lockCard}
 			/>
-
 			<Stack direction={{base: 'column', md: 'row'}}>
 				{(landscapes.length > 0) && (
 					<CardsDisplay
 						data={landscapes.sort((card1, card2) => sortTwoCards(card1, card2, 'name'))}
 						swapCard={swapLandscape}
+						lockCard={lockCard}
 					/>
 				)}
 				{wotm && (
@@ -85,6 +86,7 @@ KingdomDisplay.propTypes = {
 	landscapes: PropTypes.arrayOf(cardType).isRequired,
 	swapCard: PropTypes.func.isRequired,
 	swapLandscape: PropTypes.func.isRequired,
+	lockCard: PropTypes.func.isRequired,
 	pool: PropTypes.arrayOf(cardType).isRequired,
 	usePlatinumColony: PropTypes.bool.isRequired,
 	useShelters: PropTypes.bool.isRequired,

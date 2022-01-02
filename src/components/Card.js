@@ -30,11 +30,13 @@ export default function Card({ card, swapCard, lockCard }) {
 						icon={<VscArrowSwap/>}
 						onClick={() => swapCard(card)}
 					/>
-					<IconButton
-						colorScheme={card.locked ? 'green' : 'blue'}
-						icon={card.locked ? <LockIcon/> : <UnlockIcon/>}
-						onClick={() => lockCard(card)}
-					/>
+					{lockCard && (
+						<IconButton
+							colorScheme={card.locked ? 'green' : 'blue'}
+							icon={card.locked ? <LockIcon/> : <UnlockIcon/>}
+							onClick={() => lockCard(card)}
+						/>
+					)}
 				</HStack>
 			)}
 			{(swapCard && (card.bane || card.wotm)) && (

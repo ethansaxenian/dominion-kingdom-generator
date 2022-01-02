@@ -1,4 +1,4 @@
-import { AspectRatio, Box, HStack, IconButton, Image, LinkOverlay, Tag } from '@chakra-ui/react';
+import { AspectRatio, Box, HStack, IconButton, Image, LinkOverlay, Spinner, Tag } from '@chakra-ui/react';
 import { isLandscape } from 'lib/utils';
 import PropTypes from 'prop-types';
 import { cardType } from 'lib/types';
@@ -14,7 +14,13 @@ export default function Card({ card, swapCard, lockCard }) {
 		>
 			<AspectRatio maxW="100%" ratio={isLandscape(card) ? 325 / 200 : 200 / 320}>
 				<LinkOverlay isExternal href={card.link}>
-					<Image src={`${process.env.PUBLIC_URL}/${card.img}`} alt={card.name} border="5px solid black" borderRadius="8px"/>
+					<Image
+						src={`${process.env.PUBLIC_URL}/${card.img}`}
+						alt={card.name}
+						border="5px solid black"
+						borderRadius="8px"
+						fallback={<Spinner size="xl"/>}
+					/>
 				</LinkOverlay>
 			</AspectRatio>
 			{swapCard && (

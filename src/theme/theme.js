@@ -4,7 +4,7 @@ const theme = extendTheme({
 	styles: {
 		global: {
 			'*, *::before, *::after': {
-				'box-sizing': 'border-box'
+				boxSizing: 'border-box'
 			},
 			'*': {
 				margin: 0
@@ -13,12 +13,12 @@ const theme = extendTheme({
 				height: '100%'
 			},
 			body: {
-				'line-height': 1.5,
-				'-webkit-font-smoothing': 'antialiased'
+				lineHeight: 1.5,
+				WebkitFontSmoothing: 'antialiased'
 			},
 			'img, picture, video, canvas, svg': {
 				display: 'block',
-				'max-width': '100%'
+				maxWidth: '100%'
 			}
 		}
 	}

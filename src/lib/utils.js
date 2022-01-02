@@ -1,4 +1,4 @@
-import { BASE_2_CARDS, BASIC_CARDS, CARDS_TO_REMOVE, CARD_SHAPED_TYPES, INTRIGUE_2_CARDS, NON_SUPPLY_TYPES, ORIGINAL_BASE_CARDS, ORIGINAL_INTRIGUE_CARDS, SECONDARY_CARDS } from './constants';
+import { BASE_2_CARDS, CARDS_TO_REMOVE, CARD_SHAPED_TYPES, INTRIGUE_2_CARDS, NON_SUPPLY_TYPES, ORIGINAL_BASE_CARDS, ORIGINAL_INTRIGUE_CARDS } from './constants';
 
 export const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
@@ -21,7 +21,7 @@ export const isValidKingdomCard = (card, onlyRandomizers) =>
 
 export const isLandscape = (card) => card.types.every((type) => CARD_SHAPED_TYPES.includes(type));
 
-export const isOfType = (card, types) => card.types.every((t) => types.includes(t));
+export const isOfType = (card, types) => card.types.some((t) => types.includes(t));
 
 export const costSortValue = (card) => {
 	const coinRep = card.coins ? card.coins : '';
@@ -54,23 +54,6 @@ export const arrayIncludesCardName = (array, name) => array.map((card) => card.n
 
 export const drawCards = (cards, num, predicate) => sample(predicate ? cards.filter((card) => predicate(card)) : cards, num);
 
-export const youngWitchPredicate = (card) => ((card.coins === 2) || (card.coins === 3)) && !card.potions && !card.debt;
-
-export const addExtraCards = (kingdom, landscapes, availableCards) => {
-	const newCards = kingdom;
-	if (arrayIncludesCardName(newCards, 'Young Witch') && kingdom.every((card) => !card.bane)) {
-		const notInKingdom = availableCards.filter((card) => !arrayIncludesCard(newCards, card));
-		const [bane] = drawCards(notInKingdom, 1, youngWitchPredicate);
-		bane && newCards.push({...bane, bane: true});
-	}
-	if (arrayIncludesCardName(landscapes, 'Way of the Mouse') && kingdom.every((card) => !card.wotm)) {
-		const notInKingdom = availableCards.filter((card) => !arrayIncludesCard(newCards, card) && card.types.includes('Action'));
-		const [wotm] = drawCards(notInKingdom, 1, youngWitchPredicate);
-		wotm && newCards.push({...wotm, wotm: true});
-	}
-	return newCards
-}
-
 export const hasValidExpansion = (card, expansions) => {
 	if (ORIGINAL_BASE_CARDS.includes(card.name)) {
 		return expansions.includes('Base 1st Edition')
@@ -87,19 +70,4 @@ export const hasValidExpansion = (card, expansions) => {
 	} else {
 		return expansions.includes(card.expansion)
 	}
-}
-
-export const generateBlackMarket = (cards, kingdom, promos, expansions) => {
-	if (!arrayIncludesCardName(kingdom, 'Black Market')) {
-		return [];
-	}
-	const blackMarketOptions = cards.filter((card) =>
-		isValidKingdomCard(card, false)
-    && (hasValidExpansion(card, expansions) || promos.includes(card.name))
-    && ![...BASIC_CARDS, ...SECONDARY_CARDS].includes(card.name)
-    && !arrayIncludesCard(kingdom, card));
-	if (!kingdom.some((card) => card.potions)) {
-		return blackMarketOptions.filter((card) => !card.potions)
-	}
-	return blackMarketOptions;
 }

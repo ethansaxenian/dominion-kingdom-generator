@@ -5,6 +5,7 @@ import NavBar from './NavBar';
 import KingdomGenerator from './KingdomGenerator';
 import KingdomSettings from './KingdomSettings';
 import { Container } from '@chakra-ui/react';
+import { hasValidExpansion } from 'lib/utils';
 
 export default function App() {
 	const [cards] = useState(data);
@@ -33,7 +34,7 @@ export default function App() {
 			<NavBar page={page} setPage={setPage}/>
 			{(page === 'generate') && (
 				<KingdomGenerator
-					cards={cards}
+					cards={cards.filter((card) => (hasValidExpansion(card, expansions) || promos.includes(card.name)))}
 					expansions={expansions}
 					promos={promos}
 				/>

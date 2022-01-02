@@ -12,6 +12,7 @@ export default function App() {
 	const [page, setPage] = useState('generate');
 	const [expansions, setExpansions] = useState([]);
 	const [promos, setPromos] = useState([]);
+	const [blacklist, setBlacklist] = useState([]);
 
 	const toggleExpansion = (name) => {
 		if (expansions.includes(name)) {
@@ -29,12 +30,14 @@ export default function App() {
 		}
 	}
 
+	const pool = cards.filter((card) => !blacklist.includes(card.name) && (hasValidExpansion(card, expansions) || promos.includes(card.name)));
+
 	return (
 		<Container centerContent maxW="container.xl">
 			<NavBar page={page} setPage={setPage}/>
 			{(page === 'generate') && (
 				<KingdomGenerator
-					cards={cards.filter((card) => (hasValidExpansion(card, expansions) || promos.includes(card.name)))}
+					cards={pool}
 					expansions={expansions}
 					promos={promos}
 				/>
@@ -45,6 +48,9 @@ export default function App() {
 					promos={promos}
 					toggleExpansion={toggleExpansion}
 					togglePromo={togglePromo}
+					blacklist={blacklist}
+					setBlacklist={setBlacklist}
+					cards={cards}
 				/>
 			)}
 			{(page === 'browse') && <CardSearcher cards={cards}/>}

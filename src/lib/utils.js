@@ -14,6 +14,10 @@ export const sample = (collection, n=1) => {
 	return elements;
 }
 
+export const capitalize = (words) => {
+	return words.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+}
+
 export const isValidKingdomCard = (card, onlyRandomizers) =>
 	card.in_supply
   && card.types.every((type) => !NON_SUPPLY_TYPES.includes(type))

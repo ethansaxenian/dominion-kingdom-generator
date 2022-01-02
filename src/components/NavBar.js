@@ -38,7 +38,15 @@ export default function NavBar({ page, setPage }) {
 				icon={GiCardPick}
 			/>
 			<HStack spacing="20px">
-				<Link href="https://github.com/ethansaxenian/dominion-kingdom-generator" isExternal pt="10px" height="40px">
+				<Link
+					href="https://github.com/ethansaxenian/dominion-kingdom-generator"
+					isExternal
+					pt="10px"
+					pl="10px"
+					height="40px"
+					width="40px"
+					borderRadius="8px"
+				>
 					<Icon as={GoMarkGithub} boxSize="20px"/>
 				</Link>
 				<IconButton

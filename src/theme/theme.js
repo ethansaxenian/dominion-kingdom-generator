@@ -12,10 +12,6 @@ const theme = extendTheme({
 			'html, body': {
 				height: '100%'
 			},
-			body: {
-				lineHeight: 1.5,
-				WebkitFontSmoothing: 'antialiased'
-			},
 			'img, picture, video, canvas, svg': {
 				display: 'block',
 				maxWidth: '100%'

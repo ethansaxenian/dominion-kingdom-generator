@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { cardType, expansionType, promoNameType } from 'lib/types';
 import { Button, Center, useToast } from '@chakra-ui/react';
 import { generateBlackMarket, generateKingdom, swapCard, swapLandscape } from 'lib/kingdom-utils';
+import { isLandscape } from 'lib/utils';
 
 export default function KingdomGenerator({ cards, expansions, promos }) {
 	const [kingdom, setKingdom] = useState([]);
@@ -27,7 +28,7 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 	}, [alert]);
 
 	const _generateKingdom = () => {
-		const { newKingdom, newLandscapes, alertText, usePC, useSh } = generateKingdom(cards, expansions, promos);
+		const { newKingdom, newLandscapes, alertText, usePC, useSh } = generateKingdom(cards, expansions, promos, kingdom, landscapes);
 		if (alertText !== '') {
 			setAlert(alertText);
 			return
@@ -39,6 +40,7 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 	}
 
 	const _swapCard = (oldCard) => {
+		oldCard.locked = false;
 		const { newKingdom, alertText } = swapCard(oldCard, kingdom, landscapes, cards, expansions, promos)
 		if (alertText !== '') {
 			setAlert(alertText);
@@ -48,6 +50,7 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 	}
 
 	const _swapLandscape = (oldCard) => {
+		oldCard.locked = false;
 		const { newKingdom, newLandscapes, alertText } = swapLandscape(oldCard, kingdom, landscapes, cards, expansions, promos);
 		if (alertText !== '') {
 			setAlert(alertText);
@@ -55,6 +58,26 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 		}
 		setKingdom(newKingdom);
 		setLandScapes(newLandscapes);
+	}
+
+	const lockCard = (card) => {
+		if (isLandscape(card)) {
+			setLandScapes(landscapes.map((c) => {
+				if (c === card) {
+					return {...c, locked: !c.locked}
+				} else {
+					return c;
+				}
+			}));
+		} else {
+			setKingdom(kingdom.map((c) => {
+				if (c === card) {
+					return {...c, locked: !c.locked}
+				} else {
+					return c;
+				}
+			}));
+		}
 	}
 
 	return (
@@ -74,6 +97,7 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 				landscapes={landscapes}
 				swapCard={_swapCard}
 				swapLandscape={_swapLandscape}
+				lockCard={lockCard}
 				pool={cards}
 				usePlatinumColony={usePlatinumColony}
 				useShelters={useShelters}

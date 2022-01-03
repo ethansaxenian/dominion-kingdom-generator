@@ -3,7 +3,7 @@ import SelectorList from './SelectorList';
 import PropTypes from 'prop-types';
 import { cardType, expansionType, promoNameType } from 'lib/types';
 import { Divider, Heading, SimpleGrid } from '@chakra-ui/react';
-import CardsInput from './CardsInput';
+import MultiCardInput from './MultiCardInput';
 
 export default function KingdomSettings({ expansions, promos, toggleExpansion, togglePromo, blacklist, setBlacklist, cards }) {
 	return (
@@ -19,7 +19,7 @@ export default function KingdomSettings({ expansions, promos, toggleExpansion, t
 			</SimpleGrid>
 			<Divider/>
 			<Heading pt="30px" size="lg">Blacklist Cards:</Heading>
-			<CardsInput list={blacklist} setList={setBlacklist} cardNames={cards.map(({name}) => name)}/>
+			<MultiCardInput list={blacklist} setList={setBlacklist} cardNames={cards.map(({name}) => name)}/>
 		</>
 	)
 }

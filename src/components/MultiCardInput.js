@@ -4,9 +4,8 @@ import { AddIcon } from '@chakra-ui/icons';
 import PropTypes from 'prop-types';
 import { cardType } from 'lib/types';
 
-export default function CardsInput({ list, setList, cardNames }) {
+export default function MultiCardInput({ list, setList, cardNames }) {
 	const [text, setText] = useState('');
-	const [invalid, setInvalid] = useState(false);
 
 	const updateList = (item, action) => {
 		if (action === 'add' && !list.map((i) => i.toLowerCase()).includes(item.toLowerCase())) {
@@ -17,7 +16,6 @@ export default function CardsInput({ list, setList, cardNames }) {
 					return;
 				}
 			});
-			setInvalid(true);
 		}
 		if (action === 'remove') {
 			setList(list.filter((i) => i !== item));
@@ -27,8 +25,6 @@ export default function CardsInput({ list, setList, cardNames }) {
 	const handleKeyDown = (e) => {
 		if (e.key === 'Enter') {
 			updateList(text, 'add');
-		} else {
-			setInvalid(false);
 		}
 	}
 
@@ -88,9 +84,7 @@ export default function CardsInput({ list, setList, cardNames }) {
 					value={text}
 					onChange={(e) => setText(e.target.value)}
 					onKeyDown={handleKeyDown}
-					onClick={() => setInvalid(false)}
 					errorBorderColor="crimson"
-					isInvalid={invalid}
 				/>
 				<InputRightElement width="4.5rem">
 					<Button h="1.75rem" size="sm" onClick={() => updateList(text, 'add')}>Add</Button>
@@ -101,7 +95,7 @@ export default function CardsInput({ list, setList, cardNames }) {
 	)
 }
 
-CardsInput.propTypes = {
+MultiCardInput.propTypes = {
 	list: PropTypes.arrayOf(cardType).isRequired,
 	setList: PropTypes.func.isRequired,
 	cardNames: PropTypes.arrayOf(PropTypes.string).isRequired,

@@ -10,7 +10,7 @@ import { hasValidExpansion } from 'lib/utils';
 export default function App() {
 	const [cards] = useState(data);
 	const [page, setPage] = useState('generate');
-	const [expansions, setExpansions] = useState([]);
+	const [expansions, setExpansions] = useState(['Base']);
 	const [promos, setPromos] = useState([]);
 	const [blacklist, setBlacklist] = useState([]);
 

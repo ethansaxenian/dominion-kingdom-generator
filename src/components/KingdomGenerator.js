@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import KingdomDisplay from './KingdomDisplay';
 import PropTypes from 'prop-types';
 import { cardType, expansionType, promoNameType } from 'lib/types';
-import { Button, Center, useToast } from '@chakra-ui/react';
+import { Button, HStack, Text, useToast, VStack } from '@chakra-ui/react';
 import { generateBlackMarket, generateKingdom, swapCard, swapLandscape } from 'lib/kingdom-utils';
 import { isLandscape } from 'lib/utils';
 
@@ -82,7 +82,11 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 
 	return (
 		<>
-			<Center w="100%" py="20px">
+			<VStack w="100%" py="20px" spacing="20px">
+				<HStack spacing="20px" alignItems="top">
+					<Text fontWeight="bold" w="fit-content" whiteSpace="nowrap">Available cards:</Text>
+					<Text>{expansions.concat(promos).join(', ') || 'None'}</Text>
+				</HStack>
 				<Button
 					colorScheme="green"
 					onClick={() => _generateKingdom()}
@@ -91,7 +95,7 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 				>
 					Generate Kingdom!
 				</Button>
-			</Center>
+			</VStack>
 			<KingdomDisplay
 				kingdom={kingdom}
 				landscapes={landscapes}

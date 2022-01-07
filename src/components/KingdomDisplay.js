@@ -1,13 +1,13 @@
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { arrayIncludesCard, arrayIncludesCardName, drawCards, isOfType, sample, sortTwoCards } from 'lib/utils';
 import CardsDisplay from './CardsDisplay';
 import PropTypes from 'prop-types';
 import { cardType } from 'lib/types';
 import { Button, Stack, VStack } from '@chakra-ui/react';
-import { Context } from '../context.js';
+import { useCardContext } from '../context.js';
 
 export default function KingdomDisplay({ kingdom, landscapes, swapCard, lockCard, usePlatinumColony, useShelters, blackMarketOptions }) {
-	const { cards } = useContext(Context);
+	const cards = useCardContext();
 
 	const [blackMarketDeck, setBlackMarketDeck] = useState([]);
 

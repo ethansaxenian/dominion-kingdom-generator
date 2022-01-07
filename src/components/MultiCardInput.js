@@ -1,12 +1,12 @@
 import { Box, Button, Input, InputGroup, InputRightElement, Tag, TagCloseButton, TagLabel, TagLeftIcon, VStack, Wrap } from '@chakra-ui/react';
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import { AddIcon } from '@chakra-ui/icons';
 import PropTypes from 'prop-types';
 import { cardType } from 'lib/types';
-import { Context } from '../context.js';
+import { useCardContext } from '../context.js';
 
 export default function MultiCardInput({ list, setList }) {
-	const { cards } = useContext(Context);
+	const cards = useCardContext();
 
 	const [text, setText] = useState('');
 

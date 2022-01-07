@@ -1,14 +1,14 @@
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import CardSearcher from './CardSearcher';
 import NavBar from './NavBar';
 import KingdomGenerator from './KingdomGenerator';
 import KingdomSettings from './KingdomSettings';
 import { Container } from '@chakra-ui/react';
 import { hasValidExpansion, sortStrings } from 'lib/utils';
-import { Context } from '../context.js';
+import { useCardContext } from 'context.js';
 
 export default function App() {
-	const { cards } = useContext(Context);
+	const cards = useCardContext();
 
 	const [page, setPage] = useState('generate');
 	const [expansions, setExpansions] = useState(['Base']);

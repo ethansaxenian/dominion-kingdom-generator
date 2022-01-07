@@ -1,13 +1,13 @@
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import { isLandscape, sortTwoCards } from 'lib/utils';
 import CardsDisplay from './CardsDisplay';
 import SearchBar from './SearchBar';
 import { SUPPLY_TYPES } from 'lib/constants';
 import { Divider, Heading } from '@chakra-ui/react';
-import { Context } from '../context.js';
+import { useCardContext } from 'context.js';
 
 export default function CardSearcher() {
-	const { cards } = useContext(Context);
+	const cards = useCardContext();
 
 	const [searchTerm, setSearchTerm] = useState('');
 	const [sortBy, setSortBy] = useState('name');

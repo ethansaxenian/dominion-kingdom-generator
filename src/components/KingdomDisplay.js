@@ -1,11 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { arrayIncludesCard, arrayIncludesCardName, drawCards, isOfType, sample, sortTwoCards } from 'lib/utils';
 import CardsDisplay from './CardsDisplay';
 import PropTypes from 'prop-types';
 import { cardType } from 'lib/types';
 import { Button, Stack, VStack } from '@chakra-ui/react';
+import { Context } from 'index';
 
-export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLandscape, lockCard, pool, usePlatinumColony, useShelters, blackMarketOptions }) {
+export default function KingdomDisplay({ kingdom, landscapes, swapCard, lockCard, usePlatinumColony, useShelters, blackMarketOptions }) {
+	const { cards } = useContext(Context);
+
 	const [blackMarketDeck, setBlackMarketDeck] = useState([]);
 
 	useEffect(() => {
@@ -30,26 +33,26 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, swapLand
 	const [wotm] = kingdom.filter((card) => card.wotm);
 	const supply = kingdom.filter((card) => card !== wotm);
 
-	const platinumColony = pool.filter((card) => card.name === 'Platinum' || card.name === 'Colony');
-	const shelters = pool.filter((card) => isOfType(card, ['Shelter']));
+	const platinumColony = cards.filter((card) => card.name === 'Platinum' || card.name === 'Colony');
+	const shelters = cards.filter((card) => isOfType(card, ['Shelter']));
 
 	return (
 		<>
 			<CardsDisplay
 				data={supply.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))}
-				swapCard={swapCard}
+				swapCard={(card) => swapCard(card, 'card')}
 				lockCard={lockCard}
 			/>
 			<Stack direction={{base: 'column', md: 'row'}}>
 				{(landscapes.length > 0) && (
 					<CardsDisplay
 						data={landscapes.sort((card1, card2) => sortTwoCards(card1, card2, 'name'))}
-						swapCard={swapLandscape}
+						swapCard={(card) => swapCard(card, 'landscape')}
 						lockCard={lockCard}
 					/>
 				)}
 				{wotm && (
-					<CardsDisplay data={[wotm]} swapCard={swapCard}/>
+					<CardsDisplay data={[wotm]} swapCard={(card) => swapCard(card, 'card')}/>
 				)}
 				{usePlatinumColony && (
 					<CardsDisplay data={platinumColony.sort((a, b) => sortTwoCards(a, b, 'cost'))}/>
@@ -85,9 +88,7 @@ KingdomDisplay.propTypes = {
 	kingdom: PropTypes.arrayOf(cardType).isRequired,
 	landscapes: PropTypes.arrayOf(cardType).isRequired,
 	swapCard: PropTypes.func.isRequired,
-	swapLandscape: PropTypes.func.isRequired,
 	lockCard: PropTypes.func.isRequired,
-	pool: PropTypes.arrayOf(cardType).isRequired,
 	usePlatinumColony: PropTypes.bool.isRequired,
 	useShelters: PropTypes.bool.isRequired,
 	blackMarketOptions: PropTypes.arrayOf(cardType).isRequired

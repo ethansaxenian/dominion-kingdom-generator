@@ -75,3 +75,16 @@ export const hasValidExpansion = (card, expansions) => {
 		return expansions.includes(card.expansion)
 	}
 }
+
+export const sortStrings = (a, b) => {
+	const x = a.toLowerCase();
+	const y = b.toLowerCase();
+	if (x < y) {
+		return -1;
+	}
+	if (x > y) {
+		return 1;
+	}
+
+	return 0;
+}

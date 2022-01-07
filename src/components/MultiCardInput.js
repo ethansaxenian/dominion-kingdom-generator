@@ -1,11 +1,16 @@
 import { Box, Button, Input, InputGroup, InputRightElement, Tag, TagCloseButton, TagLabel, TagLeftIcon, VStack, Wrap } from '@chakra-ui/react';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { AddIcon } from '@chakra-ui/icons';
 import PropTypes from 'prop-types';
 import { cardType } from 'lib/types';
+import { Context } from 'index';
 
-export default function MultiCardInput({ list, setList, cardNames }) {
+export default function MultiCardInput({ list, setList }) {
+	const { cards } = useContext(Context);
+
 	const [text, setText] = useState('');
+
+	const cardNames = cards.map(({name}) => name);
 
 	const updateList = (item, action) => {
 		if (action === 'add' && !list.map((i) => i.toLowerCase()).includes(item.toLowerCase())) {
@@ -97,6 +102,5 @@ export default function MultiCardInput({ list, setList, cardNames }) {
 
 MultiCardInput.propTypes = {
 	list: PropTypes.arrayOf(cardType).isRequired,
-	setList: PropTypes.func.isRequired,
-	cardNames: PropTypes.arrayOf(PropTypes.string).isRequired,
+	setList: PropTypes.func.isRequired
 }

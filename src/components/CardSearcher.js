@@ -1,13 +1,14 @@
 import { useState } from 'react';
-import { cardType } from 'lib/types';
 import { isLandscape, sortTwoCards } from 'lib/utils';
 import CardsDisplay from './CardsDisplay';
 import SearchBar from './SearchBar';
-import PropTypes from 'prop-types';
 import { SUPPLY_TYPES } from 'lib/constants';
 import { Divider, Heading } from '@chakra-ui/react';
+import { useCardContext } from 'context.js';
 
-export default function CardSearcher({ cards }) {
+export default function CardSearcher() {
+	const cards = useCardContext();
+
 	const [searchTerm, setSearchTerm] = useState('');
 	const [sortBy, setSortBy] = useState('name');
 	const [displayed, setDisplayed] = useState(['Supply', 'Non-supply', 'Landscape']);
@@ -72,8 +73,4 @@ export default function CardSearcher({ cards }) {
 			)}
 		</>
 	)
-}
-
-CardSearcher.propTypes = {
-	cards: PropTypes.arrayOf(cardType).isRequired
 }

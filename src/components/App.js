@@ -1,32 +1,35 @@
-import data from 'data/dominion_cards.json';
 import { useState } from 'react';
 import CardSearcher from './CardSearcher';
 import NavBar from './NavBar';
 import KingdomGenerator from './KingdomGenerator';
 import KingdomSettings from './KingdomSettings';
 import { Container } from '@chakra-ui/react';
-import { hasValidExpansion } from 'lib/utils';
+import { hasValidExpansion, sortStrings } from 'lib/utils';
+import { useCardContext } from 'context.js';
 
 export default function App() {
-	const [cards] = useState(data);
+	const cards = useCardContext();
+
 	const [page, setPage] = useState('generate');
 	const [expansions, setExpansions] = useState(['Base']);
 	const [promos, setPromos] = useState([]);
 	const [blacklist, setBlacklist] = useState([]);
 
-	const toggleExpansion = (name) => {
-		if (expansions.includes(name)) {
-			setExpansions(expansions.filter((exp) => exp !== name))
-		} else {
-			setExpansions([...expansions, name])
+	const toggle = (name, type) => {
+		if (type === 'expansion') {
+			if (expansions.includes(name)) {
+				setExpansions(expansions.filter((exp) => exp !== name));
+			} else {
+				setExpansions([...expansions, name].sort());
+			}
 		}
-	}
 
-	const togglePromo = (name) => {
-		if (promos.includes(name)) {
-			setPromos(promos.filter((promo) => promo !== name))
-		} else {
-			setPromos([...promos, name])
+		if (type === 'promo') {
+			if (promos.includes(name)) {
+				setPromos(promos.filter((promo) => promo !== name));
+			} else {
+				setPromos([...promos, name].sort(sortStrings));
+			}
 		}
 	}
 
@@ -37,7 +40,7 @@ export default function App() {
 			<NavBar page={page} setPage={setPage}/>
 			{(page === 'generate') && (
 				<KingdomGenerator
-					cards={pool}
+					pool={pool}
 					expansions={expansions}
 					promos={promos}
 				/>
@@ -46,14 +49,12 @@ export default function App() {
 				<KingdomSettings
 					expansions={expansions}
 					promos={promos}
-					toggleExpansion={toggleExpansion}
-					togglePromo={togglePromo}
+					toggle={toggle}
 					blacklist={blacklist}
 					setBlacklist={setBlacklist}
-					cards={cards}
 				/>
 			)}
-			{(page === 'browse') && <CardSearcher cards={cards}/>}
+			{(page === 'browse') && <CardSearcher/>}
 		</Container>
 	);
 }

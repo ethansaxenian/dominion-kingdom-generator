@@ -3,9 +3,14 @@ import { useState } from 'react';
 import { AddIcon } from '@chakra-ui/icons';
 import PropTypes from 'prop-types';
 import { cardType } from 'lib/types';
+import { useCardContext } from 'context.js';
 
-export default function MultiCardInput({ list, setList, cardNames }) {
+export default function MultiCardInput({ list, setList }) {
+	const cards = useCardContext();
+
 	const [text, setText] = useState('');
+
+	const cardNames = cards.map(({name}) => name);
 
 	const updateList = (item, action) => {
 		if (action === 'add' && !list.map((i) => i.toLowerCase()).includes(item.toLowerCase())) {
@@ -97,6 +102,5 @@ export default function MultiCardInput({ list, setList, cardNames }) {
 
 MultiCardInput.propTypes = {
 	list: PropTypes.arrayOf(cardType).isRequired,
-	setList: PropTypes.func.isRequired,
-	cardNames: PropTypes.arrayOf(PropTypes.string).isRequired,
+	setList: PropTypes.func.isRequired
 }

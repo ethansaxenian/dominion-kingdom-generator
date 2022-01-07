@@ -5,21 +5,21 @@ import { cardType, expansionType, promoNameType } from 'lib/types';
 import { Divider, Heading, SimpleGrid } from '@chakra-ui/react';
 import MultiCardInput from './MultiCardInput';
 
-export default function KingdomSettings({ expansions, promos, toggleExpansion, togglePromo, blacklist, setBlacklist, cards }) {
+export default function KingdomSettings({ expansions, promos, toggle, blacklist, setBlacklist }) {
 	return (
 		<>
 			<SimpleGrid columns={{base: 1, md: 2}} spacingX="10vw" pb="30px">
 				<SelectorList
 					list={expansions}
-					toggle={toggleExpansion}
+					toggle={(name) => toggle(name, 'expansion')}
 					options={EXPANSIONS}
 					name="Expansions"
 				/>
-				<SelectorList list={promos} toggle={togglePromo} options={PROMOS} name="Promos"/>
+				<SelectorList list={promos} toggle={(name) => toggle(name, 'promo')} options={PROMOS} name="Promos"/>
 			</SimpleGrid>
 			<Divider/>
 			<Heading pt="30px" size="lg">Blacklist Cards:</Heading>
-			<MultiCardInput list={blacklist} setList={setBlacklist} cardNames={cards.map(({name}) => name)}/>
+			<MultiCardInput list={blacklist} setList={setBlacklist}/>
 		</>
 	)
 }
@@ -27,9 +27,7 @@ export default function KingdomSettings({ expansions, promos, toggleExpansion, t
 KingdomSettings.propTypes = {
 	expansions: PropTypes.arrayOf(expansionType).isRequired,
 	promos: PropTypes.arrayOf(promoNameType).isRequired,
-	toggleExpansion: PropTypes.func.isRequired,
-	togglePromo: PropTypes.func.isRequired,
+	toggle: PropTypes.func.isRequired,
 	blacklist: PropTypes.arrayOf(cardType).isRequired,
-	setBlacklist: PropTypes.func.isRequired,
-	cards: PropTypes.arrayOf(cardType).isRequired,
+	setBlacklist: PropTypes.func.isRequired
 }

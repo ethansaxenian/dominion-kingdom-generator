@@ -6,7 +6,7 @@ import { Button, HStack, Text, useToast, VStack } from '@chakra-ui/react';
 import { generateBlackMarket, generateKingdom, swapCard, swapLandscape } from 'lib/kingdom-utils';
 import { isLandscape } from 'lib/utils';
 
-export default function KingdomGenerator({ cards, expansions, promos }) {
+export default function KingdomGenerator({ pool, expansions, promos }) {
 	const [kingdom, setKingdom] = useState([]);
 	const [landscapes, setLandScapes] = useState([]);
 	const [usePlatinumColony, setUsePlatinumColony] = useState(false);
@@ -28,7 +28,7 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 	}, [alert]);
 
 	const _generateKingdom = () => {
-		const { newKingdom, newLandscapes, alertText, usePC, useSh } = generateKingdom(cards, expansions, promos, kingdom, landscapes);
+		const { newKingdom, newLandscapes, alertText, usePC, useSh } = generateKingdom(pool, expansions, promos, kingdom, landscapes);
 		if (alertText !== '') {
 			setAlert(alertText);
 			return
@@ -41,7 +41,7 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 
 	const _swapCard = (oldCard) => {
 		oldCard.locked = false;
-		const { newKingdom, alertText } = swapCard(oldCard, kingdom, landscapes, cards, expansions, promos)
+		const { newKingdom, alertText } = swapCard(oldCard, kingdom, landscapes, pool, expansions, promos)
 		if (alertText !== '') {
 			setAlert(alertText);
 			return
@@ -51,13 +51,22 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 
 	const _swapLandscape = (oldCard) => {
 		oldCard.locked = false;
-		const { newKingdom, newLandscapes, alertText } = swapLandscape(oldCard, kingdom, landscapes, cards, expansions, promos);
+		const { newKingdom, newLandscapes, alertText } = swapLandscape(oldCard, kingdom, landscapes, pool, expansions, promos);
 		if (alertText !== '') {
 			setAlert(alertText);
 			return
 		}
 		setKingdom(newKingdom);
 		setLandScapes(newLandscapes);
+	}
+
+	const swap = (oldCard, type) => {
+		if (type === 'card') {
+			_swapCard(oldCard);
+		}
+		if (type === 'landscape') {
+			_swapLandscape(oldCard);
+		}
 	}
 
 	const lockCard = (card) => {
@@ -84,7 +93,7 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 		<>
 			<VStack w="100%" py="20px" spacing="20px">
 				<HStack spacing="20px" alignItems="top">
-					<Text fontWeight="bold" w="fit-content" whiteSpace="nowrap">Available cards:</Text>
+					<Text fontWeight="bold" w="fit-content" whiteSpace="nowrap">Available pool:</Text>
 					<Text>{expansions.concat(promos).join(', ') || 'None'}</Text>
 				</HStack>
 				<Button
@@ -99,20 +108,18 @@ export default function KingdomGenerator({ cards, expansions, promos }) {
 			<KingdomDisplay
 				kingdom={kingdom}
 				landscapes={landscapes}
-				swapCard={_swapCard}
-				swapLandscape={_swapLandscape}
+				swapCard={swap}
 				lockCard={lockCard}
-				pool={cards}
 				usePlatinumColony={usePlatinumColony}
 				useShelters={useShelters}
-				blackMarketOptions={generateBlackMarket(cards, kingdom, promos, expansions)}
+				blackMarketOptions={generateBlackMarket(pool, kingdom, promos, expansions)}
 			/>
 		</>
 	)
 }
 
 KingdomGenerator.propTypes = {
-	cards: PropTypes.arrayOf(cardType).isRequired,
+	pool: PropTypes.arrayOf(cardType).isRequired,
 	expansions: PropTypes.arrayOf(expansionType).isRequired,
 	promos: PropTypes.arrayOf(promoNameType).isRequired
 }

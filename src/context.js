@@ -19,6 +19,8 @@ export const useCardContext = () => {
 
 
 CardProvider.propTypes = {
-	value: PropTypes.arrayOf(cardType).isRequired,
+	value: PropTypes.shape({
+		cards: PropTypes.arrayOf(cardType).isRequired
+	}),
 	children: PropTypes.element.isRequired
 }

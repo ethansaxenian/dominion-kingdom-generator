@@ -4,7 +4,7 @@ import CardsDisplay from './CardsDisplay';
 import SearchBar from './SearchBar';
 import { SUPPLY_TYPES } from 'lib/constants';
 import { Divider, Heading } from '@chakra-ui/react';
-import { Context } from 'index';
+import { Context } from '../context.js';
 
 export default function CardSearcher() {
 	const { cards } = useContext(Context);

@@ -4,7 +4,7 @@ import CardsDisplay from './CardsDisplay';
 import PropTypes from 'prop-types';
 import { cardType } from 'lib/types';
 import { Button, Stack, VStack } from '@chakra-ui/react';
-import { Context } from 'index';
+import { Context } from '../context.js';
 
 export default function KingdomDisplay({ kingdom, landscapes, swapCard, lockCard, usePlatinumColony, useShelters, blackMarketOptions }) {
 	const { cards } = useContext(Context);

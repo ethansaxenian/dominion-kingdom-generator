@@ -3,7 +3,7 @@ import { useContext, useState } from 'react';
 import { AddIcon } from '@chakra-ui/icons';
 import PropTypes from 'prop-types';
 import { cardType } from 'lib/types';
-import { Context } from 'index';
+import { Context } from '../context.js';
 
 export default function MultiCardInput({ list, setList }) {
 	const { cards } = useContext(Context);

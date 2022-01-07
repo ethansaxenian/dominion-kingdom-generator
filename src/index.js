@@ -4,8 +4,7 @@ import App from 'components/App';
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from 'theme/theme.js';
 import cards from 'data/dominion_cards.json';
-
-export const Context = React.createContext();
+import { Context } from 'context.js';
 
 ReactDOM.render((
 	<ChakraProvider theme={theme}>

@@ -5,7 +5,7 @@ import KingdomGenerator from './KingdomGenerator';
 import KingdomSettings from './KingdomSettings';
 import { Container } from '@chakra-ui/react';
 import { hasValidExpansion, sortStrings } from 'lib/utils';
-import { Context } from 'index';
+import { Context } from '../context.js';
 
 export default function App() {
 	const { cards } = useContext(Context);

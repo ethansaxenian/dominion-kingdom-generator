@@ -14,6 +14,7 @@ export default function App() {
 	const [expansions, setExpansions] = useState(['Base']);
 	const [promos, setPromos] = useState([]);
 	const [blacklist, setBlacklist] = useState([]);
+	const [whitelist, setWhitelist] = useState([]);
 
 	const toggle = (name, type) => {
 		if (type === 'expansion') {
@@ -35,6 +36,15 @@ export default function App() {
 
 	const pool = cards.filter((card) => !blacklist.includes(card.name) && (hasValidExpansion(card, expansions) || promos.includes(card.name)));
 
+	const setList = (value, type) => {
+		if (type === 'blacklist') {
+			setBlacklist(value);
+		}
+		if (type === 'whitelist') {
+			setWhitelist(value)
+		}
+	}
+
 	return (
 		<Container centerContent maxW="container.xl">
 			<NavBar page={page} setPage={setPage}/>
@@ -43,6 +53,7 @@ export default function App() {
 					pool={pool}
 					expansions={expansions}
 					promos={promos}
+					whitelist={whitelist}
 				/>
 			)}
 			{(page === 'settings') && (
@@ -51,7 +62,8 @@ export default function App() {
 					promos={promos}
 					toggle={toggle}
 					blacklist={blacklist}
-					setBlacklist={setBlacklist}
+					whitelist={whitelist}
+					setList={setList}
 				/>
 			)}
 			{(page === 'browse') && <CardSearcher/>}

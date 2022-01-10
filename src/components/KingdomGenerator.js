@@ -6,7 +6,7 @@ import { Button, HStack, Text, useToast, VStack } from '@chakra-ui/react';
 import { generateBlackMarket, generateKingdom, swapCard, swapLandscape } from 'lib/kingdom-utils';
 import { isLandscape } from 'lib/utils';
 
-export default function KingdomGenerator({ pool, expansions, promos }) {
+export default function KingdomGenerator({ pool, expansions, promos, whitelist }) {
 	const [kingdom, setKingdom] = useState([]);
 	const [landscapes, setLandScapes] = useState([]);
 	const [usePlatinumColony, setUsePlatinumColony] = useState(false);
@@ -28,7 +28,7 @@ export default function KingdomGenerator({ pool, expansions, promos }) {
 	}, [alert]);
 
 	const _generateKingdom = () => {
-		const { newKingdom, newLandscapes, alertText, usePC, useSh } = generateKingdom(pool, expansions, promos, kingdom, landscapes);
+		const { newKingdom, newLandscapes, alertText, usePC, useSh } = generateKingdom(pool, expansions, promos, kingdom, landscapes, whitelist);
 		if (alertText !== '') {
 			setAlert(alertText);
 			return
@@ -121,5 +121,6 @@ export default function KingdomGenerator({ pool, expansions, promos }) {
 KingdomGenerator.propTypes = {
 	pool: PropTypes.arrayOf(cardType).isRequired,
 	expansions: PropTypes.arrayOf(expansionType).isRequired,
-	promos: PropTypes.arrayOf(promoNameType).isRequired
+	promos: PropTypes.arrayOf(promoNameType).isRequired,
+	whitelist: PropTypes.arrayOf(PropTypes.string).isRequired
 }

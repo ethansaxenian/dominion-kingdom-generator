@@ -1,8 +1,12 @@
 import { BASIC_CARDS, SECONDARY_CARDS } from './constants';
 import { arrayIncludesCard, arrayIncludesCardName, drawCards, hasValidExpansion, isLandscape, isValidKingdomCard, sample } from './utils';
 
-export const getAvailableCards = (pool, expansions, promos) => {
-	return pool.filter((card) => isValidKingdomCard(card, true) && (hasValidExpansion(card, expansions) || promos.includes(card.name)));
+export const getAvailableCards = (pool, expansions, promos, ignore) => {
+	return pool.filter((card) =>
+		isValidKingdomCard(card, true)
+		&& (hasValidExpansion(card, expansions) || promos.includes(card.name))
+		&& !ignore.includes(card.name)
+	);
 }
 
 export const getAvailableLandscapes = (pool, expansions, promos) => {
@@ -30,21 +34,41 @@ export const addExtraCards = (kingdom, landscapes, availableCards) => {
 	return newCards;
 }
 
-export const generateKingdom = (pool, expansions, promos, oldKingdom, oldLandscapes) => {
-	const availableCards = getAvailableCards(pool, expansions, promos);
+export const generateKingdom = (pool, expansions, promos, oldKingdom, oldLandscapes, whitelist) => {
+	const availableCards = getAvailableCards(pool, expansions, promos, whitelist);
 	if (availableCards.length < 10) {
 		return { alertText: 'Not enough cards available.' }
 	}
 	const availableLandscapes = getAvailableLandscapes(pool, expansions, promos);
 	const lockedCards = oldKingdom.filter((card) => card.locked);
-	const newKingdom = drawCards(availableCards, 10 - lockedCards.length, ((card) => {
+	const lockedLandscapes = oldLandscapes.filter((card) => card.locked);
+
+	const filteredWhitelist = pool.filter((card) =>
+		whitelist.includes(card.name)
+		&& !lockedCards.map(({name}) => name).includes(card.name)
+		&& !lockedLandscapes.map(({name}) => name).includes(card.name)
+	);
+	const whitelistedCards = filteredWhitelist.filter((card) => !isLandscape(card));
+	const whitelistedLandscapes = filteredWhitelist.filter((card) => isLandscape(card));
+
+	const newKingdom = drawCards(availableCards, 10 - lockedCards.length - whitelistedCards.length, ((card) => {
 		if (arrayIncludesCard(lockedCards, card)) {
 			return false;
 		}
 		return hasValidExpansion(card, expansions) || promos.includes(card.name);
-	})).concat(lockedCards);
-	const lockedLandscapes = oldLandscapes.filter((card) => card.locked);
-	const newLandscapes = drawCards(availableLandscapes, Math.min(2, availableLandscapes.length) - lockedLandscapes.length, ((card) => !card.locked)).concat(lockedLandscapes);
+	})).concat(lockedCards).concat(whitelistedCards.map((card) => ({...card, locked: true})));
+
+	const newLandscapes = drawCards(
+		availableLandscapes,
+		Math.min(2, availableLandscapes.length) - lockedLandscapes.length - whitelistedLandscapes.length,
+		((card) => {
+			if (arrayIncludesCard(lockedLandscapes, card)) {
+				return false;
+			}
+			return hasValidExpansion(card, expansions) || promos.includes(card.name);
+		})).concat(lockedLandscapes).concat(whitelistedLandscapes.map((card) => ({...card, locked: true})));
+
+
 	const leftovers = availableCards.filter((card) => !arrayIncludesCard(newKingdom, card));
 	const extraCards = addExtraCards(newKingdom, newLandscapes, leftovers);
 	newKingdom.push(...extraCards);
@@ -60,7 +84,7 @@ export const generateKingdom = (pool, expansions, promos, oldKingdom, oldLandsca
 }
 
 export const swapCard = (oldCard, kingdom, landscapes, pool, expansions, promos) => {
-	const remaining = getAvailableCards(pool, expansions, promos).filter((card) => !arrayIncludesCard(kingdom, card));
+	const remaining = getAvailableCards(pool, expansions, promos, []).filter((card) => !arrayIncludesCard(kingdom, card));
 	if (remaining.length < 10) {
 		return { alertText: 'There are no available kingdom cards to swap!' }
 	}
@@ -89,7 +113,7 @@ export const swapLandscape = (oldCard, kingdom, landscapes, pool, expansions, pr
 	}
 	const [newCard] = drawCards(remaining, 1);
 	newLandscapes = [...newLandscapes, newCard];
-	const remainingCards = getAvailableCards(pool, expansions, promos).filter((card) => !arrayIncludesCard(newKingdom, card));
+	const remainingCards = getAvailableCards(pool, expansions, promos, []).filter((card) => !arrayIncludesCard(newKingdom, card));
 	const extraCards = addExtraCards(newKingdom, newLandscapes, remainingCards);
 	newKingdom.push(...extraCards);
 	return { newKingdom, newLandscapes, alertText: '' }

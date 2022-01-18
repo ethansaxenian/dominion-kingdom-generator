@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import CardSearcher from './CardSearcher';
 import NavBar from './NavBar';
 import KingdomGenerator from './KingdomGenerator';
@@ -6,6 +6,7 @@ import KingdomSettings from './KingdomSettings';
 import { Container } from '@chakra-ui/react';
 import { hasValidExpansion, sortStrings } from 'lib/utils';
 import { useCardContext } from 'context.js';
+import analytics from 'analytics';
 
 export default function App() {
 	const cards = useCardContext();
@@ -15,6 +16,10 @@ export default function App() {
 	const [promos, setPromos] = useState([]);
 	const [blacklist, setBlacklist] = useState([]);
 	const [whitelist, setWhitelist] = useState([]);
+
+	useEffect(() => {
+		analytics();
+	}, []);
 
 	const toggle = (name, type) => {
 		if (type === 'expansion') {

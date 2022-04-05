@@ -41,12 +41,13 @@ export default function KingdomGenerator({ pool, expansions, promos, whitelist }
 
 	const _swapCard = (oldCard) => {
 		oldCard.locked = false;
-		const { newKingdom, alertText } = swapCard(oldCard, kingdom, landscapes, pool, expansions, promos)
+		const { newKingdom, newLandscapes, alertText } = swapCard(oldCard, kingdom, landscapes, pool, expansions, promos)
 		if (alertText !== '') {
 			setAlert(alertText);
 			return
 		}
 		setKingdom(newKingdom);
+		setLandScapes(newLandscapes);
 	}
 
 	const _swapLandscape = (oldCard) => {

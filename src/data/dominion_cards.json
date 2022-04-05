@@ -8265,6 +8265,1065 @@
     "link": "http://wiki.dominionstrategy.com/index.php/Way_of_the_Worm"
   },
   {
+    "name": "Bauble",
+    "expansion": "Allies",
+    "types": [
+      "Treasure",
+      "Liaison"
+    ],
+    "coins": 2,
+    "potions": null,
+    "debt": null,
+    "text": "choose two different options:+1 buy; +; +1 favor; this turn, when you gain a card, you may put it onto your deck.",
+    "in_supply": true,
+    "img": "/images/Bauble.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Bauble"
+  },
+  {
+    "name": "Sycophant",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Liaison"
+    ],
+    "coins": 2,
+    "potions": null,
+    "debt": null,
+    "text": "+1 actiondiscard 3 cards. if you discarded at least one, +.when you gain or trash this, +2 favors.",
+    "in_supply": true,
+    "img": "/images/Sycophant.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Sycophant"
+  },
+  {
+    "name": "Merchant Camp",
+    "expansion": "Allies",
+    "types": [
+      "Action"
+    ],
+    "coins": 3,
+    "potions": null,
+    "debt": null,
+    "text": "+2 actions+when you discard this from play, you may put it onto your deck.",
+    "in_supply": true,
+    "img": "/images/Merchant Camp.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Merchant_Camp"
+  },
+  {
+    "name": "Importer",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Duration",
+      "Liaison"
+    ],
+    "coins": 3,
+    "potions": null,
+    "debt": null,
+    "text": "at the start of your next turn, gain a card costing up to .setup: each player gets +4\u00a0favors.",
+    "in_supply": true,
+    "img": "/images/Importer.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Importer"
+  },
+  {
+    "name": "Sentinel",
+    "expansion": "Allies",
+    "types": [
+      "Action"
+    ],
+    "coins": 3,
+    "potions": null,
+    "debt": null,
+    "text": "look at the top 5 cards of your deck. you may trash up to 2 of them. put the rest back in any order.",
+    "in_supply": true,
+    "img": "/images/Sentinel.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Sentinel"
+  },
+  {
+    "name": "Underling",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Liaison"
+    ],
+    "coins": 3,
+    "potions": null,
+    "debt": null,
+    "text": "+1 card+1 action+1 favor",
+    "in_supply": true,
+    "img": "/images/Underling.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Underling"
+  },
+  {
+    "name": "Broker",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Liaison"
+    ],
+    "coins": 4,
+    "potions": null,
+    "debt": null,
+    "text": "trash a card from your hand and choose one:+1 card per  it costs;or +1 action per  it costs; or + per  it costs; or +1 favor per  it costs.",
+    "in_supply": true,
+    "img": "/images/Broker.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Broker"
+  },
+  {
+    "name": "Carpenter",
+    "expansion": "Allies",
+    "types": [
+      "Action"
+    ],
+    "coins": 4,
+    "potions": null,
+    "debt": null,
+    "text": "if no supply piles are empty, +1 action and gain a card costing up to .otherwise, trash a card from your hand and gain a card costing up to  more than it.",
+    "in_supply": true,
+    "img": "/images/Carpenter.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Carpenter"
+  },
+  {
+    "name": "Courier",
+    "expansion": "Allies",
+    "types": [
+      "Action"
+    ],
+    "coins": 4,
+    "potions": null,
+    "debt": null,
+    "text": "+discard the top card of your deck. look through your discard pile; you may play an action or treasure from it.",
+    "in_supply": true,
+    "img": "/images/Courier.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Courier"
+  },
+  {
+    "name": "Innkeeper",
+    "expansion": "Allies",
+    "types": [
+      "Action"
+    ],
+    "coins": 4,
+    "potions": null,
+    "debt": null,
+    "text": "+1 actionchoose one: +1 card; or +3 cards, then discard 3 cards; or +5 cards, then discard 6 cards.",
+    "in_supply": true,
+    "img": "/images/Innkeeper.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Innkeeper"
+  },
+  {
+    "name": "Royal Galley",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Duration"
+    ],
+    "coins": 4,
+    "potions": null,
+    "debt": null,
+    "text": "+1 cardyou may play a non-duration action card from your hand. set it aside; if you did, then at the start of your next turn, play it.",
+    "in_supply": true,
+    "img": "/images/Royal Galley.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Royal_Galley"
+  },
+  {
+    "name": "Town",
+    "expansion": "Allies",
+    "types": [
+      "Action"
+    ],
+    "coins": 4,
+    "potions": null,
+    "debt": null,
+    "text": "choose one:+1 card and +2 actions;or +1 buy and +.",
+    "in_supply": true,
+    "img": "/images/Town.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Town"
+  },
+  {
+    "name": "Barbarian",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "+each other player trashes the top card of their deck. if it costs  or more they gain a cheaper card sharing a type with it; otherwise they gain a curse.",
+    "in_supply": true,
+    "img": "/images/Barbarian.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Barbarian"
+  },
+  {
+    "name": "Capital City",
+    "expansion": "Allies",
+    "types": [
+      "Action"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "+1 card+2 actionsyou may discard 2 cards for +.you may pay  for +2 cards.",
+    "in_supply": true,
+    "img": "/images/Capital City.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Capital_City"
+  },
+  {
+    "name": "Contract",
+    "expansion": "Allies",
+    "types": [
+      "Treasure",
+      "Duration",
+      "Liaison"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "+1 favoryou may set aside an action from your hand to play it at the start of your next turn.",
+    "in_supply": true,
+    "img": "/images/Contract.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Contract"
+  },
+  {
+    "name": "Emissary",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Liaison"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "+3 cardsif this made you shuffle (at least one card), +1 action and +2 favors.",
+    "in_supply": true,
+    "img": "/images/Emissary.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Emissary"
+  },
+  {
+    "name": "Galleria",
+    "expansion": "Allies",
+    "types": [
+      "Action"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "+this turn, when you gain a card costing  or , +1 buy.",
+    "in_supply": true,
+    "img": "/images/Galleria.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Galleria"
+  },
+  {
+    "name": "Guildmaster",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Liaison"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "+this turn, when you gain a card, +1\u00a0favor.",
+    "in_supply": true,
+    "img": "/images/Guildmaster.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Guildmaster"
+  },
+  {
+    "name": "Highwayman",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Duration",
+      "Attack"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "at the start of your next turn, discard this from play and +3 cards.until then, the first treasure each other player plays each turn does nothing.",
+    "in_supply": true,
+    "img": "/images/Highwayman.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Highwayman"
+  },
+  {
+    "name": "Hunter",
+    "expansion": "Allies",
+    "types": [
+      "Action"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "+1 actionreveal the top 3 cards of your deck. from those cards, put an action, a treasure, and a victory card into your hand. discard the rest.",
+    "in_supply": true,
+    "img": "/images/Hunter.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Hunter"
+  },
+  {
+    "name": "Modify",
+    "expansion": "Allies",
+    "types": [
+      "Action"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "trash a card from your hand. choose one: +1\u00a0card and +1\u00a0action; or gain a card costing up to  more than the trashed card.",
+    "in_supply": true,
+    "img": "/images/Modify.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Modify"
+  },
+  {
+    "name": "Skirmisher",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Attack"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "+1 card+1 action+this turn, when you gain an attack card, each other player discards down to 3\u00a0cards in hand.",
+    "in_supply": true,
+    "img": "/images/Skirmisher.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Skirmisher"
+  },
+  {
+    "name": "Specialist",
+    "expansion": "Allies",
+    "types": [
+      "Action"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "you may play an action or treasure from your hand.choose one: play it again; or gain a copy of it.",
+    "in_supply": true,
+    "img": "/images/Specialist.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Specialist"
+  },
+  {
+    "name": "Swap",
+    "expansion": "Allies",
+    "types": [
+      "Action"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "+1 card+1 actionyou may return an action from your hand to its pile, to gain to your hand a different action costing up to .",
+    "in_supply": true,
+    "img": "/images/Swap.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Swap"
+  },
+  {
+    "name": "Marquis",
+    "expansion": "Allies",
+    "types": [
+      "Action"
+    ],
+    "coins": 6,
+    "potions": null,
+    "debt": null,
+    "text": "+1 buy+1 card per card in your hand. discard down to 10 cards in hand.",
+    "in_supply": true,
+    "img": "/images/Marquis.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Marquis"
+  },
+  {
+    "name": "Town Crier",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Townsfolk"
+    ],
+    "coins": 2,
+    "potions": null,
+    "debt": null,
+    "text": "choose one: +; or gain a silver; or +1 card and +1 action.you may rotate the townsfolk.",
+    "in_supply": true,
+    "img": "/images/Town Crier.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Town_Crier"
+  },
+  {
+    "name": "Herb Gatherer",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Augur"
+    ],
+    "coins": 3,
+    "potions": null,
+    "debt": null,
+    "text": "+1 buyput your deck into your discard pile. look through it and you may play a treasure from it.you may rotate the augurs.",
+    "in_supply": true,
+    "img": "/images/Herb Gatherer.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Herb_Gatherer"
+  },
+  {
+    "name": "Old Map",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Odyssey"
+    ],
+    "coins": 3,
+    "potions": null,
+    "debt": null,
+    "text": "+1 card+1 actiondiscard a card. +1 card.you may rotate the odysseys.",
+    "in_supply": true,
+    "img": "/images/Old Map.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Old_Map"
+  },
+  {
+    "name": "Blacksmith",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Townsfolk"
+    ],
+    "coins": 3,
+    "potions": null,
+    "debt": null,
+    "text": "choose one:draw until you have 6\u00a0cards in hand;or +2\u00a0cards; or +1\u00a0card and +1\u00a0action.",
+    "in_supply": true,
+    "img": "/images/Blacksmith.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Blacksmith"
+  },
+  {
+    "name": "Student",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Wizard",
+      "Liaison"
+    ],
+    "coins": 3,
+    "potions": null,
+    "debt": null,
+    "text": "+1 actionyou may rotate the wizards.trash a card from your hand. if it's a treasure, +1\u00a0favor and put this onto your deck.",
+    "in_supply": true,
+    "img": "/images/Student.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Student"
+  },
+  {
+    "name": "Tent",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Fort"
+    ],
+    "coins": 3,
+    "potions": null,
+    "debt": null,
+    "text": "+you may rotate the forts.when you discard this from play, you may put it onto your deck.",
+    "in_supply": true,
+    "img": "/images/Tent.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Tent"
+  },
+  {
+    "name": "Battle Plan",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Clash"
+    ],
+    "coins": 3,
+    "potions": null,
+    "debt": null,
+    "text": "+1 card+1 actionyou may reveal an attack card from your hand for +1 card. you may rotate any supply pile.",
+    "in_supply": true,
+    "img": "/images/Battle Plan.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Battle_Plan"
+  },
+  {
+    "name": "Acolyte",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Augur"
+    ],
+    "coins": 4,
+    "potions": null,
+    "debt": null,
+    "text": "you may trash an action or victory card from your hand to gain a gold.you may trash this to gain an augur.",
+    "in_supply": true,
+    "img": "/images/Acolyte.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Acolyte"
+  },
+  {
+    "name": "Voyage",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Duration",
+      "Odyssey"
+    ],
+    "coins": 4,
+    "potions": null,
+    "debt": null,
+    "text": "+1 actionif the previous turn wasn't yours, take an extra turn after this one, during which you can only play 3 cards from your hand.",
+    "in_supply": true,
+    "img": "/images/Voyage.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Voyage"
+  },
+  {
+    "name": "Miller",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Townsfolk"
+    ],
+    "coins": 4,
+    "potions": null,
+    "debt": null,
+    "text": "+1 actionlook at the top 4 cards of your deck. put one into your hand and discard the rest.",
+    "in_supply": true,
+    "img": "/images/Miller.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Miller"
+  },
+  {
+    "name": "Conjurer",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Duration",
+      "Wizard"
+    ],
+    "coins": 4,
+    "potions": null,
+    "debt": null,
+    "text": "gain a card costing up to .at the start of your next turn, put this into your hand.",
+    "in_supply": true,
+    "img": "/images/Conjurer.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Conjurer"
+  },
+  {
+    "name": "Garrison",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Duration",
+      "Fort"
+    ],
+    "coins": 4,
+    "potions": null,
+    "debt": null,
+    "text": "+this turn, when you gain a card, add a token here. at the start of your next turn, remove them for +1 card each.",
+    "in_supply": true,
+    "img": "/images/Garrison.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Garrison"
+  },
+  {
+    "name": "Archer",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Attack",
+      "Clash"
+    ],
+    "coins": 4,
+    "potions": null,
+    "debt": null,
+    "text": "+each other player with 5 or more cards in hand reveals all but one, and discards one of those you choose.",
+    "in_supply": true,
+    "img": "/images/Archer.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Archer"
+  },
+  {
+    "name": "Sorceress",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Attack",
+      "Augur"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "+1 actionname a card. reveal the top card of your deck and put it into your hand. if it's the named card, each other player gains a curse.",
+    "in_supply": true,
+    "img": "/images/Sorceress.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Sorceress"
+  },
+  {
+    "name": "Sunken Treasure",
+    "expansion": "Allies",
+    "types": [
+      "Treasure",
+      "Odyssey"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "gain an action card you don't have a copy of in play.",
+    "in_supply": true,
+    "img": "/images/Sunken Treasure.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Sunken_Treasure"
+  },
+  {
+    "name": "Elder",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Townsfolk"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "+you may play an action card from your hand. when it gives you a choice of abilities (e.g. \u201cchoose one\u201d) this turn, you may choose an extra (different) option.",
+    "in_supply": true,
+    "img": "/images/Elder.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Elder"
+  },
+  {
+    "name": "Sorcerer",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Attack",
+      "Wizard"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "+1 card+1 actioneach other player names a card, then reveals the top card of their deck. if wrong, they gain a curse.",
+    "in_supply": true,
+    "img": "/images/Sorcerer.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Sorcerer"
+  },
+  {
+    "name": "Hill Fort",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Fort"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "gain a card costing up to . choose one: put it into your hand; or +1 card and +1 action.",
+    "in_supply": true,
+    "img": "/images/Hill Fort.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Hill_Fort"
+  },
+  {
+    "name": "Warlord",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Duration",
+      "Attack",
+      "Clash"
+    ],
+    "coins": 5,
+    "potions": null,
+    "debt": null,
+    "text": "+1 actionat the start of your next turn, +2 cards. until then, other players can't play an action from their hand that they have 2 or more copies of in play.",
+    "in_supply": true,
+    "img": "/images/Warlord.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Warlord"
+  },
+  {
+    "name": "Sibyl",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Augur"
+    ],
+    "coins": 6,
+    "potions": null,
+    "debt": null,
+    "text": "+4 cards+1 actionput a card from your hand on top of your deck, and another on the bottom.",
+    "in_supply": true,
+    "img": "/images/Sibyl.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Sibyl"
+  },
+  {
+    "name": "Distant Shore",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Victory",
+      "Odyssey"
+    ],
+    "coins": 6,
+    "potions": null,
+    "debt": null,
+    "text": "+2 cards+1 actiongain an estate.2",
+    "in_supply": true,
+    "img": "/images/Distant Shore.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Distant_Shore"
+  },
+  {
+    "name": "Lich",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Wizard"
+    ],
+    "coins": 6,
+    "potions": null,
+    "debt": null,
+    "text": "+6 cards+2 actionsskip a turn.when you trash this, discard it and gain a cheaper card from the trash.",
+    "in_supply": true,
+    "img": "/images/Lich.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Lich"
+  },
+  {
+    "name": "Stronghold",
+    "expansion": "Allies",
+    "types": [
+      "Action",
+      "Duration",
+      "Victory",
+      "Fort"
+    ],
+    "coins": 6,
+    "potions": null,
+    "debt": null,
+    "text": "choose one: +; or at the start of your next turn, +3 cards.2",
+    "in_supply": true,
+    "img": "/images/Stronghold.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Stronghold"
+  },
+  {
+    "name": "Territory",
+    "expansion": "Allies",
+    "types": [
+      "Victory",
+      "Clash"
+    ],
+    "coins": 6,
+    "potions": null,
+    "debt": null,
+    "text": "worth 1 per differently named victory card you have.when you gain this, gain a gold per empty supply pile.",
+    "in_supply": true,
+    "img": "/images/Territory.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Territory"
+  },
+  {
+    "name": "Architects' Guild",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "when you gain a card, you may spend 2 favors to gain a cheaper non-victory card.",
+    "in_supply": true,
+    "img": "/images/Architects' Guild.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Architects%27_Guild"
+  },
+  {
+    "name": "Band of Nomads",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "when you gain a card costing  or more, you may spend a favor, for +1 card, or +1 action, or +1 buy.",
+    "in_supply": true,
+    "img": "/images/Band of Nomads.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Band_of_Nomads"
+  },
+  {
+    "name": "Cave Dwellers",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "at the start of your turn, you may spend a favor, to discard a card then draw a card. repeat as desired.",
+    "in_supply": true,
+    "img": "/images/Cave Dwellers.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Cave_Dwellers"
+  },
+  {
+    "name": "Circle of Witches",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "after playing a liaison, you may spend 3 favors to have each other player gain a curse.",
+    "in_supply": true,
+    "img": "/images/Circle of Witches.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Circle_of_Witches"
+  },
+  {
+    "name": "City-state",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "when you gain an action card during your turn, you may spend 2\u00a0favors to play it.",
+    "in_supply": true,
+    "img": "/images/City-state.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/City-state"
+  },
+  {
+    "name": "Coastal Haven",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "when discarding your hand in clean-up, you may spend any number of favors to keep that many cards in hand for next turn (you still draw 5).",
+    "in_supply": true,
+    "img": "/images/Coastal Haven.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Coastal_Haven"
+  },
+  {
+    "name": "Crafters' Guild",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "at the start of your turn, you may spend 2 favors to gain a card costing up to  onto your deck.",
+    "in_supply": true,
+    "img": "/images/Crafters' Guild.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Crafters%27_Guild"
+  },
+  {
+    "name": "Desert Guides",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "at the start of your turn, you may spend a favor to discard your hand and draw 5 cards. repeat as desired.",
+    "in_supply": true,
+    "img": "/images/Desert Guides.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Desert_Guides"
+  },
+  {
+    "name": "Family of Inventors",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "at the start of your buy phase, you may put a favor token you have on a non-victory supply pile.cards cost  less per favor token on their piles.",
+    "in_supply": true,
+    "img": "/images/Family of Inventors.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Family_of_Inventors"
+  },
+  {
+    "name": "Fellowship of Scribes",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "after playing an action, if you have 4 or fewer cards in hand, you may spend a favor for +1 card.",
+    "in_supply": true,
+    "img": "/images/Fellowship of Scribes.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Fellowship_of_Scribes"
+  },
+  {
+    "name": "Forest Dwellers",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "at the start of your turn, you may spend a favor to look at the top 3 cards of your deck, discard any number and put the rest back in any order.",
+    "in_supply": true,
+    "img": "/images/Forest Dwellers.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Forest_Dwellers"
+  },
+  {
+    "name": "Gang of Pickpockets",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "at the start of your turn, discard down to 4 cards in hand unless you spend a favor.",
+    "in_supply": true,
+    "img": "/images/Gang of Pickpockets.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Gang_of_Pickpockets"
+  },
+  {
+    "name": "Island Folk",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "at the end of your turn, if the previous turn wasn't yours, you may spend 5 favors to take another turn.",
+    "in_supply": true,
+    "img": "/images/Island Folk.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Island_Folk"
+  },
+  {
+    "name": "League of Bankers",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "at the start of your buy phase, + per 4 favors you have (round down).",
+    "in_supply": true,
+    "img": "/images/League of Bankers.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/League_of_Bankers"
+  },
+  {
+    "name": "League of Shopkeepers",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "after playing a liaison, if you have 5 or more favors, +,and if 10 or more, +1 action and +1 buy.",
+    "in_supply": true,
+    "img": "/images/League of Shopkeepers.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/League_of_Shopkeepers"
+  },
+  {
+    "name": "Market Towns",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "at the start of your buy phase, you may spend a favor to play an action card from your hand. repeat as desired.",
+    "in_supply": true,
+    "img": "/images/Market Towns.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Market_Towns"
+  },
+  {
+    "name": "Mountain Folk",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "at the start of your turn, you may spend 5 favors for +3 cards.",
+    "in_supply": true,
+    "img": "/images/Mountain Folk.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Mountain_Folk"
+  },
+  {
+    "name": "Order of Astrologers",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "when shuffling, you may pick one card per favor you spend to go on top.",
+    "in_supply": true,
+    "img": "/images/Order of Astrologers.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Order_of_Astrologers"
+  },
+  {
+    "name": "Order of Masons",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "when shuffling, you may pick up to 2 cards per favor you spend to put into your discard pile.",
+    "in_supply": true,
+    "img": "/images/Order of Masons.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Order_of_Masons"
+  },
+  {
+    "name": "Peaceful Cult",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "at the start of your buy phase, you may spend any number of favors to trash that many cards from your hand.",
+    "in_supply": true,
+    "img": "/images/Peaceful Cult.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Peaceful_Cult"
+  },
+  {
+    "name": "Plateau Shepherds",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "when scoring, pair up your favors with cards you have costing , for 2 per pair.",
+    "in_supply": true,
+    "img": "/images/Plateau Shepherds.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Plateau_Shepherds"
+  },
+  {
+    "name": "Trappers' Lodge",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "when you gain a card, you may spend a favor to put it onto your deck.",
+    "in_supply": true,
+    "img": "/images/Trappers' Lodge.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Trappers%27_Lodge"
+  },
+  {
+    "name": "Woodworkers' Guild",
+    "expansion": "Allies",
+    "types": [
+      "Ally"
+    ],
+    "coins": null,
+    "potions": null,
+    "debt": null,
+    "text": "at the start of your buy phase, you may spend a favor to trash an action card from your hand. if you did, gain an action card.",
+    "in_supply": true,
+    "img": "/images/Woodworkers' Guild.jpg",
+    "link": "http://wiki.dominionstrategy.com/index.php/Woodworkers%27_Guild"
+  },
+  {
     "name": "Black Market",
     "expansion": "Promo",
     "types": [

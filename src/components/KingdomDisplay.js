@@ -36,6 +36,8 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, lockCard
 	const platinumColony = cards.filter((card) => card.name === 'Platinum' || card.name === 'Colony');
 	const shelters = cards.filter((card) => isOfType(card, ['Shelter']));
 
+	const [ally] = landscapes.filter((card) => isOfType(card, ['Ally']));
+
 	return (
 		<>
 			<CardsDisplay
@@ -46,7 +48,7 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, lockCard
 			<Stack direction={{base: 'column', md: 'row'}}>
 				{(landscapes.length > 0) && (
 					<CardsDisplay
-						data={landscapes.sort((card1, card2) => sortTwoCards(card1, card2, 'name'))}
+						data={landscapes.filter((card) => !isOfType(card, ['Ally'])).sort((card1, card2) => sortTwoCards(card1, card2, 'name'))}
 						swapCard={(card) => swapCard(card, 'landscape')}
 						lockCard={lockCard}
 					/>
@@ -58,7 +60,9 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, lockCard
 					<CardsDisplay data={platinumColony.sort((a, b) => sortTwoCards(a, b, 'cost'))}/>
 				)}
 			</Stack>
-
+			{ally && (
+				<CardsDisplay data={[ally]} swapCard={(card) => swapCard(card, 'landscape')}/>
+			)}
 			{useShelters && (
 				<CardsDisplay data={shelters.sort((a, b) => sortTwoCards(a, b, 'name'))}/>
 			)}

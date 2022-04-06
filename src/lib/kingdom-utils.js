@@ -5,7 +5,7 @@ export const getAvailableCards = (pool, expansions, promos, ignore) => {
 	return pool.filter((card) =>
 		isValidKingdomCard(card, true)
 		&& (hasValidExpansion(card, expansions) || promos.includes(card.name))
-		&& ignore && !ignore.includes(card.name)
+		&& (ignore ? !ignore.includes(card.name) : true)
 	);
 }
 
@@ -102,6 +102,7 @@ export const generateKingdom = (pool, expansions, promos, oldKingdom, oldLandsca
 
 export const swapCard = (oldCard, kingdom, landscapes, pool, expansions, promos) => {
 	const remainingCards = getAvailableCards(pool, expansions, promos).filter((card) => !arrayIncludesCard(kingdom, card));
+
 	if (remainingCards.length < 10) {
 		return { alertText: 'There are no available kingdom cards to swap!' }
 	}

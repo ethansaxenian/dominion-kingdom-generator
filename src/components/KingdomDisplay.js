@@ -4,10 +4,10 @@ import CardsDisplay from './CardsDisplay';
 import PropTypes from 'prop-types';
 import { cardType } from 'lib/types';
 import { Button, Stack, VStack } from '@chakra-ui/react';
-import { useCardContext } from 'context.js';
+import { useProject } from 'context.js';
 
 export default function KingdomDisplay({ kingdom, landscapes, swapCard, lockCard, usePlatinumColony, useShelters, blackMarketOptions }) {
-	const cards = useCardContext();
+	const { cards } = useProject();
 
 	const [blackMarketDeck, setBlackMarketDeck] = useState([]);
 

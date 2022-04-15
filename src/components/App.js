@@ -5,11 +5,11 @@ import KingdomGenerator from './KingdomGenerator';
 import KingdomSettings from './KingdomSettings';
 import { Container } from '@chakra-ui/react';
 import { hasValidExpansion, sortStrings } from 'lib/utils';
-import { useCardContext } from 'context.js';
+import { useProject } from 'context.js';
 import analytics from 'analytics';
 
 export default function App() {
-	const cards = useCardContext();
+	const { cards } = useProject();
 
 	const [page, setPage] = useState('generate');
 	const [expansions, setExpansions] = useState(['Base']);

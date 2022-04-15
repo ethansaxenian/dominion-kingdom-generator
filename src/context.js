@@ -1,26 +1,6 @@
 import { createContext, useContext } from 'react';
-import PropTypes from 'prop-types';
-import { cardType } from 'lib/types';
 
-const CardContext = createContext();
+const ProjectContext = createContext();
+export default ProjectContext;
 
-export const CardProvider = ({ value, children }) => {
-	return (
-		<CardContext.Provider value={value}>
-			{children}
-		</CardContext.Provider>
-	)
-}
-
-export const useCardContext = () => {
-	const { cards } = useContext(CardContext)
-	return cards;
-}
-
-
-CardProvider.propTypes = {
-	value: PropTypes.shape({
-		cards: PropTypes.arrayOf(cardType).isRequired
-	}),
-	children: PropTypes.element.isRequired
-}
+export const useProject = () => useContext(ProjectContext);

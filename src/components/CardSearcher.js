@@ -4,10 +4,10 @@ import CardsDisplay from './CardsDisplay';
 import SearchBar from './SearchBar';
 import { SUPPLY_TYPES } from 'lib/constants';
 import { Divider, Heading } from '@chakra-ui/react';
-import { useCardContext } from 'context.js';
+import { useProject } from 'context.js';
 
 export default function CardSearcher() {
-	const cards = useCardContext();
+	const { cards } = useProject();
 
 	const [searchTerm, setSearchTerm] = useState('');
 	const [sortBy, setSortBy] = useState('name');

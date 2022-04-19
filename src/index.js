@@ -9,9 +9,9 @@ import ProjectContext from 'context.js';
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
-	<ChakraProvider theme={theme}>
-		<ProjectContext.Provider value={{cards}}>
-			<App/>
-		</ProjectContext.Provider>
-	</ChakraProvider>
+  <ChakraProvider theme={theme}>
+    <ProjectContext.Provider value={{cards}}>
+      <App/>
+    </ProjectContext.Provider>
+  </ChakraProvider>
 );

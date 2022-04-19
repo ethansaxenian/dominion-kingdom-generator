@@ -3,17 +3,17 @@ import App from 'components/App';
 import ProjectContext from 'context';
 
 const renderWithContext = ({children}) => {
-	render(
-		<ProjectContext.Provider value={{cards: []}}>
-			{children}
-		</ProjectContext.Provider>
-	);
+  render(
+    <ProjectContext.Provider value={{cards: []}}>
+      {children}
+    </ProjectContext.Provider>
+  );
 }
 
 describe('App tests', () => {
 
-	test('Renders without crashing', () => {
-		renderWithContext(<App/>);
-	});
+  test('Renders without crashing', () => {
+    renderWithContext(<App/>);
+  });
 
 });

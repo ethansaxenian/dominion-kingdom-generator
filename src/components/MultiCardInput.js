@@ -2,11 +2,11 @@ import { Box, Button, Input, InputGroup, InputRightElement, Tag, TagCloseButton,
 import { useState } from 'react';
 import { AddIcon } from '@chakra-ui/icons';
 import PropTypes from 'prop-types';
-import { useProject } from 'context.js';
+import { useAppContext } from 'context.js';
 import { CARDS_TO_REMOVE } from 'lib/constants';
 
 export default function MultiCardInput({ list, setList }) {
-  const project = useProject();
+  const project = useAppContext();
   const cards = project.cards.filter((card) => card.in_supply && !CARDS_TO_REMOVE.includes(card.name));
 
   const [text, setText] = useState('');

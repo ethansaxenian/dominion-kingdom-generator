@@ -4,14 +4,14 @@ import App from 'components/App';
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from 'theme/theme.js';
 import cards from 'data/dominion_cards.json';
-import ProjectContext from 'context.js';
+import AppContext from 'context.js';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
   <ChakraProvider theme={theme}>
-    <ProjectContext.Provider value={{cards}}>
+    <AppContext.Provider value={{cards}}>
       <App/>
-    </ProjectContext.Provider>
+    </AppContext.Provider>
   </ChakraProvider>
 );

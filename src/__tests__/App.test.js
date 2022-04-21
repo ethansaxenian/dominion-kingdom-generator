@@ -1,12 +1,12 @@
 import { render } from '@testing-library/react';
 import App from 'components/App';
-import ProjectContext from 'context';
+import AppContext from 'context';
 
 const renderWithContext = ({children}) => {
   render(
-    <ProjectContext.Provider value={{cards: []}}>
+    <AppContext.Provider value={{cards: []}}>
       {children}
-    </ProjectContext.Provider>
+    </AppContext.Provider>
   );
 }
 

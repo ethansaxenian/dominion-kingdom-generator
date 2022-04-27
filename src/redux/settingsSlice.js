@@ -16,14 +16,14 @@ const settingsSlice = createSlice({
       state.expansions.sort();
     },
     removeExpansion(state, action) {
-      state.expansions.remove(action.payload);
+      state.expansions = state.expansions.filter((exp) => exp !== action.payload);
     },
     addPromo(state, action) {
       state.promos.push(action.payload);
       state.promos.sort();
     },
     removePromo(state, action) {
-      state.promos.remove(action.payload);
+      state.promos = state.promos.filter((promo) => promo !== action.payload);
     },
     setBlacklist(state, action) {
       state.blacklist = action.payload;

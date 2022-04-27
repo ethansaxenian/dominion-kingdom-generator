@@ -29,22 +29,35 @@ const kingdomSlice = createSlice({
       const card = state.kingdom.find((c) => c.name === name);
       card.locked = !locked;
     },
+    unlockCard(state, action) {
+      const card = state.kingdom.find((c) => c.name === action.payload);
+      card.locked = false;
+    },
     toggleLockLandscape(state, action) {
       const { name, locked } = action.payload;
       const card = state.landscapes.find((c) => c.name === name);
       card.locked = !locked;
     },
+    unlockLandscape(state, action) {
+      const card = state.landscapes.find((c) => c.name === action.payload);
+      card.locked = false;
+    },
     setBlackMarket(state, action) {
       state.blackMarket = action.payload;
-    },
-    toggleBlackMarketCard(state, action) {
-      const { name, locked } = action.payload;
-      const card = state.blackMarket.find((c) => c.name === name);
-      card.locked = !locked;
     },
   }
 });
 
 export default kingdomSlice.reducer;
 
-// export const {} = kingdomSlice.actions;
+export const {
+  setKingdom,
+  setLandscapes,
+  setUsePlatinumColony,
+  setUseShelters,
+  toggleLockCard,
+  unlockCard,
+  toggleLockLandscape,
+  unlockLandscape,
+  setBlackMarket
+} = kingdomSlice.actions;

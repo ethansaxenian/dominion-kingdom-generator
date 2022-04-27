@@ -135,7 +135,7 @@ export const swapLandscape = (oldCard, kingdom, landscapes, pool, expansions, pr
     return { alertText: 'There are no available kingdom cards to swap!' }
   }
   let newLandscapes = landscapes.filter((card) => card.name !== oldCard.name);
-  let newKingdom = kingdom;
+  let newKingdom = [...kingdom];
   if (oldCard.name === 'Way of the Mouse') {
     newKingdom = newKingdom.filter((card) => !card.wotm);
   }

@@ -2,19 +2,19 @@ import { useEffect, useState } from 'react';
 import KingdomDisplay from './KingdomDisplay';
 import { Button, HStack, Text, useToast, VStack } from '@chakra-ui/react';
 import { generateBlackMarket, generateKingdom, swapCard, swapLandscape } from 'lib/kingdom-utils';
-import { hasValidExpansion, isLandscape } from 'lib/utils';
-import { useSelector } from 'react-redux';
+import { hasValidExpansion } from 'lib/utils';
+import { useDispatch, useSelector } from 'react-redux';
 import { useAppContext } from 'context';
+import { setKingdom, setLandscapes, setUsePlatinumColony, setUseShelters, unlockCard, unlockLandscape } from 'redux/kingdomSlice';
 
 export default function KingdomGenerator() {
-  const [kingdom, setKingdom] = useState([]);
-  const [landscapes, setLandScapes] = useState([]);
-  const [usePlatinumColony, setUsePlatinumColony] = useState(false);
-  const [useShelters, setUseShelters] = useState(false);
   const [alert, setAlert] = useState('');
 
   const { blacklist, whitelist, expansions, promos } = useSelector((state) => state.settings);
+  const { kingdom, landscapes } = useSelector((state) => state.kingdom);
   const { cards } = useAppContext();
+
+  const dispatch = useDispatch();
 
   const pool = cards.filter((card) => !blacklist.includes(card.name) && (hasValidExpansion(card, expansions) || promos.includes(card.name)));
 
@@ -38,32 +38,32 @@ export default function KingdomGenerator() {
       setAlert(alertText);
       return
     }
-    setKingdom(newKingdom);
-    setLandScapes(newLandscapes);
-    setUsePlatinumColony(usePC);
-    setUseShelters(useSh);
+    dispatch(setKingdom(newKingdom));
+    dispatch(setLandscapes(newLandscapes));
+    dispatch(setUsePlatinumColony(usePC));
+    dispatch(setUseShelters(useSh));
   }
 
   const _swapCard = (oldCard) => {
-    oldCard.locked = false;
+    dispatch(unlockCard(oldCard.name))
     const { newKingdom, newLandscapes, alertText } = swapCard(oldCard, kingdom, landscapes, pool, expansions, promos)
     if (alertText !== '') {
       setAlert(alertText);
       return
     }
-    setKingdom(newKingdom);
-    setLandScapes(newLandscapes);
+    dispatch(setKingdom(newKingdom));
+    dispatch(setLandscapes(newLandscapes));
   }
 
   const _swapLandscape = (oldCard) => {
-    oldCard.locked = false;
+    dispatch(unlockLandscape(oldCard.name));
     const { newKingdom, newLandscapes, alertText } = swapLandscape(oldCard, kingdom, landscapes, pool, expansions, promos);
     if (alertText !== '') {
       setAlert(alertText);
       return
     }
-    setKingdom(newKingdom);
-    setLandScapes(newLandscapes);
+    dispatch(setKingdom(newKingdom));
+    dispatch(setLandscapes(newLandscapes));
   }
 
   const swap = (oldCard, type) => {
@@ -72,26 +72,6 @@ export default function KingdomGenerator() {
     }
     if (type === 'landscape') {
       _swapLandscape(oldCard);
-    }
-  }
-
-  const lockCard = (card) => {
-    if (isLandscape(card)) {
-      setLandScapes(landscapes.map((c) => {
-        if (c === card) {
-          return {...c, locked: !c.locked}
-        } else {
-          return c;
-        }
-      }));
-    } else {
-      setKingdom(kingdom.map((c) => {
-        if (c === card) {
-          return {...c, locked: !c.locked}
-        } else {
-          return c;
-        }
-      }));
     }
   }
 
@@ -115,9 +95,6 @@ export default function KingdomGenerator() {
         kingdom={kingdom}
         landscapes={landscapes}
         swapCard={swap}
-        lockCard={lockCard}
-        usePlatinumColony={usePlatinumColony}
-        useShelters={useShelters}
         blackMarketOptions={generateBlackMarket(pool, kingdom, promos, expansions)}
       />
     </>

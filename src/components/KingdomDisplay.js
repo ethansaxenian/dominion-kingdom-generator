@@ -1,24 +1,26 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { arrayIncludesCard, arrayIncludesCardName, drawCards, isOfType, sample, sortTwoCards } from 'lib/utils';
 import CardsDisplay from './CardsDisplay';
 import PropTypes from 'prop-types';
 import { cardType } from 'lib/types';
 import { Button, Stack, VStack } from '@chakra-ui/react';
 import { useAppContext } from 'context.js';
+import { useSelector, useDispatch } from 'react-redux';
+import { setBlackMarket, toggleLockCard, toggleLockLandscape } from 'redux/kingdomSlice';
 
-export default function KingdomDisplay({ kingdom, landscapes, swapCard, lockCard, usePlatinumColony, useShelters, blackMarketOptions }) {
+export default function KingdomDisplay({ kingdom, landscapes, swapCard, blackMarketOptions }) {
   const { cards } = useAppContext();
-
-  const [blackMarketDeck, setBlackMarketDeck] = useState([]);
+  const { usePlatinumColony, useShelters, blackMarketDeck } = useSelector((state) => state.kingdom);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     if (!arrayIncludesCardName(kingdom, 'Black Market')) {
-      setBlackMarketDeck([]);
+      dispatch(setBlackMarket([]));
     }
   }, [kingdom]);
 
   const generateBlackMarketDeck = () => {
-    setBlackMarketDeck(sample(blackMarketOptions, Math.min(blackMarketOptions.length, 60)));
+    dispatch(setBlackMarket(sample(blackMarketOptions, Math.min(blackMarketOptions.length, 60))));
   }
 
   const swapBMCard = (oldCard) => {
@@ -26,7 +28,7 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, lockCard
     if (newOptions.length > 0) {
       const newBMDeck = blackMarketDeck.filter((card) => card.name !== oldCard.name);
       const [newCard] = drawCards(newOptions, 1);
-      setBlackMarketDeck([...newBMDeck, newCard]);
+      dispatch(setBlackMarket([...newBMDeck, newCard]));
     }
   }
 
@@ -43,14 +45,14 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, lockCard
       <CardsDisplay
         data={supply.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))}
         swapCard={(card) => swapCard(card, 'card')}
-        lockCard={lockCard}
+        lockCard={({ name, locked }) => dispatch(toggleLockCard({ name, locked }))}
       />
       <Stack direction={{base: 'column', md: 'row'}}>
         {(landscapes.length > 0) && (
           <CardsDisplay
             data={landscapes.filter((card) => !isOfType(card, ['Ally'])).sort((card1, card2) => sortTwoCards(card1, card2, 'name'))}
             swapCard={(card) => swapCard(card, 'landscape')}
-            lockCard={lockCard}
+            lockCard={({ name, locked }) => dispatch(toggleLockLandscape({ name, locked }))}
           />
         )}
         {wotm && (
@@ -92,8 +94,5 @@ KingdomDisplay.propTypes = {
   kingdom: PropTypes.arrayOf(cardType).isRequired,
   landscapes: PropTypes.arrayOf(cardType).isRequired,
   swapCard: PropTypes.func.isRequired,
-  lockCard: PropTypes.func.isRequired,
-  usePlatinumColony: PropTypes.bool.isRequired,
-  useShelters: PropTypes.bool.isRequired,
   blackMarketOptions: PropTypes.arrayOf(cardType).isRequired
 }

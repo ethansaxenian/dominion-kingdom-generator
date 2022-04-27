@@ -32,13 +32,13 @@ export default function KingdomDisplay({ kingdom, landscapes, swapCard, blackMar
     }
   }
 
-  const [wotm] = kingdom.filter((card) => card.wotm);
+  const wotm = kingdom.find((card) => card.wotm);
   const supply = kingdom.filter((card) => card !== wotm);
 
   const platinumColony = cards.filter((card) => card.name === 'Platinum' || card.name === 'Colony');
   const shelters = cards.filter((card) => isOfType(card, ['Shelter']));
 
-  const [ally] = landscapes.filter((card) => isOfType(card, ['Ally']));
+  const ally = landscapes.find((card) => isOfType(card, ['Ally']));
 
   return (
     <>

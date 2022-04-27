@@ -1,17 +1,19 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import App from 'components/App';
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from 'theme/theme.js';
+import { Provider } from 'react-redux';
+import store from 'redux/store';
 import cards from 'data/dominion_cards.json';
-import AppContext from 'context.js';
+import AppContext from 'context';
 
-const container = document.getElementById('root');
-const root = createRoot(container);
-root.render(
+ReactDOM.render((
   <ChakraProvider theme={theme}>
-    <AppContext.Provider value={{cards}}>
-      <App/>
-    </AppContext.Provider>
+    <Provider store={store}>
+      <AppContext.Provider value={{cards}}>
+        <App/>
+      </AppContext.Provider>
+    </Provider>
   </ChakraProvider>
-);
+), document.getElementById('root'));

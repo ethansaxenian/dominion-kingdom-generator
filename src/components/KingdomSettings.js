@@ -1,36 +1,40 @@
 import { EXPANSIONS, PROMOS } from 'lib/constants';
 import SelectorList from './SelectorList';
-import PropTypes from 'prop-types';
-import { expansionType, promoNameType } from 'lib/types';
 import { Divider, Heading, SimpleGrid } from '@chakra-ui/react';
 import MultiCardInput from './MultiCardInput';
+import { useSelector, useDispatch } from 'react-redux';
+import { addExpansion, removeExpansion, addPromo, removePromo, setBlacklist, setWhitelist } from 'redux/settingsSlice'
 
-export default function KingdomSettings({ expansions, promos, toggle, blacklist, whitelist, setList }) {
+export default function KingdomSettings() {
+  const { expansions, promos, blacklist, whitelist } = useSelector((state) => state.settings);
+  const dispatch = useDispatch()
+
+  const toggleExpansion = (name) => {
+    const action = expansions.includes(name) ? removeExpansion : addExpansion;
+    dispatch(action(name));
+  }
+
+  const togglePromo = (name) => {
+    const action = promos.includes(name) ? removePromo : addPromo;
+    dispatch(action(name));
+  }
+
   return (
     <>
       <SimpleGrid columns={{base: 1, md: 2}} spacingX="10vw" pb="30px">
         <SelectorList
           list={expansions}
-          toggle={(name) => toggle(name, 'expansion')}
+          toggle={toggleExpansion}
           options={EXPANSIONS}
           name="Expansions"
         />
-        <SelectorList list={promos} toggle={(name) => toggle(name, 'promo')} options={PROMOS} name="Promos"/>
+        <SelectorList list={promos} toggle={togglePromo} options={PROMOS} name="Promos"/>
       </SimpleGrid>
       <Divider/>
       <Heading pt="30px" size="lg">Blacklist Cards:</Heading>
-      <MultiCardInput list={blacklist} setList={(val) => setList(val, 'blacklist')}/>
+      <MultiCardInput list={blacklist} setList={(val) => dispatch(setBlacklist(val))}/>
       <Heading pt="30px" size="lg">Whitelist Cards:</Heading>
-      <MultiCardInput list={whitelist} setList={(val) => setList(val, 'whitelist')}/>
+      <MultiCardInput list={whitelist} setList={(val) => dispatch(setWhitelist(val))}/>
     </>
   )
-}
-
-KingdomSettings.propTypes = {
-  expansions: PropTypes.arrayOf(expansionType).isRequired,
-  promos: PropTypes.arrayOf(promoNameType).isRequired,
-  toggle: PropTypes.func.isRequired,
-  blacklist: PropTypes.arrayOf(PropTypes.string).isRequired,
-  whitelist: PropTypes.arrayOf(PropTypes.string).isRequired,
-  setList: PropTypes.func.isRequired,
 }

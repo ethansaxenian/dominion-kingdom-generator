@@ -1,11 +1,11 @@
-import { AspectRatio, Box, HStack, IconButton, Image, LinkOverlay, Spinner, Tag } from '@chakra-ui/react';
+import { AspectRatio, Box, HStack, Image, LinkOverlay, Spinner, Tag } from '@chakra-ui/react';
 import { isLandscape } from 'lib/utils';
 import PropTypes from 'prop-types';
 import { cardType } from 'lib/types';
-import { VscArrowSwap } from 'react-icons/vsc';
-import { LockIcon, UnlockIcon } from '@chakra-ui/icons';
+import SwapCardButton from './SwapCardButton';
+import LockCardButton from './LockCardButton';
 
-export default function Card({ card, swapCard, lockCard }) {
+export default function Card({ card, swap, lock, blackMarket }) {
   return (
     <Box
       w={isLandscape(card) ? '300px' : '170px'}
@@ -23,23 +23,13 @@ export default function Card({ card, swapCard, lockCard }) {
           />
         </LinkOverlay>
       </AspectRatio>
-      {swapCard && (
+      {swap && (
         <HStack py="5px" justify="space-evenly">
-          <IconButton
-            colorScheme="red"
-            icon={<VscArrowSwap/>}
-            onClick={() => swapCard(card)}
-          />
-          {lockCard && (
-            <IconButton
-              colorScheme={card.locked ? 'green' : 'blue'}
-              icon={card.locked ? <LockIcon/> : <UnlockIcon/>}
-              onClick={() => lockCard(card)}
-            />
-          )}
+          <SwapCardButton card={card} isBlackMarket={blackMarket}/>
+          {lock && <LockCardButton card={card}/>}
         </HStack>
       )}
-      {(swapCard && (card.bane || card.wotm)) && (
+      {(swap && (card.bane || card.wotm)) && (
         <Tag
           position="absolute"
           top="50%"
@@ -59,6 +49,7 @@ export default function Card({ card, swapCard, lockCard }) {
 
 Card.propTypes = {
   card: cardType.isRequired,
-  swapCard: PropTypes.func,
-  lockCard: PropTypes.func
+  swap: PropTypes.bool.isRequired,
+  lock: PropTypes.bool.isRequired,
+  blackMarket: PropTypes.bool
 }

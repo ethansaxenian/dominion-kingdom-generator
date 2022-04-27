@@ -4,7 +4,7 @@ import CardsDisplay from './CardsDisplay';
 import SearchBar from './SearchBar';
 import { SUPPLY_TYPES } from 'lib/constants';
 import { Divider, Heading } from '@chakra-ui/react';
-import { useAppContext } from 'context.js';
+import { useAppContext } from 'context';
 
 export default function CardSearcher() {
   const { cards } = useAppContext();
@@ -54,21 +54,21 @@ export default function CardSearcher() {
         <>
           <Divider my="30px"/>
           <Heading pb="30px">Supply Cards</Heading>
-          <CardsDisplay data={inSupply}/>
+          <CardsDisplay data={inSupply} swap={false} lock={false}/>
         </>
       )}
       {(displayed.includes('Non-supply') && notInSupply.length > 0) && (
         <>
           <Divider my="30px"/>
           <Heading pb="30px">Non-Supply Cards</Heading>
-          <CardsDisplay data={notInSupply}/>
+          <CardsDisplay data={notInSupply} swap={false} lock={false}/>
         </>
       )}
       {(displayed.includes('Landscape') && landscapes.length > 0) && (
         <>
           <Divider my="30px"/>
           <Heading pb="30px">Landscapes</Heading>
-          <CardsDisplay data={landscapes}/>
+          <CardsDisplay data={landscapes} swap={false} lock={false}/>
         </>
       )}
     </>

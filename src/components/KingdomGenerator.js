@@ -1,17 +1,22 @@
 import { useEffect, useState } from 'react';
 import KingdomDisplay from './KingdomDisplay';
-import PropTypes from 'prop-types';
-import { cardType, expansionType, promoNameType } from 'lib/types';
 import { Button, HStack, Text, useToast, VStack } from '@chakra-ui/react';
 import { generateBlackMarket, generateKingdom, swapCard, swapLandscape } from 'lib/kingdom-utils';
-import { isLandscape } from 'lib/utils';
+import { hasValidExpansion, isLandscape } from 'lib/utils';
+import { useSelector } from 'react-redux';
+import { useAppContext } from 'context';
 
-export default function KingdomGenerator({ pool, expansions, promos, whitelist }) {
+export default function KingdomGenerator() {
   const [kingdom, setKingdom] = useState([]);
   const [landscapes, setLandScapes] = useState([]);
   const [usePlatinumColony, setUsePlatinumColony] = useState(false);
   const [useShelters, setUseShelters] = useState(false);
   const [alert, setAlert] = useState('');
+
+  const { blacklist, whitelist, expansions, promos } = useSelector((state) => state.settings);
+  const { cards } = useAppContext();
+
+  const pool = cards.filter((card) => !blacklist.includes(card.name) && (hasValidExpansion(card, expansions) || promos.includes(card.name)));
 
   const alertToast = useToast();
 
@@ -117,11 +122,4 @@ export default function KingdomGenerator({ pool, expansions, promos, whitelist }
       />
     </>
   )
-}
-
-KingdomGenerator.propTypes = {
-  pool: PropTypes.arrayOf(cardType).isRequired,
-  expansions: PropTypes.arrayOf(expansionType).isRequired,
-  promos: PropTypes.arrayOf(promoNameType).isRequired,
-  whitelist: PropTypes.arrayOf(PropTypes.string).isRequired
 }

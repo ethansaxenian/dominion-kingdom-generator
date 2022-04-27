@@ -2,8 +2,8 @@ import { Box, Button, Input, InputGroup, InputRightElement, Tag, TagCloseButton,
 import { useState } from 'react';
 import { AddIcon } from '@chakra-ui/icons';
 import PropTypes from 'prop-types';
-import { useAppContext } from 'context.js';
 import { CARDS_TO_REMOVE } from 'lib/constants';
+import { useAppContext } from 'context';
 
 export default function MultiCardInput({ list, setList }) {
   const project = useAppContext();
@@ -36,7 +36,7 @@ export default function MultiCardInput({ list, setList }) {
 
   const blacklisted = (
     <Wrap w="300px" pb="15px">
-      {list.sort().map((card) => (
+      {list.map((card) => (
         <Tag
           key={card}
           borderRadius="full"

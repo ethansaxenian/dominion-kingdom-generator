@@ -75,6 +75,8 @@ export default function KingdomGenerator() {
     }
   }
 
+  const blackMarketOptions = generateBlackMarket(pool, kingdom, promos, expansions);
+
   return (
     <>
       <VStack w="100%" py="20px" spacing="20px">
@@ -95,7 +97,7 @@ export default function KingdomGenerator() {
         kingdom={kingdom}
         landscapes={landscapes}
         swapCard={swap}
-        blackMarketOptions={generateBlackMarket(pool, kingdom, promos, expansions)}
+        blackMarketOptions={blackMarketOptions}
       />
     </>
   )

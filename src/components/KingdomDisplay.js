@@ -28,7 +28,7 @@ export default function KingdomDisplay() {
 
   const landscapesWithoutAlly = landscapes.filter((card) => !isOfType(card, ['Ally'])).sort((card1, card2) => sortTwoCards(card1, card2, 'name'));
 
-  const blackMarkeyDisplay = blackMarket.sort((card1, card2) => sortTwoCards(card1, card2, 'expansion'));
+  const blackMarketDisplay = [...blackMarket].sort((card1, card2) => sortTwoCards(card1, card2, 'name'));
 
   return (
     <>
@@ -43,7 +43,7 @@ export default function KingdomDisplay() {
       {arrayIncludesCardName(kingdom, 'Black Market') && (
         <VStack mt="50px">
           <GenerateBlackMarketButton/>
-          {(blackMarket.length > 0) && <CardsDisplay data={blackMarkeyDisplay} swap blackMarket/>}
+          {(blackMarket.length > 0) && <CardsDisplay data={blackMarketDisplay} swap lock={false} blackMarket/>}
         </VStack>
       )}
     </>

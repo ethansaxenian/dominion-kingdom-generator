@@ -54,21 +54,21 @@ export default function CardSearcher() {
         <>
           <Divider my="30px"/>
           <Heading pb="30px">Supply Cards</Heading>
-          <CardsDisplay data={inSupply}/>
+          <CardsDisplay data={inSupply} swap={false} lock={false}/>
         </>
       )}
       {(displayed.includes('Non-supply') && notInSupply.length > 0) && (
         <>
           <Divider my="30px"/>
           <Heading pb="30px">Non-Supply Cards</Heading>
-          <CardsDisplay data={notInSupply}/>
+          <CardsDisplay data={notInSupply} swap={false} lock={false}/>
         </>
       )}
       {(displayed.includes('Landscape') && landscapes.length > 0) && (
         <>
           <Divider my="30px"/>
           <Heading pb="30px">Landscapes</Heading>
-          <CardsDisplay data={landscapes}/>
+          <CardsDisplay data={landscapes} swap={false} lock={false}/>
         </>
       )}
     </>

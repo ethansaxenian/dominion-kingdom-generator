@@ -5,7 +5,8 @@ const initialState = {
   landscapes: [],
   usePlatinumColony: false,
   useShelters: false,
-  blackMarket: []
+  blackMarket: [],
+  alert: ''
 };
 
 const kingdomSlice = createSlice({
@@ -45,6 +46,9 @@ const kingdomSlice = createSlice({
     setBlackMarket(state, action) {
       state.blackMarket = action.payload;
     },
+    setAlert(state, action) {
+      state.alert = action.payload;
+    }
   }
 });
 
@@ -59,5 +63,6 @@ export const {
   unlockCard,
   toggleLockLandscape,
   unlockLandscape,
-  setBlackMarket
+  setBlackMarket,
+  setAlert
 } = kingdomSlice.actions;

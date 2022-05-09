@@ -19,7 +19,6 @@ export default function MultiCardInput({ list, setList }) {
         if (name.toLowerCase() === item.toLowerCase()) {
           setList([...list, name]);
           setText('');
-          return;
         }
       });
     }

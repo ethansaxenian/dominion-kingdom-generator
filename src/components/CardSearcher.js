@@ -23,7 +23,7 @@ export default function CardSearcher() {
 
   const filteredCards = cards.filter(({ name, expansion, types, cost, text }) => {
     const parsedTerm = searchTerm.toLowerCase();
-    return ((name.toLowerCase().includes(parsedTerm)
+    return (name.toLowerCase().includes(parsedTerm)
       || expansion.toLowerCase().includes(parsedTerm)
       || types.some((type) => type.toLowerCase().includes(parsedTerm))
       || (cost && (
@@ -31,7 +31,7 @@ export default function CardSearcher() {
         || (cost.potions && cost.potions.includes(parsedTerm))
         || (cost.debt && cost.debt.includes(parsedTerm))
       ))
-      || text.toLowerCase().includes(parsedTerm)))
+      || text.toLowerCase().includes(parsedTerm))
   }).sort((card1, card2) => sortTwoCards(card1, card2, sortBy));
 
   const inSupply = filteredCards.filter((card) => card.in_supply && card.types.every((type) => SUPPLY_TYPES.includes(type)));

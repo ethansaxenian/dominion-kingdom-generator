@@ -73,36 +73,36 @@
         "ignoreDeclarationSort": true
       }
     ],
+    "react/jsx-boolean-value": ["warn", "never"],
+    "react/jsx-closing-tag-location": "warn",
+		"react/jsx-curly-brace-presence": [
+			"warn",
+			{
+				"props": "never",
+				"children": "never"
+			}
+		],
+		"react/jsx-curly-spacing": "warn",
+		"react/jsx-equals-spacing": "warn",
+		"react/jsx-first-prop-new-line": "warn",
+		"react/jsx-indent": ["warn", 2],
+    "react/jsx-key": "warn",
+		"react/jsx-no-useless-fragment": "warn",
     "react/jsx-tag-spacing": [
       "warn",
       {
         "beforeSelfClosing": "never"
       }
     ],
-    "react/jsx-boolean-value": ["warn", "never"],
+		"react/jsx-wrap-multilines": "warn",
     "react/no-array-index-key": "warn",
-    "react/no-unused-state": "warn",
-		"react/no-unused-prop-types": "warn",
 		"react/no-invalid-html-attribute": "warn",
-    "react/react-in-jsx-scope": "off",
-    "react/prop-types": "warn",
+    "react/no-typos": "warn",
     "react/no-unescaped-entities": "off",
-		"react/no-typos": "warn",
-    "react/jsx-key": "warn",
-		"react/self-closing-comp": "warn",
-		"react/jsx-closing-tag-location": "warn",
-		"react/jsx-curly-brace-presence": [
-			"warn",
-			{
-				"props": "never",
-				"children": "never"
-				}
-		],
-		"react/jsx-curly-spacing": "warn",
-		"react/jsx-equals-spacing": "warn",
-		"react/jsx-first-prop-new-line": "warn",
-		"react/jsx-indent": ["warn", 2],
-		"react/jsx-no-useless-fragment": "warn",
-		"react/jsx-wrap-multilines": "warn"
+		"react/no-unused-prop-types": "warn",
+    "react/no-unused-state": "warn",
+    "react/prop-types": "warn",
+    "react/react-in-jsx-scope": "off",
+		"react/self-closing-comp": "warn"
   }
 }

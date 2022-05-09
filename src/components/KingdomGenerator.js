@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import KingdomDisplay from './KingdomDisplay';
-import { HStack, Text, useToast, VStack } from '@chakra-ui/react';
+import { HStack, Text, VStack, useToast } from '@chakra-ui/react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setAlert } from 'redux/kingdomSlice';
 import GenerateKingdomButton from './GenerateKingdomButton';

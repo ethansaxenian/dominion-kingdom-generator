@@ -3,7 +3,7 @@ import { arrayIncludesCardName, isOfType, sortTwoCards } from 'lib/utils';
 import CardsDisplay from './CardsDisplay';
 import { Stack, VStack } from '@chakra-ui/react';
 import { useAppContext } from 'context.js';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setBlackMarket } from 'redux/kingdomSlice';
 import GenerateBlackMarketButton from './GenerateBlackMarketButton';
 

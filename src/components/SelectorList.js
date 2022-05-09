@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { expansionType, promoNameType } from 'lib/types';
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Divider, HStack, Switch, Text, useColorModeValue, VStack } from '@chakra-ui/react';
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Divider, HStack, Switch, Text, VStack, useColorModeValue } from '@chakra-ui/react';
 import { Fragment } from 'react';
 
 export default function SelectorList({ list, toggle, options, name }) {

@@ -67,7 +67,12 @@
         "avoidEscape": true
       }
     ],
-    "sort-imports": "warn",
+    "sort-imports": [
+      "warn",
+      {
+        "ignoreDeclarationSort": true
+      }
+    ],
     "react/jsx-tag-spacing": [
       "warn",
       {

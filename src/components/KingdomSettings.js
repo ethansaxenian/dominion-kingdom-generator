@@ -2,8 +2,8 @@ import { EXPANSIONS, PROMOS } from 'lib/constants';
 import SelectorList from './SelectorList';
 import { Divider, Heading, SimpleGrid } from '@chakra-ui/react';
 import MultiCardInput from './MultiCardInput';
-import { useSelector, useDispatch } from 'react-redux';
-import { addExpansion, removeExpansion, addPromo, removePromo, setBlacklist, setWhitelist } from 'redux/settingsSlice'
+import { useDispatch, useSelector } from 'react-redux';
+import { addExpansion, addPromo, removeExpansion, removePromo, setBlacklist, setWhitelist } from 'redux/settingsSlice'
 
 export default function KingdomSettings() {
   const { expansions, promos, blacklist, whitelist } = useSelector((state) => state.settings);

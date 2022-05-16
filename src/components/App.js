@@ -10,7 +10,10 @@ export default function App() {
   const [page, setPage] = useState('generate');
 
   useEffect(() => {
-    analytics();
+    // don't run analytics when testing
+    if (process.env.NODE_ENV !== 'test') {
+      analytics();
+    }
   }, []);
 
   return (

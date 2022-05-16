@@ -1,8 +1,8 @@
-export const EXPANSIONS = ['Adventures', 'Alchemy', 'Allies', 'Base', 'Base 1st Edition', 'Cornucopia', 'Dark Ages', 'Empires', 'Guilds', 'Hinterlands', 'Intrigue', 'Intrigue 1st Edition', 'Menagerie', 'Nocturne', 'Prosperity', 'Renaissance', 'Seaside'];
+export const EXPANSIONS = ['Adventures', 'Alchemy', 'Allies', 'Base', 'Base 1st Edition', 'Cornucopia', 'Dark Ages', 'Empires', 'Guilds', 'Hinterlands', 'Intrigue', 'Intrigue 1st Edition', 'Menagerie', 'Nocturne', 'Prosperity', 'Renaissance', 'Seaside'] as const;
 
-export const PROMOS = ['Black Market', 'Captain', 'Church', 'Dismantle', 'Envoy', 'Governor', 'Prince', 'Sauna', 'Stash', 'Summon', 'Walled Village'];
+export const PROMOS = ['Black Market', 'Captain', 'Church', 'Dismantle', 'Envoy', 'Governor', 'Prince', 'Sauna', 'Stash', 'Summon', 'Walled Village'] as const;
 
-export const TYPES = ['Action', 'Ally', 'Artifact', 'Attack', 'Augur', 'Boon', 'Castle', 'Clash', 'Command', 'Curse', 'Doom', 'Duration', 'Event', 'Fate', 'Fort', 'Gathering', 'Heirloom', 'Hex', 'Knight', 'Landmark', 'Liaison', 'Looter', 'Night', 'Odyssey', 'Prize', 'Project', 'Reaction', 'Reserve', 'Ruins', 'Shelter', 'Spirit', 'State', 'Townsfolk', 'Traveller', 'Treasure', 'Victory', 'Way', 'Wizard', 'Zombie'];
+export const TYPES = ['Action', 'Ally', 'Artifact', 'Attack', 'Augur', 'Boon', 'Castle', 'Clash', 'Command', 'Curse', 'Doom', 'Duration', 'Event', 'Fate', 'Fort', 'Gathering', 'Heirloom', 'Hex', 'Knight', 'Landmark', 'Liaison', 'Looter', 'Night', 'Odyssey', 'Prize', 'Project', 'Reaction', 'Reserve', 'Ruins', 'Shelter', 'Spirit', 'State', 'Townsfolk', 'Traveller', 'Treasure', 'Victory', 'Way', 'Wizard', 'Zombie'] as const;
 
 export const SUPPLY_TYPES = ['Action', 'Attack', 'Augur', 'Castle', 'Clash', 'Command', 'Curse', 'Doom', 'Duration', 'Fate', 'Fort', 'Gathering', 'Knight', 'Liaison', 'Looter', 'Night', 'Odyssey', 'Reaction', 'Reserve', 'Ruins', 'Townsfolk', 'Traveller', 'Treasure', 'Victory', 'Wizard'];
 

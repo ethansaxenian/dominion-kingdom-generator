@@ -1,6 +1,7 @@
 {
+  "parser": "@typescript-eslint/parser",
   "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jsx-a11y/strict"],
-  "plugins": ["react", "react-hooks", "jsx-a11y"],
+  "plugins": ["react", "react-hooks", "jsx-a11y", "@typescript-eslint"],
   "env": {
     "node": true,
     "jest": true,
@@ -49,6 +50,7 @@
     "no-unused-vars": "warn",
     "no-useless-return": "warn",
     "no-var": "warn",
+    "object-curly-spacing": ["warn", "always"],
     "object-shorthand": "warn",
     "prefer-arrow-callback": "warn",
     "prefer-const": "warn",
@@ -67,6 +69,7 @@
         "avoidEscape": true
       }
     ],
+    "semi": "warn",
     "sort-imports": [
       "warn",
       {

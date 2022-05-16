@@ -19,3 +19,25 @@ export const cardType = PropTypes.shape({
 });
 
 export const promoNameType = PropTypes.oneOf(PROMOS);
+
+export type Expansion = typeof EXPANSIONS[number];
+
+export type CardType = typeof TYPES[number];
+
+export type Promo = typeof PROMOS[number];
+
+export interface Card {
+  name: string;
+  expansion: Expansion;
+  types: Array<CardType>;
+  coins?: number;
+  potions?: string;
+  debt?: string;
+  text: string;
+  in_supply: boolean;
+  img: string;
+  link: string;
+  locked: boolean;
+  bane: boolean;
+  wotm: boolean;
+}

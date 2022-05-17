@@ -27,7 +27,7 @@ export const CardDisplay: FC<CardDisplayProps> = ({
 }) => {
   return (
     <Box
-      w={isLandscape(card) ? '300px' : '170px'}
+      w={isLandscape(card) ? '72' : '44'}
       borderRadius="8px"
       position="relative"
     >

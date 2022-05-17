@@ -28,8 +28,10 @@ export const SelectorList: FC<SelectorListProps> = ({
   options,
   name,
 }) => {
+  const buttonBg = useColorModeValue('gray.300', 'gray.700');
+  const buttonBgHover = useColorModeValue('gray.400', 'gray.600');
   return (
-    <Accordion allowToggle w="250px" mt="30px">
+    <Accordion allowToggle w="64" mt="8">
       <AccordionItem
         bg={useColorModeValue('gray.100', 'gray.800')}
         border="1px solid gray"
@@ -38,10 +40,8 @@ export const SelectorList: FC<SelectorListProps> = ({
         {({ isExpanded }) => (
           <>
             <AccordionButton
-              bg={useColorModeValue('gray.300', 'gray.700')}
-              _hover={{
-                bg: useColorModeValue('gray.400', 'gray.600'),
-              }}
+              bg={buttonBg}
+              _hover={{ bg: buttonBgHover }}
               p="15px"
               borderTopRadius="8px"
               borderBottomRadius={isExpanded ? 'none' : '8px'}

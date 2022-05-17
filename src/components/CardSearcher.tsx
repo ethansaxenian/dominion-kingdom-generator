@@ -32,7 +32,7 @@ export const CardSearcher = () => {
           );
         })
         .sort((card1, card2) => sortTwoCards(card1, card2, sortBy)),
-    [searchTerm, sortBy]
+    [searchTerm, sortBy, cards]
   );
 
   const inSupply = useMemo(
@@ -75,22 +75,22 @@ export const CardSearcher = () => {
       />
       {displayed.includes('Supply') && inSupply.length > 0 && (
         <>
-          <Divider my="30px" />
-          <Heading pb="30px">Supply Cards</Heading>
+          <Divider my="7" />
+          <Heading pb="7">Supply Cards</Heading>
           <CardsDisplay data={inSupply} swap={false} lock={false} />
         </>
       )}
       {displayed.includes('Non-supply') && notInSupply.length > 0 && (
         <>
-          <Divider my="30px" />
-          <Heading pb="30px">Non-Supply Cards</Heading>
+          <Divider my="7" />
+          <Heading pb="7">Non-Supply Cards</Heading>
           <CardsDisplay data={notInSupply} swap={false} lock={false} />
         </>
       )}
       {displayed.includes('Landscape') && landscapes.length > 0 && (
         <>
-          <Divider my="30px" />
-          <Heading pb="30px">Landscapes</Heading>
+          <Divider my="7" />
+          <Heading pb="7">Landscapes</Heading>
           <CardsDisplay data={landscapes} swap={false} lock={false} />
         </>
       )}

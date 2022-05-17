@@ -23,12 +23,12 @@ export const KingdomGenerator = () => {
       });
       dispatch(setAlert(''));
     }
-  }, [alert]);
+  }, [alert, alertToast, dispatch]);
 
   return (
     <>
-      <VStack w="100%" py="20px" spacing="20px">
-        <HStack spacing="20px" alignItems="top">
+      <VStack w="100%" py="5" spacing="5">
+        <HStack spacing="5" alignItems="top">
           <Text fontWeight="bold" w="fit-content" whiteSpace="nowrap">
             Available pool:
           </Text>

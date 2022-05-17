@@ -58,19 +58,19 @@ export const NavBar: FC<NavBarProps> = ({ page, setPage }) => {
         <Link
           href="https://github.com/ethansaxenian/dominion-kingdom-generator"
           isExternal
-          pt="10px"
+          pt="2.5"
           pl="10px"
-          height="40px"
-          width="40px"
+          height="10"
+          width="10"
           borderRadius="8px"
         >
-          <Icon as={GoMarkGithub} boxSize="20px" />
+          <Icon as={GoMarkGithub} boxSize="5" />
         </Link>
         <IconButton
           onClick={toggleColorMode}
           aria-label={`Toggle ${themeIconLabel} mode`}
           icon={themeIcon}
-          fontSize="20px"
+          fontSize="xl"
           bgColor={bgColor}
         />
       </HStack>

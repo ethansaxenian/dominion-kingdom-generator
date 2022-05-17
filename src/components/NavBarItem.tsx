@@ -31,7 +31,7 @@ export const NavBarItem: FC<NavBarItemProps> = ({
       bg={isActive ? bgActiveColor : undefined}
     >
       <HStack spacing="10px" w="fit-content" p="10px">
-        <Icon as={icon} boxSize="25px" />
+        <Icon as={icon} boxSize="6" />
         <Text display={{ base: 'none', md: 'flex' }}>{label}</Text>
       </HStack>
     </Link>

@@ -10,10 +10,15 @@ export const GenerateKingdomButton = () => {
 
   const dispatch = useAppDispatch();
 
-  const pool = cards.filter((card) => !blacklist.includes(card.name) && (hasValidExpansion(card, expansions) || promos.includes(card.name as Promo)));
-
   const _generateKingdom = () => {
+    const pool = cards.filter((card) =>
+      !blacklist.includes(card.name)
+      && (hasValidExpansion(card, expansions)
+      || promos.includes(card.name as Promo))
+    );
+
     const { newKingdom, newLandscapes, alertText, usePC, useSh } = generateKingdom(pool, expansions, promos, kingdom, landscapes, whitelist);
+
     if (alertText !== '') {
       dispatch(setAlert(alertText));
     } else if (

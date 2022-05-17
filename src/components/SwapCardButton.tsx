@@ -1,7 +1,7 @@
 import { IconButton } from '@chakra-ui/react';
 import { useAppDispatch, useCardPool, useKingdom, useSettings } from 'hooks';
 import { Card, arrayIncludesCard, drawCards, generateBlackMarket, hasValidExpansion, isLandscape, swapCard, swapLandscape } from 'lib';
-import { FC } from 'react';
+import { FC, useMemo } from 'react';
 import { VscArrowSwap } from 'react-icons/vsc';
 import { setAlert, setBlackMarket, setKingdom, setLandscapes, unlockCard, unlockLandscape } from 'state';
 
@@ -17,7 +17,7 @@ export const SwapCardButton: FC<SwapCardButtonProps> = ({ card, isBlackMarket })
 
   const dispatch = useAppDispatch();
 
-  const pool = cards.filter((card) => !blacklist.includes(card.name) && (hasValidExpansion(card, expansions) || promos.includes(card.name)));
+  const pool = useMemo(() => cards.filter((card) => !blacklist.includes(card.name) && (hasValidExpansion(card, expansions) || promos.includes(card.name))), [cards, blacklist, expansions, promos]);
 
   const _swapCard = (oldCard: Card) => {
     dispatch(unlockCard(oldCard.name));

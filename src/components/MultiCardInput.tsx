@@ -1,5 +1,5 @@
-import { Box, Button, Input, InputGroup, InputRightElement, Tag, TagCloseButton, TagLabel, TagLeftIcon, VStack, Wrap } from '@chakra-ui/react';
-import { FC, useState } from 'react';
+import { Box, Button, Input, InputGroup, InputRightElement, Tag, TagCloseButton, TagLabel, TagLeftIcon, VStack, Wrap, useConst } from '@chakra-ui/react';
+import { FC, useMemo, useState } from 'react';
 import { AddIcon } from '@chakra-ui/icons';
 import { CARDS_TO_REMOVE } from 'lib';
 import { useCardPool } from 'hooks';
@@ -11,11 +11,10 @@ export interface MultiCardInputProps {
 
 export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
   const cardPool = useCardPool();
-  const cards = cardPool.filter((card) => card.in_supply && !CARDS_TO_REMOVE.includes(card.name));
+  const cards = useConst(() => cardPool.filter((card) => card.in_supply && !CARDS_TO_REMOVE.includes(card.name)));
+  const cardNames = useConst(() => cards.map(({ name }) => name));
 
   const [text, setText] = useState('');
-
-  const cardNames = cards.map(({ name }) => name);
 
   const updateList = (item: string, action: 'add' | 'remove') => {
     if (action === 'add' && !list.map((i) => i.toLowerCase()).includes(item.toLowerCase())) {
@@ -58,9 +57,9 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
     </Wrap>
   );
 
-  const recommendations = cardNames.filter(
+  const recommendations = useMemo(() => cardNames.filter(
     (name) => (name.toLowerCase().substring(0, text.length) === text.toLowerCase() && !list.includes(name))
-  );
+  ), [text]);
 
   const recommendedList = (
     <VStack align="start" w="300px" pt="5px">

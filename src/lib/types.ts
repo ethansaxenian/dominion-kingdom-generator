@@ -10,7 +10,7 @@ export type CardType = typeof types[number];
 
 export type Promo = typeof promos[number];
 
-export interface BaseCard {
+export interface Card {
   name: string;
   expansion: Expansion;
   types: Array<CardType>;
@@ -21,9 +21,6 @@ export interface BaseCard {
   in_supply: boolean;
   img: string;
   link: string;
-}
-
-export interface Card extends BaseCard {
   locked: boolean;
   bane: boolean;
   wotm: boolean;

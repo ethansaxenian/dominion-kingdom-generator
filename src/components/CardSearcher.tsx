@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { SUPPLY_TYPES, SortCardsBy, isLandscape, sortTwoCards } from 'lib';
 import { CardsDisplay } from './CardsDisplay';
 import { SearchBar } from './SearchBar';
@@ -12,15 +12,7 @@ export const CardSearcher = () => {
   const [sortBy, setSortBy] = useState<SortCardsBy>('name');
   const [displayed, setDisplayed] = useState(['Supply', 'Non-supply', 'Landscape']);
 
-  const toggleDisplayType = (type: string) => {
-    if (displayed.includes(type)) {
-      setDisplayed(displayed.filter((t) => t !== type));
-    } else {
-      setDisplayed([...displayed, type]);
-    }
-  };
-
-  const filteredCards = cards.filter(({ name, expansion, types, coins, potions, debt, text }) => {
+  const filteredCards = useMemo(() => cards.filter(({ name, expansion, types, coins, potions, debt, text }) => {
     const parsedTerm = searchTerm.toLowerCase();
     return (
       name.toLowerCase().includes(parsedTerm)
@@ -31,13 +23,22 @@ export const CardSearcher = () => {
       || debt && debt.includes(parsedTerm)
       || text.toLowerCase().includes(parsedTerm)
     );
-  }).sort((card1, card2) => sortTwoCards(card1, card2, sortBy));
+  }).sort((card1, card2) => sortTwoCards(card1, card2, sortBy)
+  ), [searchTerm, sortBy]);
 
-  const inSupply = filteredCards.filter((card) => card.in_supply && card.types.every((type) => SUPPLY_TYPES.includes(type)));
+  const inSupply = useMemo(() => filteredCards.filter((card) => card.in_supply && card.types.every((type) => SUPPLY_TYPES.includes(type))), [filteredCards]);
 
-  const notInSupply = filteredCards.filter((card) => !card.in_supply);
+  const notInSupply = useMemo(() => filteredCards.filter((card) => !card.in_supply), [filteredCards]);
 
-  const landscapes = filteredCards.filter((card) => isLandscape(card));
+  const landscapes = useMemo(() => filteredCards.filter((card) => isLandscape(card)), [filteredCards]);
+
+  const toggleDisplayType = (type: string) => {
+    if (displayed.includes(type)) {
+      setDisplayed(displayed.filter((t) => t !== type));
+    } else {
+      setDisplayed([...displayed, type]);
+    }
+  };
 
   return (
     <>

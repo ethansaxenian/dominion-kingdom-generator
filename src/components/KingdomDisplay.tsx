@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { arrayIncludesCardName, isOfType, sortTwoCards } from 'lib';
 import { CardsDisplay } from './CardsDisplay';
-import { Stack, VStack } from '@chakra-ui/react';
+import { Stack, VStack, useConst } from '@chakra-ui/react';
 import { setBlackMarket } from 'state';
 import { GenerateBlackMarketButton } from './GenerateBlackMarketButton';
 import { useAppDispatch, useCardPool, useKingdom } from 'hooks';
@@ -17,17 +17,18 @@ export const KingdomDisplay = () => {
     }
   }, [kingdom]);
 
-  const wotm = kingdom.find((card) => card.wotm);
-  const supply = kingdom.filter((card) => card !== wotm);
+  const platinumColony = useConst(() => cards.filter((card) => card.name === 'Platinum' || card.name === 'Colony').sort((a, b) => sortTwoCards(a, b, 'cost')));
+  const shelters = useConst(() => cards.filter((card) => isOfType(card, ['Shelter'])).sort((a, b) => sortTwoCards(a, b, 'name')));
 
-  const platinumColony = cards.filter((card) => card.name === 'Platinum' || card.name === 'Colony').sort((a, b) => sortTwoCards(a, b, 'cost'));
-  const shelters = cards.filter((card) => isOfType(card, ['Shelter'])).sort((a, b) => sortTwoCards(a, b, 'name'));
 
-  const ally = landscapes.find((card) => isOfType(card, ['Ally']));
+  const wotm = useMemo(() => kingdom.find((card) => card.wotm), [kingdom]);
+  const supply = useMemo(() => kingdom.filter((card) => card !== wotm), [kingdom, wotm]);
 
-  const landscapesWithoutAlly = landscapes.filter((card) => !isOfType(card, ['Ally'])).sort((card1, card2) => sortTwoCards(card1, card2, 'name'));
+  const ally = useMemo(() => landscapes.find((card) => isOfType(card, ['Ally'])), [landscapes]);
 
-  const blackMarketDisplay = [...blackMarket].sort((card1, card2) => sortTwoCards(card1, card2, 'name'));
+  const landscapesWithoutAlly = useMemo(() => landscapes.filter((card) => !isOfType(card, ['Ally'])).sort((card1, card2) => sortTwoCards(card1, card2, 'name')), []);
+
+  const blackMarketDisplay = useMemo(() => [...blackMarket].sort((card1, card2) => sortTwoCards(card1, card2, 'name')), [blackMarket]);
 
   return (
     <>

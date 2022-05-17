@@ -20,7 +20,7 @@ export const CardSearcher = () => {
     }
   };
 
-  const filteredCards= cards.filter(({ name, expansion, types, coins, potions, debt, text }) => {
+  const filteredCards = cards.filter(({ name, expansion, types, coins, potions, debt, text }) => {
     const parsedTerm = searchTerm.toLowerCase();
     return (
       name.toLowerCase().includes(parsedTerm)

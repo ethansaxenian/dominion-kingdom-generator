@@ -13,9 +13,11 @@ export interface NavBarProps {
 }
 
 export const NavBar: FC<NavBarProps> = ({ page, setPage }) => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { toggleColorMode } = useColorMode();
 
   const bgColor = useColorModeValue('gray.100', 'gray.900');
+  const themeIcon = useColorModeValue(<MoonIcon/>, <SunIcon/>);
+  const themeIconLabel = useColorModeValue('dark', 'light');
 
   return (
     <Flex
@@ -57,8 +59,8 @@ export const NavBar: FC<NavBarProps> = ({ page, setPage }) => {
         </Link>
         <IconButton
           onClick={toggleColorMode}
-          aria-label={`toggle ${colorMode === 'light' ? 'dark' : 'light'} mode`}
-          icon={colorMode === 'light' ? <MoonIcon/> : <SunIcon/>}
+          aria-label={`Toggle ${themeIconLabel} mode`}
+          icon={themeIcon}
           fontSize="20px"
           bgColor={bgColor}
         />

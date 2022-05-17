@@ -30,7 +30,6 @@ export const SwapCardButton: FC<SwapCardButtonProps> = ({ card, isBlackMarket })
     }
   };
 
-
   const _swapLandscape = (oldCard: Card) => {
     dispatch(unlockLandscape(oldCard.name));
     const { newKingdom, newLandscapes, alertText } = swapLandscape(oldCard, kingdom, landscapes, pool, expansions, promos);

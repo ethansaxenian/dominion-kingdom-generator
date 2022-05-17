@@ -2,7 +2,7 @@ import { RenderOptions, render } from '@testing-library/react';
 import { ChakraProvider } from '@chakra-ui/react';
 import { ReactElement, ReactNode } from 'react';
 import { theme } from 'theme';
-import { AppContext } from '../context';
+import { AppContext } from './context';
 import { store } from 'state';
 import { Provider } from 'react-redux';
 

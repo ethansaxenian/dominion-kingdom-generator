@@ -11,7 +11,7 @@ export interface SelectorListProps {
 
 export const SelectorList: FC<SelectorListProps> = ({ list, toggle, options, name }) => {
   return (
-    <Accordion allowToggle w="250px" mt="30px" justify="center">
+    <Accordion allowToggle w="250px" mt="30px">
       <AccordionItem bg={useColorModeValue('gray.100', 'gray.800')} border="1px solid gray" borderRadius="8px">
         {({ isExpanded }) => (
           <>

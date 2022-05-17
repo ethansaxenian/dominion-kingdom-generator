@@ -1,5 +1,5 @@
 import { App } from 'components';
-import { render } from './test-utils';
+import { render } from '../test-utils';
 
 describe('App tests', () => {
 

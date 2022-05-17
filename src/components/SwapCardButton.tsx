@@ -25,9 +25,7 @@ export const SwapCardButton: FC<SwapCardButtonProps> = ({ card, isBlackMarket })
     const { newKingdom, newLandscapes, alertText } = swapCard(oldCard, kingdom, landscapes, pool, expansions, promos);
     if (alertText !== '') {
       dispatch(setAlert(alertText));
-      return;
-    }
-    if (newKingdom && newLandscapes) {
+    } else if (newKingdom !== undefined && newLandscapes !== undefined) {
       dispatch(setKingdom(newKingdom));
       dispatch(setLandscapes(newLandscapes));
     }
@@ -39,9 +37,7 @@ export const SwapCardButton: FC<SwapCardButtonProps> = ({ card, isBlackMarket })
     const { newKingdom, newLandscapes, alertText } = swapLandscape(oldCard, kingdom, landscapes, pool, expansions, promos);
     if (alertText !== '') {
       dispatch(setAlert(alertText));
-      return;
-    }
-    if (newKingdom && newLandscapes) {
+    } else if (newKingdom !== undefined && newLandscapes !== undefined) {
       dispatch(setKingdom(newKingdom));
       dispatch(setLandscapes(newLandscapes));
     }

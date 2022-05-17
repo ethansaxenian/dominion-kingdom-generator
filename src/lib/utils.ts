@@ -3,7 +3,7 @@ import { Card, CardType, Expansion, SortCardsBy } from './types';
 
 export const random = (min: number, max: number): number => Math.floor(Math.random() * (max - min)) + min;
 
-export const sample = (collection: Array<any>, n=1): any => {
+export const sample = <T>(collection: Array<T>, n=1): Array<T> => {
   const oldCollection = [...collection];
   const elements = [];
   let sampled;

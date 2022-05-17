@@ -17,14 +17,18 @@ export const GenerateKingdomButton = () => {
     const { newKingdom, newLandscapes, alertText, usePC, useSh } = generateKingdom(pool, expansions, promos, kingdom, landscapes, whitelist);
     if (alertText !== '') {
       dispatch(setAlert(alertText));
-      return;
-    }
-    if (newKingdom && newLandscapes && usePC && useSh) {
+    } else if (
+      newKingdom !== undefined
+      && newLandscapes !== undefined
+      && usePC !== undefined
+      && useSh !== undefined
+    ) {
       dispatch(setKingdom(newKingdom));
       dispatch(setLandscapes(newLandscapes));
       dispatch(setUsePlatinumColony(usePC));
       dispatch(setUseShelters(useSh));
     }
+
   };
 
 

@@ -5,7 +5,6 @@ import { theme } from 'theme';
 import { AppContext, store } from 'state';
 import { Provider } from 'react-redux';
 
-
 const AllProviders = ({ children }: { children?: ReactNode }) => (
   <ChakraProvider theme={theme}>
     <Provider store={store}>

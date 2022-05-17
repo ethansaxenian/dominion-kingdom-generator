@@ -16,7 +16,7 @@ const initialState: KingdomState = {
   usePlatinumColony: false,
   useShelters: false,
   blackMarket: [],
-  alert: ''
+  alert: '',
 };
 
 export interface LockUnlock {
@@ -53,7 +53,10 @@ export const kingdomSlice = createSlice({
         card.locked = false;
       }
     },
-    toggleLockLandscape(state: KingdomState, action: PayloadAction<LockUnlock>) {
+    toggleLockLandscape(
+      state: KingdomState,
+      action: PayloadAction<LockUnlock>
+    ) {
       const { name, locked } = action.payload;
       const card = state.landscapes.find((c) => c.name === name);
       if (card) {
@@ -71,8 +74,8 @@ export const kingdomSlice = createSlice({
     },
     setAlert(state: KingdomState, action: PayloadAction<string>) {
       state.alert = action.payload;
-    }
-  }
+    },
+  },
 });
 
 export const {
@@ -85,5 +88,5 @@ export const {
   toggleLockLandscape,
   unlockLandscape,
   setBlackMarket,
-  setAlert
+  setAlert,
 } = kingdomSlice.actions;

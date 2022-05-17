@@ -2,7 +2,14 @@ import { EXPANSIONS, Expansion, PROMOS, Promo } from 'lib';
 import { SelectorList } from './SelectorList';
 import { Divider, Heading, SimpleGrid } from '@chakra-ui/react';
 import { MultiCardInput } from './MultiCardInput';
-import { addExpansion, addPromo, removeExpansion, removePromo, setBlacklist, setWhitelist } from 'state';
+import {
+  addExpansion,
+  addPromo,
+  removeExpansion,
+  removePromo,
+  setBlacklist,
+  setWhitelist,
+} from 'state';
 import { useAppDispatch, useSettings } from 'hooks';
 
 export const KingdomSettings = () => {
@@ -28,13 +35,28 @@ export const KingdomSettings = () => {
           options={EXPANSIONS}
           name="Expansions"
         />
-        <SelectorList list={promos} toggle={togglePromo} options={PROMOS} name="Promos"/>
+        <SelectorList
+          list={promos}
+          toggle={togglePromo}
+          options={PROMOS}
+          name="Promos"
+        />
       </SimpleGrid>
-      <Divider/>
-      <Heading pt="30px" size="lg">Blacklist Cards:</Heading>
-      <MultiCardInput list={blacklist} setList={(val) => dispatch(setBlacklist(val))}/>
-      <Heading pt="30px" size="lg">Whitelist Cards:</Heading>
-      <MultiCardInput list={whitelist} setList={(val) => dispatch(setWhitelist(val))}/>
+      <Divider />
+      <Heading pt="30px" size="lg">
+        Blacklist Cards:
+      </Heading>
+      <MultiCardInput
+        list={blacklist}
+        setList={(val) => dispatch(setBlacklist(val))}
+      />
+      <Heading pt="30px" size="lg">
+        Whitelist Cards:
+      </Heading>
+      <MultiCardInput
+        list={whitelist}
+        setList={(val) => dispatch(setWhitelist(val))}
+      />
     </>
   );
 };

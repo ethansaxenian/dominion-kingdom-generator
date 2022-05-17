@@ -1,4 +1,5 @@
 import { KingdomState } from 'state';
 import { useAppSelector } from './useAppSelector';
 
-export const useKingdom = (): KingdomState => useAppSelector((state) => state.kingdom);
+export const useKingdom = (): KingdomState =>
+  useAppSelector((state) => state.kingdom);

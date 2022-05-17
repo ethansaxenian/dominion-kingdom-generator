@@ -12,7 +12,7 @@ const initialState: SettingsState = {
   expansions: ['Base'],
   promos: [],
   blacklist: [],
-  whitelist: []
+  whitelist: [],
 };
 
 export const settingsSlice = createSlice({
@@ -24,7 +24,9 @@ export const settingsSlice = createSlice({
       state.expansions.sort();
     },
     removeExpansion(state: SettingsState, action: PayloadAction<Expansion>) {
-      state.expansions = state.expansions.filter((exp) => exp !== action.payload);
+      state.expansions = state.expansions.filter(
+        (exp) => exp !== action.payload
+      );
     },
     addPromo(state: SettingsState, action: PayloadAction<Promo>) {
       state.promos.push(action.payload);
@@ -40,8 +42,8 @@ export const settingsSlice = createSlice({
     setWhitelist(state: SettingsState, action: PayloadAction<Array<string>>) {
       state.whitelist = action.payload;
       state.whitelist.sort();
-    }
-  }
+    },
+  },
 });
 
 export const {
@@ -50,5 +52,5 @@ export const {
   addPromo,
   removePromo,
   setWhitelist,
-  setBlacklist
+  setBlacklist,
 } = settingsSlice.actions;

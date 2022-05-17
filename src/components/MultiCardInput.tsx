@@ -1,4 +1,17 @@
-import { Box, Button, Input, InputGroup, InputRightElement, Tag, TagCloseButton, TagLabel, TagLeftIcon, VStack, Wrap, useConst } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Input,
+  InputGroup,
+  InputRightElement,
+  Tag,
+  TagCloseButton,
+  TagLabel,
+  TagLeftIcon,
+  VStack,
+  Wrap,
+  useConst,
+} from '@chakra-ui/react';
 import { FC, useMemo, useState } from 'react';
 import { AddIcon } from '@chakra-ui/icons';
 import { CARDS_TO_REMOVE } from 'lib';
@@ -11,13 +24,20 @@ export interface MultiCardInputProps {
 
 export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
   const cardPool = useCardPool();
-  const cards = useConst(() => cardPool.filter((card) => card.in_supply && !CARDS_TO_REMOVE.includes(card.name)));
+  const cards = useConst(() =>
+    cardPool.filter(
+      (card) => card.in_supply && !CARDS_TO_REMOVE.includes(card.name)
+    )
+  );
   const cardNames = useConst(() => cards.map(({ name }) => name));
 
   const [text, setText] = useState('');
 
   const updateList = (item: string, action: 'add' | 'remove') => {
-    if (action === 'add' && !list.map((i) => i.toLowerCase()).includes(item.toLowerCase())) {
+    if (
+      action === 'add' &&
+      !list.map((i) => i.toLowerCase()).includes(item.toLowerCase())
+    ) {
       cardNames.forEach((name) => {
         if (name.toLowerCase() === item.toLowerCase()) {
           setList([...list, name]);
@@ -47,19 +67,25 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
           cursor="pointer"
           onClick={() => updateList(card, 'remove')}
           _hover={{
-            bgColor: 'red.400'
+            bgColor: 'red.400',
           }}
         >
           <TagLabel>{card}</TagLabel>
-          <TagCloseButton/>
+          <TagCloseButton />
         </Tag>
       ))}
     </Wrap>
   );
 
-  const recommendations = useMemo(() => cardNames.filter(
-    (name) => (name.toLowerCase().substring(0, text.length) === text.toLowerCase() && !list.includes(name))
-  ), [text]);
+  const recommendations = useMemo(
+    () =>
+      cardNames.filter(
+        (name) =>
+          name.toLowerCase().substring(0, text.length) === text.toLowerCase() &&
+          !list.includes(name)
+      ),
+    [text]
+  );
 
   const recommendedList = (
     <VStack align="start" w="300px" pt="5px">
@@ -72,10 +98,10 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
           borderRadius="full"
           onClick={() => updateList(name, 'add')}
           _hover={{
-            bgColor: 'green.400'
+            bgColor: 'green.400',
           }}
         >
-          <TagLeftIcon boxSize="12px" as={AddIcon}/>
+          <TagLeftIcon boxSize="12px" as={AddIcon} />
           <TagLabel>{name}</TagLabel>
         </Tag>
       ))}
@@ -96,7 +122,9 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
           errorBorderColor="crimson"
         />
         <InputRightElement width="4.5rem">
-          <Button h="1.75rem" size="sm" onClick={() => updateList(text, 'add')}>Add</Button>
+          <Button h="1.75rem" size="sm" onClick={() => updateList(text, 'add')}>
+            Add
+          </Button>
         </InputRightElement>
       </InputGroup>
       {text !== '' && recommendedList}

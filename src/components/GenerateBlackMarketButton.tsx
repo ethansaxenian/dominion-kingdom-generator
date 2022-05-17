@@ -10,9 +10,23 @@ export const GenerateBlackMarketButton = () => {
   const dispatch = useAppDispatch();
 
   const generateBlackMarketDeck = () => {
-    const pool = cards.filter((card) => !blacklist.includes(card.name) && (hasValidExpansion(card, expansions) || promos.includes(card.name as Promo)));
-    const blackMarketOptions = generateBlackMarket(pool, kingdom, promos, expansions);
-    dispatch(setBlackMarket(sample(blackMarketOptions, Math.min(blackMarketOptions.length, 60))));
+    const pool = cards.filter(
+      (card) =>
+        !blacklist.includes(card.name) &&
+        (hasValidExpansion(card, expansions) ||
+          promos.includes(card.name as Promo))
+    );
+    const blackMarketOptions = generateBlackMarket(
+      pool,
+      kingdom,
+      promos,
+      expansions
+    );
+    dispatch(
+      setBlackMarket(
+        sample(blackMarketOptions, Math.min(blackMarketOptions.length, 60))
+      )
+    );
   };
 
   return (

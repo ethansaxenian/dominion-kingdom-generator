@@ -10,27 +10,50 @@ export const CardSearcher = () => {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState<SortCardsBy>('name');
-  const [displayed, setDisplayed] = useState(['Supply', 'Non-supply', 'Landscape']);
+  const [displayed, setDisplayed] = useState([
+    'Supply',
+    'Non-supply',
+    'Landscape',
+  ]);
 
-  const filteredCards = useMemo(() => cards.filter(({ name, expansion, types, coins, potions, debt, text }) => {
-    const parsedTerm = searchTerm.toLowerCase();
-    return (
-      name.toLowerCase().includes(parsedTerm)
-      || expansion.toLowerCase().includes(parsedTerm)
-      || types.some((type) => type.toLowerCase().includes(parsedTerm))
-      || coins && coins.toString().includes(parsedTerm)
-      || potions && potions.includes(parsedTerm)
-      || debt && debt.includes(parsedTerm)
-      || text.toLowerCase().includes(parsedTerm)
-    );
-  }).sort((card1, card2) => sortTwoCards(card1, card2, sortBy)
-  ), [searchTerm, sortBy]);
+  const filteredCards = useMemo(
+    () =>
+      cards
+        .filter(({ name, expansion, types, coins, potions, debt, text }) => {
+          const parsedTerm = searchTerm.toLowerCase();
+          return (
+            name.toLowerCase().includes(parsedTerm) ||
+            expansion.toLowerCase().includes(parsedTerm) ||
+            types.some((type) => type.toLowerCase().includes(parsedTerm)) ||
+            (coins && coins.toString().includes(parsedTerm)) ||
+            (potions && potions.includes(parsedTerm)) ||
+            (debt && debt.includes(parsedTerm)) ||
+            text.toLowerCase().includes(parsedTerm)
+          );
+        })
+        .sort((card1, card2) => sortTwoCards(card1, card2, sortBy)),
+    [searchTerm, sortBy]
+  );
 
-  const inSupply = useMemo(() => filteredCards.filter((card) => card.in_supply && card.types.every((type) => SUPPLY_TYPES.includes(type))), [filteredCards]);
+  const inSupply = useMemo(
+    () =>
+      filteredCards.filter(
+        (card) =>
+          card.in_supply &&
+          card.types.every((type) => SUPPLY_TYPES.includes(type))
+      ),
+    [filteredCards]
+  );
 
-  const notInSupply = useMemo(() => filteredCards.filter((card) => !card.in_supply), [filteredCards]);
+  const notInSupply = useMemo(
+    () => filteredCards.filter((card) => !card.in_supply),
+    [filteredCards]
+  );
 
-  const landscapes = useMemo(() => filteredCards.filter((card) => isLandscape(card)), [filteredCards]);
+  const landscapes = useMemo(
+    () => filteredCards.filter((card) => isLandscape(card)),
+    [filteredCards]
+  );
 
   const toggleDisplayType = (type: string) => {
     if (displayed.includes(type)) {
@@ -50,25 +73,25 @@ export const CardSearcher = () => {
         displayed={displayed}
         toggleDisplayType={toggleDisplayType}
       />
-      {(displayed.includes('Supply') && inSupply.length > 0) && (
+      {displayed.includes('Supply') && inSupply.length > 0 && (
         <>
-          <Divider my="30px"/>
+          <Divider my="30px" />
           <Heading pb="30px">Supply Cards</Heading>
-          <CardsDisplay data={inSupply} swap={false} lock={false}/>
+          <CardsDisplay data={inSupply} swap={false} lock={false} />
         </>
       )}
-      {(displayed.includes('Non-supply') && notInSupply.length > 0) && (
+      {displayed.includes('Non-supply') && notInSupply.length > 0 && (
         <>
-          <Divider my="30px"/>
+          <Divider my="30px" />
           <Heading pb="30px">Non-Supply Cards</Heading>
-          <CardsDisplay data={notInSupply} swap={false} lock={false}/>
+          <CardsDisplay data={notInSupply} swap={false} lock={false} />
         </>
       )}
-      {(displayed.includes('Landscape') && landscapes.length > 0) && (
+      {displayed.includes('Landscape') && landscapes.length > 0 && (
         <>
-          <Divider my="30px"/>
+          <Divider my="30px" />
           <Heading pb="30px">Landscapes</Heading>
-          <CardsDisplay data={landscapes} swap={false} lock={false}/>
+          <CardsDisplay data={landscapes} swap={false} lock={false} />
         </>
       )}
     </>

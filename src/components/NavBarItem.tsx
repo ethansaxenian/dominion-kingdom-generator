@@ -9,8 +9,12 @@ export interface NavBarItemProps {
   icon: IconType;
 }
 
-export const NavBarItem: FC<NavBarItemProps> = ({ label, isActive, onClick, icon }) => {
-
+export const NavBarItem: FC<NavBarItemProps> = ({
+  label,
+  isActive,
+  onClick,
+  icon,
+}) => {
   const textColor = useColorModeValue('black', 'white');
   const textActiveColor = useColorModeValue('gray.600', 'gray.400');
   const bgActiveColor = useColorModeValue('gray.300', 'gray.700');
@@ -22,12 +26,12 @@ export const NavBarItem: FC<NavBarItemProps> = ({ label, isActive, onClick, icon
       color={isActive ? textColor : textActiveColor}
       _hover={{
         textDecoration: 'none',
-        color: textColor
+        color: textColor,
       }}
       bg={isActive ? bgActiveColor : undefined}
     >
       <HStack spacing="10px" w="fit-content" p="10px">
-        <Icon as={icon} boxSize="25px"/>
+        <Icon as={icon} boxSize="25px" />
         <Text display={{ base: 'none', md: 'flex' }}>{label}</Text>
       </HStack>
     </Link>

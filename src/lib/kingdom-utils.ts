@@ -1,6 +1,15 @@
 import { BASIC_CARDS, SECONDARY_CARDS } from './constants';
 import { Card, Expansion, Promo } from './types';
-import { arrayIncludesCard, arrayIncludesCardName, drawCards, hasValidExpansion, isLandscape, isOfType, isValidKingdomCard, sample } from './utils';
+import {
+  arrayIncludesCard,
+  arrayIncludesCardName,
+  drawCards,
+  hasValidExpansion,
+  isLandscape,
+  isOfType,
+  isValidKingdomCard,
+  sample,
+} from './utils';
 
 export const getAvailableCards = (
   pool: Array<Card>,
@@ -8,10 +17,12 @@ export const getAvailableCards = (
   promos: Array<Promo>,
   ignore?: Array<string>
 ): Array<Card> => {
-  return pool.filter((card) =>
-    isValidKingdomCard(card, true)
-		&& (hasValidExpansion(card, expansions) || promos.includes(card.name as Promo))
-		&& (ignore ? !ignore.includes(card.name) : true)
+  return pool.filter(
+    (card) =>
+      isValidKingdomCard(card, true) &&
+      (hasValidExpansion(card, expansions) ||
+        promos.includes(card.name as Promo)) &&
+      (ignore ? !ignore.includes(card.name) : true)
   );
 };
 
@@ -20,10 +31,16 @@ export const getAvailableLandscapes = (
   expansions: Array<Expansion>,
   promos: Array<Promo>
 ): Array<Card> => {
-  return pool.filter((card) => isLandscape(card) && (hasValidExpansion(card, expansions) || promos.includes(card.name as Promo)));
+  return pool.filter(
+    (card) =>
+      isLandscape(card) &&
+      (hasValidExpansion(card, expansions) ||
+        promos.includes(card.name as Promo))
+  );
 };
 
-export const youngWitchPredicate = (card: Card): boolean => ((card.coins === 2) || (card.coins === 3)) && !card.potions && !card.debt;
+export const youngWitchPredicate = (card: Card): boolean =>
+  (card.coins === 2 || card.coins === 3) && !card.potions && !card.debt;
 
 export interface AddExtraCards {
   extraCards: Array<Card>;
@@ -37,15 +54,25 @@ export const addExtraCards = (
 ): AddExtraCards => {
   const newCards = [];
   const newLandscapes = [];
-  if (arrayIncludesCardName(kingdom, 'Young Witch') && kingdom.every((card) => !card.bane)) {
-    const notInKingdom = availableCards.filter((card) => !arrayIncludesCard(kingdom, card));
+  if (
+    arrayIncludesCardName(kingdom, 'Young Witch') &&
+    kingdom.every((card) => !card.bane)
+  ) {
+    const notInKingdom = availableCards.filter(
+      (card) => !arrayIncludesCard(kingdom, card)
+    );
     const [bane] = drawCards(notInKingdom, 1, youngWitchPredicate);
     if (bane) {
       newCards.push({ ...bane, bane: true });
     }
   }
-  if (arrayIncludesCardName(landscapes, 'Way of the Mouse') && kingdom.every((card) => !card.wotm)) {
-    const notInKingdom = availableCards.filter((card) => !arrayIncludesCard(kingdom, card) && isOfType(card, ['Action']));
+  if (
+    arrayIncludesCardName(landscapes, 'Way of the Mouse') &&
+    kingdom.every((card) => !card.wotm)
+  ) {
+    const notInKingdom = availableCards.filter(
+      (card) => !arrayIncludesCard(kingdom, card) && isOfType(card, ['Action'])
+    );
     const [wotm] = drawCards(notInKingdom, 1, youngWitchPredicate);
     if (wotm) {
       newCards.push({ ...wotm, wotm: true });
@@ -54,7 +81,10 @@ export const addExtraCards = (
   if (kingdom.some((card) => isOfType(card, ['Liaison']))) {
     const allies = landscapes.filter((card) => isOfType(card, ['Ally']));
     if (allies.length === 0) {
-      const notInKingdom = availableCards.filter((card) => !arrayIncludesCard(landscapes, card) && isOfType(card, ['Ally']));
+      const notInKingdom = availableCards.filter(
+        (card) =>
+          !arrayIncludesCard(landscapes, card) && isOfType(card, ['Ally'])
+      );
       const [ally] = drawCards(notInKingdom, 1);
       if (ally) {
         newLandscapes.push(ally);
@@ -88,36 +118,65 @@ export const generateKingdom = (
   const lockedCards = oldKingdom.filter((card) => card.locked);
   const lockedLandscapes = oldLandscapes.filter((card) => card.locked);
 
-  const filteredWhitelist = pool.filter((card) =>
-    whitelist.includes(card.name)
-		&& !lockedCards.map(({ name }) => name).includes(card.name)
-		&& !lockedLandscapes.map(({ name }) => name).includes(card.name)
+  const filteredWhitelist = pool.filter(
+    (card) =>
+      whitelist.includes(card.name) &&
+      !lockedCards.map(({ name }) => name).includes(card.name) &&
+      !lockedLandscapes.map(({ name }) => name).includes(card.name)
   );
-  const whitelistedCards = filteredWhitelist.filter((card) => !isLandscape(card));
-  const whitelistedLandscapes = filteredWhitelist.filter((card) => isLandscape(card));
+  const whitelistedCards = filteredWhitelist.filter(
+    (card) => !isLandscape(card)
+  );
+  const whitelistedLandscapes = filteredWhitelist.filter((card) =>
+    isLandscape(card)
+  );
 
-  const newKingdom = drawCards(availableCards, 10 - lockedCards.length - whitelistedCards.length, ((card) => {
-    if (arrayIncludesCard(lockedCards, card)) {
-      return false;
+  const newKingdom = drawCards(
+    availableCards,
+    10 - lockedCards.length - whitelistedCards.length,
+    (card) => {
+      if (arrayIncludesCard(lockedCards, card)) {
+        return false;
+      }
+      return (
+        hasValidExpansion(card, expansions) ||
+        promos.includes(card.name as Promo)
+      );
     }
-    return hasValidExpansion(card, expansions) || promos.includes(card.name as Promo);
-  })).concat(lockedCards).concat(whitelistedCards.map((card) => ({ ...card, locked: true })));
+  )
+    .concat(lockedCards)
+    .concat(whitelistedCards.map((card) => ({ ...card, locked: true })));
 
   let newLandscapes = drawCards(
     availableLandscapes,
-    Math.min(2, availableLandscapes.length) - lockedLandscapes.length - whitelistedLandscapes.length,
-    ((card) => {
+    Math.min(2, availableLandscapes.length) -
+      lockedLandscapes.length -
+      whitelistedLandscapes.length,
+    (card) => {
       if (arrayIncludesCard(lockedLandscapes, card)) {
         return false;
       }
       if (isOfType(card, ['Ally'])) {
         return false;
       }
-      return hasValidExpansion(card, expansions) || promos.includes(card.name as Promo);
-    })).concat(lockedLandscapes).concat(whitelistedLandscapes.map((card) => ({ ...card, locked: true }))).filter((obj) => obj !== undefined);
+      return (
+        hasValidExpansion(card, expansions) ||
+        promos.includes(card.name as Promo)
+      );
+    }
+  )
+    .concat(lockedLandscapes)
+    .concat(whitelistedLandscapes.map((card) => ({ ...card, locked: true })))
+    .filter((obj) => obj !== undefined);
 
-  const leftovers = [...availableCards, ...availableLandscapes].filter((card) => !arrayIncludesCard([...newKingdom, ...newLandscapes], card));
-  const { extraCards, extraLandscapes } = addExtraCards(newKingdom, newLandscapes, leftovers);
+  const leftovers = [...availableCards, ...availableLandscapes].filter(
+    (card) => !arrayIncludesCard([...newKingdom, ...newLandscapes], card)
+  );
+  const { extraCards, extraLandscapes } = addExtraCards(
+    newKingdom,
+    newLandscapes,
+    leftovers
+  );
   newKingdom.push(...extraCards);
   newLandscapes.push(...extraLandscapes);
   let usePC = false;
@@ -140,7 +199,6 @@ export interface SwapCard {
   alertText: string;
 }
 
-
 export const swapCard = (
   oldCard: Card,
   kingdom: Array<Card>,
@@ -149,7 +207,9 @@ export const swapCard = (
   expansions: Array<Expansion>,
   promos: Array<Promo>
 ) => {
-  const remainingCards = getAvailableCards(pool, expansions, promos).filter((card) => !arrayIncludesCard(kingdom, card));
+  const remainingCards = getAvailableCards(pool, expansions, promos).filter(
+    (card) => !arrayIncludesCard(kingdom, card)
+  );
 
   if (remainingCards.length < 10) {
     return { alertText: 'There are no available kingdom cards to swap!' };
@@ -162,8 +222,16 @@ export const swapCard = (
     const [newCard] = drawCards(remainingCards, 1);
     newKingdom.push(newCard);
   }
-  const remainingLanscapes = getAvailableLandscapes(pool, expansions, promos).filter((card) => !arrayIncludesCard(landscapes, card));
-  const { extraCards, extraLandscapes } = addExtraCards(newKingdom, landscapes, [...remainingCards, ...remainingLanscapes]);
+  const remainingLanscapes = getAvailableLandscapes(
+    pool,
+    expansions,
+    promos
+  ).filter((card) => !arrayIncludesCard(landscapes, card));
+  const { extraCards, extraLandscapes } = addExtraCards(
+    newKingdom,
+    landscapes,
+    [...remainingCards, ...remainingLanscapes]
+  );
   newKingdom.push(...extraCards);
   let newLandscapes = [...landscapes, ...extraLandscapes];
   if (!newKingdom.some((card) => isOfType(card, ['Liaison']))) {
@@ -180,7 +248,9 @@ export const swapLandscape = (
   expansions: Array<Expansion>,
   promos: Array<Promo>
 ): SwapCard => {
-  let remaining = getAvailableLandscapes(pool, expansions, promos).filter((card) => !arrayIncludesCard(landscapes, card));
+  let remaining = getAvailableLandscapes(pool, expansions, promos).filter(
+    (card) => !arrayIncludesCard(landscapes, card)
+  );
   if (isOfType(oldCard, ['Ally'])) {
     remaining = remaining.filter((card) => isOfType(card, ['Ally']));
   } else {
@@ -196,8 +266,14 @@ export const swapLandscape = (
   }
   const [newCard] = drawCards(remaining, 1);
   newLandscapes = [...newLandscapes, newCard];
-  const remainingCards = getAvailableCards(pool, expansions, promos).filter((card) => !arrayIncludesCard(newKingdom, card));
-  const { extraCards } = addExtraCards(newKingdom, newLandscapes, remainingCards);
+  const remainingCards = getAvailableCards(pool, expansions, promos).filter(
+    (card) => !arrayIncludesCard(newKingdom, card)
+  );
+  const { extraCards } = addExtraCards(
+    newKingdom,
+    newLandscapes,
+    remainingCards
+  );
   newKingdom.push(...extraCards);
   return { newKingdom, newLandscapes, alertText: '' };
 };
@@ -211,11 +287,14 @@ export const generateBlackMarket = (
   if (!arrayIncludesCardName(kingdom, 'Black Market')) {
     return [];
   }
-  const blackMarketOptions = cards.filter((card) =>
-    isValidKingdomCard(card, false)
-		&& (hasValidExpansion(card, expansions) || promos.includes(card.name as Promo))
-		&& ![...BASIC_CARDS, ...SECONDARY_CARDS].includes(card.name)
-		&& !arrayIncludesCard(kingdom, card));
+  const blackMarketOptions = cards.filter(
+    (card) =>
+      isValidKingdomCard(card, false) &&
+      (hasValidExpansion(card, expansions) ||
+        promos.includes(card.name as Promo)) &&
+      ![...BASIC_CARDS, ...SECONDARY_CARDS].includes(card.name) &&
+      !arrayIncludesCard(kingdom, card)
+  );
   if (!kingdom.some((card) => card.potions)) {
     return blackMarketOptions.filter((card) => !card.potions);
   }

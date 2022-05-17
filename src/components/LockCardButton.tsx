@@ -24,7 +24,7 @@ export const LockCardButton: FC<LockCardButtonProps> = ({ card }) => {
     <IconButton
       aria-label={card.locked ? 'Unlock card' : 'Lock card'}
       colorScheme={card.locked ? 'green' : 'blue'}
-      icon={card.locked ? <LockIcon/> : <UnlockIcon/>}
+      icon={card.locked ? <LockIcon /> : <UnlockIcon />}
       onClick={lock}
     />
   );

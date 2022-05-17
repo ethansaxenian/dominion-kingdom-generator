@@ -19,7 +19,7 @@ export const KingdomGenerator = () => {
         title: alert,
         status: 'error',
         duration: 3000,
-        isClosable: true
+        isClosable: true,
       });
       dispatch(setAlert(''));
     }
@@ -29,13 +29,15 @@ export const KingdomGenerator = () => {
     <>
       <VStack w="100%" py="20px" spacing="20px">
         <HStack spacing="20px" alignItems="top">
-          <Text fontWeight="bold" w="fit-content" whiteSpace="nowrap">Available pool:</Text>
+          <Text fontWeight="bold" w="fit-content" whiteSpace="nowrap">
+            Available pool:
+          </Text>
           {/* @ts-ignore */}
           <Text>{expansions.concat(promos).join(', ') || 'None'}</Text>
         </HStack>
-        <GenerateKingdomButton/>
+        <GenerateKingdomButton />
       </VStack>
-      <KingdomDisplay/>
+      <KingdomDisplay />
     </>
   );
 };

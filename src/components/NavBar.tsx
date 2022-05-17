@@ -2,7 +2,16 @@ import { GiCardPick, GiCastle } from 'react-icons/gi';
 import { MdSettings } from 'react-icons/md';
 import { GoMarkGithub } from 'react-icons/go';
 import { NavBarItem } from './NavBarItem';
-import { Flex, HStack, Icon, IconButton, Image, Link, useColorMode, useColorModeValue } from '@chakra-ui/react';
+import {
+  Flex,
+  HStack,
+  Icon,
+  IconButton,
+  Image,
+  Link,
+  useColorMode,
+  useColorModeValue,
+} from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { FC } from 'react';
 import { Page } from 'lib';
@@ -16,17 +25,17 @@ export const NavBar: FC<NavBarProps> = ({ page, setPage }) => {
   const { toggleColorMode } = useColorMode();
 
   const bgColor = useColorModeValue('gray.100', 'gray.900');
-  const themeIcon = useColorModeValue(<MoonIcon/>, <SunIcon/>);
+  const themeIcon = useColorModeValue(<MoonIcon />, <SunIcon />);
   const themeIconLabel = useColorModeValue('dark', 'light');
 
   return (
-    <Flex
-      w="100vw"
-      p="20px"
-      justify="space-between"
-      bg={bgColor}
-    >
-      <Image src={`${process.env.PUBLIC_URL}/favicon.ico`} alt="logo" htmlHeight="40px" htmlWidth="40px"/>
+    <Flex w="100vw" p="20px" justify="space-between" bg={bgColor}>
+      <Image
+        src={`${process.env.PUBLIC_URL}/favicon.ico`}
+        alt="logo"
+        htmlHeight="40px"
+        htmlWidth="40px"
+      />
       <NavBarItem
         label="Kingdom Generator"
         isActive={page === 'generate'}
@@ -55,7 +64,7 @@ export const NavBar: FC<NavBarProps> = ({ page, setPage }) => {
           width="40px"
           borderRadius="8px"
         >
-          <Icon as={GoMarkGithub} boxSize="20px"/>
+          <Icon as={GoMarkGithub} boxSize="20px" />
         </Link>
         <IconButton
           onClick={toggleColorMode}

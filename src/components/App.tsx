@@ -19,10 +19,10 @@ export const App = () => {
 
   return (
     <Container centerContent maxW="container.xl">
-      <NavBar page={page} setPage={setPage}/>
-      {(page === 'generate') && <KingdomGenerator/>}
-      {(page === 'settings') && <KingdomSettings/>}
-      {(page === 'browse') && <CardSearcher/>}
+      <NavBar page={page} setPage={setPage} />
+      {page === 'generate' && <KingdomGenerator />}
+      {page === 'settings' && <KingdomSettings />}
+      {page === 'browse' && <CardSearcher />}
     </Container>
   );
 };

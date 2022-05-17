@@ -10,13 +10,23 @@ export interface CardsDisplayProps {
   blackMarket?: boolean;
 }
 
-export const CardsDisplay: FC<CardsDisplayProps> = ({ data, swap, lock, blackMarket }) => {
+export const CardsDisplay: FC<CardsDisplayProps> = ({
+  data,
+  swap,
+  lock,
+  blackMarket,
+}) => {
   return (
     <Container centerContent maxW="container.lg" p="10px">
       <Wrap spacing="20px" justify="center">
         {data.map((card) => (
           <WrapItem key={card.name}>
-            <CardDisplay card={card} swap={swap} lock={lock} blackMarket={blackMarket}/>
+            <CardDisplay
+              card={card}
+              swap={swap}
+              lock={lock}
+              blackMarket={blackMarket}
+            />
           </WrapItem>
         ))}
       </Wrap>

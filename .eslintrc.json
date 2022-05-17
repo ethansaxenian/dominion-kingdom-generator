@@ -1,12 +1,18 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jsx-a11y/strict"],
-  "plugins": ["react", "react-hooks", "jsx-a11y"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/strict",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["react", "react-hooks", "jsx-a11y", "@typescript-eslint"],
   "env": {
     "node": true,
     "jest": true,
     "browser": true
   },
   "parserOptions": {
+    "parser": "@typescript-eslint/parser",
     "ecmaVersion": 2021,
     "ecmaFeatures": {
       "jsx": true
@@ -46,9 +52,10 @@
     ],
     "no-undef-init": "warn",
     "no-unneeded-ternary": "warn",
-    "no-unused-vars": "warn",
+    "no-unused-vars": "off",
     "no-useless-return": "warn",
     "no-var": "warn",
+    "object-curly-spacing": ["warn", "always"],
     "object-shorthand": "warn",
     "prefer-arrow-callback": "warn",
     "prefer-const": "warn",
@@ -67,6 +74,7 @@
         "avoidEscape": true
       }
     ],
+    "semi": "warn",
     "sort-imports": [
       "warn",
       {
@@ -103,6 +111,9 @@
     "react/no-unused-state": "warn",
     "react/prop-types": "warn",
     "react/react-in-jsx-scope": "off",
-		"react/self-closing-comp": "warn"
+		"react/self-closing-comp": "warn",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-inferrable-types": "warn",
+    "@typescript-eslint/no-unused-vars": "warn"
   }
 }

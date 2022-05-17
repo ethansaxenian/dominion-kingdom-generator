@@ -3,6 +3,7 @@ import { MdSettings } from 'react-icons/md';
 import { GoMarkGithub } from 'react-icons/go';
 import { NavBarItem } from './NavBarItem';
 import {
+  Center,
   Flex,
   HStack,
   Icon,
@@ -33,8 +34,7 @@ export const NavBar: FC<NavBarProps> = ({ page, setPage }) => {
       <Image
         src={`${process.env.PUBLIC_URL}/favicon.ico`}
         alt="logo"
-        htmlHeight="40px"
-        htmlWidth="40px"
+        boxSize="10"
       />
       <NavBarItem
         label="Kingdom Generator"
@@ -55,17 +55,17 @@ export const NavBar: FC<NavBarProps> = ({ page, setPage }) => {
         icon={GiCardPick}
       />
       <HStack spacing="20px">
-        <Link
-          href="https://github.com/ethansaxenian/dominion-kingdom-generator"
-          isExternal
-          pt="2.5"
-          pl="10px"
+        <Center
+          as={Link}
           height="10"
           width="10"
           borderRadius="8px"
+          href="https://github.com/ethansaxenian/dominion-kingdom-generator"
+          isExternal
+          aria-label="View source code on GitHub"
         >
           <Icon as={GoMarkGithub} boxSize="5" />
-        </Link>
+        </Center>
         <IconButton
           onClick={toggleColorMode}
           aria-label={`Toggle ${themeIconLabel} mode`}

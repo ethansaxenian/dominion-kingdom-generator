@@ -21,7 +21,7 @@ export const NavBarItem: FC<NavBarItemProps> = ({
 
   return (
     <Link
-      onClick={() => onClick()}
+      onClick={onClick}
       rounded="md"
       color={isActive ? textColor : textActiveColor}
       _hover={{
@@ -29,8 +29,9 @@ export const NavBarItem: FC<NavBarItemProps> = ({
         color: textColor,
       }}
       bg={isActive ? bgActiveColor : undefined}
+      aria-label={`Go to ${label}`}
     >
-      <HStack spacing="10px" w="fit-content" p="10px">
+      <HStack w="fit-content" h="100%" p="10px">
         <Icon as={icon} boxSize="6" />
         <Text display={{ base: 'none', md: 'flex' }}>{label}</Text>
       </HStack>

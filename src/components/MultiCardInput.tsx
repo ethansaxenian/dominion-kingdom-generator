@@ -5,15 +5,15 @@ import {
   InputGroup,
   InputRightElement,
   Tag,
-  TagCloseButton,
   TagLabel,
   TagLeftIcon,
+  TagRightIcon,
   VStack,
   Wrap,
   useConst,
 } from '@chakra-ui/react';
 import { FC, useMemo, useState } from 'react';
-import { AddIcon } from '@chakra-ui/icons';
+import { AddIcon, CloseIcon } from '@chakra-ui/icons';
 import { CARDS_TO_REMOVE } from 'lib';
 import { useCardPool } from 'hooks';
 
@@ -71,7 +71,7 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
           }}
         >
           <TagLabel>{card}</TagLabel>
-          <TagCloseButton />
+          <TagRightIcon boxSize="2.5" as={CloseIcon} />
         </Tag>
       ))}
     </Wrap>

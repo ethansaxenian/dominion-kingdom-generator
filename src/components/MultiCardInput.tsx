@@ -5,15 +5,15 @@ import {
   InputGroup,
   InputRightElement,
   Tag,
-  TagCloseButton,
   TagLabel,
   TagLeftIcon,
+  TagRightIcon,
   VStack,
   Wrap,
   useConst,
 } from '@chakra-ui/react';
 import { FC, useMemo, useState } from 'react';
-import { AddIcon } from '@chakra-ui/icons';
+import { AddIcon, CloseIcon } from '@chakra-ui/icons';
 import { CARDS_TO_REMOVE } from 'lib';
 import { useCardPool } from 'hooks';
 
@@ -57,7 +57,7 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
   };
 
   const blacklisted = (
-    <Wrap w="300px" pb="15px">
+    <Wrap w="72" pb="3.5">
       {list.map((card) => (
         <Tag
           key={card}
@@ -71,7 +71,7 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
           }}
         >
           <TagLabel>{card}</TagLabel>
-          <TagCloseButton />
+          <TagRightIcon boxSize="2.5" as={CloseIcon} />
         </Tag>
       ))}
     </Wrap>
@@ -84,11 +84,11 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
           name.toLowerCase().substring(0, text.length) === text.toLowerCase() &&
           !list.includes(name)
       ),
-    [text]
+    [list, text, cardNames]
   );
 
   const recommendedList = (
-    <VStack align="start" w="300px" pt="5px">
+    <VStack align="start" w="72" pt="1.5">
       {recommendations.map((name) => (
         <Tag
           key={name}
@@ -101,7 +101,7 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
             bgColor: 'green.400',
           }}
         >
-          <TagLeftIcon boxSize="12px" as={AddIcon} />
+          <TagLeftIcon boxSize="3" as={AddIcon} />
           <TagLabel>{name}</TagLabel>
         </Tag>
       ))}
@@ -109,9 +109,9 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
   );
 
   return (
-    <Box pt="15px" pb="30px">
+    <Box pt="3.5" pb="7">
       {blacklisted}
-      <InputGroup w="300px">
+      <InputGroup w="72">
         <Input
           pr="10px"
           placeholder="Enter card name"
@@ -121,8 +121,8 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
           onKeyDown={handleKeyDown}
           errorBorderColor="crimson"
         />
-        <InputRightElement width="4.5rem">
-          <Button h="1.75rem" size="sm" onClick={() => updateList(text, 'add')}>
+        <InputRightElement width="16">
+          <Button h="7" size="sm" onClick={() => updateList(text, 'add')}>
             Add
           </Button>
         </InputRightElement>

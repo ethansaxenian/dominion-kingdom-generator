@@ -18,7 +18,7 @@ export const CardsDisplay: FC<CardsDisplayProps> = ({
 }) => {
   return (
     <Container centerContent maxW="container.lg" p="10px">
-      <Wrap spacing="20px" justify="center">
+      <Wrap spacing="5" justify="center">
         {data.map((card) => (
           <WrapItem key={card.name}>
             <CardDisplay

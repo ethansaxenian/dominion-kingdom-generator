@@ -40,9 +40,9 @@ export const SearchBar: FC<SearchBarProps> = ({
           value={searchTerm}
           placeholder="Search"
           onChange={(event) => setSearchTerm(event.target.value)}
-          w="250px"
+          w="64"
         />
-        <InputGroup w="250px">
+        <InputGroup w="64">
           <InputLeftAddon>Sort by:</InputLeftAddon>
           <Select
             value={sortBy}

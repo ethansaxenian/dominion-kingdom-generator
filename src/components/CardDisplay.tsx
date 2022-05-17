@@ -25,18 +25,17 @@ export const CardDisplay: FC<CardDisplayProps> = ({
   lock,
   blackMarket,
 }) => {
+  const cardWidth = isLandscape(card) ? '72' : '44';
+
   return (
-    <Box
-      w={isLandscape(card) ? '300px' : '170px'}
-      borderRadius="8px"
-      position="relative"
-    >
+    <Box w={cardWidth} borderRadius="8px" position="relative">
       <AspectRatio
         maxW="100%"
         ratio={isLandscape(card) ? 325 / 200 : 200 / 320}
       >
         <LinkOverlay isExternal href={card.link}>
           <Image
+            w={cardWidth}
             src={`${process.env.PUBLIC_URL}/${card.img}`}
             alt={card.name}
             border="5px solid black"

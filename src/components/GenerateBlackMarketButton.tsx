@@ -34,7 +34,7 @@ export const GenerateBlackMarketButton = () => {
       size="lg"
       colorScheme="blue"
       onClick={() => generateBlackMarketDeck()}
-      mb="25px"
+      mb="6"
     >
       Generate Black Market Deck
     </Button>

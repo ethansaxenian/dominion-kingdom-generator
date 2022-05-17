@@ -16,7 +16,7 @@ export const KingdomDisplay = () => {
     if (!arrayIncludesCardName(kingdom, 'Black Market')) {
       dispatch(setBlackMarket([]));
     }
-  }, [kingdom]);
+  }, [kingdom, dispatch]);
 
   const platinumColony = useConst(() =>
     cards
@@ -45,7 +45,7 @@ export const KingdomDisplay = () => {
       landscapes
         .filter((card) => !isOfType(card, ['Ally']))
         .sort((card1, card2) => sortTwoCards(card1, card2, 'name')),
-    []
+    [landscapes]
   );
 
   const blackMarketDisplay = useMemo(
@@ -77,7 +77,7 @@ export const KingdomDisplay = () => {
         <CardsDisplay data={shelters} swap={false} lock={false} />
       )}
       {arrayIncludesCardName(kingdom, 'Black Market') && (
-        <VStack mt="50px">
+        <VStack mt="12">
           <GenerateBlackMarketButton />
           {blackMarket.length > 0 && (
             <CardsDisplay

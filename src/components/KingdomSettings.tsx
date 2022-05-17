@@ -28,7 +28,7 @@ export const KingdomSettings = () => {
 
   return (
     <>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacingX="10vw" pb="30px">
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacingX="10vw" pb="8">
         <SelectorList
           list={expansions}
           toggle={toggleExpansion}
@@ -43,14 +43,14 @@ export const KingdomSettings = () => {
         />
       </SimpleGrid>
       <Divider />
-      <Heading pt="30px" size="lg">
+      <Heading pt="8" size="lg">
         Blacklist Cards:
       </Heading>
       <MultiCardInput
         list={blacklist}
         setList={(val) => dispatch(setBlacklist(val))}
       />
-      <Heading pt="30px" size="lg">
+      <Heading pt="8" size="lg">
         Whitelist Cards:
       </Heading>
       <MultiCardInput

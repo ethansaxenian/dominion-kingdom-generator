@@ -2,15 +2,14 @@ import { useEffect } from 'react';
 import { arrayIncludesCardName, isOfType, sortTwoCards } from 'lib';
 import { CardsDisplay } from './CardsDisplay';
 import { Stack, VStack } from '@chakra-ui/react';
-import { useAppContext } from 'context';
-import { useDispatch, useSelector } from 'react-redux';
-import { KingdomState, RootState, setBlackMarket } from 'state';
+import { setBlackMarket } from 'state';
 import { GenerateBlackMarketButton } from './GenerateBlackMarketButton';
+import { useAppDispatch, useCardPool, useKingdom } from 'hooks';
 
 export const KingdomDisplay = () => {
-  const { cards } = useAppContext();
-  const { usePlatinumColony, useShelters, blackMarket, kingdom, landscapes }: KingdomState = useSelector((state: RootState) => state.kingdom);
-  const dispatch = useDispatch();
+  const cards = useCardPool();
+  const { usePlatinumColony, useShelters, blackMarket, kingdom, landscapes } = useKingdom();
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     if (!arrayIncludesCardName(kingdom, 'Black Market')) {

@@ -2,7 +2,7 @@ import { Box, Button, Input, InputGroup, InputRightElement, Tag, TagCloseButton,
 import { FC, useState } from 'react';
 import { AddIcon } from '@chakra-ui/icons';
 import { CARDS_TO_REMOVE } from 'lib';
-import { useAppContext } from 'context';
+import { useCardPool } from 'hooks';
 
 export interface MultiCardInputProps {
   list: Array<string>;
@@ -10,8 +10,8 @@ export interface MultiCardInputProps {
 }
 
 export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
-  const project = useAppContext();
-  const cards = project.cards.filter((card) => card.in_supply && !CARDS_TO_REMOVE.includes(card.name));
+  const cardPool = useCardPool();
+  const cards = cardPool.filter((card) => card.in_supply && !CARDS_TO_REMOVE.includes(card.name));
 
   const [text, setText] = useState('');
 

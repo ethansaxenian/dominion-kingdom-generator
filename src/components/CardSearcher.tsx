@@ -3,10 +3,10 @@ import { SUPPLY_TYPES, SortCardsBy, isLandscape, sortTwoCards } from 'lib';
 import { CardsDisplay } from './CardsDisplay';
 import { SearchBar } from './SearchBar';
 import { Divider, Heading } from '@chakra-ui/react';
-import { useAppContext } from 'context';
+import { useCardPool } from 'hooks';
 
 export const CardSearcher = () => {
-  const { cards } = useAppContext();
+  const cards = useCardPool();
 
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState<SortCardsBy>('name');

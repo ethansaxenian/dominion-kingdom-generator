@@ -1,10 +1,9 @@
 import { IconButton } from '@chakra-ui/react';
-import { useAppContext } from 'context';
+import { useAppDispatch, useCardPool, useKingdom, useSettings } from 'hooks';
 import { Card, arrayIncludesCard, drawCards, generateBlackMarket, hasValidExpansion, isLandscape, swapCard, swapLandscape } from 'lib';
 import { FC } from 'react';
 import { VscArrowSwap } from 'react-icons/vsc';
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState, setAlert, setBlackMarket, setKingdom, setLandscapes, unlockCard, unlockLandscape } from 'state';
+import { setAlert, setBlackMarket, setKingdom, setLandscapes, unlockCard, unlockLandscape } from 'state';
 
 export interface SwapCardButtonProps {
   card: Card;
@@ -12,11 +11,11 @@ export interface SwapCardButtonProps {
 }
 
 export const SwapCardButton: FC<SwapCardButtonProps> = ({ card, isBlackMarket }) => {
-  const { blacklist, expansions, promos } = useSelector((state: RootState) => state.settings);
-  const { kingdom, landscapes, blackMarket } = useSelector((state: RootState) => state.kingdom);
-  const { cards } = useAppContext();
+  const { blacklist, expansions, promos } = useSettings();
+  const { kingdom, landscapes, blackMarket } = useKingdom();
+  const cards = useCardPool();
 
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const pool = cards.filter((card) => !blacklist.includes(card.name) && (hasValidExpansion(card, expansions) || promos.includes(card.name)));
 

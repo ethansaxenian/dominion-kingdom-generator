@@ -2,12 +2,12 @@ import { EXPANSIONS, Expansion, PROMOS, Promo } from 'lib';
 import { SelectorList } from './SelectorList';
 import { Divider, Heading, SimpleGrid } from '@chakra-ui/react';
 import { MultiCardInput } from './MultiCardInput';
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState, addExpansion, addPromo, removeExpansion, removePromo, setBlacklist, setWhitelist } from 'state';
+import { addExpansion, addPromo, removeExpansion, removePromo, setBlacklist, setWhitelist } from 'state';
+import { useAppDispatch, useSettings } from 'hooks';
 
 export const KingdomSettings = () => {
-  const { expansions, promos, blacklist, whitelist } = useSelector((state: RootState) => state.settings);
-  const dispatch = useDispatch();
+  const { expansions, promos, blacklist, whitelist } = useSettings();
+  const dispatch = useAppDispatch();
 
   const toggleExpansion = (name: Expansion) => {
     const action = expansions.includes(name) ? removeExpansion : addExpansion;

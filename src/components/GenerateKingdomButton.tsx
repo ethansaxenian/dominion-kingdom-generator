@@ -1,15 +1,14 @@
 import { Button } from '@chakra-ui/react';
-import { useAppContext } from 'context';
+import { useAppDispatch, useCardPool, useKingdom, useSettings } from 'hooks';
 import { Promo, generateKingdom, hasValidExpansion } from 'lib';
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState, setAlert, setKingdom, setLandscapes, setUsePlatinumColony, setUseShelters } from 'state';
+import { setAlert, setKingdom, setLandscapes, setUsePlatinumColony, setUseShelters } from 'state';
 
 export const GenerateKingdomButton = () => {
-  const { blacklist, whitelist, expansions, promos } = useSelector((state: RootState) => state.settings);
-  const { kingdom, landscapes } = useSelector((state: RootState) => state.kingdom);
-  const { cards } = useAppContext();
+  const { blacklist, whitelist, expansions, promos } = useSettings();
+  const { kingdom, landscapes } = useKingdom();
+  const cards = useCardPool();
 
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const pool = cards.filter((card) => !blacklist.includes(card.name) && (hasValidExpansion(card, expansions) || promos.includes(card.name as Promo)));
 

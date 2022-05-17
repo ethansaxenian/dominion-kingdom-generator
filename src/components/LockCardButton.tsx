@@ -1,16 +1,16 @@
 import { IconButton } from '@chakra-ui/react';
 import { LockIcon, UnlockIcon } from '@chakra-ui/icons';
-import { useDispatch } from 'react-redux';
 import { toggleLockCard, toggleLockLandscape } from 'state';
 import { Card, isLandscape } from 'lib';
 import { FC } from 'react';
+import { useAppDispatch } from 'hooks';
 
 export interface LockCardButtonProps {
   card: Card;
 }
 
 export const LockCardButton: FC<LockCardButtonProps> = ({ card }) => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const lock = () => {
     if (isLandscape(card)) {

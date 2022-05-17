@@ -1,15 +1,15 @@
 import { useEffect } from 'react';
 import { KingdomDisplay } from './KingdomDisplay';
 import { HStack, Text, VStack, useToast } from '@chakra-ui/react';
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState, setAlert } from 'state';
+import { setAlert } from 'state';
 import { GenerateKingdomButton } from './GenerateKingdomButton';
+import { useAppDispatch, useKingdom, useSettings } from 'hooks';
 
 export const KingdomGenerator = () => {
-  const { expansions, promos } = useSelector((state: RootState) => state.settings);
-  const alert = useSelector((state: RootState) => state.kingdom.alert);
+  const { expansions, promos } = useSettings();
+  const { alert } = useKingdom();
 
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const alertToast = useToast();
 

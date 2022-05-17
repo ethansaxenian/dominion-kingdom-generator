@@ -1,7 +1,15 @@
-import PropTypes from 'prop-types';
 import { HStack, Icon, Link, Text, useColorModeValue } from '@chakra-ui/react';
+import { FC } from 'react';
+import { IconType } from 'react-icons';
 
-export default function NavBarItem({ label, isActive, onClick, icon }) {
+export interface NavBarItemProps {
+  label: string;
+  isActive: boolean;
+  onClick: () => void;
+  icon: IconType;
+}
+
+export const NavBarItem: FC<NavBarItemProps> = ({ label, isActive, onClick, icon }) => {
 
   const textColor = useColorModeValue('black', 'white');
   const textActiveColor = useColorModeValue('gray.600', 'gray.400');
@@ -16,19 +24,12 @@ export default function NavBarItem({ label, isActive, onClick, icon }) {
         textDecoration: 'none',
         color: textColor
       }}
-      bg={isActive && bgActiveColor}
+      bg={isActive ? bgActiveColor : undefined}
     >
       <HStack spacing="10px" w="fit-content" p="10px">
         <Icon as={icon} boxSize="25px"/>
-        <Text display={{base: 'none', md: 'flex'}}>{label}</Text>
+        <Text display={{ base: 'none', md: 'flex' }}>{label}</Text>
       </HStack>
     </Link>
-  )
-}
-
-NavBarItem.propTypes = {
-  label: PropTypes.string.isRequired,
-  isActive: PropTypes.bool.isRequired,
-  onClick: PropTypes.func.isRequired,
-  icon: PropTypes.func.isRequired
-}
+  );
+};

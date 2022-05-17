@@ -1,27 +1,27 @@
-import { EXPANSIONS, PROMOS } from 'lib/constants';
-import SelectorList from './SelectorList';
+import { EXPANSIONS, Expansion, PROMOS, Promo } from 'lib';
+import { SelectorList } from './SelectorList';
 import { Divider, Heading, SimpleGrid } from '@chakra-ui/react';
-import MultiCardInput from './MultiCardInput';
+import { MultiCardInput } from './MultiCardInput';
 import { useDispatch, useSelector } from 'react-redux';
-import { addExpansion, addPromo, removeExpansion, removePromo, setBlacklist, setWhitelist } from 'redux/settingsSlice'
+import { RootState, addExpansion, addPromo, removeExpansion, removePromo, setBlacklist, setWhitelist } from 'state';
 
-export default function KingdomSettings() {
-  const { expansions, promos, blacklist, whitelist } = useSelector((state) => state.settings);
-  const dispatch = useDispatch()
+export const KingdomSettings = () => {
+  const { expansions, promos, blacklist, whitelist } = useSelector((state: RootState) => state.settings);
+  const dispatch = useDispatch();
 
-  const toggleExpansion = (name) => {
+  const toggleExpansion = (name: Expansion) => {
     const action = expansions.includes(name) ? removeExpansion : addExpansion;
     dispatch(action(name));
-  }
+  };
 
-  const togglePromo = (name) => {
+  const togglePromo = (name: Promo) => {
     const action = promos.includes(name) ? removePromo : addPromo;
     dispatch(action(name));
-  }
+  };
 
   return (
     <>
-      <SimpleGrid columns={{base: 1, md: 2}} spacingX="10vw" pb="30px">
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacingX="10vw" pb="30px">
         <SelectorList
           list={expansions}
           toggle={toggleExpansion}
@@ -36,5 +36,5 @@ export default function KingdomSettings() {
       <Heading pt="30px" size="lg">Whitelist Cards:</Heading>
       <MultiCardInput list={whitelist} setList={(val) => dispatch(setWhitelist(val))}/>
     </>
-  )
-}
+  );
+};

@@ -1,19 +1,23 @@
 import { Box, Button, Input, InputGroup, InputRightElement, Tag, TagCloseButton, TagLabel, TagLeftIcon, VStack, Wrap } from '@chakra-ui/react';
-import { useState } from 'react';
+import { FC, useState } from 'react';
 import { AddIcon } from '@chakra-ui/icons';
-import PropTypes from 'prop-types';
-import { CARDS_TO_REMOVE } from 'lib/constants';
+import { CARDS_TO_REMOVE } from 'lib';
 import { useAppContext } from 'context';
 
-export default function MultiCardInput({ list, setList }) {
+export interface MultiCardInputProps {
+  list: Array<string>;
+  setList: (arr: Array<string>) => void;
+}
+
+export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
   const project = useAppContext();
   const cards = project.cards.filter((card) => card.in_supply && !CARDS_TO_REMOVE.includes(card.name));
 
   const [text, setText] = useState('');
 
-  const cardNames = cards.map(({name}) => name);
+  const cardNames = cards.map(({ name }) => name);
 
-  const updateList = (item, action) => {
+  const updateList = (item: string, action: 'add' | 'remove') => {
     if (action === 'add' && !list.map((i) => i.toLowerCase()).includes(item.toLowerCase())) {
       cardNames.forEach((name) => {
         if (name.toLowerCase() === item.toLowerCase()) {
@@ -25,13 +29,13 @@ export default function MultiCardInput({ list, setList }) {
     if (action === 'remove') {
       setList(list.filter((i) => i !== item));
     }
-  }
+  };
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e: KeyboardEvent) => {
     if (e.key === 'Enter') {
       updateList(text, 'add');
     }
-  }
+  };
 
   const blacklisted = (
     <Wrap w="300px" pb="15px">
@@ -88,6 +92,7 @@ export default function MultiCardInput({ list, setList }) {
           placeholder="Enter card name"
           value={text}
           onChange={(e) => setText(e.target.value)}
+          // @ts-ignore
           onKeyDown={handleKeyDown}
           errorBorderColor="crimson"
         />
@@ -97,10 +102,5 @@ export default function MultiCardInput({ list, setList }) {
       </InputGroup>
       {text !== '' && recommendedList}
     </Box>
-  )
-}
-
-MultiCardInput.propTypes = {
-  list: PropTypes.arrayOf(PropTypes.string).isRequired,
-  setList: PropTypes.func.isRequired
-}
+  );
+};

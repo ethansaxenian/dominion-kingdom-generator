@@ -1,30 +1,14 @@
-import PropTypes from 'prop-types';
 import { EXPANSIONS, PROMOS, TYPES } from './constants';
 
-export const expansionType = PropTypes.oneOf([...EXPANSIONS, 'Promo']);
+const expansions = [...EXPANSIONS] as const;
+const promos = [...PROMOS] as const;
+const types = [...TYPES] as const;
 
-export const cardTypeType = PropTypes.oneOf(TYPES);
+export type Expansion = typeof expansions[number] | 'Promo';
 
-export const cardType = PropTypes.shape({
-  name: PropTypes.string.isRequired,
-  expansion: expansionType.isRequired,
-  types: PropTypes.arrayOf(cardTypeType.isRequired).isRequired,
-  coins: PropTypes.number,
-  potions: PropTypes.string,
-  debt: PropTypes.string,
-  text: PropTypes.string.isRequired,
-  in_supply: PropTypes.bool.isRequired,
-  img: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired
-});
+export type CardType = typeof types[number];
 
-export const promoNameType = PropTypes.oneOf(PROMOS);
-
-export type Expansion = typeof EXPANSIONS[number];
-
-export type CardType = typeof TYPES[number];
-
-export type Promo = typeof PROMOS[number];
+export type Promo = typeof promos[number];
 
 export interface Card {
   name: string;
@@ -41,3 +25,7 @@ export interface Card {
   bane: boolean;
   wotm: boolean;
 }
+
+export type SortCardsBy = 'cost' | 'name' | 'expansion';
+
+export type Page = 'generate' | 'settings' | 'browse';

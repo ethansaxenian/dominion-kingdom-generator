@@ -1,12 +1,18 @@
-import PropTypes from 'prop-types';
 import { GiCardPick, GiCastle } from 'react-icons/gi';
 import { MdSettings } from 'react-icons/md';
 import { GoMarkGithub } from 'react-icons/go';
-import NavBarItem from './NavBarItem';
+import { NavBarItem } from './NavBarItem';
 import { Flex, HStack, Icon, IconButton, Image, Link, useColorMode, useColorModeValue } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { FC } from 'react';
+import { Page } from 'lib';
 
-export default function NavBar({ page, setPage }) {
+export interface NavBarProps {
+  page: Page;
+  setPage: (page: Page) => void;
+}
+
+export const NavBar: FC<NavBarProps> = ({ page, setPage }) => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   const bgColor = useColorModeValue('gray.100', 'gray.900');
@@ -58,10 +64,5 @@ export default function NavBar({ page, setPage }) {
         />
       </HStack>
     </Flex>
-  )
-}
-
-NavBar.propTypes = {
-  page: PropTypes.oneOf(['generate', 'settings', 'browse']).isRequired,
-  setPage: PropTypes.func.isRequired
-}
+  );
+};

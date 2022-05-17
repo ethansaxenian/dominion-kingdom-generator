@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
-import CardSearcher from './CardSearcher';
-import NavBar from './NavBar';
-import KingdomGenerator from './KingdomGenerator';
-import KingdomSettings from './KingdomSettings';
+import { CardSearcher } from './CardSearcher';
+import { NavBar } from './NavBar';
+import { KingdomGenerator } from './KingdomGenerator';
+import { KingdomSettings } from './KingdomSettings';
 import { Container } from '@chakra-ui/react';
 import analytics from 'analytics';
+import { Page } from 'lib';
 
-export default function App() {
-  const [page, setPage] = useState('generate');
+export const App = () => {
+  const [page, setPage] = useState<Page>('generate');
 
   useEffect(() => {
     // don't run analytics when testing
@@ -24,4 +25,4 @@ export default function App() {
       {(page === 'browse') && <CardSearcher/>}
     </Container>
   );
-}
+};

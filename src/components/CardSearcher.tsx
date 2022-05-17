@@ -1,37 +1,36 @@
 import { useState } from 'react';
-import { isLandscape, sortTwoCards } from 'lib/utils';
-import CardsDisplay from './CardsDisplay';
-import SearchBar from './SearchBar';
-import { SUPPLY_TYPES } from 'lib/constants';
+import { SUPPLY_TYPES, SortCardsBy, isLandscape, sortTwoCards } from 'lib';
+import { CardsDisplay } from './CardsDisplay';
+import { SearchBar } from './SearchBar';
 import { Divider, Heading } from '@chakra-ui/react';
 import { useAppContext } from 'context';
 
-export default function CardSearcher() {
+export const CardSearcher = () => {
   const { cards } = useAppContext();
 
   const [searchTerm, setSearchTerm] = useState('');
-  const [sortBy, setSortBy] = useState('name');
+  const [sortBy, setSortBy] = useState<SortCardsBy>('name');
   const [displayed, setDisplayed] = useState(['Supply', 'Non-supply', 'Landscape']);
 
-  const toggleDisplayType = (type) => {
+  const toggleDisplayType = (type: string) => {
     if (displayed.includes(type)) {
       setDisplayed(displayed.filter((t) => t !== type));
     } else {
       setDisplayed([...displayed, type]);
     }
-  }
+  };
 
-  const filteredCards = cards.filter(({ name, expansion, types, cost, text }) => {
+  const filteredCards= cards.filter(({ name, expansion, types, coins, potions, debt, text }) => {
     const parsedTerm = searchTerm.toLowerCase();
-    return (name.toLowerCase().includes(parsedTerm)
+    return (
+      name.toLowerCase().includes(parsedTerm)
       || expansion.toLowerCase().includes(parsedTerm)
       || types.some((type) => type.toLowerCase().includes(parsedTerm))
-      || (cost && (
-        (cost.coins && cost.coins.toString().includes(parsedTerm))
-        || (cost.potions && cost.potions.includes(parsedTerm))
-        || (cost.debt && cost.debt.includes(parsedTerm))
-      ))
-      || text.toLowerCase().includes(parsedTerm))
+      || coins && coins.toString().includes(parsedTerm)
+      || potions && potions.includes(parsedTerm)
+      || debt && debt.includes(parsedTerm)
+      || text.toLowerCase().includes(parsedTerm)
+    );
   }).sort((card1, card2) => sortTwoCards(card1, card2, sortBy));
 
   const inSupply = filteredCards.filter((card) => card.in_supply && card.types.every((type) => SUPPLY_TYPES.includes(type)));
@@ -72,5 +71,5 @@ export default function CardSearcher() {
         </>
       )}
     </>
-  )
-}
+  );
+};

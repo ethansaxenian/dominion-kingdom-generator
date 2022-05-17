@@ -1,5 +1,5 @@
 import { BASE_2_CARDS, CARDS_TO_REMOVE, CARD_SHAPED_TYPES, INTRIGUE_2_CARDS, NON_SUPPLY_TYPES, ORIGINAL_BASE_CARDS, ORIGINAL_INTRIGUE_CARDS } from './constants';
-import { Card, CardType, Expansion } from './types';
+import { Card, CardType, Expansion, SortCardsBy } from './types';
 
 export const random = (min: number, max: number): number => Math.floor(Math.random() * (max - min)) + min;
 
@@ -32,7 +32,7 @@ export const costSortValue = (card: Card): number => {
   return parseInt(`${coinRep}${potionRep}${debtRep}` || '0');
 };
 
-export const sortTwoCards = (card1: Card, card2: Card, sortBy: 'cost' | 'name') => {
+export const sortTwoCards = (card1: Card, card2: Card, sortBy: SortCardsBy) => {
   const first = (sortBy === 'cost') ? costSortValue(card1) : card1[sortBy];
   const second = (sortBy === 'cost') ? costSortValue(card2) : card2[sortBy];
   if (first < second) {

@@ -1,11 +1,17 @@
 import { AspectRatio, Box, HStack, Image, LinkOverlay, Spinner, Tag } from '@chakra-ui/react';
-import { isLandscape } from 'lib/utils';
-import PropTypes from 'prop-types';
-import { cardType } from 'lib/types';
-import SwapCardButton from './SwapCardButton';
-import LockCardButton from './LockCardButton';
+import { Card, isLandscape } from 'lib';
+import { SwapCardButton } from './SwapCardButton';
+import { LockCardButton } from './LockCardButton';
+import { FC } from 'react';
 
-export default function Card({ card, swap, lock, blackMarket }) {
+export interface CardDisplayProps {
+  card: Card;
+  swap: boolean;
+  lock: boolean;
+  blackMarket?: boolean;
+}
+
+export const CardDisplay: FC<CardDisplayProps> = ({ card, swap, lock, blackMarket }) => {
   return (
     <Box
       w={isLandscape(card) ? '300px' : '170px'}
@@ -44,12 +50,5 @@ export default function Card({ card, swap, lock, blackMarket }) {
         </Tag>
       )}
     </Box>
-  )
-}
-
-Card.propTypes = {
-  card: cardType.isRequired,
-  swap: PropTypes.bool.isRequired,
-  lock: PropTypes.bool.isRequired,
-  blackMarket: PropTypes.bool
-}
+  );
+};

@@ -1,21 +1,21 @@
 import { Button } from '@chakra-ui/react';
 import { useAppContext } from 'context';
-import { generateBlackMarket } from 'lib/kingdom-utils';
-import { hasValidExpansion, sample } from 'lib/utils';
+import { Promo, generateBlackMarket, hasValidExpansion, sample } from 'lib';
 import { useDispatch, useSelector } from 'react-redux';
-import { setBlackMarket } from 'redux/kingdomSlice';
+import { RootState, setBlackMarket } from 'state';
 
-export default function GenerateBlackMarketButton() {
-  const kingdom = useSelector((state) => state.kingdom.kingdom);
-  const { blacklist, expansions, promos } = useSelector((state) => state.settings);
+
+export const GenerateBlackMarketButton = () => {
+  const { kingdom } = useSelector((state: RootState) => state.kingdom);
+  const { blacklist, expansions, promos } = useSelector((state: RootState) => state.settings);
   const { cards } = useAppContext();
   const dispatch = useDispatch();
 
   const generateBlackMarketDeck = () => {
-    const pool = cards.filter((card) => !blacklist.includes(card.name) && (hasValidExpansion(card, expansions) || promos.includes(card.name)));
+    const pool = cards.filter((card) => !blacklist.includes(card.name) && (hasValidExpansion(card, expansions) || promos.includes(card.name as Promo)));
     const blackMarketOptions = generateBlackMarket(pool, kingdom, promos, expansions);
     dispatch(setBlackMarket(sample(blackMarketOptions, Math.min(blackMarketOptions.length, 60))));
-  }
+  };
 
   return (
     <Button
@@ -26,5 +26,5 @@ export default function GenerateBlackMarketButton() {
     >
       Generate Black Market Deck
     </Button>
-  )
-}
+  );
+};

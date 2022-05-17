@@ -1,15 +1,15 @@
 import { useEffect } from 'react';
-import { arrayIncludesCardName, isOfType, sortTwoCards } from 'lib/utils';
-import CardsDisplay from './CardsDisplay';
+import { arrayIncludesCardName, isOfType, sortTwoCards } from 'lib';
+import { CardsDisplay } from './CardsDisplay';
 import { Stack, VStack } from '@chakra-ui/react';
-import { useAppContext } from 'context.js';
+import { useAppContext } from 'context';
 import { useDispatch, useSelector } from 'react-redux';
-import { setBlackMarket } from 'redux/kingdomSlice';
-import GenerateBlackMarketButton from './GenerateBlackMarketButton';
+import { KingdomState, RootState, setBlackMarket } from 'state';
+import { GenerateBlackMarketButton } from './GenerateBlackMarketButton';
 
-export default function KingdomDisplay() {
+export const KingdomDisplay = () => {
   const { cards } = useAppContext();
-  const { usePlatinumColony, useShelters, blackMarket, kingdom, landscapes } = useSelector((state) => state.kingdom);
+  const { usePlatinumColony, useShelters, blackMarket, kingdom, landscapes }: KingdomState = useSelector((state: RootState) => state.kingdom);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function KingdomDisplay() {
   return (
     <>
       <CardsDisplay data={supply.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))} swap lock/>
-      <Stack direction={{base: 'column', md: 'row'}}>
+      <Stack direction={{ base: 'column', md: 'row' }}>
         {(landscapes.length > 0) && <CardsDisplay data={landscapesWithoutAlly} swap lock/>}
         {wotm && <CardsDisplay data={[wotm]} swap lock={false}/>}
         {usePlatinumColony && <CardsDisplay data={platinumColony} swap={false} lock={false}/>}
@@ -47,5 +47,5 @@ export default function KingdomDisplay() {
         </VStack>
       )}
     </>
-  )
-}
+  );
+};

@@ -1,9 +1,15 @@
-import PropTypes from 'prop-types';
-import { expansionType, promoNameType } from 'lib/types';
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Divider, HStack, Switch, Text, VStack, useColorModeValue } from '@chakra-ui/react';
-import { Fragment } from 'react';
+import { Expansion, Promo } from 'lib';
+import { FC, Fragment } from 'react';
 
-export default function SelectorList({ list, toggle, options, name }) {
+export interface SelectorListProps {
+  list: Array<Expansion | Promo>;
+  toggle: (name: Expansion | Promo) => void;
+  options: Array<Expansion | Promo>;
+  name: string;
+}
+
+export const SelectorList: FC<SelectorListProps> = ({ list, toggle, options, name }) => {
   return (
     <Accordion allowToggle w="250px" mt="30px" justify="center">
       <AccordionItem bg={useColorModeValue('gray.100', 'gray.800')} border="1px solid gray" borderRadius="8px">
@@ -40,12 +46,5 @@ export default function SelectorList({ list, toggle, options, name }) {
         )}
       </AccordionItem>
     </Accordion>
-  )
-}
-
-SelectorList.propTypes = {
-  list: PropTypes.arrayOf(PropTypes.oneOfType([expansionType, promoNameType])).isRequired,
-  toggle: PropTypes.func.isRequired,
-  options: PropTypes.arrayOf(PropTypes.oneOfType([expansionType, promoNameType])).isRequired,
-  name: PropTypes.oneOf(['Expansions', 'Promos']).isRequired
-}
+  );
+};

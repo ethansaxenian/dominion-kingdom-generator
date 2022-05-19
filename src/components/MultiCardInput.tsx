@@ -12,10 +12,11 @@ import {
   Wrap,
   useConst,
 } from '@chakra-ui/react';
-import { FC, useMemo, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { AddIcon, CloseIcon } from '@chakra-ui/icons';
 import { CARDS_TO_REMOVE } from 'lib';
 import { useCardPool } from 'hooks';
+import Fuse from 'fuse.js';
 
 export interface MultiCardInputProps {
   list: Array<string>;
@@ -32,6 +33,14 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
   const cardNames = useConst(() => cards.map(({ name }) => name));
 
   const [text, setText] = useState('');
+  const [recommendations, setRecommendations] = useState<Array<string>>([]);
+
+  useEffect(() => {
+    const fuse = new Fuse(cardNames);
+    const recs = fuse.search(text).map(({ item }) => item);
+    const filteredRecs = recs.filter((name) => !list.includes(name));
+    setRecommendations(filteredRecs);
+  }, [text, cardNames, list]);
 
   const updateList = (item: string, action: 'add' | 'remove') => {
     if (
@@ -75,16 +84,6 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
         </Tag>
       ))}
     </Wrap>
-  );
-
-  const recommendations = useMemo(
-    () =>
-      cardNames.filter(
-        (name) =>
-          name.toLowerCase().substring(0, text.length) === text.toLowerCase() &&
-          !list.includes(name)
-      ),
-    [list, text, cardNames]
   );
 
   const recommendedList = (

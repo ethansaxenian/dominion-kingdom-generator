@@ -21,13 +21,22 @@ for row in table_rows[1:]:
     costs = [str(image).removeprefix("<img alt=").split('"')[1].lower().removesuffix("plus").removesuffix("star").removeprefix('$') for image in images]
     cost = { "coins": None, "potions": None, "debt": None }
     for item in costs:
-    if item == "p":
-        cost["potions"] = "p"
-    elif item[-1] == "d":
-        cost["debt"] = f"{item[:-1]}d"
-    else:
-        cost["coins"] = int(item)
-    text = columns[4].text.lower().strip()
+        if item == "p":
+            cost["potions"] = "p"
+        elif item[-1] == "d":
+            cost["debt"] = f"{item[:-1]}d"
+        else:
+            cost["coins"] = int(item)
+    html_text = columns[4]
+    for span in html_text.find_all("span", class_="coin-icon"):
+        img = html_text.find("img", alt=True)
+        span.replace_with(img['alt'])
+    for span in html_text.find_all("span"):
+        span.unwrap()
+    for b in html_text.find_all("b"):
+        b.unwrap()
+    html_text.smooth()
+    text = html_text.get_text(separator="\n", strip=True)
     img_tag = str(columns[0].find("img"))
     img = img_tag[img_tag.find("src") + 4: img_tag.find("width")].strip().strip('"')
     request.urlretrieve(f"http://wiki.dominionstrategy.com{img}", f"public/images/{name}.jpg")

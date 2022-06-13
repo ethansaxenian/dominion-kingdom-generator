@@ -17,7 +17,7 @@
     "deploy": "gh-pages -d build",
     "lint": "eslint src",
     "prettier": "npx prettier --check src",
-    "scrape": "python3 scrape_data.py"
+    "scrape": ".venv/bin/python3 scrape_data.py"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",

@@ -1,4 +1,4 @@
-import { Button } from '@chakra-ui/react';
+import { Button, Spinner } from '@chakra-ui/react';
 import { useAppDispatch, useCardPool, useKingdom, useSettings } from 'hooks';
 import { Promo, generateKingdom, hasValidExpansion } from 'lib';
 import {
@@ -42,7 +42,16 @@ export const GenerateKingdomButton = () => {
     }
   };
 
-  return (
+  return cards.length === 0 ? (
+    <Spinner
+      mt="100"
+      thickness="7px"
+      speed="0.65s"
+      emptyColor="gray.200"
+      color="green.500"
+      size="xl"
+    />
+  ) : (
     <Button
       colorScheme="green"
       onClick={() => _generateKingdom()}

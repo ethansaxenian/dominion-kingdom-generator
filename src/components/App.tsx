@@ -3,7 +3,7 @@ import { CardSearcher } from './CardSearcher';
 import { NavBar } from './NavBar';
 import { KingdomGenerator } from './KingdomGenerator';
 import { KingdomSettings } from './KingdomSettings';
-import { Container, Spinner } from '@chakra-ui/react';
+import { Container } from '@chakra-ui/react';
 import analytics from 'analytics';
 import { Card, Page } from 'lib';
 import { AppContext } from 'state';
@@ -41,16 +41,10 @@ export const App = () => {
       }}
     >
       <Container centerContent maxW="container.xl">
-        {cardPool.length ? (
-          <>
-            <NavBar page={page} setPage={setPage} />
-            {page === 'generate' && <KingdomGenerator />}
-            {page === 'settings' && <KingdomSettings />}
-            {page === 'browse' && <CardSearcher />}
-          </>
-        ) : (
-          <Spinner size="xl" />
-        )}
+        <NavBar page={page} setPage={setPage} />
+        {page === 'generate' && <KingdomGenerator />}
+        {page === 'settings' && <KingdomSettings />}
+        {page === 'browse' && <CardSearcher />}
       </Container>
     </AppContext.Provider>
   );

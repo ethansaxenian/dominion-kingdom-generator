@@ -26,8 +26,8 @@ export const CardSearcher = () => {
             expansion.toLowerCase().includes(parsedTerm) ||
             types.some((type) => type.toLowerCase().includes(parsedTerm)) ||
             (coins && coins.toString().includes(parsedTerm)) ||
-            (potions && potions.includes(parsedTerm)) ||
-            (debt && debt.includes(parsedTerm)) ||
+            (potions && potions.toString().includes(parsedTerm)) ||
+            (debt && debt.toString().includes(parsedTerm)) ||
             text.toLowerCase().includes(parsedTerm)
           );
         })

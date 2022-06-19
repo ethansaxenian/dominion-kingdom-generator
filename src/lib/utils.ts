@@ -41,7 +41,7 @@ export const isOfType = (card: Card, types: Array<CardType>): boolean =>
 export const costSortValue = (card: Card): number => {
   const coinRep = card.coins ? card.coins : '';
   const potionRep = card.potions ? '100' : '';
-  const debtRep = card.debt ? `${card.debt.slice(0, -1)}00000` : '';
+  const debtRep = card.debt ? `${card.debt}00000` : '';
 
   return parseInt(`${coinRep}${potionRep}${debtRep}` || '0');
 };

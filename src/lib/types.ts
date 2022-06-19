@@ -15,11 +15,12 @@ export interface Card {
   expansion: Expansion;
   types: Array<CardType>;
   coins?: number | null;
-  potions?: string | null;
-  debt?: string | null;
+  potions?: number | null;
+  debt?: number | null;
   text: string;
   in_supply: boolean;
-  img: string;
+  img_path: string;
+  img_b64: string;
   link: string;
   locked: boolean;
   bane: boolean;

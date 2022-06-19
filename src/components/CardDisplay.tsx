@@ -36,7 +36,7 @@ export const CardDisplay: FC<CardDisplayProps> = ({
         <LinkOverlay isExternal href={card.link}>
           <Image
             w={cardWidth}
-            src={`${process.env.PUBLIC_URL}/${card.img}`}
+            src={`data:image/jpeg;base64,${card.img_b64}`}
             alt={card.name}
             border="5px solid black"
             borderRadius="8px"

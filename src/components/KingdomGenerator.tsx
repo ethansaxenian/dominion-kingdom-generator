@@ -32,7 +32,6 @@ export const KingdomGenerator = () => {
           <Text fontWeight="bold" w="fit-content" whiteSpace="nowrap">
             Available pool:
           </Text>
-          {/* @ts-ignore */}
           <Text>{expansions.concat(promos).join(', ') || 'None'}</Text>
         </HStack>
         <GenerateKingdomButton />

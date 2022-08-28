@@ -20,7 +20,7 @@ export const App = () => {
 
     const fetchCardData = async () => {
       const response = await fetch(
-        'https://dominion-card-api.herokuapp.com/api/cards?include-b64=true'
+        'https://dominion-api.onrender.com/api/cards?include-b64=true'
       );
       const data = await response.json();
       setCardPool(data);

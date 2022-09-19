@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.10",
-    "@chakra-ui/react": "^2.3.2",
+    "@chakra-ui/react": "^2.3.4",
     "@chakra-ui/system": "^2.2.11",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.4",
@@ -43,7 +43,7 @@
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.38.0",
-    "@typescript-eslint/parser": "^5.37.0",
+    "@typescript-eslint/parser": "^5.38.0",
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",

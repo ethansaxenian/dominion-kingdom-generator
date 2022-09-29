@@ -19,11 +19,20 @@ export const App = () => {
     }
 
     const fetchCardData = async () => {
-      const response = await fetch(
-        'https://dominion-api.onrender.com/api/cards?include-b64=true'
-      );
-      const data = await response.json();
-      setCardPool(data);
+      try {
+        const response = await Promise.all(
+          [1, 2, 3, 4].map(
+            async (i) =>
+              await fetch(
+                `https://dominion-api.deta.dev/api/cards?include-b64=true&page=${i}&size=200`
+              )
+          )
+        );
+        const data = await Promise.all(response.map((res) => res.json()));
+        setCardPool(data.flat());
+      } catch (e) {
+        throw new Error(e as string);
+      }
     };
 
     fetchCardData();

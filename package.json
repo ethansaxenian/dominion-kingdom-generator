@@ -19,13 +19,13 @@
     "prettier": "npx prettier --check src"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.0.10",
+    "@chakra-ui/icons": "^2.0.11",
     "@chakra-ui/react": "^2.3.4",
-    "@chakra-ui/system": "^2.2.11",
+    "@chakra-ui/system": "^2.2.12",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.4",
     "@reduxjs/toolkit": "^1.8.5",
-    "framer-motion": "^7.4.0",
+    "framer-motion": "^7.5.1",
     "fuse.js": "^6.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -38,12 +38,12 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
-    "@types/jest": "^29.0.3",
+    "@types/jest": "^29.1.1",
     "@types/node": "^18.7.23",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
-    "@typescript-eslint/parser": "^5.38.1",
+    "@typescript-eslint/parser": "^5.39.0",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
@@ -51,7 +51,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "gh-pages": "^4.0.0",
     "prettier": "^2.7.1",
-    "typescript": "^4.8.3"
+    "typescript": "^4.8.4"
   },
   "browserslist": {
     "production": [

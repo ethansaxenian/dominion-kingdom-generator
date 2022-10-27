@@ -5,9 +5,7 @@ import {
   Highlight,
   Image,
   LinkOverlay,
-  Spinner,
   Tag,
-  Text,
 } from '@chakra-ui/react';
 import { Card, isLandscape } from 'lib';
 import { SwapCardButton } from './SwapCardButton';

@@ -46,7 +46,7 @@ export const CardSearcher = () => {
   );
 
   const notInSupply = useMemo(
-    () => filteredCards.filter((card) => !card.in_supply && !isLandscape(card)),
+    () => filteredCards.filter((card) => !card.in_supply),
     [filteredCards]
   );
 

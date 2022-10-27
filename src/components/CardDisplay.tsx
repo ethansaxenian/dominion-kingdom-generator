@@ -2,15 +2,15 @@ import {
   AspectRatio,
   Box,
   HStack,
-  Highlight,
   Image,
   LinkOverlay,
+  Spinner,
   Tag,
 } from '@chakra-ui/react';
 import { Card, isLandscape } from 'lib';
 import { SwapCardButton } from './SwapCardButton';
 import { LockCardButton } from './LockCardButton';
-import { FC, useState } from 'react';
+import { FC } from 'react';
 
 export interface CardDisplayProps {
   card: Card;
@@ -25,12 +25,7 @@ export const CardDisplay: FC<CardDisplayProps> = ({
   lock,
   blackMarket,
 }) => {
-  const [showNameFallback, setShowNameFallback] = useState(true);
-
   const cardWidth = isLandscape(card) ? '72' : '44';
-  const fallbackImg = isLandscape(card)
-    ? 'card-back-landscape.png'
-    : 'card-back.png';
 
   return (
     <Box w={cardWidth} borderRadius="8px" position="relative">
@@ -41,29 +36,12 @@ export const CardDisplay: FC<CardDisplayProps> = ({
         <LinkOverlay isExternal href={card.link}>
           <Image
             w={cardWidth}
-            src={card.img_path}
+            src={`data:image/jpeg;base64,${card.img_b64}`}
             alt={card.name}
             border="5px solid black"
             borderRadius="8px"
-            fallbackSrc={`${process.env.PUBLIC_URL}/${fallbackImg}`}
-            onLoad={() => setShowNameFallback(false)}
+            fallback={<Spinner size="xl" />}
           />
-          {showNameFallback ? (
-            <Highlight
-              query={card.name}
-              styles={{
-                position: 'absolute',
-                px: '1',
-                bg: 'white',
-                borderRadius: '8px',
-                fontSize: 16,
-                fontWeight: 700,
-                opacity: 0.8,
-              }}
-            >
-              {card.name}
-            </Highlight>
-          ) : undefined}
         </LinkOverlay>
       </AspectRatio>
       {swap && (

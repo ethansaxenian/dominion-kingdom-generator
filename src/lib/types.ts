@@ -20,7 +20,6 @@ export interface Card {
   text: string;
   in_supply: boolean;
   img_path: string;
-  img_b64: string;
   link: string;
   locked: boolean;
   bane: boolean;

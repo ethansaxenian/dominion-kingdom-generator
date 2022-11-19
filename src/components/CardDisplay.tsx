@@ -7,10 +7,10 @@ import {
   LinkOverlay,
   Tag,
 } from '@chakra-ui/react';
-import { Card, isLandscape } from 'lib';
+import { Card, caseInsensitive, isLandscape } from 'lib';
 import { SwapCardButton } from './SwapCardButton';
 import { LockCardButton } from './LockCardButton';
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 
 export interface CardDisplayProps {
   card: Card;
@@ -26,6 +26,24 @@ export const CardDisplay: FC<CardDisplayProps> = ({
   blackMarket,
 }) => {
   const [showNameFallback, setShowNameFallback] = useState(true);
+  const [image, setImage] = useState<string | undefined>();
+
+  useEffect(() => {
+    (async () => {
+      const response = await fetch(
+        `${process.env.REACT_APP_DETA_DRIVE_URL}?name=${caseInsensitive(
+          card.name
+        )}`,
+        {
+          headers: {
+            'X-API-Key': process.env.REACT_APP_DETA_DRIVE_KEY as string,
+          },
+        }
+      );
+      const blob = await response.blob();
+      setImage(URL.createObjectURL(blob));
+    })();
+  }, [card]);
 
   const cardWidth = isLandscape(card) ? '72' : '44';
   const fallbackImg = isLandscape(card)
@@ -41,7 +59,7 @@ export const CardDisplay: FC<CardDisplayProps> = ({
         <LinkOverlay isExternal href={card.link}>
           <Image
             w={cardWidth}
-            src={card.img_path}
+            src={image}
             alt={card.name}
             border="5px solid black"
             borderRadius="8px"

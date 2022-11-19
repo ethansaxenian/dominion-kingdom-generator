@@ -117,3 +117,7 @@ export const sortStrings = (a: string, b: string): number => {
 
   return 0;
 };
+
+export const caseInsensitive = (s: string): string => {
+  return s.toLowerCase().replace(/[^a-z0-9]/g, '');
+};

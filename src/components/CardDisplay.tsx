@@ -11,6 +11,8 @@ import { Card, caseInsensitive, isLandscape } from 'lib';
 import { SwapCardButton } from './SwapCardButton';
 import { LockCardButton } from './LockCardButton';
 import { FC, useEffect, useState } from 'react';
+import { useAppDispatch, useKingdom } from 'hooks';
+import { setImgUrl } from 'state';
 
 export interface CardDisplayProps {
   card: Card;
@@ -26,10 +28,11 @@ export const CardDisplay: FC<CardDisplayProps> = ({
   blackMarket,
 }) => {
   const [showNameFallback, setShowNameFallback] = useState(true);
-  const [image, setImage] = useState<string | undefined>();
+  const dispatch = useAppDispatch();
+  const { images } = useKingdom();
 
   useEffect(() => {
-    (async () => {
+    const fetchImage = async () => {
       const response = await fetch(
         `${process.env.REACT_APP_DETA_DRIVE_URL}?name=${caseInsensitive(
           card.name
@@ -41,9 +44,14 @@ export const CardDisplay: FC<CardDisplayProps> = ({
         }
       );
       const blob = await response.blob();
-      setImage(URL.createObjectURL(blob));
-    })();
-  }, [card]);
+      const url = URL.createObjectURL(blob);
+      dispatch(setImgUrl({ key: card.key, imgUrl: url }));
+    };
+
+    if (!images[card.key]) {
+      fetchImage();
+    }
+  }, [card, dispatch, images]);
 
   const cardWidth = isLandscape(card) ? '72' : '44';
   const fallbackImg = isLandscape(card)
@@ -59,7 +67,7 @@ export const CardDisplay: FC<CardDisplayProps> = ({
         <LinkOverlay isExternal href={card.link}>
           <Image
             w={cardWidth}
-            src={image}
+            src={images[card.key]}
             alt={card.name}
             border="5px solid black"
             borderRadius="8px"

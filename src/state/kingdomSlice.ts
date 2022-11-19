@@ -8,6 +8,9 @@ export interface KingdomState {
   useShelters: boolean;
   blackMarket: Array<Card>;
   alert: string;
+  images: {
+    [key: string]: string;
+  };
 }
 
 const initialState: KingdomState = {
@@ -17,11 +20,17 @@ const initialState: KingdomState = {
   useShelters: false,
   blackMarket: [],
   alert: '',
+  images: {},
 };
 
 export interface LockUnlock {
   name: string;
   locked: boolean;
+}
+
+export interface EditImgUrl {
+  key: string;
+  imgUrl: string;
 }
 
 export const kingdomSlice = createSlice({
@@ -75,6 +84,10 @@ export const kingdomSlice = createSlice({
     setAlert(state: KingdomState, action: PayloadAction<string>) {
       state.alert = action.payload;
     },
+    setImgUrl(state: KingdomState, action: PayloadAction<EditImgUrl>) {
+      const { key, imgUrl } = action.payload;
+      state.images[key] = imgUrl;
+    },
   },
 });
 
@@ -89,4 +102,5 @@ export const {
   unlockLandscape,
   setBlackMarket,
   setAlert,
+  setImgUrl,
 } = kingdomSlice.actions;

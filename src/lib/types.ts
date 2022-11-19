@@ -24,6 +24,7 @@ export interface Card {
   locked: boolean;
   bane: boolean;
   wotm: boolean;
+  key: string;
 }
 
 export type SortCardsBy = 'cost' | 'name' | 'expansion';

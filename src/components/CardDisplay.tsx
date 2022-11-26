@@ -7,12 +7,10 @@ import {
   LinkOverlay,
   Tag,
 } from '@chakra-ui/react';
-import { Card, caseInsensitive, isLandscape } from 'lib';
+import { API_BASE_URL, Card, isLandscape } from 'lib';
 import { SwapCardButton } from './SwapCardButton';
 import { LockCardButton } from './LockCardButton';
-import { FC, useEffect, useState } from 'react';
-import { useAppDispatch, useKingdom } from 'hooks';
-import { setImgUrl } from 'state';
+import { FC, useState } from 'react';
 
 export interface CardDisplayProps {
   card: Card;
@@ -28,30 +26,6 @@ export const CardDisplay: FC<CardDisplayProps> = ({
   blackMarket,
 }) => {
   const [showNameFallback, setShowNameFallback] = useState(true);
-  const dispatch = useAppDispatch();
-  const { images } = useKingdom();
-
-  useEffect(() => {
-    const fetchImage = async () => {
-      const response = await fetch(
-        `${process.env.REACT_APP_DETA_DRIVE_URL}?name=${caseInsensitive(
-          card.name
-        )}`,
-        {
-          headers: {
-            'X-API-Key': process.env.REACT_APP_DETA_DRIVE_KEY as string,
-          },
-        }
-      );
-      const blob = await response.blob();
-      const url = URL.createObjectURL(blob);
-      dispatch(setImgUrl({ key: card.key, imgUrl: url }));
-    };
-
-    if (!images[card.key]) {
-      fetchImage();
-    }
-  }, [card, dispatch, images]);
 
   const cardWidth = isLandscape(card) ? '72' : '44';
   const fallbackImg = isLandscape(card)
@@ -67,7 +41,7 @@ export const CardDisplay: FC<CardDisplayProps> = ({
         <LinkOverlay isExternal href={card.link}>
           <Image
             w={cardWidth}
-            src={images[card.key]}
+            src={`${API_BASE_URL}/images/${card.key}`}
             alt={card.name}
             border="5px solid black"
             borderRadius="8px"

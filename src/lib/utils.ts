@@ -104,20 +104,3 @@ export const hasValidExpansion = (
     return expansions.includes(card.expansion);
   }
 };
-
-export const sortStrings = (a: string, b: string): number => {
-  const x = a.toLowerCase();
-  const y = b.toLowerCase();
-  if (x < y) {
-    return -1;
-  }
-  if (x > y) {
-    return 1;
-  }
-
-  return 0;
-};
-
-export const caseInsensitive = (s: string): string => {
-  return s.toLowerCase().replace(/[^a-z0-9]/g, '');
-};

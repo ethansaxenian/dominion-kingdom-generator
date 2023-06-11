@@ -1,4 +1,4 @@
-export const API_BASE_URL = 'https://dominionapi-1-u6800667.deta.app/api';
+export const API_BASE_URL = 'https://dominion-api.deta.dev/api';
 
 export const EXPANSIONS = [
   'Adventures',

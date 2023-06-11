@@ -14,7 +14,7 @@ export const App = () => {
   useEffect(() => {
     const fetchCardData = async () => {
       try {
-        const response = await fetch(`${API_BASE_URL}/cards`);
+        const response = await fetch(`${API_BASE_URL}/cards/`);
         const data = await response.json();
         setCardPool(data);
       } catch (e) {

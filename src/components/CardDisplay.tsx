@@ -7,7 +7,7 @@ import {
   LinkOverlay,
   Tag,
 } from '@chakra-ui/react';
-import { API_BASE_URL, Card, isLandscape } from 'lib';
+import { Card, isLandscape } from 'lib';
 import { SwapCardButton } from './SwapCardButton';
 import { LockCardButton } from './LockCardButton';
 import { FC, useState } from 'react';
@@ -41,7 +41,7 @@ export const CardDisplay: FC<CardDisplayProps> = ({
         <LinkOverlay isExternal href={card.link}>
           <Image
             w={cardWidth}
-            src={`${API_BASE_URL}/images/${card.key}`}
+            src={card.img_path}
             alt={card.name}
             border="5px solid black"
             borderRadius="8px"

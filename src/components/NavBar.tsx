@@ -1,6 +1,6 @@
 import { GiCardPick, GiCastle } from 'react-icons/gi';
 import { MdSettings } from 'react-icons/md';
-import { GoMarkGithub } from 'react-icons/go';
+import { FaGithub } from 'react-icons/fa';
 import { NavBarItem } from './NavBarItem';
 import {
   Center,
@@ -64,7 +64,7 @@ export const NavBar: FC<NavBarProps> = ({ page, setPage }) => {
           isExternal
           aria-label="View source code on GitHub"
         >
-          <Icon as={GoMarkGithub} boxSize="5" />
+          <Icon as={FaGithub} boxSize="5" />
         </Center>
         <IconButton
           onClick={toggleColorMode}

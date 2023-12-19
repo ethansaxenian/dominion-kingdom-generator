@@ -1,5 +1,11 @@
 import { useMemo, useState } from 'react';
-import { SUPPLY_TYPES, SortCardsBy, isLandscape, sortTwoCards } from 'lib';
+import {
+  NON_SUPPLY_TYPES,
+  SUPPLY_TYPES,
+  SortCardsBy,
+  isLandscape,
+  sortTwoCards,
+} from 'lib';
 import { CardsDisplay } from './CardsDisplay';
 import { SearchBar } from './SearchBar';
 import { Divider, Heading } from '@chakra-ui/react';
@@ -46,7 +52,13 @@ export const CardSearcher = () => {
   );
 
   const notInSupply = useMemo(
-    () => filteredCards.filter((card) => !card.in_supply && !isLandscape(card)),
+    () =>
+      filteredCards.filter(
+        (card) =>
+          (!card.in_supply ||
+            card.types.some((type) => NON_SUPPLY_TYPES.includes(type))) &&
+          !isLandscape(card)
+      ),
     [filteredCards]
   );
 

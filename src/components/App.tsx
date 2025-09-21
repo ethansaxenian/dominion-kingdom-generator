@@ -4,7 +4,7 @@ import { NavBar } from './NavBar';
 import { KingdomGenerator } from './KingdomGenerator';
 import { KingdomSettings } from './KingdomSettings';
 import { Container } from '@chakra-ui/react';
-import { API_BASE_URL, Card, Page } from 'lib';
+import { Card, Page } from 'lib';
 import { AppContext } from 'state';
 
 export const App = () => {
@@ -14,7 +14,7 @@ export const App = () => {
   useEffect(() => {
     const fetchCardData = async () => {
       try {
-        const response = await fetch(`${API_BASE_URL}/cards/`);
+        const response = await fetch(`${process.env.PUBLIC_URL}/dominion_cards.json`);
         const data = await response.json();
         setCardPool(data);
       } catch (e) {

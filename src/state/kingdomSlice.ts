@@ -1,5 +1,5 @@
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import { Card } from 'lib';
+import { type PayloadAction, createSlice } from "@reduxjs/toolkit";
+import type { Card } from "lib";
 
 export interface KingdomState {
   kingdom: Array<Card>;
@@ -16,7 +16,7 @@ const initialState: KingdomState = {
   usePlatinumColony: false,
   useShelters: false,
   blackMarket: [],
-  alert: '',
+  alert: "",
 };
 
 export interface LockUnlock {
@@ -25,7 +25,7 @@ export interface LockUnlock {
 }
 
 export const kingdomSlice = createSlice({
-  name: 'kingdom',
+  name: "kingdom",
   initialState,
   reducers: {
     setKingdom(state: KingdomState, action: PayloadAction<Array<Card>>) {
@@ -55,7 +55,7 @@ export const kingdomSlice = createSlice({
     },
     toggleLockLandscape(
       state: KingdomState,
-      action: PayloadAction<LockUnlock>
+      action: PayloadAction<LockUnlock>,
     ) {
       const { name, locked } = action.payload;
       const card = state.landscapes.find((c) => c.name === name);

@@ -2,14 +2,14 @@ import {
   HStack,
   Input,
   InputGroup,
-  InputLeftAddon,
+  InputAddon,
   Select,
   Stack,
   Switch,
   Text,
-} from '@chakra-ui/react';
-import { SortCardsBy } from 'lib';
-import { FC } from 'react';
+} from "@chakra-ui/react";
+import type { SortCardsBy } from "lib";
+import type { FC } from "react";
 
 export interface SearchBarProps {
   searchTerm: string;
@@ -31,9 +31,9 @@ export const SearchBar: FC<SearchBarProps> = ({
   return (
     <>
       <Stack
-        direction={{ base: 'column', md: 'row' }}
+        direction={{ base: "column", md: "row" }}
         justify="space-evenly"
-        w={{ base: 'fit-content', md: '75%' }}
+        w={{ base: "fit-content", md: "75%" }}
         p="30px"
       >
         <Input
@@ -43,7 +43,7 @@ export const SearchBar: FC<SearchBarProps> = ({
           w="64"
         />
         <InputGroup w="64">
-          <InputLeftAddon>Sort by:</InputLeftAddon>
+          <InputAddon>Sort by:</InputAddon>
           <Select
             value={sortBy}
             onChange={(event) => setSortBy(event.target.value as SortCardsBy)}
@@ -56,10 +56,10 @@ export const SearchBar: FC<SearchBarProps> = ({
         </InputGroup>
       </Stack>
       <Stack
-        direction={{ base: 'column', md: 'row' }}
-        spacing={{ base: '5px', md: '20px' }}
+        direction={{ base: "column", md: "row" }}
+        spacing={{ base: "5px", md: "20px" }}
       >
-        {['Supply', 'Non-supply', 'Landscape'].map((type) => (
+        {["Supply", "Non-supply", "Landscape"].map((type) => (
           <HStack key={type}>
             <Switch
               isChecked={displayed.includes(type)}

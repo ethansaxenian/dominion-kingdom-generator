@@ -11,9 +11,10 @@ import {
   VStack,
   Wrap,
   useConst,
+  Icon,
 } from '@chakra-ui/react';
 import { FC, useEffect, useState } from 'react';
-import { AddIcon, CloseIcon } from '@chakra-ui/icons';
+import { FaPlus, FaTimes } from 'react-icons/fa';
 import { CARDS_TO_REMOVE } from 'lib';
 import { useCardPool } from 'hooks';
 import Fuse from 'fuse.js';
@@ -80,7 +81,7 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
           }}
         >
           <TagLabel>{card}</TagLabel>
-          <TagRightIcon boxSize="2.5" as={CloseIcon} />
+          <TagRightIcon boxSize="2.5" as={FaTimes} />
         </Tag>
       ))}
     </Wrap>
@@ -100,7 +101,7 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
             bgColor: 'green.400',
           }}
         >
-          <TagLeftIcon boxSize="3" as={AddIcon} />
+          <TagLeftIcon boxSize="3" as={FaPlus} />
           <TagLabel>{name}</TagLabel>
         </Tag>
       ))}

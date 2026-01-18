@@ -1,5 +1,5 @@
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import { Expansion, Promo } from 'lib';
+import { type PayloadAction, createSlice } from "@reduxjs/toolkit";
+import type { Expansion, Promo } from "lib";
 
 export interface SettingsState {
   expansions: Array<Expansion>;
@@ -9,14 +9,14 @@ export interface SettingsState {
 }
 
 const initialState: SettingsState = {
-  expansions: ['Base'],
+  expansions: ["Base"],
   promos: [],
   blacklist: [],
   whitelist: [],
 };
 
 export const settingsSlice = createSlice({
-  name: 'settings',
+  name: "settings",
   initialState,
   reducers: {
     addExpansion(state: SettingsState, action: PayloadAction<Expansion>) {
@@ -25,7 +25,7 @@ export const settingsSlice = createSlice({
     },
     removeExpansion(state: SettingsState, action: PayloadAction<Expansion>) {
       state.expansions = state.expansions.filter(
-        (exp) => exp !== action.payload
+        (exp) => exp !== action.payload,
       );
     },
     addPromo(state: SettingsState, action: PayloadAction<Promo>) {

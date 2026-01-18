@@ -1,6 +1,6 @@
-import { HStack, Icon, Link, Text, useColorModeValue } from '@chakra-ui/react';
-import { FC } from 'react';
-import { IconType } from 'react-icons';
+import { HStack, Icon, Link, Text, useColorModeValue } from "@chakra-ui/react";
+import type { FC } from "react";
+import type { IconType } from "react-icons";
 
 export interface NavBarItemProps {
   label: string;
@@ -15,9 +15,9 @@ export const NavBarItem: FC<NavBarItemProps> = ({
   onClick,
   icon,
 }) => {
-  const textColor = useColorModeValue('black', 'white');
-  const textActiveColor = useColorModeValue('gray.600', 'gray.400');
-  const bgActiveColor = useColorModeValue('gray.300', 'gray.700');
+  const textColor = useColorModeValue("black", "white");
+  const textActiveColor = useColorModeValue("gray.600", "gray.400");
+  const bgActiveColor = useColorModeValue("gray.300", "gray.700");
 
   return (
     <Link
@@ -25,7 +25,7 @@ export const NavBarItem: FC<NavBarItemProps> = ({
       rounded="md"
       color={isActive ? textColor : textActiveColor}
       _hover={{
-        textDecoration: 'none',
+        textDecoration: "none",
         color: textColor,
       }}
       bg={isActive ? bgActiveColor : undefined}
@@ -33,7 +33,7 @@ export const NavBarItem: FC<NavBarItemProps> = ({
     >
       <HStack w="fit-content" h="100%" p="10px">
         <Icon as={icon} boxSize="6" />
-        <Text display={{ base: 'none', md: 'flex' }}>{label}</Text>
+        <Text display={{ base: "none", md: "flex" }}>{label}</Text>
       </HStack>
     </Link>
   );

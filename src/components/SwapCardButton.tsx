@@ -1,7 +1,7 @@
-import { IconButton } from '@chakra-ui/react';
-import { useAppDispatch, useCardPool, useKingdom, useSettings } from 'hooks';
+import { IconButton } from "@chakra-ui/react";
+import { useAppDispatch, useCardPool, useKingdom, useSettings } from "hooks";
 import {
-  Card,
+  type Card,
   arrayIncludesCard,
   drawCards,
   generateBlackMarket,
@@ -9,9 +9,9 @@ import {
   isLandscape,
   swapCard,
   swapLandscape,
-} from 'lib';
-import { FC, useMemo } from 'react';
-import { VscArrowSwap } from 'react-icons/vsc';
+} from "lib";
+import { type FC, useMemo } from "react";
+import { VscArrowSwap } from "react-icons/vsc";
 import {
   setAlert,
   setBlackMarket,
@@ -19,7 +19,7 @@ import {
   setLandscapes,
   unlockCard,
   unlockLandscape,
-} from 'state';
+} from "state";
 
 export interface SwapCardButtonProps {
   card: Card;
@@ -41,9 +41,9 @@ export const SwapCardButton: FC<SwapCardButtonProps> = ({
       cards.filter(
         (card) =>
           !blacklist.includes(card.name) &&
-          (hasValidExpansion(card, expansions) || promos.includes(card.name))
+          (hasValidExpansion(card, expansions) || promos.includes(card.name)),
       ),
-    [cards, blacklist, expansions, promos]
+    [cards, blacklist, expansions, promos],
   );
 
   const _swapCard = (oldCard: Card) => {
@@ -54,9 +54,9 @@ export const SwapCardButton: FC<SwapCardButtonProps> = ({
       landscapes,
       pool,
       expansions,
-      promos
+      promos,
     );
-    if (alertText !== '') {
+    if (alertText !== "") {
       dispatch(setAlert(alertText));
     } else if (newKingdom !== undefined && newLandscapes !== undefined) {
       dispatch(setKingdom(newKingdom));
@@ -72,9 +72,9 @@ export const SwapCardButton: FC<SwapCardButtonProps> = ({
       landscapes,
       pool,
       expansions,
-      promos
+      promos,
     );
-    if (alertText !== '') {
+    if (alertText !== "") {
       dispatch(setAlert(alertText));
     } else if (newKingdom !== undefined && newLandscapes !== undefined) {
       dispatch(setKingdom(newKingdom));
@@ -87,14 +87,14 @@ export const SwapCardButton: FC<SwapCardButtonProps> = ({
       pool,
       kingdom,
       promos,
-      expansions
+      expansions,
     );
     const newOptions = blackMarketOptions.filter(
-      (card) => !arrayIncludesCard(blackMarket, card)
+      (card) => !arrayIncludesCard(blackMarket, card),
     );
     if (newOptions.length > 0) {
       const newBMDeck = blackMarket.filter(
-        (card) => card.name !== oldCard.name
+        (card) => card.name !== oldCard.name,
       );
       const [newCard] = drawCards(newOptions, 1);
       dispatch(setBlackMarket([...newBMDeck, newCard]));

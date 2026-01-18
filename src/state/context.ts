@@ -1,5 +1,5 @@
-import { Card } from 'lib';
-import { createContext } from 'react';
+import type { Card } from "lib";
+import { createContext } from "react";
 
 export interface AppContextData {
   cards: Array<Card>;

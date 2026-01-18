@@ -1,6 +1,6 @@
 import { GiCardPick, GiCastle } from 'react-icons/gi';
 import { MdSettings } from 'react-icons/md';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaMoon, FaSun } from 'react-icons/fa';
 import { NavBarItem } from './NavBarItem';
 import {
   Center,
@@ -13,7 +13,6 @@ import {
   useColorMode,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { FC } from 'react';
 import { Page } from 'lib';
 
@@ -26,7 +25,7 @@ export const NavBar: FC<NavBarProps> = ({ page, setPage }) => {
   const { toggleColorMode } = useColorMode();
 
   const bgColor = useColorModeValue('gray.100', 'gray.900');
-  const themeIcon = useColorModeValue(<MoonIcon />, <SunIcon />);
+  const themeIcon = useColorModeValue(<Icon as={FaMoon} />, <Icon as={FaSun} />);
   const themeIconLabel = useColorModeValue('dark', 'light');
 
   return (

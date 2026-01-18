@@ -1,7 +1,7 @@
-import { CardDisplay } from './CardDisplay';
-import { Container, Wrap, WrapItem } from '@chakra-ui/react';
-import { Card } from 'lib';
-import { FC } from 'react';
+import { CardDisplay } from "./CardDisplay";
+import { Container, Wrap, WrapItem } from "@chakra-ui/react";
+import type { Card } from "lib";
+import type { FC } from "react";
 
 export interface CardsDisplayProps {
   data: Array<Card>;

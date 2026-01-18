@@ -6,11 +6,11 @@ import {
   Image,
   LinkOverlay,
   Tag,
-} from '@chakra-ui/react';
-import { Card, isLandscape } from 'lib';
-import { SwapCardButton } from './SwapCardButton';
-import { LockCardButton } from './LockCardButton';
-import { FC, useState } from 'react';
+} from "@chakra-ui/react";
+import { type Card, isLandscape } from "lib";
+import { SwapCardButton } from "./SwapCardButton";
+import { LockCardButton } from "./LockCardButton";
+import { useState, type FC } from "react";
 
 export interface CardDisplayProps {
   card: Card;
@@ -27,10 +27,10 @@ export const CardDisplay: FC<CardDisplayProps> = ({
 }) => {
   const [showNameFallback, setShowNameFallback] = useState(true);
 
-  const cardWidth = isLandscape(card) ? '72' : '44';
+  const cardWidth = isLandscape(card) ? "72" : "44";
   const fallbackImg = isLandscape(card)
-    ? 'card-back-landscape.png'
-    : 'card-back.png';
+    ? "card-back-landscape.png"
+    : "card-back.png";
 
   return (
     <Box w={cardWidth} borderRadius="8px" position="relative">
@@ -52,10 +52,10 @@ export const CardDisplay: FC<CardDisplayProps> = ({
             <Highlight
               query={card.name}
               styles={{
-                position: 'absolute',
-                px: '1',
-                bg: 'white',
-                borderRadius: '8px',
+                position: "absolute",
+                px: "1",
+                bg: "white",
+                borderRadius: "8px",
                 fontSize: 16,
                 fontWeight: 700,
                 opacity: 0.8,
@@ -83,7 +83,7 @@ export const CardDisplay: FC<CardDisplayProps> = ({
           colorScheme="gray"
           variant="solid"
         >
-          {card.bane ? 'Bane Card' : 'Way of the Mouse'}
+          {card.bane ? "Bane Card" : "Way of the Mouse"}
         </Tag>
       )}
     </Box>

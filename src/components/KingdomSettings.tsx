@@ -43,7 +43,7 @@ export const KingdomSettings = () => {
         />
       </span>
       <Separator />
-      <span className="flex flex-col items-center md:flex-row justify-evenly">
+      <span className="flex flex-col items-center md:items-start md:flex-row justify-evenly">
         <span>
           <h2 className="pt-8 text-2xl font-bold text-center">
             Blacklist Cards

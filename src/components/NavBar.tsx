@@ -3,7 +3,7 @@ import { MdSettings } from "react-icons/md";
 import { FaGithub, FaMoon, FaSun } from "react-icons/fa";
 import { NavBarItem } from "./NavBarItem";
 import { Button } from "@/components/ui/button";
-import { type FC, useEffect, useState } from "react";
+import { type FC, useState } from "react";
 import { type Page } from "@/lib";
 
 export interface NavBarProps {
@@ -12,23 +12,16 @@ export interface NavBarProps {
 }
 
 export const NavBar: FC<NavBarProps> = ({ page, setPage }) => {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark">(() => {
+    const savedTheme =
+      (localStorage.getItem("dominion-theme") as "light" | "dark") || "dark";
 
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("dominion-theme") as
-      | "light"
-      | "dark"
-      | null;
-    if (savedTheme) {
-      setTheme(savedTheme);
-      if (savedTheme === "dark") {
-        document.documentElement.classList.add("dark");
-      }
-    } else {
-      const isDark = document.documentElement.classList.contains("dark");
-      setTheme(isDark ? "dark" : "light");
+    if (savedTheme === "dark") {
+      document.documentElement.classList.add("dark");
     }
-  }, []);
+
+    return savedTheme;
+  });
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";

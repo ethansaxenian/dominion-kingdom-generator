@@ -1,6 +1,6 @@
 import { Input } from "@/components/ui/input";
 import { FaPlus, FaTimes } from "react-icons/fa";
-import { FC, useEffect, useState } from "react";
+import { type FC, useState, useMemo } from "react";
 import { CARDS_TO_REMOVE } from "@/lib";
 import { useCardPool } from "@/hooks";
 import Fuse from "fuse.js";
@@ -18,13 +18,12 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
   const cardNames = cards.map(({ name }) => name);
 
   const [text, setText] = useState("");
-  const [recommendations, setRecommendations] = useState<Array<string>>([]);
 
-  useEffect(() => {
+  const recommendations = useMemo<Array<string>>(() => {
     const fuse = new Fuse(cardNames);
     const recs = fuse.search(text).map(({ item }) => item);
     const filteredRecs = recs.filter((name) => !list.includes(name));
-    setRecommendations(filteredRecs);
+    return filteredRecs;
   }, [text, cardNames, list]);
 
   const updateList = (item: string, action: "add" | "remove") => {

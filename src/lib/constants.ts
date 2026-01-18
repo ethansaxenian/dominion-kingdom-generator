@@ -134,6 +134,13 @@ export const CARD_SHAPED_TYPES = [
   "Way",
 ];
 
+export const NON_SUPPLY_CARD_SHAPED_TYPES = [
+  "Artifact",
+  "Boon",
+  "Hex",
+  "State",
+];
+
 export const BASIC_CARDS = [
   "Copper",
   "Silver",

@@ -32,7 +32,7 @@ export const NavBar: FC<NavBarProps> = ({ page, setPage }) => {
 
   return (
     <nav className="flex w-full items-center justify-between bg-gray-100 dark:bg-gray-900 p-5 mb-4">
-      <img src="/favicon.ico" alt="logo" className="h-10 w-10" />
+      <img src="favicon.ico" alt="logo" className="h-10 w-10" />
       <NavBarItem
         label="Kingdom Generator"
         isActive={page === "generate"}

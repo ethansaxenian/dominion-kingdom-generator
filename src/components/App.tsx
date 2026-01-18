@@ -14,7 +14,7 @@ export const App = () => {
   useEffect(() => {
     const fetchCardData = async () => {
       try {
-        const response = await fetch("/dominion_cards.json");
+        const response = await fetch("dominion_cards.json");
         const data = await response.json();
         setCardPool(data);
       } catch (e) {

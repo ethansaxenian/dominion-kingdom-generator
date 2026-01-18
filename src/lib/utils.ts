@@ -5,6 +5,7 @@ import {
   CARDS_TO_REMOVE,
   CARD_SHAPED_TYPES,
   INTRIGUE_2_CARDS,
+  NON_SUPPLY_CARD_SHAPED_TYPES,
   NON_SUPPLY_TYPES,
   ORIGINAL_BASE_CARDS,
   ORIGINAL_INTRIGUE_CARDS,
@@ -40,6 +41,13 @@ export const isValidKingdomCard = (
 
 export const isLandscape = (card: Card): boolean =>
   card.types.every((type) => CARD_SHAPED_TYPES.includes(type));
+
+export const isLandscapeShaped = (card: Card): boolean =>
+  card.types.every(
+    (type) =>
+      CARD_SHAPED_TYPES.includes(type) ||
+      NON_SUPPLY_CARD_SHAPED_TYPES.includes(type),
+  );
 
 export const isOfType = (card: Card, types: Array<CardType>): boolean =>
   card.types.some((t) => types.includes(t));

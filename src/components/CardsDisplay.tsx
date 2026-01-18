@@ -16,8 +16,8 @@ export const CardsDisplay: FC<CardsDisplayProps> = ({
   blackMarket,
 }) => {
   return (
-    <div className="container max-w-4xl mx-auto p-2">
-      <div className="flex flex-wrap gap-5 justify-center">
+    <div className="container w-auto md:max-w-6xl mx-auto p-2">
+      <div className="grid grid-cols-2  md:grid-cols-4 lg:grid-cols-6 gap-5 justify-items-center">
         {data.map((card) => (
           <CardDisplay
             key={card.name}

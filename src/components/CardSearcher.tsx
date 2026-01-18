@@ -86,19 +86,21 @@ export const CardSearcher = () => {
       />
       {displayed.includes("Supply") && inSupply.length > 0 && (
         <>
-          <h2 className="pb-7 text-2xl font-bold">Supply Cards</h2>
+          <h2 className="pb-7 text-2xl font-bold w-fit m-auto">Supply Cards</h2>
           <CardsDisplay data={inSupply} swap={false} lock={false} />
         </>
       )}
       {displayed.includes("Non-supply") && notInSupply.length > 0 && (
         <>
-          <h2 className="pb-7 text-2xl font-bold">Non-Supply Cards</h2>
+          <h2 className="pb-7 text-2xl font-bold w-fit m-auto">
+            Non-Supply Cards
+          </h2>
           <CardsDisplay data={notInSupply} swap={false} lock={false} />
         </>
       )}
       {displayed.includes("Landscape") && landscapes.length > 0 && (
         <>
-          <h2 className="pb-7 text-2xl font-bold">Landscapes</h2>
+          <h2 className="pb-7 text-2xl font-bold w-fit m-auto">Landscapes</h2>
           <CardsDisplay data={landscapes} swap={false} lock={false} />
         </>
       )}

@@ -1,4 +1,4 @@
-import { type Card, isLandscape } from "@/lib";
+import { type Card, isLandscape, isLandscapeShaped } from "@/lib";
 import { SwapCardButton } from "./SwapCardButton";
 import { LockCardButton } from "./LockCardButton";
 import { useState, type FC } from "react";
@@ -18,14 +18,17 @@ export const CardDisplay: FC<CardDisplayProps> = ({
 }) => {
   const [showNameFallback, setShowNameFallback] = useState(true);
 
-  const cardWidth = isLandscape(card) ? "18rem" : "11rem";
-  const fallbackImg = isLandscape(card)
+  const cardWidth = isLandscapeShaped(card) ? "18rem" : "11rem";
+  const fallbackImg = isLandscapeShaped(card)
     ? "card-back-landscape.png"
     : "card-back.png";
-  const aspectRatio = isLandscape(card) ? "325/200" : "200/320";
+  const aspectRatio = isLandscapeShaped(card) ? "325/200" : "200/320";
 
   return (
-    <div className="relative rounded-lg" style={{ width: cardWidth }}>
+    <div
+      className={`relative rounded-lg ${isLandscapeShaped(card) ? "col-span-2" : ""}`}
+      style={{ width: cardWidth }}
+    >
       <div style={{ aspectRatio }}>
         <a
           href={card.link}
@@ -38,7 +41,7 @@ export const CardDisplay: FC<CardDisplayProps> = ({
             alt={card.name}
             className="w-full border-4 border-black rounded-lg"
             onError={(e) => {
-              e.currentTarget.src = `/${fallbackImg}`;
+              e.currentTarget.src = fallbackImg;
             }}
             onLoad={() => setShowNameFallback(false)}
           />

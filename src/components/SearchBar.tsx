@@ -28,8 +28,8 @@ export const SearchBar: FC<SearchBarProps> = ({
   toggleDisplayType,
 }) => {
   return (
-    <>
-      <div className="flex flex-col md:flex-row justify-evenly items-center gap-4 w-full md:w-3/4 p-8">
+    <span className="flex flex-col  items-center pb-8">
+      <div className="flex flex-col md:flex-row gap-1 md:gap-5 p-8">
         <Input
           value={searchTerm}
           placeholder="Search"
@@ -66,6 +66,6 @@ export const SearchBar: FC<SearchBarProps> = ({
           </div>
         ))}
       </div>
-    </>
+    </span>
   );
 };

@@ -7,7 +7,7 @@ import {
 import { Switch } from "@/components/ui/switch";
 import { Separator } from "@/components/ui/separator";
 import type { Expansion, Promo } from "@/lib";
-import { FC, Fragment } from "react";
+import { type FC, Fragment } from "react";
 
 export interface SelectorListProps {
   list: Array<Expansion | Promo>;

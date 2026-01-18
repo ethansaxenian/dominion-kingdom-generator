@@ -17,7 +17,7 @@ export const CardsDisplay: FC<CardsDisplayProps> = ({
 }) => {
   return (
     <div className="container w-auto md:max-w-6xl mx-auto p-2">
-      <div className="grid grid-cols-2  md:grid-cols-4 lg:grid-cols-6 gap-5 justify-items-center">
+      <div className="flex flex-wrap gap-5 justify-center">
         {data.map((card) => (
           <CardDisplay
             key={card.name}

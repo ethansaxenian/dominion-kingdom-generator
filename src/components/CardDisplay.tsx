@@ -1,4 +1,4 @@
-import { type Card, isLandscape, isLandscapeShaped } from "@/lib";
+import { type Card, isLandscapeShaped } from "@/lib";
 import { SwapCardButton } from "./SwapCardButton";
 import { LockCardButton } from "./LockCardButton";
 import { useState, type FC } from "react";
@@ -25,11 +25,8 @@ export const CardDisplay: FC<CardDisplayProps> = ({
   const aspectRatio = isLandscapeShaped(card) ? "325/200" : "200/320";
 
   return (
-    <div
-      className={`relative rounded-lg ${isLandscapeShaped(card) ? "col-span-2" : ""}`}
-      style={{ width: cardWidth }}
-    >
-      <div style={{ aspectRatio }}>
+    <div className={`relative rounded-lg w-[${cardWidth}]`}>
+      <div className={`aspect-[${aspectRatio}]`}>
         <a
           href={card.link}
           target="_blank"

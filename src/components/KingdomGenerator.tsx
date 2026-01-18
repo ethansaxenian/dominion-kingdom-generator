@@ -20,7 +20,7 @@ export const KingdomGenerator = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center w-full py-5 gap-5">
+      <div className="flex flex-col items-center w-full pb-5 gap-5">
         <div className="flex gap-5 items-start">
           <span className="font-bold whitespace-nowrap">Available pool:</span>
           <span>{expansions.concat(promos).join(", ") || "None"}</span>

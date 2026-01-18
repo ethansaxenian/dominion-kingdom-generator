@@ -1,5 +1,5 @@
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import { Expansion, Promo } from 'lib';
+import { type PayloadAction, createSlice } from "@reduxjs/toolkit";
+import type { Expansion, Promo } from "@/lib";
 
 export interface SettingsState {
   expansions: Array<Expansion>;
@@ -8,15 +8,27 @@ export interface SettingsState {
   whitelist: Array<string>;
 }
 
-const initialState: SettingsState = {
-  expansions: ['Base'],
-  promos: [],
-  blacklist: [],
-  whitelist: [],
+const loadFromLocalStorage = (): SettingsState => {
+  try {
+    const saved = localStorage.getItem("dominion-settings");
+    if (saved) {
+      return JSON.parse(saved);
+    }
+  } catch (error) {
+    console.error("Failed to load settings from local storage:", error);
+  }
+  return {
+    expansions: ["Base"],
+    promos: [],
+    blacklist: [],
+    whitelist: [],
+  };
 };
 
+const initialState: SettingsState = loadFromLocalStorage();
+
 export const settingsSlice = createSlice({
-  name: 'settings',
+  name: "settings",
   initialState,
   reducers: {
     addExpansion(state: SettingsState, action: PayloadAction<Expansion>) {
@@ -25,7 +37,7 @@ export const settingsSlice = createSlice({
     },
     removeExpansion(state: SettingsState, action: PayloadAction<Expansion>) {
       state.expansions = state.expansions.filter(
-        (exp) => exp !== action.payload
+        (exp) => exp !== action.payload,
       );
     },
     addPromo(state: SettingsState, action: PayloadAction<Promo>) {

@@ -1,5 +1,5 @@
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import { Card } from 'lib';
+import { type PayloadAction, createSlice } from "@reduxjs/toolkit";
+import type { Card } from "@/lib";
 
 export interface KingdomState {
   kingdom: Array<Card>;
@@ -10,14 +10,26 @@ export interface KingdomState {
   alert: string;
 }
 
-const initialState: KingdomState = {
-  kingdom: [],
-  landscapes: [],
-  usePlatinumColony: false,
-  useShelters: false,
-  blackMarket: [],
-  alert: '',
+const loadFromLocalStorage = (): KingdomState => {
+  try {
+    const saved = localStorage.getItem("dominion-kingdom");
+    if (saved) {
+      return JSON.parse(saved);
+    }
+  } catch (error) {
+    console.error("Failed to load kingdom from local storage:", error);
+  }
+  return {
+    kingdom: [],
+    landscapes: [],
+    usePlatinumColony: false,
+    useShelters: false,
+    blackMarket: [],
+    alert: "",
+  };
 };
+
+const initialState: KingdomState = loadFromLocalStorage();
 
 export interface LockUnlock {
   name: string;
@@ -25,7 +37,7 @@ export interface LockUnlock {
 }
 
 export const kingdomSlice = createSlice({
-  name: 'kingdom',
+  name: "kingdom",
   initialState,
   reducers: {
     setKingdom(state: KingdomState, action: PayloadAction<Array<Card>>) {
@@ -55,7 +67,7 @@ export const kingdomSlice = createSlice({
     },
     toggleLockLandscape(
       state: KingdomState,
-      action: PayloadAction<LockUnlock>
+      action: PayloadAction<LockUnlock>,
     ) {
       const { name, locked } = action.payload;
       const card = state.landscapes.find((c) => c.name === name);

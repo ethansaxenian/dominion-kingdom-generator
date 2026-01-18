@@ -1,7 +1,12 @@
-import { Button } from '@chakra-ui/react';
-import { useAppDispatch, useCardPool, useKingdom, useSettings } from 'hooks';
-import { Promo, generateBlackMarket, hasValidExpansion, sample } from 'lib';
-import { setBlackMarket } from 'state';
+import { Button } from "@/components/ui/button";
+import { useAppDispatch, useCardPool, useKingdom, useSettings } from "@/hooks";
+import {
+  type Promo,
+  generateBlackMarket,
+  hasValidExpansion,
+  sample,
+} from "@/lib";
+import { setBlackMarket } from "@/state";
 
 export const GenerateBlackMarketButton = () => {
   const { kingdom } = useKingdom();
@@ -14,27 +19,26 @@ export const GenerateBlackMarketButton = () => {
       (card) =>
         !blacklist.includes(card.name) &&
         (hasValidExpansion(card, expansions) ||
-          promos.includes(card.name as Promo))
+          promos.includes(card.name as Promo)),
     );
     const blackMarketOptions = generateBlackMarket(
       pool,
       kingdom,
       promos,
-      expansions
+      expansions,
     );
     dispatch(
       setBlackMarket(
-        sample(blackMarketOptions, Math.min(blackMarketOptions.length, 60))
-      )
+        sample(blackMarketOptions, Math.min(blackMarketOptions.length, 60)),
+      ),
     );
   };
 
   return (
     <Button
       size="lg"
-      colorScheme="blue"
+      className="mb-6 bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600"
       onClick={() => generateBlackMarketDeck()}
-      mb="6"
     >
       Generate Black Market Deck
     </Button>

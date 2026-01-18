@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
-import { KingdomDisplay } from './KingdomDisplay';
-import { HStack, Text, VStack, useToast } from '@chakra-ui/react';
-import { setAlert } from 'state';
-import { GenerateKingdomButton } from './GenerateKingdomButton';
-import { useAppDispatch, useKingdom, useSettings } from 'hooks';
+import { useEffect } from "react";
+import { KingdomDisplay } from "./KingdomDisplay";
+import { toast } from "sonner";
+import { setAlert } from "@/state";
+import { GenerateKingdomButton } from "./GenerateKingdomButton";
+import { useAppDispatch, useKingdom, useSettings } from "@/hooks";
 
 export const KingdomGenerator = () => {
   const { expansions, promos } = useSettings();
@@ -11,31 +11,22 @@ export const KingdomGenerator = () => {
 
   const dispatch = useAppDispatch();
 
-  const alertToast = useToast();
-
   useEffect(() => {
-    if (alert !== '') {
-      alertToast({
-        title: alert,
-        status: 'error',
-        duration: 3000,
-        isClosable: true,
-      });
-      dispatch(setAlert(''));
+    if (alert !== "") {
+      toast.error(alert);
+      dispatch(setAlert(""));
     }
-  }, [alert, alertToast, dispatch]);
+  }, [alert, dispatch]);
 
   return (
     <>
-      <VStack w="100%" py="5" spacing="5">
-        <HStack spacing="5" alignItems="top">
-          <Text fontWeight="bold" w="fit-content" whiteSpace="nowrap">
-            Available pool:
-          </Text>
-          <Text>{expansions.concat(promos).join(', ') || 'None'}</Text>
-        </HStack>
+      <div className="flex flex-col items-center w-full pb-5 gap-5">
+        <div className="flex gap-5 items-start">
+          <span className="font-bold whitespace-nowrap">Available pool:</span>
+          <span>{expansions.concat(promos).join(", ") || "None"}</span>
+        </div>
         <GenerateKingdomButton />
-      </VStack>
+      </div>
       <KingdomDisplay />
     </>
   );

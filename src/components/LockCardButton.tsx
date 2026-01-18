@@ -1,9 +1,9 @@
-import { IconButton } from '@chakra-ui/react';
-import { LockIcon, UnlockIcon } from '@chakra-ui/icons';
-import { toggleLockCard, toggleLockLandscape } from 'state';
-import { Card, isLandscape } from 'lib';
-import { FC } from 'react';
-import { useAppDispatch } from 'hooks';
+import { Button } from "@/components/ui/button";
+import { FaLock, FaUnlock } from "react-icons/fa";
+import { toggleLockCard, toggleLockLandscape } from "@/state";
+import { type Card, isLandscape } from "@/lib";
+import type { FC } from "react";
+import { useAppDispatch } from "@/hooks";
 
 export interface LockCardButtonProps {
   card: Card;
@@ -21,11 +21,22 @@ export const LockCardButton: FC<LockCardButtonProps> = ({ card }) => {
   };
 
   return (
-    <IconButton
-      aria-label={card.locked ? 'Unlock card' : 'Lock card'}
-      colorScheme={card.locked ? 'green' : 'blue'}
-      icon={card.locked ? <LockIcon /> : <UnlockIcon />}
+    <Button
+      variant="outline"
+      size="icon"
+      aria-label={card.locked ? "Unlock card" : "Lock card"}
+      className={
+        card.locked
+          ? "bg-green-200 hover:bg-green-300 dark:bg-green-700 dark:hover:bg-green-600 border-green-400 dark:border-green-600"
+          : ""
+      }
       onClick={lock}
-    />
+    >
+      {card.locked ? (
+        <FaLock className="h-4 w-4" />
+      ) : (
+        <FaUnlock className="h-4 w-4" />
+      )}
+    </Button>
   );
 };

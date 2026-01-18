@@ -1,10 +1,9 @@
-import { useEffect, useMemo } from 'react';
-import { arrayIncludesCardName, isOfType, sortTwoCards } from 'lib';
-import { CardsDisplay } from './CardsDisplay';
-import { Stack, VStack, useConst } from '@chakra-ui/react';
-import { setBlackMarket } from 'state';
-import { GenerateBlackMarketButton } from './GenerateBlackMarketButton';
-import { useAppDispatch, useCardPool, useKingdom } from 'hooks';
+import { useEffect, useMemo } from "react";
+import { arrayIncludesCardName, isOfType, sortTwoCards } from "@/lib";
+import { CardsDisplay } from "./CardsDisplay";
+import { setBlackMarket } from "@/state";
+import { GenerateBlackMarketButton } from "./GenerateBlackMarketButton";
+import { useAppDispatch, useCardPool, useKingdom } from "@/hooks";
 
 export const KingdomDisplay = () => {
   const cards = useCardPool();
@@ -13,57 +12,62 @@ export const KingdomDisplay = () => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    if (!arrayIncludesCardName(kingdom, 'Black Market')) {
+    if (!arrayIncludesCardName(kingdom, "Black Market")) {
       dispatch(setBlackMarket([]));
     }
   }, [kingdom, dispatch]);
 
-  const platinumColony = useConst(() =>
-    cards
-      .filter((card) => card.name === 'Platinum' || card.name === 'Colony')
-      .sort((a, b) => sortTwoCards(a, b, 'cost'))
+  const platinumColony = useMemo(
+    () =>
+      cards
+        .filter((card) => card.name === "Platinum" || card.name === "Colony")
+        .sort((a, b) => sortTwoCards(a, b, "cost")),
+    [cards],
   );
-  const shelters = useConst(() =>
-    cards
-      .filter((card) => isOfType(card, ['Shelter']))
-      .sort((a, b) => sortTwoCards(a, b, 'name'))
+
+  const shelters = useMemo(
+    () =>
+      cards
+        .filter((card) => isOfType(card, ["Shelter"]))
+        .sort((a, b) => sortTwoCards(a, b, "name")),
+    [cards],
   );
 
   const wotm = useMemo(() => kingdom.find((card) => card.wotm), [kingdom]);
   const supply = useMemo(
     () => kingdom.filter((card) => card !== wotm),
-    [kingdom, wotm]
+    [kingdom, wotm],
   );
 
   const ally = useMemo(
-    () => landscapes.find((card) => isOfType(card, ['Ally'])),
-    [landscapes]
+    () => landscapes.find((card) => isOfType(card, ["Ally"])),
+    [landscapes],
   );
 
   const landscapesWithoutAlly = useMemo(
     () =>
       landscapes
-        .filter((card) => !isOfType(card, ['Ally']))
-        .sort((card1, card2) => sortTwoCards(card1, card2, 'name')),
-    [landscapes]
+        .filter((card) => !isOfType(card, ["Ally"]))
+        .sort((card1, card2) => sortTwoCards(card1, card2, "name")),
+    [landscapes],
   );
 
   const blackMarketDisplay = useMemo(
     () =>
       [...blackMarket].sort((card1, card2) =>
-        sortTwoCards(card1, card2, 'name')
+        sortTwoCards(card1, card2, "name"),
       ),
-    [blackMarket]
+    [blackMarket],
   );
 
   return (
     <>
       <CardsDisplay
-        data={supply.sort((card1, card2) => sortTwoCards(card1, card2, 'cost'))}
+        data={supply.sort((card1, card2) => sortTwoCards(card1, card2, "cost"))}
         swap
         lock
       />
-      <Stack direction={{ base: 'column', md: 'row' }}>
+      <div className="flex flex-col md:flex-row gap-4">
         {landscapes.length > 0 && (
           <CardsDisplay data={landscapesWithoutAlly} swap lock />
         )}
@@ -71,13 +75,13 @@ export const KingdomDisplay = () => {
         {usePlatinumColony && (
           <CardsDisplay data={platinumColony} swap={false} lock={false} />
         )}
-      </Stack>
+      </div>
       {ally && <CardsDisplay data={[ally]} swap lock={false} />}
       {useShelters && (
         <CardsDisplay data={shelters} swap={false} lock={false} />
       )}
-      {arrayIncludesCardName(kingdom, 'Black Market') && (
-        <VStack mt="12">
+      {arrayIncludesCardName(kingdom, "Black Market") && (
+        <div className="flex flex-col items-center mt-12 gap-4">
           <GenerateBlackMarketButton />
           {blackMarket.length > 0 && (
             <CardsDisplay
@@ -87,7 +91,7 @@ export const KingdomDisplay = () => {
               blackMarket
             />
           )}
-        </VStack>
+        </div>
       )}
     </>
   );

@@ -1,5 +1,5 @@
-import { KingdomState } from 'state';
-import { useAppSelector } from './useAppSelector';
+import type { KingdomState } from "@/state";
+import { useAppSelector } from "./useAppSelector";
 
 export const useKingdom = (): KingdomState =>
   useAppSelector((state) => state.kingdom);

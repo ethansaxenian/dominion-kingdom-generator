@@ -1,15 +1,14 @@
+import { Input } from "@/components/ui/input";
 import {
-  HStack,
-  Input,
-  InputGroup,
-  InputLeftAddon,
   Select,
-  Stack,
-  Switch,
-  Text,
-} from '@chakra-ui/react';
-import { SortCardsBy } from 'lib';
-import { FC } from 'react';
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Switch } from "@/components/ui/switch";
+import type { SortCardsBy } from "@/lib";
+import type { FC } from "react";
 
 export interface SearchBarProps {
   searchTerm: string;
@@ -29,46 +28,44 @@ export const SearchBar: FC<SearchBarProps> = ({
   toggleDisplayType,
 }) => {
   return (
-    <>
-      <Stack
-        direction={{ base: 'column', md: 'row' }}
-        justify="space-evenly"
-        w={{ base: 'fit-content', md: '75%' }}
-        p="30px"
-      >
+    <span className="flex flex-col  items-center pb-8">
+      <div className="flex flex-col md:flex-row gap-1 md:gap-5 p-8">
         <Input
           value={searchTerm}
           placeholder="Search"
           onChange={(event) => setSearchTerm(event.target.value)}
-          w="64"
+          className="w-64"
         />
-        <InputGroup w="64">
-          <InputLeftAddon>Sort by:</InputLeftAddon>
+        <div className="flex items-center gap-2 w-64">
+          <span className="text-sm font-medium whitespace-nowrap">
+            Sort by:
+          </span>
           <Select
             value={sortBy}
-            onChange={(event) => setSortBy(event.target.value as SortCardsBy)}
-            borderLeftRadius="none"
+            onValueChange={(value) => setSortBy(value as SortCardsBy)}
           >
-            <option value="name">Name</option>
-            <option value="expansion">Expansion</option>
-            <option value="cost">Cost</option>
+            <SelectTrigger>
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="name">Name</SelectItem>
+              <SelectItem value="expansion">Expansion</SelectItem>
+              <SelectItem value="cost">Cost</SelectItem>
+            </SelectContent>
           </Select>
-        </InputGroup>
-      </Stack>
-      <Stack
-        direction={{ base: 'column', md: 'row' }}
-        spacing={{ base: '5px', md: '20px' }}
-      >
-        {['Supply', 'Non-supply', 'Landscape'].map((type) => (
-          <HStack key={type}>
+        </div>
+      </div>
+      <div className="flex flex-col md:flex-row gap-1 md:gap-5">
+        {["Supply", "Non-supply", "Landscape"].map((type) => (
+          <div key={type} className="flex items-center gap-2">
             <Switch
-              isChecked={displayed.includes(type)}
-              onChange={() => toggleDisplayType(type)}
+              checked={displayed.includes(type)}
+              onCheckedChange={() => toggleDisplayType(type)}
             />
-            <Text pl="10px">{type}</Text>
-          </HStack>
+            <span className="pl-2">{type}</span>
+          </div>
         ))}
-      </Stack>
-    </>
+      </div>
+    </span>
   );
 };

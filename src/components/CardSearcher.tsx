@@ -1,25 +1,24 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState } from "react";
 import {
   NON_SUPPLY_TYPES,
   SUPPLY_TYPES,
-  SortCardsBy,
+  type SortCardsBy,
   isLandscape,
   sortTwoCards,
-} from 'lib';
-import { CardsDisplay } from './CardsDisplay';
-import { SearchBar } from './SearchBar';
-import { Divider, Heading } from '@chakra-ui/react';
-import { useCardPool } from 'hooks';
+} from "@/lib";
+import { CardsDisplay } from "./CardsDisplay";
+import { SearchBar } from "./SearchBar";
+import { useCardPool } from "@/hooks";
 
 export const CardSearcher = () => {
   const cards = useCardPool();
 
-  const [searchTerm, setSearchTerm] = useState('');
-  const [sortBy, setSortBy] = useState<SortCardsBy>('name');
+  const [searchTerm, setSearchTerm] = useState("");
+  const [sortBy, setSortBy] = useState<SortCardsBy>("name");
   const [displayed, setDisplayed] = useState([
-    'Supply',
-    'Non-supply',
-    'Landscape',
+    "Supply",
+    "Non-supply",
+    "Landscape",
   ]);
 
   const filteredCards = useMemo(
@@ -38,7 +37,7 @@ export const CardSearcher = () => {
           );
         })
         .sort((card1, card2) => sortTwoCards(card1, card2, sortBy)),
-    [searchTerm, sortBy, cards]
+    [searchTerm, sortBy, cards],
   );
 
   const inSupply = useMemo(
@@ -46,9 +45,9 @@ export const CardSearcher = () => {
       filteredCards.filter(
         (card) =>
           card.in_supply &&
-          card.types.every((type) => SUPPLY_TYPES.includes(type))
+          card.types.every((type) => SUPPLY_TYPES.includes(type)),
       ),
-    [filteredCards]
+    [filteredCards],
   );
 
   const notInSupply = useMemo(
@@ -57,14 +56,14 @@ export const CardSearcher = () => {
         (card) =>
           (!card.in_supply ||
             card.types.some((type) => NON_SUPPLY_TYPES.includes(type))) &&
-          !isLandscape(card)
+          !isLandscape(card),
       ),
-    [filteredCards]
+    [filteredCards],
   );
 
   const landscapes = useMemo(
     () => filteredCards.filter((card) => isLandscape(card)),
-    [filteredCards]
+    [filteredCards],
   );
 
   const toggleDisplayType = (type: string) => {
@@ -85,24 +84,23 @@ export const CardSearcher = () => {
         displayed={displayed}
         toggleDisplayType={toggleDisplayType}
       />
-      {displayed.includes('Supply') && inSupply.length > 0 && (
+      {displayed.includes("Supply") && inSupply.length > 0 && (
         <>
-          <Divider my="7" />
-          <Heading pb="7">Supply Cards</Heading>
+          <h2 className="pb-7 text-2xl font-bold w-fit m-auto">Supply Cards</h2>
           <CardsDisplay data={inSupply} swap={false} lock={false} />
         </>
       )}
-      {displayed.includes('Non-supply') && notInSupply.length > 0 && (
+      {displayed.includes("Non-supply") && notInSupply.length > 0 && (
         <>
-          <Divider my="7" />
-          <Heading pb="7">Non-Supply Cards</Heading>
+          <h2 className="pb-7 text-2xl font-bold w-fit m-auto">
+            Non-Supply Cards
+          </h2>
           <CardsDisplay data={notInSupply} swap={false} lock={false} />
         </>
       )}
-      {displayed.includes('Landscape') && landscapes.length > 0 && (
+      {displayed.includes("Landscape") && landscapes.length > 0 && (
         <>
-          <Divider my="7" />
-          <Heading pb="7">Landscapes</Heading>
+          <h2 className="pb-7 text-2xl font-bold w-fit m-auto">Landscapes</h2>
           <CardsDisplay data={landscapes} swap={false} lock={false} />
         </>
       )}

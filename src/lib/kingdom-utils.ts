@@ -1,5 +1,5 @@
-import { BASIC_CARDS, SECONDARY_CARDS } from './constants';
-import { Card, Expansion, Promo } from './types';
+import { BASIC_CARDS, SECONDARY_CARDS } from "./constants";
+import type { Card, Expansion, Promo } from "./types";
 import {
   arrayIncludesCard,
   arrayIncludesCardName,
@@ -9,33 +9,33 @@ import {
   isOfType,
   isValidKingdomCard,
   sample,
-} from './utils';
+} from "./utils";
 
 export const getAvailableCards = (
   pool: Array<Card>,
   expansions: Array<Expansion>,
   promos: Array<Promo>,
-  ignore?: Array<string>
+  ignore?: Array<string>,
 ): Array<Card> => {
   return pool.filter(
     (card) =>
       isValidKingdomCard(card, true) &&
       (hasValidExpansion(card, expansions) ||
         promos.includes(card.name as Promo)) &&
-      (ignore ? !ignore.includes(card.name) : true)
+      (ignore ? !ignore.includes(card.name) : true),
   );
 };
 
 export const getAvailableLandscapes = (
   pool: Array<Card>,
   expansions: Array<Expansion>,
-  promos: Array<Promo>
+  promos: Array<Promo>,
 ): Array<Card> => {
   return pool.filter(
     (card) =>
       isLandscape(card) &&
       (hasValidExpansion(card, expansions) ||
-        promos.includes(card.name as Promo))
+        promos.includes(card.name as Promo)),
   );
 };
 
@@ -50,16 +50,16 @@ export interface AddExtraCards {
 export const addExtraCards = (
   kingdom: Array<Card>,
   landscapes: Array<Card>,
-  availableCards: Array<Card>
+  availableCards: Array<Card>,
 ): AddExtraCards => {
   const newCards = [];
   const newLandscapes = [];
   if (
-    arrayIncludesCardName(kingdom, 'Young Witch') &&
+    arrayIncludesCardName(kingdom, "Young Witch") &&
     kingdom.every((card) => !card.bane)
   ) {
     const notInKingdom = availableCards.filter(
-      (card) => !arrayIncludesCard(kingdom, card)
+      (card) => !arrayIncludesCard(kingdom, card),
     );
     const [bane] = drawCards(notInKingdom, 1, youngWitchPredicate);
     if (bane) {
@@ -67,23 +67,23 @@ export const addExtraCards = (
     }
   }
   if (
-    arrayIncludesCardName(landscapes, 'Way of the Mouse') &&
+    arrayIncludesCardName(landscapes, "Way of the Mouse") &&
     kingdom.every((card) => !card.wotm)
   ) {
     const notInKingdom = availableCards.filter(
-      (card) => !arrayIncludesCard(kingdom, card) && isOfType(card, ['Action'])
+      (card) => !arrayIncludesCard(kingdom, card) && isOfType(card, ["Action"]),
     );
     const [wotm] = drawCards(notInKingdom, 1, youngWitchPredicate);
     if (wotm) {
       newCards.push({ ...wotm, wotm: true });
     }
   }
-  if (kingdom.some((card) => isOfType(card, ['Liaison']))) {
-    const allies = landscapes.filter((card) => isOfType(card, ['Ally']));
+  if (kingdom.some((card) => isOfType(card, ["Liaison"]))) {
+    const allies = landscapes.filter((card) => isOfType(card, ["Ally"]));
     if (allies.length === 0) {
       const notInKingdom = availableCards.filter(
         (card) =>
-          !arrayIncludesCard(landscapes, card) && isOfType(card, ['Ally'])
+          !arrayIncludesCard(landscapes, card) && isOfType(card, ["Ally"]),
       );
       const [ally] = drawCards(notInKingdom, 1);
       if (ally) {
@@ -108,11 +108,11 @@ export const generateKingdom = (
   promos: Array<Promo>,
   oldKingdom: Array<Card>,
   oldLandscapes: Array<Card>,
-  whitelist: Array<string>
+  whitelist: Array<string>,
 ): GenerateKingdom => {
   const availableCards = getAvailableCards(pool, expansions, promos, whitelist);
   if (availableCards.length < 10) {
-    return { alertText: 'Not enough cards available.' };
+    return { alertText: "Not enough cards available." };
   }
   const availableLandscapes = getAvailableLandscapes(pool, expansions, promos);
   const lockedCards = oldKingdom.filter((card) => card.locked);
@@ -122,13 +122,13 @@ export const generateKingdom = (
     (card) =>
       whitelist.includes(card.name) &&
       !lockedCards.map(({ name }) => name).includes(card.name) &&
-      !lockedLandscapes.map(({ name }) => name).includes(card.name)
+      !lockedLandscapes.map(({ name }) => name).includes(card.name),
   );
   const whitelistedCards = filteredWhitelist.filter(
-    (card) => !isLandscape(card)
+    (card) => !isLandscape(card),
   );
   const whitelistedLandscapes = filteredWhitelist.filter((card) =>
-    isLandscape(card)
+    isLandscape(card),
   );
 
   const newKingdom = drawCards(
@@ -142,7 +142,7 @@ export const generateKingdom = (
         hasValidExpansion(card, expansions) ||
         promos.includes(card.name as Promo)
       );
-    }
+    },
   )
     .concat(lockedCards)
     .concat(whitelistedCards.map((card) => ({ ...card, locked: true })));
@@ -156,26 +156,26 @@ export const generateKingdom = (
       if (arrayIncludesCard(lockedLandscapes, card)) {
         return false;
       }
-      if (isOfType(card, ['Ally'])) {
+      if (isOfType(card, ["Ally"])) {
         return false;
       }
       return (
         hasValidExpansion(card, expansions) ||
         promos.includes(card.name as Promo)
       );
-    }
+    },
   )
     .concat(lockedLandscapes)
     .concat(whitelistedLandscapes.map((card) => ({ ...card, locked: true })))
     .filter((obj) => obj !== undefined);
 
   const leftovers = [...availableCards, ...availableLandscapes].filter(
-    (card) => !arrayIncludesCard([...newKingdom, ...newLandscapes], card)
+    (card) => !arrayIncludesCard([...newKingdom, ...newLandscapes], card),
   );
   const { extraCards, extraLandscapes } = addExtraCards(
     newKingdom,
     newLandscapes,
-    leftovers
+    leftovers,
   );
   newKingdom.push(...extraCards);
   newLandscapes.push(...extraLandscapes);
@@ -183,14 +183,14 @@ export const generateKingdom = (
   let useSh = false;
   if (newKingdom.length > 0) {
     const [randomCard1] = sample(newKingdom);
-    usePC = randomCard1.expansion === 'Prosperity';
+    usePC = randomCard1.expansion === "Prosperity";
     const [randomCard2] = sample(newKingdom);
-    useSh = randomCard2.expansion === 'Dark Ages';
+    useSh = randomCard2.expansion === "Dark Ages";
   }
-  if (!newKingdom.some((card) => isOfType(card, ['Liaison']))) {
-    newLandscapes = newLandscapes.filter((card) => !isOfType(card, ['Ally']));
+  if (!newKingdom.some((card) => isOfType(card, ["Liaison"]))) {
+    newLandscapes = newLandscapes.filter((card) => !isOfType(card, ["Ally"]));
   }
-  return { newKingdom, newLandscapes, alertText: '', usePC, useSh };
+  return { newKingdom, newLandscapes, alertText: "", usePC, useSh };
 };
 
 export interface SwapCard {
@@ -205,17 +205,17 @@ export const swapCard = (
   landscapes: Array<Card>,
   pool: Array<Card>,
   expansions: Array<Expansion>,
-  promos: Array<Promo>
+  promos: Array<Promo>,
 ) => {
   const remainingCards = getAvailableCards(pool, expansions, promos).filter(
-    (card) => !arrayIncludesCard(kingdom, card)
+    (card) => !arrayIncludesCard(kingdom, card),
   );
 
   if (remainingCards.length < 10) {
-    return { alertText: 'There are no available kingdom cards to swap!' };
+    return { alertText: "There are no available kingdom cards to swap!" };
   }
   let newKingdom = kingdom.filter((card) => card.name !== oldCard.name);
-  if (oldCard.name === 'Young Witch') {
+  if (oldCard.name === "Young Witch") {
     newKingdom = newKingdom.filter((card) => !card.bane);
   }
   if (!oldCard.bane && !oldCard.wotm) {
@@ -225,19 +225,19 @@ export const swapCard = (
   const remainingLanscapes = getAvailableLandscapes(
     pool,
     expansions,
-    promos
+    promos,
   ).filter((card) => !arrayIncludesCard(landscapes, card));
   const { extraCards, extraLandscapes } = addExtraCards(
     newKingdom,
     landscapes,
-    [...remainingCards, ...remainingLanscapes]
+    [...remainingCards, ...remainingLanscapes],
   );
   newKingdom.push(...extraCards);
   let newLandscapes = [...landscapes, ...extraLandscapes];
-  if (!newKingdom.some((card) => isOfType(card, ['Liaison']))) {
-    newLandscapes = newLandscapes.filter((card) => !isOfType(card, ['Ally']));
+  if (!newKingdom.some((card) => isOfType(card, ["Liaison"]))) {
+    newLandscapes = newLandscapes.filter((card) => !isOfType(card, ["Ally"]));
   }
-  return { newKingdom, newLandscapes, alertText: '' };
+  return { newKingdom, newLandscapes, alertText: "" };
 };
 
 export const swapLandscape = (
@@ -246,45 +246,45 @@ export const swapLandscape = (
   landscapes: Array<Card>,
   pool: Array<Card>,
   expansions: Array<Expansion>,
-  promos: Array<Promo>
+  promos: Array<Promo>,
 ): SwapCard => {
   let remaining = getAvailableLandscapes(pool, expansions, promos).filter(
-    (card) => !arrayIncludesCard(landscapes, card)
+    (card) => !arrayIncludesCard(landscapes, card),
   );
-  if (isOfType(oldCard, ['Ally'])) {
-    remaining = remaining.filter((card) => isOfType(card, ['Ally']));
+  if (isOfType(oldCard, ["Ally"])) {
+    remaining = remaining.filter((card) => isOfType(card, ["Ally"]));
   } else {
-    remaining = remaining.filter((card) => !isOfType(card, ['Ally']));
+    remaining = remaining.filter((card) => !isOfType(card, ["Ally"]));
   }
   if (remaining.length < 2) {
-    return { alertText: 'There are no available kingdom cards to swap!' };
+    return { alertText: "There are no available kingdom cards to swap!" };
   }
   let newLandscapes = landscapes.filter((card) => card.name !== oldCard.name);
   let newKingdom = [...kingdom];
-  if (oldCard.name === 'Way of the Mouse') {
+  if (oldCard.name === "Way of the Mouse") {
     newKingdom = newKingdom.filter((card) => !card.wotm);
   }
   const [newCard] = drawCards(remaining, 1);
   newLandscapes = [...newLandscapes, newCard];
   const remainingCards = getAvailableCards(pool, expansions, promos).filter(
-    (card) => !arrayIncludesCard(newKingdom, card)
+    (card) => !arrayIncludesCard(newKingdom, card),
   );
   const { extraCards } = addExtraCards(
     newKingdom,
     newLandscapes,
-    remainingCards
+    remainingCards,
   );
   newKingdom.push(...extraCards);
-  return { newKingdom, newLandscapes, alertText: '' };
+  return { newKingdom, newLandscapes, alertText: "" };
 };
 
 export const generateBlackMarket = (
   cards: Array<Card>,
   kingdom: Array<Card>,
   promos: Array<Promo>,
-  expansions: Array<Expansion>
+  expansions: Array<Expansion>,
 ): Array<Card> => {
-  if (!arrayIncludesCardName(kingdom, 'Black Market')) {
+  if (!arrayIncludesCardName(kingdom, "Black Market")) {
     return [];
   }
   const blackMarketOptions = cards.filter(
@@ -293,7 +293,7 @@ export const generateBlackMarket = (
       (hasValidExpansion(card, expansions) ||
         promos.includes(card.name as Promo)) &&
       ![...BASIC_CARDS, ...SECONDARY_CARDS].includes(card.name) &&
-      !arrayIncludesCard(kingdom, card)
+      !arrayIncludesCard(kingdom, card),
   );
   if (!kingdom.some((card) => card.potions)) {
     return blackMarketOptions.filter((card) => !card.potions);

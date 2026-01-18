@@ -1,13 +1,20 @@
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
 import {
   BASE_2_CARDS,
   CARDS_TO_REMOVE,
   CARD_SHAPED_TYPES,
   INTRIGUE_2_CARDS,
+  NON_SUPPLY_CARD_SHAPED_TYPES,
   NON_SUPPLY_TYPES,
   ORIGINAL_BASE_CARDS,
   ORIGINAL_INTRIGUE_CARDS,
-} from './constants';
-import { Card, CardType, Expansion, SortCardsBy } from './types';
+} from "./constants";
+import type { Card, CardType, Expansion, SortCardsBy } from "./types";
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 export const random = (min: number, max: number): number =>
   Math.floor(Math.random() * (max - min)) + min;
@@ -26,7 +33,7 @@ export const sample = <T>(collection: Array<T>, n = 1): Array<T> => {
 
 export const isValidKingdomCard = (
   card: Card,
-  onlyRandomizers: boolean
+  onlyRandomizers: boolean,
 ): boolean =>
   card.in_supply &&
   card.types.every((type) => !NON_SUPPLY_TYPES.includes(type)) &&
@@ -35,20 +42,27 @@ export const isValidKingdomCard = (
 export const isLandscape = (card: Card): boolean =>
   card.types.every((type) => CARD_SHAPED_TYPES.includes(type));
 
+export const isLandscapeShaped = (card: Card): boolean =>
+  card.types.every(
+    (type) =>
+      CARD_SHAPED_TYPES.includes(type) ||
+      NON_SUPPLY_CARD_SHAPED_TYPES.includes(type),
+  );
+
 export const isOfType = (card: Card, types: Array<CardType>): boolean =>
   card.types.some((t) => types.includes(t));
 
 export const costSortValue = (card: Card): number => {
-  const coinRep = card.coins ? card.coins : '';
-  const potionRep = card.potions ? '100' : '';
-  const debtRep = card.debt ? `${card.debt}00000` : '';
+  const coinRep = card.coins ? card.coins : "";
+  const potionRep = card.potions ? "100" : "";
+  const debtRep = card.debt ? `${card.debt}00000` : "";
 
-  return parseInt(`${coinRep}${potionRep}${debtRep}` || '0');
+  return parseInt(`${coinRep}${potionRep}${debtRep}` || "0");
 };
 
 export const sortTwoCards = (card1: Card, card2: Card, sortBy: SortCardsBy) => {
-  const first = sortBy === 'cost' ? costSortValue(card1) : card1[sortBy];
-  const second = sortBy === 'cost' ? costSortValue(card2) : card2[sortBy];
+  const first = sortBy === "cost" ? costSortValue(card1) : card1[sortBy];
+  const second = sortBy === "cost" ? costSortValue(card2) : card2[sortBy];
   if (first < second) {
     return -1;
   } else if (first > second) {
@@ -68,37 +82,37 @@ export const arrayIncludesCard = (array: Array<Card>, card: Card): boolean =>
 
 export const arrayIncludesCardName = (
   array: Array<Card>,
-  name: string
+  name: string,
 ): boolean =>
   array.map((card) => card.name.toLowerCase()).includes(name.toLowerCase());
 
 export const drawCards = (
   cards: Array<Card>,
   num: number,
-  predicate?: (card: Card) => boolean
+  predicate?: (card: Card) => boolean,
 ): Array<Card> =>
   sample(predicate ? cards.filter((card) => predicate(card)) : cards, num);
 
 export const hasValidExpansion = (
   card: Card,
-  expansions: Array<Expansion>
+  expansions: Array<Expansion>,
 ): boolean => {
   if (ORIGINAL_BASE_CARDS.includes(card.name)) {
-    return expansions.includes('Base 1st Edition');
+    return expansions.includes("Base 1st Edition");
   } else if (BASE_2_CARDS.includes(card.name)) {
-    return expansions.includes('Base');
-  } else if (card.expansion === 'Base') {
+    return expansions.includes("Base");
+  } else if (card.expansion === "Base") {
     return (
-      expansions.includes('Base') || expansions.includes('Base 1st Edition')
+      expansions.includes("Base") || expansions.includes("Base 1st Edition")
     );
   } else if (ORIGINAL_INTRIGUE_CARDS.includes(card.name)) {
-    return expansions.includes('Intrigue 1st Edition');
+    return expansions.includes("Intrigue 1st Edition");
   } else if (INTRIGUE_2_CARDS.includes(card.name)) {
-    return expansions.includes('Intrigue');
-  } else if (card.expansion === 'Intrigue') {
+    return expansions.includes("Intrigue");
+  } else if (card.expansion === "Intrigue") {
     return (
-      expansions.includes('Intrigue') ||
-      expansions.includes('Intrigue 1st Edition')
+      expansions.includes("Intrigue") ||
+      expansions.includes("Intrigue 1st Edition")
     );
   } else {
     return expansions.includes(card.expansion);

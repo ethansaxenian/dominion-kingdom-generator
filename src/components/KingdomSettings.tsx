@@ -1,7 +1,7 @@
-import { EXPANSIONS, Expansion, PROMOS, Promo } from 'lib';
-import { SelectorList } from './SelectorList';
-import { Divider, Heading, SimpleGrid } from '@chakra-ui/react';
-import { MultiCardInput } from './MultiCardInput';
+import { EXPANSIONS, type Expansion, PROMOS, type Promo } from "@/lib";
+import { SelectorList } from "./SelectorList";
+import { Separator } from "@/components/ui/separator";
+import { MultiCardInput } from "./MultiCardInput";
 import {
   addExpansion,
   addPromo,
@@ -9,8 +9,8 @@ import {
   removePromo,
   setBlacklist,
   setWhitelist,
-} from 'state';
-import { useAppDispatch, useSettings } from 'hooks';
+} from "@/state";
+import { useAppDispatch, useSettings } from "@/hooks";
 
 export const KingdomSettings = () => {
   const { expansions, promos, blacklist, whitelist } = useSettings();
@@ -28,7 +28,7 @@ export const KingdomSettings = () => {
 
   return (
     <>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacingX="10vw" pb="8">
+      <span className="flex flex-col items-center md:flex-row justify-evenly pb-8">
         <SelectorList
           list={expansions}
           toggle={toggleExpansion}
@@ -41,22 +41,28 @@ export const KingdomSettings = () => {
           options={PROMOS}
           name="Promos"
         />
-      </SimpleGrid>
-      <Divider />
-      <Heading pt="8" size="lg">
-        Blacklist Cards:
-      </Heading>
-      <MultiCardInput
-        list={blacklist}
-        setList={(val) => dispatch(setBlacklist(val))}
-      />
-      <Heading pt="8" size="lg">
-        Whitelist Cards:
-      </Heading>
-      <MultiCardInput
-        list={whitelist}
-        setList={(val) => dispatch(setWhitelist(val))}
-      />
+      </span>
+      <Separator />
+      <span className="flex flex-col items-center md:items-start md:flex-row justify-evenly">
+        <span>
+          <h2 className="pt-8 text-2xl font-bold text-center">
+            Blacklist Cards
+          </h2>
+          <MultiCardInput
+            list={blacklist}
+            setList={(val) => dispatch(setBlacklist(val))}
+          />
+        </span>
+        <span>
+          <h2 className="pt-8 text-2xl font-bold text-center">
+            Whitelist Cards
+          </h2>
+          <MultiCardInput
+            list={whitelist}
+            setList={(val) => dispatch(setWhitelist(val))}
+          />
+        </span>
+      </span>
     </>
   );
 };

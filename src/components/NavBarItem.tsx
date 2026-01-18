@@ -1,6 +1,5 @@
-import { HStack, Icon, Link, Text, useColorModeValue } from '@chakra-ui/react';
-import { FC } from 'react';
-import { IconType } from 'react-icons';
+import type { FC } from "react";
+import type { IconType } from "react-icons";
 
 export interface NavBarItemProps {
   label: string;
@@ -13,28 +12,21 @@ export const NavBarItem: FC<NavBarItemProps> = ({
   label,
   isActive,
   onClick,
-  icon,
+  icon: Icon,
 }) => {
-  const textColor = useColorModeValue('black', 'white');
-  const textActiveColor = useColorModeValue('gray.600', 'gray.400');
-  const bgActiveColor = useColorModeValue('gray.300', 'gray.700');
-
   return (
-    <Link
+    <button
       onClick={onClick}
-      rounded="md"
-      color={isActive ? textColor : textActiveColor}
-      _hover={{
-        textDecoration: 'none',
-        color: textColor,
-      }}
-      bg={isActive ? bgActiveColor : undefined}
+      className={`flex items-center gap-2 h-full px-3 py-2 rounded-md transition-colors
+        ${
+          isActive
+            ? "bg-gray-300 dark:bg-gray-700 text-black dark:text-white"
+            : "text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+        }`}
       aria-label={`Go to ${label}`}
     >
-      <HStack w="fit-content" h="100%" p="10px">
-        <Icon as={icon} boxSize="6" />
-        <Text display={{ base: 'none', md: 'flex' }}>{label}</Text>
-      </HStack>
-    </Link>
+      <Icon className="h-6 w-6" />
+      <span className="hidden md:flex">{label}</span>
+    </button>
   );
 };

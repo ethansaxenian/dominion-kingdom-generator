@@ -1,14 +1,10 @@
-import { EXPANSIONS, PROMOS, TYPES } from './constants';
+import { EXPANSIONS, PROMOS, TYPES } from "./constants";
 
-const expansions = [...EXPANSIONS] as const;
-const promos = [...PROMOS] as const;
-const types = [...TYPES] as const;
+export type Expansion = (typeof EXPANSIONS)[number] | "Promo";
 
-export type Expansion = (typeof expansions)[number] | 'Promo';
+export type CardType = (typeof TYPES)[number];
 
-export type CardType = (typeof types)[number];
-
-export type Promo = (typeof promos)[number];
+export type Promo = (typeof PROMOS)[number];
 
 export interface Card {
   name: string;
@@ -27,6 +23,6 @@ export interface Card {
   key: string;
 }
 
-export type SortCardsBy = 'cost' | 'name' | 'expansion';
+export type SortCardsBy = "cost" | "name" | "expansion";
 
-export type Page = 'generate' | 'settings' | 'browse';
+export type Page = "generate" | "settings" | "browse";

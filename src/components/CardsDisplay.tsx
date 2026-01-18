@@ -1,7 +1,6 @@
-import { CardDisplay } from './CardDisplay';
-import { Container, Wrap, WrapItem } from '@chakra-ui/react';
-import { Card } from 'lib';
-import { FC } from 'react';
+import { CardDisplay } from "./CardDisplay";
+import type { Card } from "@/lib";
+import type { FC } from "react";
 
 export interface CardsDisplayProps {
   data: Array<Card>;
@@ -17,19 +16,18 @@ export const CardsDisplay: FC<CardsDisplayProps> = ({
   blackMarket,
 }) => {
   return (
-    <Container centerContent maxW="container.lg" p="10px">
-      <Wrap spacing="5" justify="center">
+    <div className="container w-auto md:max-w-6xl mx-auto p-2">
+      <div className="flex flex-wrap gap-5 justify-center">
         {data.map((card) => (
-          <WrapItem key={card.name}>
-            <CardDisplay
-              card={card}
-              swap={swap}
-              lock={lock}
-              blackMarket={blackMarket}
-            />
-          </WrapItem>
+          <CardDisplay
+            key={card.name}
+            card={card}
+            swap={swap}
+            lock={lock}
+            blackMarket={blackMarket}
+          />
         ))}
-      </Wrap>
-    </Container>
+      </div>
+    </div>
   );
 };

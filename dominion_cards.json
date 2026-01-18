@@ -2,9 +2,7 @@
   {
     "name": "Cellar",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -16,9 +14,7 @@
   {
     "name": "Chapel",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -30,10 +26,7 @@
   {
     "name": "Moat",
     "expansion": "Base",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -45,9 +38,7 @@
   {
     "name": "Chancellor",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -59,9 +50,7 @@
   {
     "name": "Harbinger",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -73,9 +62,7 @@
   {
     "name": "Merchant",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -87,9 +74,7 @@
   {
     "name": "Vassal",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -101,9 +86,7 @@
   {
     "name": "Village",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -115,9 +98,7 @@
   {
     "name": "Woodcutter",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -129,9 +110,7 @@
   {
     "name": "Workshop",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -143,10 +122,7 @@
   {
     "name": "Bureaucrat",
     "expansion": "Base",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -158,9 +134,7 @@
   {
     "name": "Feast",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -172,9 +146,7 @@
   {
     "name": "Gardens",
     "expansion": "Base",
-    "types": [
-      "Victory"
-    ],
+    "types": ["Victory"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -186,10 +158,7 @@
   {
     "name": "Militia",
     "expansion": "Base",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -201,9 +170,7 @@
   {
     "name": "Moneylender",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -215,9 +182,7 @@
   {
     "name": "Poacher",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -229,9 +194,7 @@
   {
     "name": "Remodel",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -243,9 +206,7 @@
   {
     "name": "Smithy",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -257,10 +218,7 @@
   {
     "name": "Spy",
     "expansion": "Base",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -272,10 +230,7 @@
   {
     "name": "Thief",
     "expansion": "Base",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -287,9 +242,7 @@
   {
     "name": "Throne Room",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -301,10 +254,7 @@
   {
     "name": "Bandit",
     "expansion": "Base",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -316,9 +266,7 @@
   {
     "name": "Council Room",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -330,9 +278,7 @@
   {
     "name": "Festival",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -344,9 +290,7 @@
   {
     "name": "Laboratory",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -358,9 +302,7 @@
   {
     "name": "Library",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -372,9 +314,7 @@
   {
     "name": "Market",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -386,9 +326,7 @@
   {
     "name": "Mine",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -400,9 +338,7 @@
   {
     "name": "Sentry",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -414,10 +350,7 @@
   {
     "name": "Witch",
     "expansion": "Base",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -429,9 +362,7 @@
   {
     "name": "Adventurer",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -443,9 +374,7 @@
   {
     "name": "Artisan",
     "expansion": "Base",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -457,9 +386,7 @@
   {
     "name": "Copper",
     "expansion": "Base",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -471,9 +398,7 @@
   {
     "name": "Silver",
     "expansion": "Base",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -485,9 +410,7 @@
   {
     "name": "Gold",
     "expansion": "Base",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -499,9 +422,7 @@
   {
     "name": "Estate",
     "expansion": "Base",
-    "types": [
-      "Victory"
-    ],
+    "types": ["Victory"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -513,9 +434,7 @@
   {
     "name": "Duchy",
     "expansion": "Base",
-    "types": [
-      "Victory"
-    ],
+    "types": ["Victory"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -527,9 +446,7 @@
   {
     "name": "Province",
     "expansion": "Base",
-    "types": [
-      "Victory"
-    ],
+    "types": ["Victory"],
     "coins": 8,
     "potions": null,
     "debt": null,
@@ -541,9 +458,7 @@
   {
     "name": "Curse",
     "expansion": "Base",
-    "types": [
-      "Curse"
-    ],
+    "types": ["Curse"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -555,9 +470,7 @@
   {
     "name": "Courtyard",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -569,9 +482,7 @@
   {
     "name": "Lurker",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -583,9 +494,7 @@
   {
     "name": "Pawn",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -597,10 +506,7 @@
   {
     "name": "Secret Chamber",
     "expansion": "Intrigue",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -612,10 +518,7 @@
   {
     "name": "Great Hall",
     "expansion": "Intrigue",
-    "types": [
-      "Action",
-      "Victory"
-    ],
+    "types": ["Action", "Victory"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -627,9 +530,7 @@
   {
     "name": "Masquerade",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -641,9 +542,7 @@
   {
     "name": "Shanty Town",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -655,9 +554,7 @@
   {
     "name": "Steward",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -669,10 +566,7 @@
   {
     "name": "Swindler",
     "expansion": "Intrigue",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -684,9 +578,7 @@
   {
     "name": "Wishing Well",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -698,9 +590,7 @@
   {
     "name": "Baron",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -712,9 +602,7 @@
   {
     "name": "Bridge",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -726,9 +614,7 @@
   {
     "name": "Conspirator",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -740,9 +626,7 @@
   {
     "name": "Coppersmith",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -754,10 +638,7 @@
   {
     "name": "Diplomat",
     "expansion": "Intrigue",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -769,9 +650,7 @@
   {
     "name": "Ironworks",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -783,10 +662,7 @@
   {
     "name": "Mill",
     "expansion": "Intrigue",
-    "types": [
-      "Action",
-      "Victory"
-    ],
+    "types": ["Action", "Victory"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -798,9 +674,7 @@
   {
     "name": "Mining Village",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -812,9 +686,7 @@
   {
     "name": "Scout",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -826,9 +698,7 @@
   {
     "name": "Secret Passage",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -840,9 +710,7 @@
   {
     "name": "Courtier",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -854,9 +722,7 @@
   {
     "name": "Duke",
     "expansion": "Intrigue",
-    "types": [
-      "Victory"
-    ],
+    "types": ["Victory"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -868,10 +734,7 @@
   {
     "name": "Minion",
     "expansion": "Intrigue",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -883,9 +746,7 @@
   {
     "name": "Patrol",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -897,10 +758,7 @@
   {
     "name": "Replace",
     "expansion": "Intrigue",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -912,10 +770,7 @@
   {
     "name": "Saboteur",
     "expansion": "Intrigue",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -927,10 +782,7 @@
   {
     "name": "Torturer",
     "expansion": "Intrigue",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -942,9 +794,7 @@
   {
     "name": "Trading Post",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -956,9 +806,7 @@
   {
     "name": "Tribute",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -970,9 +818,7 @@
   {
     "name": "Upgrade",
     "expansion": "Intrigue",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -984,10 +830,7 @@
   {
     "name": "Harem",
     "expansion": "Intrigue",
-    "types": [
-      "Treasure",
-      "Victory"
-    ],
+    "types": ["Treasure", "Victory"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -999,10 +842,7 @@
   {
     "name": "Nobles",
     "expansion": "Intrigue",
-    "types": [
-      "Action",
-      "Victory"
-    ],
+    "types": ["Action", "Victory"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -1014,9 +854,7 @@
   {
     "name": "Embargo",
     "expansion": "Seaside",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -1028,10 +866,7 @@
   {
     "name": "Haven",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -1043,10 +878,7 @@
   {
     "name": "Lighthouse",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -1058,9 +890,7 @@
   {
     "name": "Native Village",
     "expansion": "Seaside",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -1072,9 +902,7 @@
   {
     "name": "Pearl Diver",
     "expansion": "Seaside",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -1086,10 +914,7 @@
   {
     "name": "Ambassador",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -1101,10 +926,7 @@
   {
     "name": "Astrolabe",
     "expansion": "Seaside",
-    "types": [
-      "Treasure",
-      "Duration"
-    ],
+    "types": ["Treasure", "Duration"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -1116,10 +938,7 @@
   {
     "name": "Fishing Village",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -1131,9 +950,7 @@
   {
     "name": "Lookout",
     "expansion": "Seaside",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -1145,10 +962,7 @@
   {
     "name": "Monkey",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -1160,9 +974,7 @@
   {
     "name": "Sea Chart",
     "expansion": "Seaside",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -1174,9 +986,7 @@
   {
     "name": "Smugglers",
     "expansion": "Seaside",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -1188,9 +998,7 @@
   {
     "name": "Warehouse",
     "expansion": "Seaside",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -1202,11 +1010,7 @@
   {
     "name": "Blockade",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Duration",
-      "Attack"
-    ],
+    "types": ["Action", "Duration", "Attack"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1218,10 +1022,7 @@
   {
     "name": "Caravan",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1233,10 +1034,7 @@
   {
     "name": "Cutpurse",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1248,10 +1046,7 @@
   {
     "name": "Island",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Victory"
-    ],
+    "types": ["Action", "Victory"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1263,9 +1058,7 @@
   {
     "name": "Navigator",
     "expansion": "Seaside",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1277,10 +1070,7 @@
   {
     "name": "Pirate Ship",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1292,10 +1082,7 @@
   {
     "name": "Sailor",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1307,9 +1094,7 @@
   {
     "name": "Salvager",
     "expansion": "Seaside",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1321,10 +1106,7 @@
   {
     "name": "Sea Hag",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1336,10 +1118,7 @@
   {
     "name": "Tide Pools",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1351,9 +1130,7 @@
   {
     "name": "Treasure Map",
     "expansion": "Seaside",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1365,9 +1142,7 @@
   {
     "name": "Bazaar",
     "expansion": "Seaside",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1379,11 +1154,7 @@
   {
     "name": "Corsair",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Duration",
-      "Attack"
-    ],
+    "types": ["Action", "Duration", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1395,9 +1166,7 @@
   {
     "name": "Explorer",
     "expansion": "Seaside",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1409,10 +1178,7 @@
   {
     "name": "Ghost Ship",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1424,10 +1190,7 @@
   {
     "name": "Merchant Ship",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1439,10 +1202,7 @@
   {
     "name": "Outpost",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1454,11 +1214,7 @@
   {
     "name": "Pirate",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Duration",
-      "Reaction"
-    ],
+    "types": ["Action", "Duration", "Reaction"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1470,11 +1226,7 @@
   {
     "name": "Sea Witch",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Duration",
-      "Attack"
-    ],
+    "types": ["Action", "Duration", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1486,10 +1238,7 @@
   {
     "name": "Tactician",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1501,9 +1250,7 @@
   {
     "name": "Treasury",
     "expansion": "Seaside",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1515,10 +1262,7 @@
   {
     "name": "Wharf",
     "expansion": "Seaside",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1530,9 +1274,7 @@
   {
     "name": "Transmute",
     "expansion": "Alchemy",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": null,
     "potions": 1,
     "debt": null,
@@ -1544,9 +1286,7 @@
   {
     "name": "Vineyard",
     "expansion": "Alchemy",
-    "types": [
-      "Victory"
-    ],
+    "types": ["Victory"],
     "coins": null,
     "potions": 1,
     "debt": null,
@@ -1558,9 +1298,7 @@
   {
     "name": "Herbalist",
     "expansion": "Alchemy",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -1572,9 +1310,7 @@
   {
     "name": "Apothecary",
     "expansion": "Alchemy",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": 1,
     "debt": null,
@@ -1586,10 +1322,7 @@
   {
     "name": "Scrying Pool",
     "expansion": "Alchemy",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 2,
     "potions": 1,
     "debt": null,
@@ -1601,9 +1334,7 @@
   {
     "name": "University",
     "expansion": "Alchemy",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": 1,
     "debt": null,
@@ -1615,9 +1346,7 @@
   {
     "name": "Alchemist",
     "expansion": "Alchemy",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": 1,
     "debt": null,
@@ -1629,10 +1358,7 @@
   {
     "name": "Familiar",
     "expansion": "Alchemy",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 3,
     "potions": 1,
     "debt": null,
@@ -1644,9 +1370,7 @@
   {
     "name": "Philosopher's Stone",
     "expansion": "Alchemy",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 3,
     "potions": 1,
     "debt": null,
@@ -1658,9 +1382,7 @@
   {
     "name": "Golem",
     "expansion": "Alchemy",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": 1,
     "debt": null,
@@ -1672,9 +1394,7 @@
   {
     "name": "Apprentice",
     "expansion": "Alchemy",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1686,9 +1406,7 @@
   {
     "name": "Possession",
     "expansion": "Alchemy",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 6,
     "potions": 1,
     "debt": null,
@@ -1700,9 +1418,7 @@
   {
     "name": "Potion",
     "expansion": "Alchemy",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1714,9 +1430,7 @@
   {
     "name": "Anvil",
     "expansion": "Prosperity",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -1728,9 +1442,7 @@
   {
     "name": "Loan",
     "expansion": "Prosperity",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -1742,9 +1454,7 @@
   {
     "name": "Trade Route",
     "expansion": "Prosperity",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -1756,10 +1466,7 @@
   {
     "name": "Watchtower",
     "expansion": "Prosperity",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -1771,9 +1478,7 @@
   {
     "name": "Bishop",
     "expansion": "Prosperity",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1785,11 +1490,7 @@
   {
     "name": "Clerk",
     "expansion": "Prosperity",
-    "types": [
-      "Action",
-      "Reaction",
-      "Attack"
-    ],
+    "types": ["Action", "Reaction", "Attack"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1801,9 +1502,7 @@
   {
     "name": "Investment",
     "expansion": "Prosperity",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1815,9 +1514,7 @@
   {
     "name": "Monument",
     "expansion": "Prosperity",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1829,9 +1526,7 @@
   {
     "name": "Quarry",
     "expansion": "Prosperity",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1843,9 +1538,7 @@
   {
     "name": "Talisman",
     "expansion": "Prosperity",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1857,9 +1550,7 @@
   {
     "name": "Tiara",
     "expansion": "Prosperity",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1871,9 +1562,7 @@
   {
     "name": "Worker's Village",
     "expansion": "Prosperity",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -1885,10 +1574,7 @@
   {
     "name": "Charlatan",
     "expansion": "Prosperity",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1900,9 +1586,7 @@
   {
     "name": "City",
     "expansion": "Prosperity",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1914,9 +1598,7 @@
   {
     "name": "Collection",
     "expansion": "Prosperity",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1928,9 +1610,7 @@
   {
     "name": "Contraband",
     "expansion": "Prosperity",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1942,9 +1622,7 @@
   {
     "name": "Counting House",
     "expansion": "Prosperity",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1956,9 +1634,7 @@
   {
     "name": "Crystal Ball",
     "expansion": "Prosperity",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1970,9 +1646,7 @@
   {
     "name": "Magnate",
     "expansion": "Prosperity",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1984,9 +1658,7 @@
   {
     "name": "Mint",
     "expansion": "Prosperity",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -1998,10 +1670,7 @@
   {
     "name": "Mountebank",
     "expansion": "Prosperity",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2013,10 +1682,7 @@
   {
     "name": "Rabble",
     "expansion": "Prosperity",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2028,9 +1694,7 @@
   {
     "name": "Royal Seal",
     "expansion": "Prosperity",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2042,9 +1706,7 @@
   {
     "name": "Vault",
     "expansion": "Prosperity",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2056,9 +1718,7 @@
   {
     "name": "Venture",
     "expansion": "Prosperity",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2070,9 +1730,7 @@
   {
     "name": "War Chest",
     "expansion": "Prosperity",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2084,10 +1742,7 @@
   {
     "name": "Goons",
     "expansion": "Prosperity",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -2099,9 +1754,7 @@
   {
     "name": "Grand Market",
     "expansion": "Prosperity",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -2113,9 +1766,7 @@
   {
     "name": "Hoard",
     "expansion": "Prosperity",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -2127,9 +1778,7 @@
   {
     "name": "Bank",
     "expansion": "Prosperity",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -2141,9 +1790,7 @@
   {
     "name": "Expand",
     "expansion": "Prosperity",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -2155,9 +1802,7 @@
   {
     "name": "Forge",
     "expansion": "Prosperity",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -2169,9 +1814,7 @@
   {
     "name": "King's Court",
     "expansion": "Prosperity",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -2183,9 +1826,7 @@
   {
     "name": "Peddler",
     "expansion": "Prosperity",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 8,
     "potions": null,
     "debt": null,
@@ -2197,9 +1838,7 @@
   {
     "name": "Platinum",
     "expansion": "Prosperity",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 9,
     "potions": null,
     "debt": null,
@@ -2211,9 +1850,7 @@
   {
     "name": "Colony",
     "expansion": "Prosperity",
-    "types": [
-      "Victory"
-    ],
+    "types": ["Victory"],
     "coins": 11,
     "potions": null,
     "debt": null,
@@ -2225,9 +1862,7 @@
   {
     "name": "Hamlet",
     "expansion": "Cornucopia",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -2239,10 +1874,7 @@
   {
     "name": "Fortune Teller",
     "expansion": "Cornucopia",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -2254,9 +1886,7 @@
   {
     "name": "Menagerie",
     "expansion": "Cornucopia",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -2268,9 +1898,7 @@
   {
     "name": "Farming Village",
     "expansion": "Cornucopia",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -2282,10 +1910,7 @@
   {
     "name": "Horse Traders",
     "expansion": "Cornucopia",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -2297,9 +1922,7 @@
   {
     "name": "Remake",
     "expansion": "Cornucopia",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -2311,9 +1934,7 @@
   {
     "name": "Tournament",
     "expansion": "Cornucopia",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -2325,10 +1946,7 @@
   {
     "name": "Young Witch",
     "expansion": "Cornucopia",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -2340,9 +1958,7 @@
   {
     "name": "Harvest",
     "expansion": "Cornucopia",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2354,9 +1970,7 @@
   {
     "name": "Horn of Plenty",
     "expansion": "Cornucopia",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2368,9 +1982,7 @@
   {
     "name": "Hunting Party",
     "expansion": "Cornucopia",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2382,10 +1994,7 @@
   {
     "name": "Jester",
     "expansion": "Cornucopia",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2397,9 +2006,7 @@
   {
     "name": "Fairgrounds",
     "expansion": "Cornucopia",
-    "types": [
-      "Victory"
-    ],
+    "types": ["Victory"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -2411,10 +2018,7 @@
   {
     "name": "Bag of Gold",
     "expansion": "Cornucopia",
-    "types": [
-      "Action",
-      "Prize"
-    ],
+    "types": ["Action", "Prize"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -2426,10 +2030,7 @@
   {
     "name": "Diadem",
     "expansion": "Cornucopia",
-    "types": [
-      "Treasure",
-      "Prize"
-    ],
+    "types": ["Treasure", "Prize"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -2441,11 +2042,7 @@
   {
     "name": "Followers",
     "expansion": "Cornucopia",
-    "types": [
-      "Action",
-      "Attack",
-      "Prize"
-    ],
+    "types": ["Action", "Attack", "Prize"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -2457,10 +2054,7 @@
   {
     "name": "Princess",
     "expansion": "Cornucopia",
-    "types": [
-      "Action",
-      "Prize"
-    ],
+    "types": ["Action", "Prize"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -2472,10 +2066,7 @@
   {
     "name": "Trusty Steed",
     "expansion": "Cornucopia",
-    "types": [
-      "Action",
-      "Prize"
-    ],
+    "types": ["Action", "Prize"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -2487,9 +2078,7 @@
   {
     "name": "Crossroads",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -2501,9 +2090,7 @@
   {
     "name": "Duchess",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -2515,10 +2102,7 @@
   {
     "name": "Fool's Gold",
     "expansion": "Hinterlands",
-    "types": [
-      "Treasure",
-      "Reaction"
-    ],
+    "types": ["Treasure", "Reaction"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -2530,9 +2114,7 @@
   {
     "name": "Develop",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -2544,10 +2126,7 @@
   {
     "name": "Guard Dog",
     "expansion": "Hinterlands",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -2559,9 +2138,7 @@
   {
     "name": "Oasis",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -2573,10 +2150,7 @@
   {
     "name": "Oracle",
     "expansion": "Hinterlands",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -2588,9 +2162,7 @@
   {
     "name": "Scheme",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -2602,10 +2174,7 @@
   {
     "name": "Tunnel",
     "expansion": "Hinterlands",
-    "types": [
-      "Victory",
-      "Reaction"
-    ],
+    "types": ["Victory", "Reaction"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -2617,9 +2186,7 @@
   {
     "name": "Jack of All Trades",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -2631,10 +2198,7 @@
   {
     "name": "Noble Brigand",
     "expansion": "Hinterlands",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -2646,9 +2210,7 @@
   {
     "name": "Nomad Camp",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -2660,9 +2222,7 @@
   {
     "name": "Nomads",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -2674,9 +2234,7 @@
   {
     "name": "Silk Road",
     "expansion": "Hinterlands",
-    "types": [
-      "Victory"
-    ],
+    "types": ["Victory"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -2688,9 +2246,7 @@
   {
     "name": "Spice Merchant",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -2702,10 +2258,7 @@
   {
     "name": "Trader",
     "expansion": "Hinterlands",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -2717,10 +2270,7 @@
   {
     "name": "Trail",
     "expansion": "Hinterlands",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -2732,10 +2282,7 @@
   {
     "name": "Weaver",
     "expansion": "Hinterlands",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -2747,10 +2294,7 @@
   {
     "name": "Berserker",
     "expansion": "Hinterlands",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2762,9 +2306,7 @@
   {
     "name": "Cache",
     "expansion": "Hinterlands",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2776,9 +2318,7 @@
   {
     "name": "Cartographer",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2790,10 +2330,7 @@
   {
     "name": "Cauldron",
     "expansion": "Hinterlands",
-    "types": [
-      "Treasure",
-      "Attack"
-    ],
+    "types": ["Treasure", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2805,9 +2342,7 @@
   {
     "name": "Embassy",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2819,9 +2354,7 @@
   {
     "name": "Haggler",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2833,9 +2366,7 @@
   {
     "name": "Highway",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2847,9 +2378,7 @@
   {
     "name": "Ill-Gotten Gains",
     "expansion": "Hinterlands",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2861,9 +2390,7 @@
   {
     "name": "Inn",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2875,9 +2402,7 @@
   {
     "name": "Mandarin",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2889,10 +2414,7 @@
   {
     "name": "Margrave",
     "expansion": "Hinterlands",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2904,9 +2426,7 @@
   {
     "name": "Souk",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2918,9 +2438,7 @@
   {
     "name": "Stables",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2932,9 +2450,7 @@
   {
     "name": "Wheelwright",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2946,10 +2462,7 @@
   {
     "name": "Witch's Hut",
     "expansion": "Hinterlands",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -2961,9 +2474,7 @@
   {
     "name": "Border Village",
     "expansion": "Hinterlands",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -2975,9 +2486,7 @@
   {
     "name": "Farmland",
     "expansion": "Hinterlands",
-    "types": [
-      "Victory"
-    ],
+    "types": ["Victory"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -2989,9 +2498,7 @@
   {
     "name": "Poor House",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 1,
     "potions": null,
     "debt": null,
@@ -3003,10 +2510,7 @@
   {
     "name": "Beggar",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -3018,9 +2522,7 @@
   {
     "name": "Squire",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -3032,9 +2534,7 @@
   {
     "name": "Vagrant",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -3046,9 +2546,7 @@
   {
     "name": "Forager",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -3060,9 +2558,7 @@
   {
     "name": "Hermit",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -3074,10 +2570,7 @@
   {
     "name": "Market Square",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -3089,9 +2582,7 @@
   {
     "name": "Sage",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -3103,9 +2594,7 @@
   {
     "name": "Storeroom",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -3117,10 +2606,7 @@
   {
     "name": "Urchin",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -3132,9 +2618,7 @@
   {
     "name": "Armory",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -3146,10 +2630,7 @@
   {
     "name": "Death Cart",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Looter"
-    ],
+    "types": ["Action", "Looter"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -3161,9 +2642,7 @@
   {
     "name": "Feodum",
     "expansion": "Dark Ages",
-    "types": [
-      "Victory"
-    ],
+    "types": ["Victory"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -3175,9 +2654,7 @@
   {
     "name": "Fortress",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -3189,9 +2666,7 @@
   {
     "name": "Ironmonger",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -3203,11 +2678,7 @@
   {
     "name": "Marauder",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack",
-      "Looter"
-    ],
+    "types": ["Action", "Attack", "Looter"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -3219,9 +2690,7 @@
   {
     "name": "Procession",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -3233,9 +2702,7 @@
   {
     "name": "Rats",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -3247,9 +2714,7 @@
   {
     "name": "Scavenger",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -3261,9 +2726,7 @@
   {
     "name": "Wandering Minstrel",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -3275,10 +2738,7 @@
   {
     "name": "Band of Misfits",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Command"
-    ],
+    "types": ["Action", "Command"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3290,9 +2750,7 @@
   {
     "name": "Bandit Camp",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3304,9 +2762,7 @@
   {
     "name": "Catacombs",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3318,9 +2774,7 @@
   {
     "name": "Count",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3332,9 +2786,7 @@
   {
     "name": "Counterfeit",
     "expansion": "Dark Ages",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3346,11 +2798,7 @@
   {
     "name": "Cultist",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack",
-      "Looter"
-    ],
+    "types": ["Action", "Attack", "Looter"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3362,9 +2810,7 @@
   {
     "name": "Graverobber",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3376,9 +2822,7 @@
   {
     "name": "Junk Dealer",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3390,9 +2834,7 @@
   {
     "name": "Mystic",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3404,10 +2846,7 @@
   {
     "name": "Pillage",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3419,9 +2858,7 @@
   {
     "name": "Rebuild",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3433,10 +2870,7 @@
   {
     "name": "Rogue",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3448,9 +2882,7 @@
   {
     "name": "Altar",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -3462,9 +2894,7 @@
   {
     "name": "Hunting Grounds",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -3476,10 +2906,7 @@
   {
     "name": "Abandoned Mine",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Ruins"
-    ],
+    "types": ["Action", "Ruins"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -3491,10 +2918,7 @@
   {
     "name": "Ruined Library",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Ruins"
-    ],
+    "types": ["Action", "Ruins"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -3506,10 +2930,7 @@
   {
     "name": "Ruined Market",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Ruins"
-    ],
+    "types": ["Action", "Ruins"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -3521,10 +2942,7 @@
   {
     "name": "Ruined Village",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Ruins"
-    ],
+    "types": ["Action", "Ruins"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -3536,10 +2954,7 @@
   {
     "name": "Survivors",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Ruins"
-    ],
+    "types": ["Action", "Ruins"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -3551,11 +2966,7 @@
   {
     "name": "Dame Anna",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack",
-      "Knight"
-    ],
+    "types": ["Action", "Attack", "Knight"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3567,12 +2978,7 @@
   {
     "name": "Dame Josephine",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack",
-      "Victory",
-      "Knight"
-    ],
+    "types": ["Action", "Attack", "Victory", "Knight"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3584,11 +2990,7 @@
   {
     "name": "Dame Molly",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack",
-      "Knight"
-    ],
+    "types": ["Action", "Attack", "Knight"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3600,11 +3002,7 @@
   {
     "name": "Dame Natalie",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack",
-      "Knight"
-    ],
+    "types": ["Action", "Attack", "Knight"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3616,11 +3014,7 @@
   {
     "name": "Dame Sylvia",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack",
-      "Knight"
-    ],
+    "types": ["Action", "Attack", "Knight"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3632,11 +3026,7 @@
   {
     "name": "Sir Bailey",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack",
-      "Knight"
-    ],
+    "types": ["Action", "Attack", "Knight"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3648,11 +3038,7 @@
   {
     "name": "Sir Destry",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack",
-      "Knight"
-    ],
+    "types": ["Action", "Attack", "Knight"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3664,11 +3050,7 @@
   {
     "name": "Sir Martin",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack",
-      "Knight"
-    ],
+    "types": ["Action", "Attack", "Knight"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -3680,11 +3062,7 @@
   {
     "name": "Sir Michael",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack",
-      "Knight"
-    ],
+    "types": ["Action", "Attack", "Knight"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3696,11 +3074,7 @@
   {
     "name": "Sir Vander",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack",
-      "Knight"
-    ],
+    "types": ["Action", "Attack", "Knight"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3712,9 +3086,7 @@
   {
     "name": "Madman",
     "expansion": "Dark Ages",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -3726,10 +3098,7 @@
   {
     "name": "Mercenary",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -3741,9 +3110,7 @@
   {
     "name": "Spoils",
     "expansion": "Dark Ages",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -3755,10 +3122,7 @@
   {
     "name": "Hovel",
     "expansion": "Dark Ages",
-    "types": [
-      "Reaction",
-      "Shelter"
-    ],
+    "types": ["Reaction", "Shelter"],
     "coins": 1,
     "potions": null,
     "debt": null,
@@ -3770,10 +3134,7 @@
   {
     "name": "Necropolis",
     "expansion": "Dark Ages",
-    "types": [
-      "Action",
-      "Shelter"
-    ],
+    "types": ["Action", "Shelter"],
     "coins": 1,
     "potions": null,
     "debt": null,
@@ -3785,10 +3146,7 @@
   {
     "name": "Overgrown Estate",
     "expansion": "Dark Ages",
-    "types": [
-      "Victory",
-      "Shelter"
-    ],
+    "types": ["Victory", "Shelter"],
     "coins": 1,
     "potions": null,
     "debt": null,
@@ -3800,9 +3158,7 @@
   {
     "name": "Candlestick Maker",
     "expansion": "Guilds",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -3814,9 +3170,7 @@
   {
     "name": "Stonemason",
     "expansion": "Guilds",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -3828,9 +3182,7 @@
   {
     "name": "Doctor",
     "expansion": "Guilds",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -3842,9 +3194,7 @@
   {
     "name": "Masterpiece",
     "expansion": "Guilds",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -3856,9 +3206,7 @@
   {
     "name": "Advisor",
     "expansion": "Guilds",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -3870,9 +3218,7 @@
   {
     "name": "Herald",
     "expansion": "Guilds",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -3884,9 +3230,7 @@
   {
     "name": "Plaza",
     "expansion": "Guilds",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -3898,10 +3242,7 @@
   {
     "name": "Taxman",
     "expansion": "Guilds",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -3913,9 +3254,7 @@
   {
     "name": "Baker",
     "expansion": "Guilds",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3927,9 +3266,7 @@
   {
     "name": "Butcher",
     "expansion": "Guilds",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3941,9 +3278,7 @@
   {
     "name": "Journeyman",
     "expansion": "Guilds",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3955,9 +3290,7 @@
   {
     "name": "Merchant Guild",
     "expansion": "Guilds",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3969,10 +3302,7 @@
   {
     "name": "Soothsayer",
     "expansion": "Guilds",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -3984,10 +3314,7 @@
   {
     "name": "Coin of the Realm",
     "expansion": "Adventures",
-    "types": [
-      "Treasure",
-      "Reserve"
-    ],
+    "types": ["Treasure", "Reserve"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -3999,10 +3326,7 @@
   {
     "name": "Page",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Traveller"
-    ],
+    "types": ["Action", "Traveller"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -4014,10 +3338,7 @@
   {
     "name": "Peasant",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Traveller"
-    ],
+    "types": ["Action", "Traveller"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -4029,10 +3350,7 @@
   {
     "name": "Ratcatcher",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Reserve"
-    ],
+    "types": ["Action", "Reserve"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -4044,9 +3362,7 @@
   {
     "name": "Raze",
     "expansion": "Adventures",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -4058,10 +3374,7 @@
   {
     "name": "Amulet",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -4073,11 +3386,7 @@
   {
     "name": "Caravan Guard",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Duration",
-      "Reaction"
-    ],
+    "types": ["Action", "Duration", "Reaction"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -4089,10 +3398,7 @@
   {
     "name": "Dungeon",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -4104,10 +3410,7 @@
   {
     "name": "Gear",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -4119,10 +3422,7 @@
   {
     "name": "Guide",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Reserve"
-    ],
+    "types": ["Action", "Reserve"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -4134,10 +3434,7 @@
   {
     "name": "Duplicate",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Reserve"
-    ],
+    "types": ["Action", "Reserve"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -4149,9 +3446,7 @@
   {
     "name": "Magpie",
     "expansion": "Adventures",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -4163,9 +3458,7 @@
   {
     "name": "Messenger",
     "expansion": "Adventures",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -4177,9 +3470,7 @@
   {
     "name": "Miser",
     "expansion": "Adventures",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -4191,9 +3482,7 @@
   {
     "name": "Port",
     "expansion": "Adventures",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -4205,9 +3494,7 @@
   {
     "name": "Ranger",
     "expansion": "Adventures",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -4219,10 +3506,7 @@
   {
     "name": "Transmogrify",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Reserve"
-    ],
+    "types": ["Action", "Reserve"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -4234,9 +3518,7 @@
   {
     "name": "Artificer",
     "expansion": "Adventures",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4248,11 +3530,7 @@
   {
     "name": "Bridge Troll",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Attack",
-      "Duration"
-    ],
+    "types": ["Action", "Attack", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4264,11 +3542,7 @@
   {
     "name": "Distant Lands",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Reserve",
-      "Victory"
-    ],
+    "types": ["Action", "Reserve", "Victory"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4280,10 +3554,7 @@
   {
     "name": "Giant",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4295,11 +3566,7 @@
   {
     "name": "Haunted Woods",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Attack",
-      "Duration"
-    ],
+    "types": ["Action", "Attack", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4311,9 +3578,7 @@
   {
     "name": "Lost City",
     "expansion": "Adventures",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4325,10 +3590,7 @@
   {
     "name": "Relic",
     "expansion": "Adventures",
-    "types": [
-      "Treasure",
-      "Attack"
-    ],
+    "types": ["Treasure", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4340,10 +3602,7 @@
   {
     "name": "Royal Carriage",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Reserve"
-    ],
+    "types": ["Action", "Reserve"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4355,9 +3614,7 @@
   {
     "name": "Storyteller",
     "expansion": "Adventures",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4369,11 +3626,7 @@
   {
     "name": "Swamp Hag",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Attack",
-      "Duration"
-    ],
+    "types": ["Action", "Attack", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4385,9 +3638,7 @@
   {
     "name": "Treasure Trove",
     "expansion": "Adventures",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4399,10 +3650,7 @@
   {
     "name": "Wine Merchant",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Reserve"
-    ],
+    "types": ["Action", "Reserve"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4414,10 +3662,7 @@
   {
     "name": "Hireling",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -4429,9 +3674,7 @@
   {
     "name": "Alms",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -4443,9 +3686,7 @@
   {
     "name": "Borrow",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -4457,9 +3698,7 @@
   {
     "name": "Quest",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -4471,9 +3710,7 @@
   {
     "name": "Save",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 1,
     "potions": null,
     "debt": null,
@@ -4485,9 +3722,7 @@
   {
     "name": "Scouting Party",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -4499,9 +3734,7 @@
   {
     "name": "Travelling Fair",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -4513,9 +3746,7 @@
   {
     "name": "Bonfire",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -4527,9 +3758,7 @@
   {
     "name": "Expedition",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -4541,9 +3770,7 @@
   {
     "name": "Ferry",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -4555,9 +3782,7 @@
   {
     "name": "Plan",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -4569,9 +3794,7 @@
   {
     "name": "Mission",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -4583,9 +3806,7 @@
   {
     "name": "Pilgrimage",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -4597,9 +3818,7 @@
   {
     "name": "Ball",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4611,9 +3830,7 @@
   {
     "name": "Raid",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4625,9 +3842,7 @@
   {
     "name": "Seaway",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4639,9 +3854,7 @@
   {
     "name": "Trade",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4653,9 +3866,7 @@
   {
     "name": "Lost Arts",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -4667,9 +3878,7 @@
   {
     "name": "Training",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -4681,9 +3890,7 @@
   {
     "name": "Inheritance",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -4695,9 +3902,7 @@
   {
     "name": "Pathfinding",
     "expansion": "Adventures",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 8,
     "potions": null,
     "debt": null,
@@ -4709,11 +3914,7 @@
   {
     "name": "Soldier",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Attack",
-      "Traveller"
-    ],
+    "types": ["Action", "Attack", "Traveller"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -4725,10 +3926,7 @@
   {
     "name": "Fugitive",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Traveller"
-    ],
+    "types": ["Action", "Traveller"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -4740,10 +3938,7 @@
   {
     "name": "Disciple",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Traveller"
-    ],
+    "types": ["Action", "Traveller"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4755,10 +3950,7 @@
   {
     "name": "Teacher",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Reserve"
-    ],
+    "types": ["Action", "Reserve"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -4770,10 +3962,7 @@
   {
     "name": "Treasure Hunter",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Traveller"
-    ],
+    "types": ["Action", "Traveller"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -4785,11 +3974,7 @@
   {
     "name": "Warrior",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Attack",
-      "Traveller"
-    ],
+    "types": ["Action", "Attack", "Traveller"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -4801,10 +3986,7 @@
   {
     "name": "Hero",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Traveller"
-    ],
+    "types": ["Action", "Traveller"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -4816,10 +3998,7 @@
   {
     "name": "Champion",
     "expansion": "Adventures",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -4831,9 +4010,7 @@
   {
     "name": "Engineer",
     "expansion": "Empires",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": null,
     "potions": null,
     "debt": 4,
@@ -4845,9 +4022,7 @@
   {
     "name": "City Quarter",
     "expansion": "Empires",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": null,
     "potions": null,
     "debt": 8,
@@ -4859,9 +4034,7 @@
   {
     "name": "Royal Blacksmith",
     "expansion": "Empires",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": null,
     "potions": null,
     "debt": 8,
@@ -4873,10 +4046,7 @@
   {
     "name": "Overlord",
     "expansion": "Empires",
-    "types": [
-      "Action",
-      "Command"
-    ],
+    "types": ["Action", "Command"],
     "coins": null,
     "potions": null,
     "debt": 8,
@@ -4888,9 +4058,7 @@
   {
     "name": "Encampment",
     "expansion": "Empires",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -4902,9 +4070,7 @@
   {
     "name": "Patrician",
     "expansion": "Empires",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -4916,9 +4082,7 @@
   {
     "name": "Settlers",
     "expansion": "Empires",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -4930,10 +4094,7 @@
   {
     "name": "Catapult",
     "expansion": "Empires",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -4945,9 +4106,7 @@
   {
     "name": "Chariot Race",
     "expansion": "Empires",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -4959,11 +4118,7 @@
   {
     "name": "Enchantress",
     "expansion": "Empires",
-    "types": [
-      "Action",
-      "Attack",
-      "Duration"
-    ],
+    "types": ["Action", "Attack", "Duration"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -4975,10 +4130,7 @@
   {
     "name": "Farmers' Market",
     "expansion": "Empires",
-    "types": [
-      "Action",
-      "Gathering"
-    ],
+    "types": ["Action", "Gathering"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -4990,9 +4142,7 @@
   {
     "name": "Gladiator",
     "expansion": "Empires",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -5004,9 +4154,7 @@
   {
     "name": "Rocks",
     "expansion": "Empires",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -5018,9 +4166,7 @@
   {
     "name": "Sacrifice",
     "expansion": "Empires",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -5032,10 +4178,7 @@
   {
     "name": "Temple",
     "expansion": "Empires",
-    "types": [
-      "Action",
-      "Gathering"
-    ],
+    "types": ["Action", "Gathering"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -5047,9 +4190,7 @@
   {
     "name": "Villa",
     "expansion": "Empires",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -5061,10 +4202,7 @@
   {
     "name": "Archive",
     "expansion": "Empires",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -5076,9 +4214,7 @@
   {
     "name": "Bustling Village",
     "expansion": "Empires",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -5090,9 +4226,7 @@
   {
     "name": "Capital",
     "expansion": "Empires",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -5104,9 +4238,7 @@
   {
     "name": "Charm",
     "expansion": "Empires",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -5118,10 +4250,7 @@
   {
     "name": "Crown",
     "expansion": "Empires",
-    "types": [
-      "Action",
-      "Treasure"
-    ],
+    "types": ["Action", "Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -5133,9 +4262,7 @@
   {
     "name": "Emporium",
     "expansion": "Empires",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -5147,9 +4274,7 @@
   {
     "name": "Forum",
     "expansion": "Empires",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -5161,9 +4286,7 @@
   {
     "name": "Groundskeeper",
     "expansion": "Empires",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -5175,10 +4298,7 @@
   {
     "name": "Legionary",
     "expansion": "Empires",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -5190,9 +4310,7 @@
   {
     "name": "Plunder",
     "expansion": "Empires",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -5204,10 +4322,7 @@
   {
     "name": "Wild Hunt",
     "expansion": "Empires",
-    "types": [
-      "Action",
-      "Gathering"
-    ],
+    "types": ["Action", "Gathering"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -5219,9 +4334,7 @@
   {
     "name": "Fortune",
     "expansion": "Empires",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 8,
     "potions": null,
     "debt": 8,
@@ -5233,11 +4346,7 @@
   {
     "name": "Humble Castle",
     "expansion": "Empires",
-    "types": [
-      "Treasure",
-      "Victory",
-      "Castle"
-    ],
+    "types": ["Treasure", "Victory", "Castle"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -5249,10 +4358,7 @@
   {
     "name": "Crumbling Castle",
     "expansion": "Empires",
-    "types": [
-      "Victory",
-      "Castle"
-    ],
+    "types": ["Victory", "Castle"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -5264,11 +4370,7 @@
   {
     "name": "Small Castle",
     "expansion": "Empires",
-    "types": [
-      "Action",
-      "Victory",
-      "Castle"
-    ],
+    "types": ["Action", "Victory", "Castle"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -5280,10 +4382,7 @@
   {
     "name": "Haunted Castle",
     "expansion": "Empires",
-    "types": [
-      "Victory",
-      "Castle"
-    ],
+    "types": ["Victory", "Castle"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -5295,11 +4394,7 @@
   {
     "name": "Opulent Castle",
     "expansion": "Empires",
-    "types": [
-      "Action",
-      "Victory",
-      "Castle"
-    ],
+    "types": ["Action", "Victory", "Castle"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -5311,10 +4406,7 @@
   {
     "name": "Sprawling Castle",
     "expansion": "Empires",
-    "types": [
-      "Victory",
-      "Castle"
-    ],
+    "types": ["Victory", "Castle"],
     "coins": 8,
     "potions": null,
     "debt": null,
@@ -5326,10 +4418,7 @@
   {
     "name": "Grand Castle",
     "expansion": "Empires",
-    "types": [
-      "Victory",
-      "Castle"
-    ],
+    "types": ["Victory", "Castle"],
     "coins": 9,
     "potions": null,
     "debt": null,
@@ -5341,10 +4430,7 @@
   {
     "name": "King's Castle",
     "expansion": "Empires",
-    "types": [
-      "Victory",
-      "Castle"
-    ],
+    "types": ["Victory", "Castle"],
     "coins": 10,
     "potions": null,
     "debt": null,
@@ -5356,9 +4442,7 @@
   {
     "name": "Triumph",
     "expansion": "Empires",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": null,
     "potions": null,
     "debt": 5,
@@ -5370,9 +4454,7 @@
   {
     "name": "Annex",
     "expansion": "Empires",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": null,
     "potions": null,
     "debt": 8,
@@ -5384,9 +4466,7 @@
   {
     "name": "Donate",
     "expansion": "Empires",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": null,
     "potions": null,
     "debt": 8,
@@ -5398,9 +4478,7 @@
   {
     "name": "Advance",
     "expansion": "Empires",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -5412,9 +4490,7 @@
   {
     "name": "Delve",
     "expansion": "Empires",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -5426,9 +4502,7 @@
   {
     "name": "Tax",
     "expansion": "Empires",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -5440,9 +4514,7 @@
   {
     "name": "Banquet",
     "expansion": "Empires",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -5454,9 +4526,7 @@
   {
     "name": "Ritual",
     "expansion": "Empires",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -5468,9 +4538,7 @@
   {
     "name": "Salt the Earth",
     "expansion": "Empires",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -5482,9 +4550,7 @@
   {
     "name": "Wedding",
     "expansion": "Empires",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 4,
     "potions": null,
     "debt": 3,
@@ -5496,9 +4562,7 @@
   {
     "name": "Windfall",
     "expansion": "Empires",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -5510,9 +4574,7 @@
   {
     "name": "Conquest",
     "expansion": "Empires",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -5524,9 +4586,7 @@
   {
     "name": "Dominate",
     "expansion": "Empires",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 14,
     "potions": null,
     "debt": null,
@@ -5538,9 +4598,7 @@
   {
     "name": "Aqueduct",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5552,9 +4610,7 @@
   {
     "name": "Arena",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5566,9 +4622,7 @@
   {
     "name": "Bandit Fort",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5580,9 +4634,7 @@
   {
     "name": "Basilica",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5594,9 +4646,7 @@
   {
     "name": "Battlefield",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5608,9 +4658,7 @@
   {
     "name": "Baths",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5622,9 +4670,7 @@
   {
     "name": "Colonnade",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5636,9 +4682,7 @@
   {
     "name": "Defiled Shrine",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5650,9 +4694,7 @@
   {
     "name": "Fountain",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5664,9 +4706,7 @@
   {
     "name": "Keep",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5678,9 +4718,7 @@
   {
     "name": "Labyrinth",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5692,9 +4730,7 @@
   {
     "name": "Mountain Pass",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5706,9 +4742,7 @@
   {
     "name": "Museum",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5720,9 +4754,7 @@
   {
     "name": "Obelisk",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5734,9 +4766,7 @@
   {
     "name": "Orchard",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5748,9 +4778,7 @@
   {
     "name": "Palace",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5762,9 +4790,7 @@
   {
     "name": "Tomb",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5776,9 +4802,7 @@
   {
     "name": "Tower",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5790,9 +4814,7 @@
   {
     "name": "Triumphal Arch",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5804,9 +4826,7 @@
   {
     "name": "Wall",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5818,9 +4838,7 @@
   {
     "name": "Wolf Den",
     "expansion": "Empires",
-    "types": [
-      "Landmark"
-    ],
+    "types": ["Landmark"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -5832,10 +4850,7 @@
   {
     "name": "Druid",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Fate"
-    ],
+    "types": ["Action", "Fate"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -5847,10 +4862,7 @@
   {
     "name": "Faithful Hound",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -5862,10 +4874,7 @@
   {
     "name": "Guardian",
     "expansion": "Nocturne",
-    "types": [
-      "Night",
-      "Duration"
-    ],
+    "types": ["Night", "Duration"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -5877,9 +4886,7 @@
   {
     "name": "Monastery",
     "expansion": "Nocturne",
-    "types": [
-      "Night"
-    ],
+    "types": ["Night"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -5891,10 +4898,7 @@
   {
     "name": "Pixie",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Fate"
-    ],
+    "types": ["Action", "Fate"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -5906,10 +4910,7 @@
   {
     "name": "Tracker",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Fate"
-    ],
+    "types": ["Action", "Fate"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -5921,9 +4922,7 @@
   {
     "name": "Changeling",
     "expansion": "Nocturne",
-    "types": [
-      "Night"
-    ],
+    "types": ["Night"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -5935,10 +4934,7 @@
   {
     "name": "Fool",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Fate"
-    ],
+    "types": ["Action", "Fate"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -5950,10 +4946,7 @@
   {
     "name": "Ghost Town",
     "expansion": "Nocturne",
-    "types": [
-      "Night",
-      "Duration"
-    ],
+    "types": ["Night", "Duration"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -5965,10 +4958,7 @@
   {
     "name": "Leprechaun",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Doom"
-    ],
+    "types": ["Action", "Doom"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -5980,9 +4970,7 @@
   {
     "name": "Night Watchman",
     "expansion": "Nocturne",
-    "types": [
-      "Night"
-    ],
+    "types": ["Night"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -5994,10 +4982,7 @@
   {
     "name": "Secret Cave",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -6009,10 +4994,7 @@
   {
     "name": "Bard",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Fate"
-    ],
+    "types": ["Action", "Fate"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -6024,10 +5006,7 @@
   {
     "name": "Blessed Village",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Fate"
-    ],
+    "types": ["Action", "Fate"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -6039,9 +5018,7 @@
   {
     "name": "Cemetery",
     "expansion": "Nocturne",
-    "types": [
-      "Victory"
-    ],
+    "types": ["Victory"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -6053,9 +5030,7 @@
   {
     "name": "Conclave",
     "expansion": "Nocturne",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -6067,9 +5042,7 @@
   {
     "name": "Devil's Workshop",
     "expansion": "Nocturne",
-    "types": [
-      "Night"
-    ],
+    "types": ["Night"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -6081,9 +5054,7 @@
   {
     "name": "Exorcist",
     "expansion": "Nocturne",
-    "types": [
-      "Night"
-    ],
+    "types": ["Night"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -6095,9 +5066,7 @@
   {
     "name": "Necromancer",
     "expansion": "Nocturne",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -6109,9 +5078,7 @@
   {
     "name": "Shepherd",
     "expansion": "Nocturne",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -6123,11 +5090,7 @@
   {
     "name": "Skulk",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Attack",
-      "Doom"
-    ],
+    "types": ["Action", "Attack", "Doom"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -6139,10 +5102,7 @@
   {
     "name": "Cobbler",
     "expansion": "Nocturne",
-    "types": [
-      "Night",
-      "Duration"
-    ],
+    "types": ["Night", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -6154,10 +5114,7 @@
   {
     "name": "Crypt",
     "expansion": "Nocturne",
-    "types": [
-      "Night",
-      "Duration"
-    ],
+    "types": ["Night", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -6169,10 +5126,7 @@
   {
     "name": "Cursed Village",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Doom"
-    ],
+    "types": ["Action", "Doom"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -6184,10 +5138,7 @@
   {
     "name": "Den of Sin",
     "expansion": "Nocturne",
-    "types": [
-      "Night",
-      "Duration"
-    ],
+    "types": ["Night", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -6199,11 +5150,7 @@
   {
     "name": "Idol",
     "expansion": "Nocturne",
-    "types": [
-      "Treasure",
-      "Attack",
-      "Fate"
-    ],
+    "types": ["Treasure", "Attack", "Fate"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -6215,9 +5162,7 @@
   {
     "name": "Pooka",
     "expansion": "Nocturne",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -6229,10 +5174,7 @@
   {
     "name": "Sacred Grove",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Fate"
-    ],
+    "types": ["Action", "Fate"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -6244,11 +5186,7 @@
   {
     "name": "Tormentor",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Attack",
-      "Doom"
-    ],
+    "types": ["Action", "Attack", "Doom"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -6260,9 +5198,7 @@
   {
     "name": "Tragic Hero",
     "expansion": "Nocturne",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -6274,11 +5210,7 @@
   {
     "name": "Vampire",
     "expansion": "Nocturne",
-    "types": [
-      "Night",
-      "Attack",
-      "Doom"
-    ],
+    "types": ["Night", "Attack", "Doom"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -6290,12 +5222,7 @@
   {
     "name": "Werewolf",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Night",
-      "Attack",
-      "Doom"
-    ],
+    "types": ["Action", "Night", "Attack", "Doom"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -6307,11 +5234,7 @@
   {
     "name": "Raider",
     "expansion": "Nocturne",
-    "types": [
-      "Night",
-      "Duration",
-      "Attack"
-    ],
+    "types": ["Night", "Duration", "Attack"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -6323,10 +5246,7 @@
   {
     "name": "Will-o'-Wisp",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Spirit"
-    ],
+    "types": ["Action", "Spirit"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -6338,9 +5258,7 @@
   {
     "name": "Wish",
     "expansion": "Nocturne",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -6352,9 +5270,7 @@
   {
     "name": "Bat",
     "expansion": "Nocturne",
-    "types": [
-      "Night"
-    ],
+    "types": ["Night"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -6366,10 +5282,7 @@
   {
     "name": "Imp",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Spirit"
-    ],
+    "types": ["Action", "Spirit"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -6381,11 +5294,7 @@
   {
     "name": "Ghost",
     "expansion": "Nocturne",
-    "types": [
-      "Night",
-      "Duration",
-      "Spirit"
-    ],
+    "types": ["Night", "Duration", "Spirit"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -6397,10 +5306,7 @@
   {
     "name": "Zombie Apprentice",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Zombie"
-    ],
+    "types": ["Action", "Zombie"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -6412,10 +5318,7 @@
   {
     "name": "Zombie Mason",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Zombie"
-    ],
+    "types": ["Action", "Zombie"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -6427,10 +5330,7 @@
   {
     "name": "Zombie Spy",
     "expansion": "Nocturne",
-    "types": [
-      "Action",
-      "Zombie"
-    ],
+    "types": ["Action", "Zombie"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -6442,10 +5342,7 @@
   {
     "name": "Haunted Mirror",
     "expansion": "Nocturne",
-    "types": [
-      "Treasure",
-      "Heirloom"
-    ],
+    "types": ["Treasure", "Heirloom"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -6457,10 +5354,7 @@
   {
     "name": "Magic Lamp",
     "expansion": "Nocturne",
-    "types": [
-      "Treasure",
-      "Heirloom"
-    ],
+    "types": ["Treasure", "Heirloom"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -6472,10 +5366,7 @@
   {
     "name": "Goat",
     "expansion": "Nocturne",
-    "types": [
-      "Treasure",
-      "Heirloom"
-    ],
+    "types": ["Treasure", "Heirloom"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -6487,11 +5378,7 @@
   {
     "name": "Pasture",
     "expansion": "Nocturne",
-    "types": [
-      "Treasure",
-      "Victory",
-      "Heirloom"
-    ],
+    "types": ["Treasure", "Victory", "Heirloom"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -6503,10 +5390,7 @@
   {
     "name": "Pouch",
     "expansion": "Nocturne",
-    "types": [
-      "Treasure",
-      "Heirloom"
-    ],
+    "types": ["Treasure", "Heirloom"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -6518,10 +5402,7 @@
   {
     "name": "Cursed Gold",
     "expansion": "Nocturne",
-    "types": [
-      "Treasure",
-      "Heirloom"
-    ],
+    "types": ["Treasure", "Heirloom"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -6533,10 +5414,7 @@
   {
     "name": "Lucky Coin",
     "expansion": "Nocturne",
-    "types": [
-      "Treasure",
-      "Heirloom"
-    ],
+    "types": ["Treasure", "Heirloom"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -6548,9 +5426,7 @@
   {
     "name": "The Earth's Gift",
     "expansion": "Nocturne",
-    "types": [
-      "Boon"
-    ],
+    "types": ["Boon"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6562,9 +5438,7 @@
   {
     "name": "The Field's Gift",
     "expansion": "Nocturne",
-    "types": [
-      "Boon"
-    ],
+    "types": ["Boon"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6576,9 +5450,7 @@
   {
     "name": "The Flame's Gift",
     "expansion": "Nocturne",
-    "types": [
-      "Boon"
-    ],
+    "types": ["Boon"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6590,9 +5462,7 @@
   {
     "name": "The Forest's Gift",
     "expansion": "Nocturne",
-    "types": [
-      "Boon"
-    ],
+    "types": ["Boon"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6604,9 +5474,7 @@
   {
     "name": "The Moon's Gift",
     "expansion": "Nocturne",
-    "types": [
-      "Boon"
-    ],
+    "types": ["Boon"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6618,9 +5486,7 @@
   {
     "name": "The Mountain's Gift",
     "expansion": "Nocturne",
-    "types": [
-      "Boon"
-    ],
+    "types": ["Boon"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6632,9 +5498,7 @@
   {
     "name": "The River's Gift",
     "expansion": "Nocturne",
-    "types": [
-      "Boon"
-    ],
+    "types": ["Boon"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6646,9 +5510,7 @@
   {
     "name": "The Sea's Gift",
     "expansion": "Nocturne",
-    "types": [
-      "Boon"
-    ],
+    "types": ["Boon"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6660,9 +5522,7 @@
   {
     "name": "The Sky's Gift",
     "expansion": "Nocturne",
-    "types": [
-      "Boon"
-    ],
+    "types": ["Boon"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6674,9 +5534,7 @@
   {
     "name": "The Sun's Gift",
     "expansion": "Nocturne",
-    "types": [
-      "Boon"
-    ],
+    "types": ["Boon"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6688,9 +5546,7 @@
   {
     "name": "The Swamp's Gift",
     "expansion": "Nocturne",
-    "types": [
-      "Boon"
-    ],
+    "types": ["Boon"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6702,9 +5558,7 @@
   {
     "name": "The Wind's Gift",
     "expansion": "Nocturne",
-    "types": [
-      "Boon"
-    ],
+    "types": ["Boon"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6716,9 +5570,7 @@
   {
     "name": "Bad Omens",
     "expansion": "Nocturne",
-    "types": [
-      "Hex"
-    ],
+    "types": ["Hex"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6730,9 +5582,7 @@
   {
     "name": "Delusion",
     "expansion": "Nocturne",
-    "types": [
-      "Hex"
-    ],
+    "types": ["Hex"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6744,9 +5594,7 @@
   {
     "name": "Envy",
     "expansion": "Nocturne",
-    "types": [
-      "Hex"
-    ],
+    "types": ["Hex"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6758,9 +5606,7 @@
   {
     "name": "Famine",
     "expansion": "Nocturne",
-    "types": [
-      "Hex"
-    ],
+    "types": ["Hex"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6772,9 +5618,7 @@
   {
     "name": "Fear",
     "expansion": "Nocturne",
-    "types": [
-      "Hex"
-    ],
+    "types": ["Hex"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6786,9 +5630,7 @@
   {
     "name": "Greed",
     "expansion": "Nocturne",
-    "types": [
-      "Hex"
-    ],
+    "types": ["Hex"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6800,9 +5642,7 @@
   {
     "name": "Haunting",
     "expansion": "Nocturne",
-    "types": [
-      "Hex"
-    ],
+    "types": ["Hex"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6814,9 +5654,7 @@
   {
     "name": "Locusts",
     "expansion": "Nocturne",
-    "types": [
-      "Hex"
-    ],
+    "types": ["Hex"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6828,9 +5666,7 @@
   {
     "name": "Misery",
     "expansion": "Nocturne",
-    "types": [
-      "Hex"
-    ],
+    "types": ["Hex"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6842,9 +5678,7 @@
   {
     "name": "Plague",
     "expansion": "Nocturne",
-    "types": [
-      "Hex"
-    ],
+    "types": ["Hex"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6856,9 +5690,7 @@
   {
     "name": "Poverty",
     "expansion": "Nocturne",
-    "types": [
-      "Hex"
-    ],
+    "types": ["Hex"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6870,9 +5702,7 @@
   {
     "name": "War",
     "expansion": "Nocturne",
-    "types": [
-      "Hex"
-    ],
+    "types": ["Hex"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6884,9 +5714,7 @@
   {
     "name": "Deluded",
     "expansion": "Nocturne",
-    "types": [
-      "State"
-    ],
+    "types": ["State"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6898,9 +5726,7 @@
   {
     "name": "Envious",
     "expansion": "Nocturne",
-    "types": [
-      "State"
-    ],
+    "types": ["State"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6912,9 +5738,7 @@
   {
     "name": "Lost in the Woods",
     "expansion": "Nocturne",
-    "types": [
-      "State"
-    ],
+    "types": ["State"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6926,9 +5750,7 @@
   {
     "name": "Miserable",
     "expansion": "Nocturne",
-    "types": [
-      "State"
-    ],
+    "types": ["State"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6940,9 +5762,7 @@
   {
     "name": "Twice Miserable",
     "expansion": "Nocturne",
-    "types": [
-      "State"
-    ],
+    "types": ["State"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -6954,9 +5774,7 @@
   {
     "name": "Border Guard",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -6968,9 +5786,7 @@
   {
     "name": "Ducat",
     "expansion": "Renaissance",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -6982,9 +5798,7 @@
   {
     "name": "Lackeys",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -6996,9 +5810,7 @@
   {
     "name": "Acting Troupe",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7010,10 +5822,7 @@
   {
     "name": "Cargo Ship",
     "expansion": "Renaissance",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7025,9 +5834,7 @@
   {
     "name": "Experiment",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7039,9 +5846,7 @@
   {
     "name": "Improve",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7053,9 +5858,7 @@
   {
     "name": "Flag Bearer",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7067,9 +5870,7 @@
   {
     "name": "Hideout",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7081,9 +5882,7 @@
   {
     "name": "Inventor",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7095,9 +5894,7 @@
   {
     "name": "Mountain Village",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7109,10 +5906,7 @@
   {
     "name": "Patron",
     "expansion": "Renaissance",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7124,9 +5918,7 @@
   {
     "name": "Priest",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7138,10 +5930,7 @@
   {
     "name": "Research",
     "expansion": "Renaissance",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7153,9 +5942,7 @@
   {
     "name": "Silk Merchant",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7167,10 +5954,7 @@
   {
     "name": "Old Witch",
     "expansion": "Renaissance",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7182,9 +5966,7 @@
   {
     "name": "Recruiter",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7196,9 +5978,7 @@
   {
     "name": "Scepter",
     "expansion": "Renaissance",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7210,9 +5990,7 @@
   {
     "name": "Scholar",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7224,9 +6002,7 @@
   {
     "name": "Sculptor",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7238,9 +6014,7 @@
   {
     "name": "Seer",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7252,9 +6026,7 @@
   {
     "name": "Spices",
     "expansion": "Renaissance",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7266,9 +6038,7 @@
   {
     "name": "Swashbuckler",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7280,9 +6050,7 @@
   {
     "name": "Treasurer",
     "expansion": "Renaissance",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7294,10 +6062,7 @@
   {
     "name": "Villain",
     "expansion": "Renaissance",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7309,9 +6074,7 @@
   {
     "name": "Flag",
     "expansion": "Renaissance",
-    "types": [
-      "Artifact"
-    ],
+    "types": ["Artifact"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -7323,9 +6086,7 @@
   {
     "name": "Horn",
     "expansion": "Renaissance",
-    "types": [
-      "Artifact"
-    ],
+    "types": ["Artifact"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -7337,9 +6098,7 @@
   {
     "name": "Key",
     "expansion": "Renaissance",
-    "types": [
-      "Artifact"
-    ],
+    "types": ["Artifact"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -7351,9 +6110,7 @@
   {
     "name": "Lantern",
     "expansion": "Renaissance",
-    "types": [
-      "Artifact"
-    ],
+    "types": ["Artifact"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -7365,9 +6122,7 @@
   {
     "name": "Treasure Chest",
     "expansion": "Renaissance",
-    "types": [
-      "Artifact"
-    ],
+    "types": ["Artifact"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -7379,9 +6134,7 @@
   {
     "name": "Cathedral",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7393,9 +6146,7 @@
   {
     "name": "City Gate",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7407,9 +6158,7 @@
   {
     "name": "Pageant",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7421,9 +6170,7 @@
   {
     "name": "Sewers",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7435,9 +6182,7 @@
   {
     "name": "Star Chart",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7449,9 +6194,7 @@
   {
     "name": "Exploration",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7463,9 +6206,7 @@
   {
     "name": "Fair",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7477,9 +6218,7 @@
   {
     "name": "Silos",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7491,9 +6230,7 @@
   {
     "name": "Sinister Plot",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7505,9 +6242,7 @@
   {
     "name": "Academy",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7519,9 +6254,7 @@
   {
     "name": "Capitalism",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7533,9 +6266,7 @@
   {
     "name": "Fleet",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7547,9 +6278,7 @@
   {
     "name": "Guildhall",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7561,9 +6290,7 @@
   {
     "name": "Piazza",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7575,9 +6302,7 @@
   {
     "name": "Road Network",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7589,9 +6314,7 @@
   {
     "name": "Barracks",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -7603,9 +6326,7 @@
   {
     "name": "Crop Rotation",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -7617,9 +6338,7 @@
   {
     "name": "Innovation",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -7631,9 +6350,7 @@
   {
     "name": "Canal",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -7645,9 +6362,7 @@
   {
     "name": "Citadel",
     "expansion": "Renaissance",
-    "types": [
-      "Project"
-    ],
+    "types": ["Project"],
     "coins": 8,
     "potions": null,
     "debt": null,
@@ -7659,11 +6374,7 @@
   {
     "name": "Black Cat",
     "expansion": "Menagerie",
-    "types": [
-      "Action",
-      "Attack",
-      "Reaction"
-    ],
+    "types": ["Action", "Attack", "Reaction"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -7675,10 +6386,7 @@
   {
     "name": "Sleigh",
     "expansion": "Menagerie",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -7690,9 +6398,7 @@
   {
     "name": "Supplies",
     "expansion": "Menagerie",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -7704,9 +6410,7 @@
   {
     "name": "Horse",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7718,9 +6422,7 @@
   {
     "name": "Camel Train",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7732,9 +6434,7 @@
   {
     "name": "Goatherd",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7746,9 +6446,7 @@
   {
     "name": "Scrap",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7760,10 +6458,7 @@
   {
     "name": "Sheepdog",
     "expansion": "Menagerie",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7775,9 +6470,7 @@
   {
     "name": "Snowy Village",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7789,9 +6482,7 @@
   {
     "name": "Stockpile",
     "expansion": "Menagerie",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -7803,9 +6494,7 @@
   {
     "name": "Bounty Hunter",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7817,10 +6506,7 @@
   {
     "name": "Cardinal",
     "expansion": "Menagerie",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7832,9 +6518,7 @@
   {
     "name": "Cavalry",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7846,9 +6530,7 @@
   {
     "name": "Groom",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7860,9 +6542,7 @@
   {
     "name": "Hostelry",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7874,11 +6554,7 @@
   {
     "name": "Village Green",
     "expansion": "Menagerie",
-    "types": [
-      "Action",
-      "Duration",
-      "Reaction"
-    ],
+    "types": ["Action", "Duration", "Reaction"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -7890,9 +6566,7 @@
   {
     "name": "Fisherman",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7904,9 +6578,7 @@
   {
     "name": "Hunting Lodge",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7918,10 +6590,7 @@
   {
     "name": "Barge",
     "expansion": "Menagerie",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7933,10 +6602,7 @@
   {
     "name": "Coven",
     "expansion": "Menagerie",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7948,9 +6614,7 @@
   {
     "name": "Displace",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7962,10 +6626,7 @@
   {
     "name": "Falconer",
     "expansion": "Menagerie",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7977,11 +6638,7 @@
   {
     "name": "Gatekeeper",
     "expansion": "Menagerie",
-    "types": [
-      "Action",
-      "Duration",
-      "Attack"
-    ],
+    "types": ["Action", "Duration", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -7993,9 +6650,7 @@
   {
     "name": "Kiln",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8007,9 +6662,7 @@
   {
     "name": "Livery",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8021,10 +6674,7 @@
   {
     "name": "Mastermind",
     "expansion": "Menagerie",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8036,9 +6686,7 @@
   {
     "name": "Paddock",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8050,9 +6698,7 @@
   {
     "name": "Sanctuary",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8064,9 +6710,7 @@
   {
     "name": "Destrier",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -8078,9 +6722,7 @@
   {
     "name": "Wayfarer",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -8092,9 +6734,7 @@
   {
     "name": "Animal Fair",
     "expansion": "Menagerie",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -8106,9 +6746,7 @@
   {
     "name": "Delay",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -8120,9 +6758,7 @@
   {
     "name": "Desperation",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 0,
     "potions": null,
     "debt": null,
@@ -8134,9 +6770,7 @@
   {
     "name": "Gamble",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -8148,9 +6782,7 @@
   {
     "name": "Pursue",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -8162,9 +6794,7 @@
   {
     "name": "Ride",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -8176,9 +6806,7 @@
   {
     "name": "Toil",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -8190,9 +6818,7 @@
   {
     "name": "Enhance",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -8204,9 +6830,7 @@
   {
     "name": "March",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -8218,9 +6842,7 @@
   {
     "name": "Transport",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -8232,9 +6854,7 @@
   {
     "name": "Banish",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -8246,9 +6866,7 @@
   {
     "name": "Bargain",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -8260,9 +6878,7 @@
   {
     "name": "Invest",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -8274,9 +6890,7 @@
   {
     "name": "Seize the Day",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -8288,9 +6902,7 @@
   {
     "name": "Commerce",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8302,9 +6914,7 @@
   {
     "name": "Demand",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8316,9 +6926,7 @@
   {
     "name": "Stampede",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8330,9 +6938,7 @@
   {
     "name": "Reap",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -8344,9 +6950,7 @@
   {
     "name": "Enclave",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 8,
     "potions": null,
     "debt": null,
@@ -8358,9 +6962,7 @@
   {
     "name": "Alliance",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 10,
     "potions": null,
     "debt": null,
@@ -8372,9 +6974,7 @@
   {
     "name": "Populate",
     "expansion": "Menagerie",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 10,
     "potions": null,
     "debt": null,
@@ -8386,9 +6986,7 @@
   {
     "name": "Way of the Butterfly",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8400,9 +6998,7 @@
   {
     "name": "Way of the Camel",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8414,9 +7010,7 @@
   {
     "name": "Way of the Chameleon",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8428,9 +7022,7 @@
   {
     "name": "Way of the Frog",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8442,9 +7034,7 @@
   {
     "name": "Way of the Goat",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8456,9 +7046,7 @@
   {
     "name": "Way of the Horse",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8470,9 +7058,7 @@
   {
     "name": "Way of the Mole",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8484,9 +7070,7 @@
   {
     "name": "Way of the Monkey",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8498,9 +7082,7 @@
   {
     "name": "Way of the Mouse",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8512,9 +7094,7 @@
   {
     "name": "Way of the Mule",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8526,9 +7106,7 @@
   {
     "name": "Way of the Otter",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8540,9 +7118,7 @@
   {
     "name": "Way of the Ox",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8554,9 +7130,7 @@
   {
     "name": "Way of the Owl",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8568,9 +7142,7 @@
   {
     "name": "Way of the Pig",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8582,9 +7154,7 @@
   {
     "name": "Way of the Rat",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8596,9 +7166,7 @@
   {
     "name": "Way of the Seal",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8610,9 +7178,7 @@
   {
     "name": "Way of the Sheep",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8624,9 +7190,7 @@
   {
     "name": "Way of the Squirrel",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8638,9 +7202,7 @@
   {
     "name": "Way of the Turtle",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8652,9 +7214,7 @@
   {
     "name": "Way of the Worm",
     "expansion": "Menagerie",
-    "types": [
-      "Way"
-    ],
+    "types": ["Way"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -8666,10 +7226,7 @@
   {
     "name": "Bauble",
     "expansion": "Allies",
-    "types": [
-      "Treasure",
-      "Liaison"
-    ],
+    "types": ["Treasure", "Liaison"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -8681,10 +7238,7 @@
   {
     "name": "Sycophant",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Liaison"
-    ],
+    "types": ["Action", "Liaison"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -8696,9 +7250,7 @@
   {
     "name": "Merchant Camp",
     "expansion": "Allies",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -8710,11 +7262,7 @@
   {
     "name": "Importer",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Duration",
-      "Liaison"
-    ],
+    "types": ["Action", "Duration", "Liaison"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -8726,9 +7274,7 @@
   {
     "name": "Sentinel",
     "expansion": "Allies",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -8740,10 +7286,7 @@
   {
     "name": "Underling",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Liaison"
-    ],
+    "types": ["Action", "Liaison"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -8755,10 +7298,7 @@
   {
     "name": "Broker",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Liaison"
-    ],
+    "types": ["Action", "Liaison"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -8770,9 +7310,7 @@
   {
     "name": "Carpenter",
     "expansion": "Allies",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -8784,9 +7322,7 @@
   {
     "name": "Courier",
     "expansion": "Allies",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -8798,9 +7334,7 @@
   {
     "name": "Innkeeper",
     "expansion": "Allies",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -8812,10 +7346,7 @@
   {
     "name": "Royal Galley",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -8827,9 +7358,7 @@
   {
     "name": "Town",
     "expansion": "Allies",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -8841,10 +7370,7 @@
   {
     "name": "Barbarian",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8856,9 +7382,7 @@
   {
     "name": "Capital City",
     "expansion": "Allies",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8870,11 +7394,7 @@
   {
     "name": "Contract",
     "expansion": "Allies",
-    "types": [
-      "Treasure",
-      "Duration",
-      "Liaison"
-    ],
+    "types": ["Treasure", "Duration", "Liaison"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8886,10 +7406,7 @@
   {
     "name": "Emissary",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Liaison"
-    ],
+    "types": ["Action", "Liaison"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8901,9 +7418,7 @@
   {
     "name": "Galleria",
     "expansion": "Allies",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8915,10 +7430,7 @@
   {
     "name": "Guildmaster",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Liaison"
-    ],
+    "types": ["Action", "Liaison"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8930,11 +7442,7 @@
   {
     "name": "Highwayman",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Duration",
-      "Attack"
-    ],
+    "types": ["Action", "Duration", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8946,9 +7454,7 @@
   {
     "name": "Hunter",
     "expansion": "Allies",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8960,9 +7466,7 @@
   {
     "name": "Modify",
     "expansion": "Allies",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8974,10 +7478,7 @@
   {
     "name": "Skirmisher",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -8989,9 +7490,7 @@
   {
     "name": "Specialist",
     "expansion": "Allies",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -9003,9 +7502,7 @@
   {
     "name": "Swap",
     "expansion": "Allies",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -9017,9 +7514,7 @@
   {
     "name": "Marquis",
     "expansion": "Allies",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -9031,10 +7526,7 @@
   {
     "name": "Town Crier",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Townsfolk"
-    ],
+    "types": ["Action", "Townsfolk"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -9046,10 +7538,7 @@
   {
     "name": "Herb Gatherer",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Augur"
-    ],
+    "types": ["Action", "Augur"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -9061,10 +7550,7 @@
   {
     "name": "Old Map",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Odyssey"
-    ],
+    "types": ["Action", "Odyssey"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -9076,10 +7562,7 @@
   {
     "name": "Blacksmith",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Townsfolk"
-    ],
+    "types": ["Action", "Townsfolk"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -9091,11 +7574,7 @@
   {
     "name": "Student",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Wizard",
-      "Liaison"
-    ],
+    "types": ["Action", "Wizard", "Liaison"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -9107,10 +7586,7 @@
   {
     "name": "Tent",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Fort"
-    ],
+    "types": ["Action", "Fort"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -9122,10 +7598,7 @@
   {
     "name": "Battle Plan",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Clash"
-    ],
+    "types": ["Action", "Clash"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -9137,10 +7610,7 @@
   {
     "name": "Acolyte",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Augur"
-    ],
+    "types": ["Action", "Augur"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -9152,11 +7622,7 @@
   {
     "name": "Voyage",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Duration",
-      "Odyssey"
-    ],
+    "types": ["Action", "Duration", "Odyssey"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -9168,10 +7634,7 @@
   {
     "name": "Miller",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Townsfolk"
-    ],
+    "types": ["Action", "Townsfolk"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -9183,11 +7646,7 @@
   {
     "name": "Conjurer",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Duration",
-      "Wizard"
-    ],
+    "types": ["Action", "Duration", "Wizard"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -9199,11 +7658,7 @@
   {
     "name": "Garrison",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Duration",
-      "Fort"
-    ],
+    "types": ["Action", "Duration", "Fort"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -9215,11 +7670,7 @@
   {
     "name": "Archer",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Attack",
-      "Clash"
-    ],
+    "types": ["Action", "Attack", "Clash"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -9231,11 +7682,7 @@
   {
     "name": "Sorceress",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Attack",
-      "Augur"
-    ],
+    "types": ["Action", "Attack", "Augur"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -9247,10 +7694,7 @@
   {
     "name": "Sunken Treasure",
     "expansion": "Allies",
-    "types": [
-      "Treasure",
-      "Odyssey"
-    ],
+    "types": ["Treasure", "Odyssey"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -9262,10 +7706,7 @@
   {
     "name": "Elder",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Townsfolk"
-    ],
+    "types": ["Action", "Townsfolk"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -9277,11 +7718,7 @@
   {
     "name": "Sorcerer",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Attack",
-      "Wizard"
-    ],
+    "types": ["Action", "Attack", "Wizard"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -9293,10 +7730,7 @@
   {
     "name": "Hill Fort",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Fort"
-    ],
+    "types": ["Action", "Fort"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -9308,12 +7742,7 @@
   {
     "name": "Warlord",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Duration",
-      "Attack",
-      "Clash"
-    ],
+    "types": ["Action", "Duration", "Attack", "Clash"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -9325,10 +7754,7 @@
   {
     "name": "Sibyl",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Augur"
-    ],
+    "types": ["Action", "Augur"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -9340,11 +7766,7 @@
   {
     "name": "Distant Shore",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Victory",
-      "Odyssey"
-    ],
+    "types": ["Action", "Victory", "Odyssey"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -9356,10 +7778,7 @@
   {
     "name": "Lich",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Wizard"
-    ],
+    "types": ["Action", "Wizard"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -9371,12 +7790,7 @@
   {
     "name": "Stronghold",
     "expansion": "Allies",
-    "types": [
-      "Action",
-      "Victory",
-      "Duration",
-      "Fort"
-    ],
+    "types": ["Action", "Victory", "Duration", "Fort"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -9388,10 +7802,7 @@
   {
     "name": "Territory",
     "expansion": "Allies",
-    "types": [
-      "Victory",
-      "Clash"
-    ],
+    "types": ["Victory", "Clash"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -9403,9 +7814,7 @@
   {
     "name": "Architects' Guild",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9417,9 +7826,7 @@
   {
     "name": "Band of Nomads",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9431,9 +7838,7 @@
   {
     "name": "Cave Dwellers",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9445,9 +7850,7 @@
   {
     "name": "Circle of Witches",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9459,9 +7862,7 @@
   {
     "name": "City-state",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9473,9 +7874,7 @@
   {
     "name": "Coastal Haven",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9487,9 +7886,7 @@
   {
     "name": "Crafters' Guild",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9501,9 +7898,7 @@
   {
     "name": "Desert Guides",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9515,9 +7910,7 @@
   {
     "name": "Family of Inventors",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9529,9 +7922,7 @@
   {
     "name": "Fellowship of Scribes",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9543,9 +7934,7 @@
   {
     "name": "Forest Dwellers",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9557,9 +7946,7 @@
   {
     "name": "Gang of Pickpockets",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9571,9 +7958,7 @@
   {
     "name": "Island Folk",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9585,9 +7970,7 @@
   {
     "name": "League of Bankers",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9599,9 +7982,7 @@
   {
     "name": "League of Shopkeepers",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9613,9 +7994,7 @@
   {
     "name": "Market Towns",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9627,9 +8006,7 @@
   {
     "name": "Mountain Folk",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9641,9 +8018,7 @@
   {
     "name": "Order of Astrologers",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9655,9 +8030,7 @@
   {
     "name": "Order of Masons",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9669,9 +8042,7 @@
   {
     "name": "Peaceful Cult",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9683,9 +8054,7 @@
   {
     "name": "Plateau Shepherds",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9697,9 +8066,7 @@
   {
     "name": "Trappers' Lodge",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9711,9 +8078,7 @@
   {
     "name": "Woodworkers' Guild",
     "expansion": "Allies",
-    "types": [
-      "Ally"
-    ],
+    "types": ["Ally"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -9725,10 +8090,7 @@
   {
     "name": "Cage",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Duration"
-    ],
+    "types": ["Treasure", "Duration"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -9740,10 +8102,7 @@
   {
     "name": "Grotto",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -9755,9 +8114,7 @@
   {
     "name": "Jewelled Egg",
     "expansion": "Plunder",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -9769,10 +8126,7 @@
   {
     "name": "Search",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -9784,9 +8138,7 @@
   {
     "name": "Shaman",
     "expansion": "Plunder",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -9798,10 +8150,7 @@
   {
     "name": "Secluded Shrine",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -9813,11 +8162,7 @@
   {
     "name": "Siren",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Duration",
-      "Attack"
-    ],
+    "types": ["Action", "Duration", "Attack"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -9829,11 +8174,7 @@
   {
     "name": "Stowaway",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Duration",
-      "Reaction"
-    ],
+    "types": ["Action", "Duration", "Reaction"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -9845,10 +8186,7 @@
   {
     "name": "Taskmaster",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -9860,10 +8198,7 @@
   {
     "name": "Abundance",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Duration"
-    ],
+    "types": ["Treasure", "Duration"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -9875,10 +8210,7 @@
   {
     "name": "Cabin Boy",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -9890,9 +8222,7 @@
   {
     "name": "Crucible",
     "expansion": "Plunder",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -9904,11 +8234,7 @@
   {
     "name": "Flagship",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Duration",
-      "Command"
-    ],
+    "types": ["Action", "Duration", "Command"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -9920,9 +8246,7 @@
   {
     "name": "Fortune Hunter",
     "expansion": "Plunder",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -9934,10 +8258,7 @@
   {
     "name": "Gondola",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Duration"
-    ],
+    "types": ["Treasure", "Duration"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -9949,9 +8270,7 @@
   {
     "name": "Harbor Village",
     "expansion": "Plunder",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -9963,10 +8282,7 @@
   {
     "name": "Landing Party",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -9978,10 +8294,7 @@
   {
     "name": "Mapmaker",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Reaction"
-    ],
+    "types": ["Action", "Reaction"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -9993,9 +8306,7 @@
   {
     "name": "Maroon",
     "expansion": "Plunder",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -10007,10 +8318,7 @@
   {
     "name": "Rope",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Duration"
-    ],
+    "types": ["Treasure", "Duration"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -10022,9 +8330,7 @@
   {
     "name": "Swamp Shacks",
     "expansion": "Plunder",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -10036,9 +8342,7 @@
   {
     "name": "Tools",
     "expansion": "Plunder",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -10050,10 +8354,7 @@
   {
     "name": "Buried Treasure",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Duration"
-    ],
+    "types": ["Treasure", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10065,10 +8366,7 @@
   {
     "name": "Crew",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10080,11 +8378,7 @@
   {
     "name": "Cutthroat",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Duration",
-      "Attack"
-    ],
+    "types": ["Action", "Duration", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10096,10 +8390,7 @@
   {
     "name": "Enlarge",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10111,9 +8402,7 @@
   {
     "name": "Figurine",
     "expansion": "Plunder",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10125,9 +8414,7 @@
   {
     "name": "First Mate",
     "expansion": "Plunder",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10139,11 +8426,7 @@
   {
     "name": "Frigate",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Duration",
-      "Attack"
-    ],
+    "types": ["Action", "Duration", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10155,10 +8438,7 @@
   {
     "name": "Longship",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10170,9 +8450,7 @@
   {
     "name": "Mining Road",
     "expansion": "Plunder",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10184,9 +8462,7 @@
   {
     "name": "Pendant",
     "expansion": "Plunder",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10198,9 +8474,7 @@
   {
     "name": "Pickaxe",
     "expansion": "Plunder",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10212,9 +8486,7 @@
   {
     "name": "Pilgrim",
     "expansion": "Plunder",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10226,10 +8498,7 @@
   {
     "name": "Quartermaster",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10241,9 +8510,7 @@
   {
     "name": "Silver Mine",
     "expansion": "Plunder",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10255,10 +8522,7 @@
   {
     "name": "Trickster",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Attack"
-    ],
+    "types": ["Action", "Attack"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10270,9 +8534,7 @@
   {
     "name": "Wealthy Village",
     "expansion": "Plunder",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -10284,9 +8546,7 @@
   {
     "name": "Sack of Loot",
     "expansion": "Plunder",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -10298,9 +8558,7 @@
   {
     "name": "King's Cache",
     "expansion": "Plunder",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10312,11 +8570,7 @@
   {
     "name": "Amphora",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Duration",
-      "Loot"
-    ],
+    "types": ["Treasure", "Duration", "Loot"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10328,10 +8582,7 @@
   {
     "name": "Doubloons",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Loot"
-    ],
+    "types": ["Treasure", "Loot"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10343,11 +8594,7 @@
   {
     "name": "Endless Chalice",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Duration",
-      "Loot"
-    ],
+    "types": ["Treasure", "Duration", "Loot"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10359,11 +8606,7 @@
   {
     "name": "Figurehead",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Duration",
-      "Loot"
-    ],
+    "types": ["Treasure", "Duration", "Loot"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10375,10 +8618,7 @@
   {
     "name": "Hammer",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Loot"
-    ],
+    "types": ["Treasure", "Loot"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10390,10 +8630,7 @@
   {
     "name": "Insignia",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Loot"
-    ],
+    "types": ["Treasure", "Loot"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10405,11 +8642,7 @@
   {
     "name": "Jewels",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Duration",
-      "Loot"
-    ],
+    "types": ["Treasure", "Duration", "Loot"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10421,10 +8654,7 @@
   {
     "name": "Orb",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Loot"
-    ],
+    "types": ["Treasure", "Loot"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10436,10 +8666,7 @@
   {
     "name": "Prize Goat",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Loot"
-    ],
+    "types": ["Treasure", "Loot"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10451,10 +8678,7 @@
   {
     "name": "Puzzle Box",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Loot"
-    ],
+    "types": ["Treasure", "Loot"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10466,10 +8690,7 @@
   {
     "name": "Sextant",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Loot"
-    ],
+    "types": ["Treasure", "Loot"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10481,11 +8702,7 @@
   {
     "name": "Shield",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Reaction",
-      "Loot"
-    ],
+    "types": ["Treasure", "Reaction", "Loot"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10497,11 +8714,7 @@
   {
     "name": "Spell Scroll",
     "expansion": "Plunder",
-    "types": [
-      "Action",
-      "Treasure",
-      "Loot"
-    ],
+    "types": ["Action", "Treasure", "Loot"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10513,10 +8726,7 @@
   {
     "name": "Staff",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Loot"
-    ],
+    "types": ["Treasure", "Loot"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10528,11 +8738,7 @@
   {
     "name": "Sword",
     "expansion": "Plunder",
-    "types": [
-      "Treasure",
-      "Attack",
-      "Loot"
-    ],
+    "types": ["Treasure", "Attack", "Loot"],
     "coins": 7,
     "potions": null,
     "debt": null,
@@ -10544,9 +8750,7 @@
   {
     "name": "Bury",
     "expansion": "Plunder",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 1,
     "potions": null,
     "debt": null,
@@ -10558,9 +8762,7 @@
   {
     "name": "Avoid",
     "expansion": "Plunder",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -10572,9 +8774,7 @@
   {
     "name": "Deliver",
     "expansion": "Plunder",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -10586,9 +8786,7 @@
   {
     "name": "Peril",
     "expansion": "Plunder",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -10600,9 +8798,7 @@
   {
     "name": "Rush",
     "expansion": "Plunder",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 2,
     "potions": null,
     "debt": null,
@@ -10614,9 +8810,7 @@
   {
     "name": "Foray",
     "expansion": "Plunder",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -10628,9 +8822,7 @@
   {
     "name": "Launch",
     "expansion": "Plunder",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -10642,9 +8834,7 @@
   {
     "name": "Mirror",
     "expansion": "Plunder",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -10656,9 +8846,7 @@
   {
     "name": "Prepare",
     "expansion": "Plunder",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -10670,9 +8858,7 @@
   {
     "name": "Scrounge",
     "expansion": "Plunder",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -10684,9 +8870,7 @@
   {
     "name": "Journey",
     "expansion": "Plunder",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -10698,9 +8882,7 @@
   {
     "name": "Maelstrom",
     "expansion": "Plunder",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -10712,9 +8894,7 @@
   {
     "name": "Looting",
     "expansion": "Plunder",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -10726,9 +8906,7 @@
   {
     "name": "Invasion",
     "expansion": "Plunder",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 10,
     "potions": null,
     "debt": null,
@@ -10740,9 +8918,7 @@
   {
     "name": "Prosper",
     "expansion": "Plunder",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 10,
     "potions": null,
     "debt": null,
@@ -10754,9 +8930,7 @@
   {
     "name": "Cheap",
     "expansion": "Plunder",
-    "types": [
-      "Trait"
-    ],
+    "types": ["Trait"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -10768,9 +8942,7 @@
   {
     "name": "Cursed",
     "expansion": "Plunder",
-    "types": [
-      "Trait"
-    ],
+    "types": ["Trait"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -10782,9 +8954,7 @@
   {
     "name": "Fated",
     "expansion": "Plunder",
-    "types": [
-      "Trait"
-    ],
+    "types": ["Trait"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -10796,9 +8966,7 @@
   {
     "name": "Fawning",
     "expansion": "Plunder",
-    "types": [
-      "Trait"
-    ],
+    "types": ["Trait"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -10810,9 +8978,7 @@
   {
     "name": "Friendly",
     "expansion": "Plunder",
-    "types": [
-      "Trait"
-    ],
+    "types": ["Trait"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -10824,9 +8990,7 @@
   {
     "name": "Hasty",
     "expansion": "Plunder",
-    "types": [
-      "Trait"
-    ],
+    "types": ["Trait"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -10838,9 +9002,7 @@
   {
     "name": "Inherited",
     "expansion": "Plunder",
-    "types": [
-      "Trait"
-    ],
+    "types": ["Trait"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -10852,9 +9014,7 @@
   {
     "name": "Inspiring",
     "expansion": "Plunder",
-    "types": [
-      "Trait"
-    ],
+    "types": ["Trait"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -10866,9 +9026,7 @@
   {
     "name": "Nearby",
     "expansion": "Plunder",
-    "types": [
-      "Trait"
-    ],
+    "types": ["Trait"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -10880,9 +9038,7 @@
   {
     "name": "Patient",
     "expansion": "Plunder",
-    "types": [
-      "Trait"
-    ],
+    "types": ["Trait"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -10894,9 +9050,7 @@
   {
     "name": "Pious",
     "expansion": "Plunder",
-    "types": [
-      "Trait"
-    ],
+    "types": ["Trait"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -10908,9 +9062,7 @@
   {
     "name": "Reckless",
     "expansion": "Plunder",
-    "types": [
-      "Trait"
-    ],
+    "types": ["Trait"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -10922,9 +9074,7 @@
   {
     "name": "Rich",
     "expansion": "Plunder",
-    "types": [
-      "Trait"
-    ],
+    "types": ["Trait"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -10936,9 +9086,7 @@
   {
     "name": "Shy",
     "expansion": "Plunder",
-    "types": [
-      "Trait"
-    ],
+    "types": ["Trait"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -10950,9 +9098,7 @@
   {
     "name": "Tireless",
     "expansion": "Plunder",
-    "types": [
-      "Trait"
-    ],
+    "types": ["Trait"],
     "coins": null,
     "potions": null,
     "debt": null,
@@ -10964,9 +9110,7 @@
   {
     "name": "Black Market",
     "expansion": "Promo",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -10978,10 +9122,7 @@
   {
     "name": "Church",
     "expansion": "Promo",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 3,
     "potions": null,
     "debt": null,
@@ -10993,9 +9134,7 @@
   {
     "name": "Dismantle",
     "expansion": "Promo",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -11007,9 +9146,7 @@
   {
     "name": "Envoy",
     "expansion": "Promo",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -11021,9 +9158,7 @@
   {
     "name": "Sauna",
     "expansion": "Promo",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -11035,9 +9170,7 @@
   {
     "name": "Walled Village",
     "expansion": "Promo",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 4,
     "potions": null,
     "debt": null,
@@ -11049,9 +9182,7 @@
   {
     "name": "Avanto",
     "expansion": "Promo",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -11063,9 +9194,7 @@
   {
     "name": "Governor",
     "expansion": "Promo",
-    "types": [
-      "Action"
-    ],
+    "types": ["Action"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -11077,9 +9206,7 @@
   {
     "name": "Stash",
     "expansion": "Promo",
-    "types": [
-      "Treasure"
-    ],
+    "types": ["Treasure"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -11091,9 +9218,7 @@
   {
     "name": "Summon",
     "expansion": "Promo",
-    "types": [
-      "Event"
-    ],
+    "types": ["Event"],
     "coins": 5,
     "potions": null,
     "debt": null,
@@ -11105,11 +9230,7 @@
   {
     "name": "Captain",
     "expansion": "Promo",
-    "types": [
-      "Action",
-      "Duration",
-      "Command"
-    ],
+    "types": ["Action", "Duration", "Command"],
     "coins": 6,
     "potions": null,
     "debt": null,
@@ -11121,10 +9242,7 @@
   {
     "name": "Prince",
     "expansion": "Promo",
-    "types": [
-      "Action",
-      "Duration"
-    ],
+    "types": ["Action", "Duration"],
     "coins": 8,
     "potions": null,
     "debt": null,

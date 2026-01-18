@@ -52,7 +52,7 @@ export const GenerateKingdomButton = () => {
       variant="default"
       size="lg"
       onClick={() => _generateKingdom()}
-      className="bg-green-600 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-600 w-fit"
+      className="bg-green-600 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-600 w-fit text-white"
     >
       Generate Kingdom!
     </Button>

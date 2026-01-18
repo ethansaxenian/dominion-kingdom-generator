@@ -10,14 +10,26 @@ export interface KingdomState {
   alert: string;
 }
 
-const initialState: KingdomState = {
-  kingdom: [],
-  landscapes: [],
-  usePlatinumColony: false,
-  useShelters: false,
-  blackMarket: [],
-  alert: "",
+const loadFromLocalStorage = (): KingdomState => {
+  try {
+    const saved = localStorage.getItem("dominion-kingdom");
+    if (saved) {
+      return JSON.parse(saved);
+    }
+  } catch (error) {
+    console.error("Failed to load kingdom from local storage:", error);
+  }
+  return {
+    kingdom: [],
+    landscapes: [],
+    usePlatinumColony: false,
+    useShelters: false,
+    blackMarket: [],
+    alert: "",
+  };
 };
+
+const initialState: KingdomState = loadFromLocalStorage();
 
 export interface LockUnlock {
   name: string;

@@ -28,7 +28,7 @@ export const KingdomSettings = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[10vw] pb-8">
+      <span className="flex flex-col items-center md:flex-row justify-evenly pb-8">
         <SelectorList
           list={expansions}
           toggle={toggleExpansion}
@@ -41,18 +41,28 @@ export const KingdomSettings = () => {
           options={PROMOS}
           name="Promos"
         />
-      </div>
+      </span>
       <Separator />
-      <h2 className="pt-8 text-2xl font-bold">Blacklist Cards:</h2>
-      <MultiCardInput
-        list={blacklist}
-        setList={(val) => dispatch(setBlacklist(val))}
-      />
-      <h2 className="pt-8 text-2xl font-bold">Whitelist Cards:</h2>
-      <MultiCardInput
-        list={whitelist}
-        setList={(val) => dispatch(setWhitelist(val))}
-      />
+      <span className="flex flex-col items-center md:flex-row justify-evenly">
+        <span>
+          <h2 className="pt-8 text-2xl font-bold text-center">
+            Blacklist Cards
+          </h2>
+          <MultiCardInput
+            list={blacklist}
+            setList={(val) => dispatch(setBlacklist(val))}
+          />
+        </span>
+        <span>
+          <h2 className="pt-8 text-2xl font-bold text-center">
+            Whitelist Cards
+          </h2>
+          <MultiCardInput
+            list={whitelist}
+            setList={(val) => dispatch(setWhitelist(val))}
+          />
+        </span>
+      </span>
     </>
   );
 };

@@ -8,12 +8,24 @@ export interface SettingsState {
   whitelist: Array<string>;
 }
 
-const initialState: SettingsState = {
-  expansions: ["Base"],
-  promos: [],
-  blacklist: [],
-  whitelist: [],
+const loadFromLocalStorage = (): SettingsState => {
+  try {
+    const saved = localStorage.getItem("dominion-settings");
+    if (saved) {
+      return JSON.parse(saved);
+    }
+  } catch (error) {
+    console.error("Failed to load settings from local storage:", error);
+  }
+  return {
+    expansions: ["Base"],
+    promos: [],
+    blacklist: [],
+    whitelist: [],
+  };
 };
+
+const initialState: SettingsState = loadFromLocalStorage();
 
 export const settingsSlice = createSlice({
   name: "settings",

@@ -36,8 +36,8 @@ export const App = () => {
         })),
       }}
     >
+      <NavBar page={page} setPage={setPage} />
       <div className="container mx-auto max-w-7xl px-4">
-        <NavBar page={page} setPage={setPage} />
         {page === "generate" && <KingdomGenerator />}
         {page === "settings" && <KingdomSettings />}
         {page === "browse" && <CardSearcher />}

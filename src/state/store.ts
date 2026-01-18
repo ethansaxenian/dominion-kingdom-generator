@@ -9,5 +9,16 @@ export const store = configureStore({
   },
 });
 
+// Subscribe to store changes and persist settings to local storage
+store.subscribe(() => {
+  try {
+    const state = store.getState();
+    localStorage.setItem("dominion-settings", JSON.stringify(state.settings));
+    localStorage.setItem("dominion-kingdom", JSON.stringify(state.kingdom));
+  } catch (error) {
+    console.error("Failed to save to local storage:", error);
+  }
+});
+
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

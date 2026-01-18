@@ -1,13 +1,4 @@
-import {
-  AspectRatio,
-  Box,
-  HStack,
-  Highlight,
-  Image,
-  LinkOverlay,
-  Tag,
-} from "@chakra-ui/react";
-import { type Card, isLandscape } from "lib";
+import { type Card, isLandscape } from "@/lib";
 import { SwapCardButton } from "./SwapCardButton";
 import { LockCardButton } from "./LockCardButton";
 import { useState, type FC } from "react";
@@ -27,65 +18,52 @@ export const CardDisplay: FC<CardDisplayProps> = ({
 }) => {
   const [showNameFallback, setShowNameFallback] = useState(true);
 
-  const cardWidth = isLandscape(card) ? "72" : "44";
+  const cardWidth = isLandscape(card) ? "18rem" : "11rem";
   const fallbackImg = isLandscape(card)
     ? "card-back-landscape.png"
     : "card-back.png";
+  const aspectRatio = isLandscape(card) ? "325/200" : "200/320";
 
   return (
-    <Box w={cardWidth} borderRadius="8px" position="relative">
-      <AspectRatio
-        maxW="100%"
-        ratio={isLandscape(card) ? 325 / 200 : 200 / 320}
-      >
-        <LinkOverlay isExternal href={card.link}>
-          <Image
-            w={cardWidth}
+    <div className="relative rounded-lg" style={{ width: cardWidth }}>
+      <div style={{ aspectRatio }}>
+        <a
+          href={card.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block relative"
+        >
+          <img
             src={card.img_path}
             alt={card.name}
-            border="5px solid black"
-            borderRadius="8px"
-            fallbackSrc={`${process.env.PUBLIC_URL}/${fallbackImg}`}
+            className="w-full border-4 border-black rounded-lg"
+            onError={(e) => {
+              e.currentTarget.src = `/${fallbackImg}`;
+            }}
             onLoad={() => setShowNameFallback(false)}
           />
-          {showNameFallback ? (
-            <Highlight
-              query={card.name}
-              styles={{
-                position: "absolute",
-                px: "1",
-                bg: "white",
-                borderRadius: "8px",
-                fontSize: 16,
-                fontWeight: 700,
-                opacity: 0.8,
-              }}
-            >
-              {card.name}
-            </Highlight>
-          ) : undefined}
-        </LinkOverlay>
-      </AspectRatio>
+          {showNameFallback && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="px-2 bg-white/80 rounded-lg text-base font-bold">
+                {card.name}
+              </span>
+            </div>
+          )}
+        </a>
+      </div>
       {swap && (
-        <HStack py="5px" justify="space-evenly">
+        <div className="flex py-1 justify-evenly gap-2">
           <SwapCardButton card={card} isBlackMarket={blackMarket} />
           {lock && <LockCardButton card={card} />}
-        </HStack>
+        </div>
       )}
       {swap && (card.bane || card.wotm) && (
-        <Tag
-          position="absolute"
-          top="50%"
-          left="50%"
-          transform="translate(-50%, -200%)"
-          w="fit-content"
-          borderRadius="full"
-          colorScheme="gray"
-          variant="solid"
-        >
-          {card.bane ? "Bane Card" : "Way of the Mouse"}
-        </Tag>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full">
+          <span className="inline-block px-3 py-1 rounded-full bg-gray-600 text-white text-sm">
+            {card.bane ? "Bane Card" : "Way of the Mouse"}
+          </span>
+        </div>
       )}
-    </Box>
+    </div>
   );
 };

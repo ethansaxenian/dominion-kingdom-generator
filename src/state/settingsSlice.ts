@@ -1,5 +1,5 @@
 import { type PayloadAction, createSlice } from "@reduxjs/toolkit";
-import type { Expansion, Promo } from "lib";
+import type { Expansion, Promo } from "@/lib";
 
 export interface SettingsState {
   expansions: Array<Expansion>;

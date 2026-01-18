@@ -1,10 +1,9 @@
 import { useEffect, useMemo } from 'react';
-import { arrayIncludesCardName, isOfType, sortTwoCards } from 'lib';
+import { arrayIncludesCardName, isOfType, sortTwoCards } from '@/lib';
 import { CardsDisplay } from './CardsDisplay';
-import { Stack, VStack, useConst } from '@chakra-ui/react';
-import { setBlackMarket } from 'state';
+import { setBlackMarket } from '@/state';
 import { GenerateBlackMarketButton } from './GenerateBlackMarketButton';
-import { useAppDispatch, useCardPool, useKingdom } from 'hooks';
+import { useAppDispatch, useCardPool, useKingdom } from '@/hooks';
 
 export const KingdomDisplay = () => {
   const cards = useCardPool();
@@ -18,15 +17,18 @@ export const KingdomDisplay = () => {
     }
   }, [kingdom, dispatch]);
 
-  const platinumColony = useConst(() =>
+  const platinumColony = useMemo(() =>
     cards
       .filter((card) => card.name === 'Platinum' || card.name === 'Colony')
-      .sort((a, b) => sortTwoCards(a, b, 'cost'))
+      .sort((a, b) => sortTwoCards(a, b, 'cost')),
+    [cards]
   );
-  const shelters = useConst(() =>
+  
+  const shelters = useMemo(() =>
     cards
       .filter((card) => isOfType(card, ['Shelter']))
-      .sort((a, b) => sortTwoCards(a, b, 'name'))
+      .sort((a, b) => sortTwoCards(a, b, 'name')),
+    [cards]
   );
 
   const wotm = useMemo(() => kingdom.find((card) => card.wotm), [kingdom]);
@@ -63,7 +65,7 @@ export const KingdomDisplay = () => {
         swap
         lock
       />
-      <Stack direction={{ base: 'column', md: 'row' }}>
+      <div className="flex flex-col md:flex-row gap-4">
         {landscapes.length > 0 && (
           <CardsDisplay data={landscapesWithoutAlly} swap lock />
         )}
@@ -71,13 +73,13 @@ export const KingdomDisplay = () => {
         {usePlatinumColony && (
           <CardsDisplay data={platinumColony} swap={false} lock={false} />
         )}
-      </Stack>
+      </div>
       {ally && <CardsDisplay data={[ally]} swap lock={false} />}
       {useShelters && (
         <CardsDisplay data={shelters} swap={false} lock={false} />
       )}
       {arrayIncludesCardName(kingdom, 'Black Market') && (
-        <VStack mt="12">
+        <div className="flex flex-col items-center mt-12 gap-4">
           <GenerateBlackMarketButton />
           {blackMarket.length > 0 && (
             <CardsDisplay
@@ -87,7 +89,7 @@ export const KingdomDisplay = () => {
               blackMarket
             />
           )}
-        </VStack>
+        </div>
       )}
     </>
   );

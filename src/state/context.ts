@@ -1,4 +1,4 @@
-import type { Card } from "lib";
+import type { Card } from "@/lib";
 import { createContext } from "react";
 
 export interface AppContextData {

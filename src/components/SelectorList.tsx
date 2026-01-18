@@ -1,19 +1,13 @@
 import {
   Accordion,
-  AccordionButton,
-  AccordionIcon,
+  AccordionContent,
   AccordionItem,
-  AccordionPanel,
-  Box,
-  Divider,
-  HStack,
-  Switch,
-  Text,
-  VStack,
-  useColorModeValue,
-} from '@chakra-ui/react';
-import { Expansion, Promo } from 'lib';
-import { FC, Fragment } from 'react';
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Switch } from "@/components/ui/switch";
+import { Separator } from "@/components/ui/separator";
+import type { Expansion, Promo } from "@/lib";
+import { FC, Fragment } from "react";
 
 export interface SelectorListProps {
   list: Array<Expansion | Promo>;
@@ -28,50 +22,32 @@ export const SelectorList: FC<SelectorListProps> = ({
   options,
   name,
 }) => {
-  const buttonBg = useColorModeValue('gray.300', 'gray.700');
-  const buttonBgHover = useColorModeValue('gray.400', 'gray.600');
   return (
-    <Accordion allowToggle w="64" mt="8">
+    <Accordion type="single" collapsible className="w-64 mt-8">
       <AccordionItem
-        bg={useColorModeValue('gray.100', 'gray.800')}
-        border="1px solid gray"
-        borderRadius="8px"
+        value="item-1"
+        className="border border-gray-300 dark:border-gray-700 rounded-lg bg-gray-100 dark:bg-gray-800"
       >
-        {({ isExpanded }) => (
-          <>
-            <AccordionButton
-              bg={buttonBg}
-              _hover={{ bg: buttonBgHover }}
-              p="15px"
-              borderTopRadius="8px"
-              borderBottomRadius={isExpanded ? 'none' : '8px'}
-            >
-              <Box flex="1" textAlign="left">
-                Select {name}
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-            <AccordionPanel py={4}>
-              <VStack alignItems="left" m="auto" w="fit-content">
-                {options.map((option) => (
-                  <Fragment key={option}>
-                    <HStack justify="space-between">
-                      <Text fontWeight="semibold" pr="15px">
-                        {option}
-                      </Text>
-                      <Switch
-                        isChecked={list.includes(option)}
-                        onChange={() => toggle(option)}
-                        ml="auto"
-                      />
-                    </HStack>
-                    <Divider />
-                  </Fragment>
-                ))}
-              </VStack>
-            </AccordionPanel>
-          </>
-        )}
+        <AccordionTrigger className="px-4 py-3 bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-600 rounded-t-lg data-[state=closed]:rounded-b-lg">
+          <span>Select {name}</span>
+        </AccordionTrigger>
+        <AccordionContent className="py-4">
+          <div className="flex flex-col items-start mx-auto w-fit gap-2">
+            {options.map((option) => (
+              <Fragment key={option}>
+                <div className="flex justify-between items-center w-full">
+                  <span className="font-semibold pr-4">{option}</span>
+                  <Switch
+                    checked={list.includes(option)}
+                    onCheckedChange={() => toggle(option)}
+                    className="ml-auto"
+                  />
+                </div>
+                <Separator />
+              </Fragment>
+            ))}
+          </div>
+        </AccordionContent>
       </AccordionItem>
     </Accordion>
   );

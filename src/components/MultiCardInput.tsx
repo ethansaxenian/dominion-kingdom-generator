@@ -1,22 +1,8 @@
-import {
-  Box,
-  Button,
-  Input,
-  InputGroup,
-  InputRightElement,
-  Tag,
-  TagLabel,
-  TagLeftIcon,
-  TagRightIcon,
-  VStack,
-  Wrap,
-  useConst,
-  Icon,
-} from '@chakra-ui/react';
-import { FC, useEffect, useState } from 'react';
+import { Input } from '@/components/ui/input';
 import { FaPlus, FaTimes } from 'react-icons/fa';
-import { CARDS_TO_REMOVE } from 'lib';
-import { useCardPool } from 'hooks';
+import { FC, useEffect, useState } from 'react';
+import { CARDS_TO_REMOVE } from '@/lib';
+import { useCardPool } from '@/hooks';
 import Fuse from 'fuse.js';
 
 export interface MultiCardInputProps {
@@ -26,12 +12,10 @@ export interface MultiCardInputProps {
 
 export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
   const cardPool = useCardPool();
-  const cards = useConst(() =>
-    cardPool.filter(
-      (card) => card.in_supply && !CARDS_TO_REMOVE.includes(card.name)
-    )
+  const cards = cardPool.filter(
+    (card) => card.in_supply && !CARDS_TO_REMOVE.includes(card.name)
   );
-  const cardNames = useConst(() => cards.map(({ name }) => name));
+  const cardNames = cards.map(({ name }) => name);
 
   const [text, setText] = useState('');
   const [recommendations, setRecommendations] = useState<Array<string>>([]);
@@ -60,74 +44,55 @@ export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
     }
   };
 
-  const handleKeyDown = (e: KeyboardEvent) => {
+  const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter') {
       updateList(text, 'add');
     }
   };
 
-  const blacklisted = (
-    <Wrap w="72" pb="3.5">
-      {list.map((card) => (
-        <Tag
-          key={card}
-          borderRadius="full"
-          colorScheme="red"
-          variant="solid"
-          cursor="pointer"
-          onClick={() => updateList(card, 'remove')}
-          _hover={{
-            bgColor: 'red.400',
-          }}
-        >
-          <TagLabel>{card}</TagLabel>
-          <TagRightIcon boxSize="2.5" as={FaTimes} />
-        </Tag>
-      ))}
-    </Wrap>
-  );
-
-  const recommendedList = (
-    <VStack align="start" w="72" pt="1.5">
-      {recommendations.map((name) => (
-        <Tag
-          key={name}
-          cursor="pointer"
-          colorScheme="green"
-          variant="solid"
-          borderRadius="full"
-          onClick={() => updateList(name, 'add')}
-          _hover={{
-            bgColor: 'green.400',
-          }}
-        >
-          <TagLeftIcon boxSize="3" as={FaPlus} />
-          <TagLabel>{name}</TagLabel>
-        </Tag>
-      ))}
-    </VStack>
-  );
-
   return (
-    <Box pt="3.5" pb="7">
-      {blacklisted}
-      <InputGroup w="72">
+    <div className="pt-3.5 pb-7">
+      <div className="flex flex-wrap gap-2 w-72 pb-3.5">
+        {list.map((card) => (
+          <button
+            key={card}
+            onClick={() => updateList(card, 'remove')}
+            className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-red-500 text-white cursor-pointer hover:bg-red-400 transition-colors"
+          >
+            <span>{card}</span>
+            <FaTimes className="h-2.5 w-2.5" />
+          </button>
+        ))}
+      </div>
+      <div className="relative w-72">
         <Input
-          pr="10px"
           placeholder="Enter card name"
           value={text}
           onChange={(e) => setText(e.target.value)}
-          // @ts-ignore
           onKeyDown={handleKeyDown}
-          errorBorderColor="crimson"
+          className="pr-20"
         />
-        <InputRightElement width="16">
-          <Button h="7" size="sm" onClick={() => updateList(text, 'add')}>
-            Add
-          </Button>
-        </InputRightElement>
-      </InputGroup>
-      {text !== '' && recommendedList}
-    </Box>
+        <button
+          onClick={() => updateList(text, 'add')}
+          className="absolute right-2 top-1/2 -translate-y-1/2 px-3 py-1 text-sm bg-primary text-primary-foreground rounded hover:bg-primary/90"
+        >
+          Add
+        </button>
+      </div>
+      {text !== '' && (
+        <div className="flex flex-col items-start gap-2 w-72 pt-1.5">
+          {recommendations.map((name) => (
+            <button
+              key={name}
+              onClick={() => updateList(name, 'add')}
+              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500 text-white cursor-pointer hover:bg-green-400 transition-colors"
+            >
+              <FaPlus className="h-3 w-3" />
+              <span>{name}</span>
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
   );
 };

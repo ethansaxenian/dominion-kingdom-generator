@@ -1,13 +1,14 @@
-import { Button, Spinner } from '@chakra-ui/react';
-import { useAppDispatch, useCardPool, useKingdom, useSettings } from 'hooks';
-import { Promo, generateKingdom, hasValidExpansion } from 'lib';
+import { Button } from "@/components/ui/button";
+import { Loader2 } from "lucide-react";
+import { useAppDispatch, useCardPool, useKingdom, useSettings } from "@/hooks";
+import { type Promo, generateKingdom, hasValidExpansion } from "@/lib";
 import {
   setAlert,
   setKingdom,
   setLandscapes,
   setUsePlatinumColony,
   setUseShelters,
-} from 'state';
+} from "@/state";
 
 export const GenerateKingdomButton = () => {
   const { blacklist, whitelist, expansions, promos } = useSettings();
@@ -21,13 +22,13 @@ export const GenerateKingdomButton = () => {
       (card) =>
         !blacklist.includes(card.name) &&
         (hasValidExpansion(card, expansions) ||
-          promos.includes(card.name as Promo))
+          promos.includes(card.name as Promo)),
     );
 
     const { newKingdom, newLandscapes, alertText, usePC, useSh } =
       generateKingdom(pool, expansions, promos, kingdom, landscapes, whitelist);
 
-    if (alertText !== '') {
+    if (alertText !== "") {
       dispatch(setAlert(alertText));
     } else if (
       newKingdom !== undefined &&
@@ -43,20 +44,15 @@ export const GenerateKingdomButton = () => {
   };
 
   return cards.length === 0 ? (
-    <Spinner
-      mt="100"
-      thickness="7px"
-      speed="0.65s"
-      emptyColor="gray.200"
-      color="green.500"
-      size="xl"
-    />
+    <div className="flex justify-center items-center mt-24">
+      <Loader2 className="h-12 w-12 animate-spin text-green-500" />
+    </div>
   ) : (
     <Button
-      colorScheme="green"
-      onClick={() => _generateKingdom()}
+      variant="default"
       size="lg"
-      w="fit-content"
+      onClick={() => _generateKingdom()}
+      className="bg-green-600 hover:bg-green-700 w-fit"
     >
       Generate Kingdom!
     </Button>

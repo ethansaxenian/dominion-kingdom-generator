@@ -5,11 +5,10 @@ import {
   type SortCardsBy,
   isLandscape,
   sortTwoCards,
-} from "lib";
+} from "@/lib";
 import { CardsDisplay } from "./CardsDisplay";
 import { SearchBar } from "./SearchBar";
-import { Heading } from "@chakra-ui/react";
-import { useCardPool } from "hooks";
+import { useCardPool } from "@/hooks";
 
 export const CardSearcher = () => {
   const cards = useCardPool();
@@ -87,22 +86,19 @@ export const CardSearcher = () => {
       />
       {displayed.includes("Supply") && inSupply.length > 0 && (
         <>
-          {/* <Divider my="7" /> */}
-          <Heading pb="7">Supply Cards</Heading>
+          <h2 className="pb-7 text-2xl font-bold">Supply Cards</h2>
           <CardsDisplay data={inSupply} swap={false} lock={false} />
         </>
       )}
       {displayed.includes("Non-supply") && notInSupply.length > 0 && (
         <>
-          {/* <Divider my="7" /> */}
-          <Heading pb="7">Non-Supply Cards</Heading>
+          <h2 className="pb-7 text-2xl font-bold">Non-Supply Cards</h2>
           <CardsDisplay data={notInSupply} swap={false} lock={false} />
         </>
       )}
       {displayed.includes("Landscape") && landscapes.length > 0 && (
         <>
-          {/* <Divider my="7" /> */}
-          <Heading pb="7">Landscapes</Heading>
+          <h2 className="pb-7 text-2xl font-bold">Landscapes</h2>
           <CardsDisplay data={landscapes} swap={false} lock={false} />
         </>
       )}

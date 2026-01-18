@@ -1,5 +1,5 @@
 import { type PayloadAction, createSlice } from "@reduxjs/toolkit";
-import type { Card } from "lib";
+import type { Card } from "@/lib";
 
 export interface KingdomState {
   kingdom: Array<Card>;

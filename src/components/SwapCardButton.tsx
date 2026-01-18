@@ -1,5 +1,5 @@
-import { IconButton } from "@chakra-ui/react";
-import { useAppDispatch, useCardPool, useKingdom, useSettings } from "hooks";
+import { Button } from "@/components/ui/button";
+import { useAppDispatch, useCardPool, useKingdom, useSettings } from "@/hooks";
 import {
   type Card,
   arrayIncludesCard,
@@ -9,7 +9,7 @@ import {
   isLandscape,
   swapCard,
   swapLandscape,
-} from "lib";
+} from "@/lib";
 import { type FC, useMemo } from "react";
 import { VscArrowSwap } from "react-icons/vsc";
 import {
@@ -19,7 +19,7 @@ import {
   setLandscapes,
   unlockCard,
   unlockLandscape,
-} from "state";
+} from "@/state";
 
 export interface SwapCardButtonProps {
   card: Card;
@@ -112,11 +112,14 @@ export const SwapCardButton: FC<SwapCardButtonProps> = ({
   };
 
   return (
-    <IconButton
+    <Button
+      variant="outline"
+      size="icon"
       aria-label="Swap card"
-      colorScheme="red"
-      icon={<VscArrowSwap />}
+      className="bg-red-100 hover:bg-red-200"
       onClick={swap}
-    />
+    >
+      <VscArrowSwap className="h-4 w-4" />
+    </Button>
   );
 };

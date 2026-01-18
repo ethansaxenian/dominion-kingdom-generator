@@ -37,7 +37,7 @@ export const GenerateBlackMarketButton = () => {
   return (
     <Button
       size="lg"
-      className="mb-6 bg-blue-600 hover:bg-blue-700"
+      className="mb-6 bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600"
       onClick={() => generateBlackMarketDeck()}
     >
       Generate Black Market Deck

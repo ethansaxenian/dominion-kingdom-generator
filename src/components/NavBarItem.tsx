@@ -18,9 +18,10 @@ export const NavBarItem: FC<NavBarItemProps> = ({
     <button
       onClick={onClick}
       className={`flex items-center gap-2 h-full px-3 py-2 rounded-md transition-colors
-        ${isActive 
-          ? 'bg-gray-300 dark:bg-gray-700 text-black dark:text-white' 
-          : 'text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white'
+        ${
+          isActive
+            ? "bg-gray-300 dark:bg-gray-700 text-black dark:text-white"
+            : "text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
         }`}
       aria-label={`Go to ${label}`}
     >

@@ -25,7 +25,11 @@ export const LockCardButton: FC<LockCardButtonProps> = ({ card }) => {
       variant="outline"
       size="icon"
       aria-label={card.locked ? "Unlock card" : "Lock card"}
-      className={card.locked ? "bg-green-100 hover:bg-green-200" : ""}
+      className={
+        card.locked
+          ? "bg-green-200 hover:bg-green-300 dark:bg-green-700 dark:hover:bg-green-600 border-green-400 dark:border-green-600"
+          : ""
+      }
       onClick={lock}
     >
       {card.locked ? (

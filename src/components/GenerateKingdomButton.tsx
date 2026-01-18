@@ -45,14 +45,14 @@ export const GenerateKingdomButton = () => {
 
   return cards.length === 0 ? (
     <div className="flex justify-center items-center mt-24">
-      <Loader2 className="h-12 w-12 animate-spin text-green-500" />
+      <Loader2 className="h-12 w-12 animate-spin text-green-600 dark:text-green-400" />
     </div>
   ) : (
     <Button
       variant="default"
       size="lg"
       onClick={() => _generateKingdom()}
-      className="bg-green-600 hover:bg-green-700 w-fit"
+      className="bg-green-600 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-600 w-fit"
     >
       Generate Kingdom!
     </Button>

@@ -116,7 +116,7 @@ export const SwapCardButton: FC<SwapCardButtonProps> = ({
       variant="outline"
       size="icon"
       aria-label="Swap card"
-      className="bg-red-100 hover:bg-red-200"
+      className="bg-red-200 hover:bg-red-300 dark:bg-red-700 dark:hover:bg-red-600 border-red-400 dark:border-red-600"
       onClick={swap}
     >
       <VscArrowSwap className="h-4 w-4" />

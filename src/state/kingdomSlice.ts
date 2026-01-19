@@ -1,5 +1,5 @@
 import { type PayloadAction, createSlice } from "@reduxjs/toolkit";
-import type { Card } from "@/lib";
+import { sortTwoCards, type Card } from "@/lib";
 
 export interface KingdomState {
   kingdom: Array<Card>;
@@ -14,7 +14,12 @@ const loadFromLocalStorage = (): KingdomState => {
   try {
     const saved = localStorage.getItem("dominion-kingdom");
     if (saved) {
-      return JSON.parse(saved);
+      const state = JSON.parse(saved) as KingdomState;
+      state.kingdom.sort((card1, card2) => sortTwoCards(card1, card2, "cost"));
+      state.landscapes.sort((card1, card2) =>
+        sortTwoCards(card1, card2, "cost"),
+      );
+      return state;
     }
   } catch (error) {
     console.error("Failed to load kingdom from local storage:", error);

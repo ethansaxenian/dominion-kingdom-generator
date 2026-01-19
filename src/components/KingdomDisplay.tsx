@@ -47,8 +47,7 @@ export const KingdomDisplay = () => {
   const landscapesWithoutAlly = useMemo(
     () =>
       landscapes
-        .filter((card) => !isOfType(card, ["Ally"]))
-        .sort((card1, card2) => sortTwoCards(card1, card2, "name")),
+        .filter((card) => !isOfType(card, ["Ally"])),
     [landscapes],
   );
 
@@ -63,7 +62,7 @@ export const KingdomDisplay = () => {
   return (
     <>
       <CardsDisplay
-        data={supply.sort((card1, card2) => sortTwoCards(card1, card2, "cost"))}
+        data={supply}
         swap
         lock
       />

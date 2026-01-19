@@ -9,6 +9,7 @@ import {
   isOfType,
   isValidKingdomCard,
   sample,
+  sortTwoCards,
 } from "./utils";
 
 export const getAvailableCards = (
@@ -193,6 +194,9 @@ export const generateKingdom = (
   if (!newKingdom.some((card) => isOfType(card, ["Liaison"]))) {
     newLandscapes = newLandscapes.filter((card) => !isOfType(card, ["Ally"]));
   }
+  // Sort kingdom by cost and landscapes by name initially
+  newKingdom.sort((card1, card2) => sortTwoCards(card1, card2, "cost"));
+  newLandscapes.sort((card1, card2) => sortTwoCards(card1, card2, "name"));
   return { newKingdom, newLandscapes, alertText: "", usePC, useSh };
 };
 
@@ -217,13 +221,23 @@ export const swapCard = (
   if (remainingCards.length < 10) {
     return { alertText: "There are no available kingdom cards to swap!" };
   }
+
   let newKingdom = kingdom.filter((card) => card.name !== oldCard.name);
   if (oldCard.name === "Young Witch") {
     newKingdom = newKingdom.filter((card) => !card.bane);
   }
   if (!oldCard.bane && !oldCard.wotm) {
     const [newCard] = drawCards(remainingCards, 1);
-    newKingdom.push(newCard);
+
+    const oldCardIndex = kingdom.findIndex(
+      (card) => card.name === oldCard.name,
+    );
+
+    if (oldCardIndex >= 0) {
+      newKingdom.splice(oldCardIndex, 0, newCard);
+    } else {
+      newKingdom.push(newCard);
+    }
   }
   const remainingLanscapes = getAvailableLandscapes(
     pool,
@@ -268,7 +282,14 @@ export const swapLandscape = (
     newKingdom = newKingdom.filter((card) => !card.wotm);
   }
   const [newCard] = drawCards(remaining, 1);
-  newLandscapes = [...newLandscapes, newCard];
+  const oldCardIndex = landscapes.findIndex(
+    (card) => card.name === oldCard.name,
+  );
+  if (oldCardIndex >= 0) {
+    newLandscapes.splice(oldCardIndex, 0, newCard);
+  } else {
+    newLandscapes.push(newCard);
+  }
   const remainingCards = getAvailableCards(pool, expansions, promos).filter(
     (card) => !arrayIncludesCard(newKingdom, card),
   );

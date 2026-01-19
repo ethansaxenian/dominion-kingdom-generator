@@ -1,5 +1,5 @@
 import { type PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { sortTwoCards, type Card } from "@/lib";
+import { cardSortFn, type Card } from "@/lib";
 
 export interface KingdomState {
   kingdom: Array<Card>;
@@ -15,10 +15,8 @@ const loadFromLocalStorage = (): KingdomState => {
     const saved = localStorage.getItem("dominion-kingdom");
     if (saved) {
       const state = JSON.parse(saved) as KingdomState;
-      state.kingdom.sort((card1, card2) => sortTwoCards(card1, card2, "cost"));
-      state.landscapes.sort((card1, card2) =>
-        sortTwoCards(card1, card2, "cost"),
-      );
+      state.kingdom.sort(cardSortFn("cost"));
+      state.landscapes.sort(cardSortFn("name"));
       return state;
     }
   } catch (error) {

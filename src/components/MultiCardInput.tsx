@@ -1,7 +1,7 @@
 import { Input } from "@/components/ui/input";
 import { FaPlus, FaTimes } from "react-icons/fa";
 import { type FC, useState, useMemo } from "react";
-import { CARDS_TO_REMOVE } from "@/lib";
+import { CARDS_TO_REMOVE, isLandscape } from "@/lib";
 import { useCardPool } from "@/hooks";
 import Fuse from "fuse.js";
 
@@ -12,10 +12,17 @@ export interface MultiCardInputProps {
 
 export const MultiCardInput: FC<MultiCardInputProps> = ({ list, setList }) => {
   const cardPool = useCardPool();
-  const cards = cardPool.filter(
-    (card) => card.in_supply && !CARDS_TO_REMOVE.includes(card.name),
+  const cards = useMemo(
+    () =>
+      cardPool.filter(
+        (card) =>
+          (card.in_supply || isLandscape(card)) &&
+          !CARDS_TO_REMOVE.includes(card.name),
+      ),
+    [cardPool],
   );
-  const cardNames = cards.map(({ name }) => name);
+
+  const cardNames = useMemo(() => cards.map(({ name }) => name), [cards]);
 
   const [text, setText] = useState("");
 

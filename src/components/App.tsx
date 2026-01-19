@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { CardSearcher } from "./CardSearcher";
-import { NavBar } from "./NavBar";
-import { KingdomGenerator } from "./KingdomGenerator";
-import { KingdomSettings } from "./KingdomSettings";
+import { CardSearcher } from "@/components/CardSearcher";
+import { NavBar } from "@/components/NavBar";
+import { KingdomGenerator } from "@/components/KingdomGenerator";
+import { KingdomSettings } from "@/components/KingdomSettings";
 import { Toaster } from "@/components/ui/sonner";
 import type { Card, Page } from "@/lib";
 import { AppContext } from "@/state";

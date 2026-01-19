@@ -28,7 +28,7 @@ export const KingdomSettings = () => {
 
   return (
     <>
-      <span className="flex flex-col items-center md:flex-row justify-evenly pb-8">
+      <span className="flex flex-col items-center md:items-start md:flex-row justify-evenly pb-8">
         <SelectorList
           list={expansions}
           toggle={toggleExpansion}

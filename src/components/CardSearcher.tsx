@@ -4,7 +4,7 @@ import {
   SUPPLY_TYPES,
   type SortCardsBy,
   isLandscape,
-  sortTwoCards,
+  cardSortFn,
 } from "@/lib";
 import { CardsDisplay } from "./CardsDisplay";
 import { SearchBar } from "./SearchBar";
@@ -36,7 +36,7 @@ export const CardSearcher = () => {
             text.toLowerCase().includes(parsedTerm)
           );
         })
-        .sort((card1, card2) => sortTwoCards(card1, card2, sortBy)),
+        .sort(cardSortFn(sortBy)),
     [searchTerm, sortBy, cards],
   );
 

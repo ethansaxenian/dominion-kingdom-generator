@@ -9,7 +9,7 @@ import {
   isOfType,
   isValidKingdomCard,
   sample,
-  sortTwoCards,
+  cardSortFn,
 } from "./utils";
 
 export const getAvailableCards = (
@@ -195,8 +195,8 @@ export const generateKingdom = (
     newLandscapes = newLandscapes.filter((card) => !isOfType(card, ["Ally"]));
   }
   // Sort kingdom by cost and landscapes by name initially
-  newKingdom.sort((card1, card2) => sortTwoCards(card1, card2, "cost"));
-  newLandscapes.sort((card1, card2) => sortTwoCards(card1, card2, "name"));
+  newKingdom.sort(cardSortFn("cost"));
+  newLandscapes.sort(cardSortFn("cost"));
   return { newKingdom, newLandscapes, alertText: "", usePC, useSh };
 };
 

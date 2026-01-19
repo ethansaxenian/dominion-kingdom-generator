@@ -1,5 +1,5 @@
 import { useEffect, useMemo } from "react";
-import { arrayIncludesCardName, isOfType, sortTwoCards } from "@/lib";
+import { arrayIncludesCardName, isOfType, cardSortFn } from "@/lib";
 import { CardsDisplay } from "./CardsDisplay";
 import { setBlackMarket } from "@/state";
 import { GenerateBlackMarketButton } from "./GenerateBlackMarketButton";
@@ -21,7 +21,7 @@ export const KingdomDisplay = () => {
     () =>
       cards
         .filter((card) => card.name === "Platinum" || card.name === "Colony")
-        .sort((a, b) => sortTwoCards(a, b, "cost")),
+        .sort(cardSortFn("cost")),
     [cards],
   );
 
@@ -29,7 +29,7 @@ export const KingdomDisplay = () => {
     () =>
       cards
         .filter((card) => isOfType(card, ["Shelter"]))
-        .sort((a, b) => sortTwoCards(a, b, "name")),
+        .sort(cardSortFn("name")),
     [cards],
   );
 
@@ -45,27 +45,18 @@ export const KingdomDisplay = () => {
   );
 
   const landscapesWithoutAlly = useMemo(
-    () =>
-      landscapes
-        .filter((card) => !isOfType(card, ["Ally"])),
+    () => landscapes.filter((card) => !isOfType(card, ["Ally"])),
     [landscapes],
   );
 
   const blackMarketDisplay = useMemo(
-    () =>
-      [...blackMarket].sort((card1, card2) =>
-        sortTwoCards(card1, card2, "name"),
-      ),
+    () => [...blackMarket].sort(cardSortFn("name")),
     [blackMarket],
   );
 
   return (
     <>
-      <CardsDisplay
-        data={supply}
-        swap
-        lock
-      />
+      <CardsDisplay data={supply} swap lock />
       <div className="flex flex-col md:flex-row gap-4">
         {landscapes.length > 0 && (
           <CardsDisplay data={landscapesWithoutAlly} swap lock />

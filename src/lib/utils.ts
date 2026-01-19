@@ -60,22 +60,26 @@ export const costSortValue = (card: Card): number => {
   return parseInt(`${coinRep}${potionRep}${debtRep}` || "0");
 };
 
-export const sortTwoCards = (card1: Card, card2: Card, sortBy: SortCardsBy) => {
-  const first = sortBy === "cost" ? costSortValue(card1) : card1[sortBy];
-  const second = sortBy === "cost" ? costSortValue(card2) : card2[sortBy];
-  if (first < second) {
-    return -1;
-  } else if (first > second) {
-    return 1;
-  } else {
-    if (card1.name < card2.name) {
+export function cardSortFn(
+  sortBy: SortCardsBy,
+): (card1: Card, card2: Card) => -1 | 0 | 1 {
+  return (card1: Card, card2: Card) => {
+    const first = sortBy === "cost" ? costSortValue(card1) : card1[sortBy];
+    const second = sortBy === "cost" ? costSortValue(card2) : card2[sortBy];
+    if (first < second) {
       return -1;
-    } else if (card1.name > card2.name) {
+    } else if (first > second) {
       return 1;
+    } else {
+      if (card1.name < card2.name) {
+        return -1;
+      } else if (card1.name > card2.name) {
+        return 1;
+      }
+      return 0;
     }
-    return 0;
-  }
-};
+  };
+}
 
 export const arrayIncludesCard = (array: Array<Card>, card: Card): boolean =>
   array.map((obj) => obj.name.toLowerCase()).includes(card.name.toLowerCase());

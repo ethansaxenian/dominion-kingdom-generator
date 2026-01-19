@@ -1,4 +1,4 @@
-import { BASIC_CARDS, SECONDARY_CARDS } from "./constants";
+import { BASIC_CARDS, SECONDARY_CARDS, SUPPLY_TYPES } from "./constants";
 import type { Card, Expansion, Promo } from "./types";
 import {
   arrayIncludesCard,
@@ -40,7 +40,10 @@ export const getAvailableLandscapes = (
 };
 
 export const youngWitchPredicate = (card: Card): boolean =>
-  (card.coins === 2 || card.coins === 3) && !card.potions && !card.debt;
+  (card.coins === 2 || card.coins === 3) &&
+  !card.potions &&
+  !card.debt &&
+  isOfType(card, SUPPLY_TYPES);
 
 export interface AddExtraCards {
   extraCards: Array<Card>;

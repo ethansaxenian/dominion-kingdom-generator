@@ -25,7 +25,9 @@ export const CardDisplay: FC<CardDisplayProps> = ({
   const aspectRatio = isLandscapeShaped(card) ? "325/200" : "200/320";
 
   return (
-    <div className={`relative rounded-lg w-[${cardWidth}]`}>
+    <div
+      className={`relative rounded-lg w-[${cardWidth}] flex flex-col justify-end`}
+    >
       <div className={`aspect-[${aspectRatio}]`}>
         <a
           href={card.link}
@@ -58,7 +60,7 @@ export const CardDisplay: FC<CardDisplayProps> = ({
         </div>
       )}
       {swap && (card.bane || card.wotm) && (
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full">
+        <div className="absolute top-3/7 left-1/2 -translate-x-1/2 -translate-y-full">
           <span className="inline-block px-3 py-1 rounded-full bg-gray-600 text-white text-sm">
             {card.bane ? "Bane Card" : "Way of the Mouse"}
           </span>
